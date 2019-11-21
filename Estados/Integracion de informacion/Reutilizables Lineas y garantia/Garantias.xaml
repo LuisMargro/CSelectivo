@@ -1,0 +1,853 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Garantias" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="in_TipoGarantia" Type="InArgument(x:String)" />
+  </x:Members>
+  <mva:VisualBasic.Settings>
+    <x:Null />
+  </mva:VisualBasic.Settings>
+  <sap:VirtualizedContainerService.HintSize>750,1202</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>Garantias_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="21">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="19">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap2010:Annotation.AnnotationText="Se crean las garantias que se hayan ingresado en la matriz de casos" DisplayName="Garantias" sap:VirtualizedContainerService.HintSize="730,1142" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Attach Process portal" sap:VirtualizedContainerService.HintSize="688,1023" sap2010:WorkflowViewState.IdRef="BrowserScope_1" InformativeScreenshot="6283ef35c4d374cd06ffdb05d2891a6a" Selector="&lt;html app='chrome.exe' title='IBM BPM Portal - Step: Integración de información' /&gt;">
+      <ui:BrowserScope.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+          </ActivityAction.Argument>
+          <Flowchart DisplayName="Proceso De garantias" sap:VirtualizedContainerService.HintSize="654,877" sap2010:WorkflowViewState.IdRef="Flowchart_1">
+            <Flowchart.Variables>
+              <Variable x:TypeArguments="x:Boolean" Name="SumarioAbierto" />
+            </Flowchart.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                <av:Point x:Key="ShapeLocation">280,0</av:Point>
+                <av:Size x:Key="ShapeSize">60,75</av:Size>
+                <av:PointCollection x:Key="ConnectorLocation">310,75 310,114.5</av:PointCollection>
+                <x:Double x:Key="Height">841</x:Double>
+                <x:Double x:Key="Width">620</x:Double>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <Flowchart.StartNode>
+              <x:Reference>__ReferenceID7</x:Reference>
+            </Flowchart.StartNode>
+            <FlowSwitch x:TypeArguments="x:String" x:Name="__ReferenceID6" DisplayName="Tipo Garantia" Expression="[in_TipoGarantia]" sap:VirtualizedContainerService.HintSize="76,87" sap2010:WorkflowViewState.IdRef="FlowSwitch`1_1">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <av:Point x:Key="ShapeLocation">272,206.5</av:Point>
+                  <av:Size x:Key="ShapeSize">76,87</av:Size>
+                  <av:PointCollection x:Key="hipotecariaConnector">310,293.5 310,347</av:PointCollection>
+                  <av:PointCollection x:Key="avalConnector">272,271.75 100,271.75 100,346</av:PointCollection>
+                  <av:PointCollection x:Key="prendariaConnector">348,271.75 520,271.75 520,347</av:PointCollection>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <FlowStep x:Key="aval" x:Name="__ReferenceID4">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <av:Point x:Key="ShapeLocation">0,346</av:Point>
+                    <av:Size x:Key="ShapeSize">200,66</av:Size>
+                    <av:PointCollection x:Key="ConnectorLocation">100,412 100,467</av:PointCollection>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <Sequence DisplayName="Seleccionar garantia Aval" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_22">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:SelectItem ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Seleccionar Categoria" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="SelectItem_7" Item="Personal">
+                    <ui:SelectItem.Items>
+                      <scg:List x:TypeArguments="x:String" Capacity="4">
+                        <x:String>Real</x:String>
+                        <x:String>Personal</x:String>
+                      </scg:List>
+                    </ui:SelectItem.Items>
+                    <ui:SelectItem.Target>
+                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="a067c31dc8c27185e1913f1638274a84" Selector="&lt;webctrl id='singleselect-Garantias1:categoriaNuevo' tag='SELECT' /&gt;" TimeoutMS="180000" WaitForReady="INTERACTIVE" />
+                    </ui:SelectItem.Target>
+                  </ui:SelectItem>
+                  <ui:SelectItem ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Seleccionar Tipo de garantia" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="SelectItem_8" Item="Aval">
+                    <ui:SelectItem.Items>
+                      <scg:List x:TypeArguments="x:String" Capacity="4">
+                        <x:String>Aval</x:String>
+                      </scg:List>
+                    </ui:SelectItem.Items>
+                    <ui:SelectItem.Target>
+                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="43d84c95198fdc340eadfa5f00c9023b" Selector="&lt;webctrl id='singleselect-Garantias1:tipoGarantiaNuevo' tag='SELECT' /&gt;" TimeoutMS="180000" WaitForReady="INTERACTIVE" />
+                    </ui:SelectItem.Target>
+                  </ui:SelectItem>
+                  <ui:SelectItem ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Seleccionar subtipo" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="SelectItem_9" Item="Aval Corporativa">
+                    <ui:SelectItem.Items>
+                      <scg:List x:TypeArguments="x:String" Capacity="32">
+                        <x:String>Aval Corporativa</x:String>
+                        <x:String>Aval Estado</x:String>
+                        <x:String>Aval Gobierno Federal</x:String>
+                        <x:String>Aval Municipio</x:String>
+                        <x:String>Aval Persona Física</x:String>
+                        <x:String>Aval Persona Moral</x:String>
+                        <x:String>Obligado Solidario Corporativa</x:String>
+                        <x:String>Obligado Solidario y AvalEstado</x:String>
+                        <x:String>Obligado Solidario y Aval Gobierno Federal</x:String>
+                        <x:String>Obligado Solidario y Aval Municipio</x:String>
+                        <x:String>Obligado Solidario y Aval Persona Física</x:String>
+                        <x:String>Obligado Solidario y Aval Persona Moral</x:String>
+                        <x:String>Fiador y Aval Corporativa</x:String>
+                        <x:String>Fiador y Aval Gobierno Federal</x:String>
+                        <x:String>Fiador y Aval Municipio</x:String>
+                        <x:String>Fiador y Aval Persona Física</x:String>
+                        <x:String>Fiador y Aval Persona Moral</x:String>
+                        <x:String>Fiador y Aval Estado</x:String>
+                        <x:String>Obligado Solidario Corporativa</x:String>
+                        <x:String>Obligado Solidario Gobierno Federal</x:String>
+                        <x:String>Obligado Solidario Municipio</x:String>
+                        <x:String>Obligado Solidario Persona Física</x:String>
+                        <x:String>Obligado Solidario Persona Moral</x:String>
+                        <x:String>Obligado Solidario Estado</x:String>
+                      </scg:List>
+                    </ui:SelectItem.Items>
+                    <ui:SelectItem.Target>
+                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="519cbd9fd01dad296bdbab4860ffc1b4" Selector="&lt;webctrl id='singleselect-Garantias1:subtipoGarantiaNuevo' tag='SELECT' /&gt;" TimeoutMS="180000" WaitForReady="INTERACTIVE" />
+                    </ui:SelectItem.Target>
+                  </ui:SelectItem>
+                </Sequence>
+                <FlowStep.Next>
+                  <FlowStep x:Name="__ReferenceID5">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <av:Point x:Key="ShapeLocation">0,467</av:Point>
+                        <av:Size x:Key="ShapeSize">200,66</av:Size>
+                        <av:PointCollection x:Key="ConnectorLocation">100,533 100,563 240,563 240,597</av:PointCollection>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <Sequence DisplayName="Secuencia ingresar datos de aval" sap:VirtualizedContainerService.HintSize="376,1576" sap2010:WorkflowViewState.IdRef="Sequence_44">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <ui:TypeInto ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" Activate="True" DisplayName="Escribir Importe" EmptyField="True" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_18" SendWindowMessages="True" SimulateType="False" Text="1000000">
+                        <ui:TypeInto.Target>
+                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="e66a61e537e04aa6d4efdd17bc813f68" Selector="&lt;webctrl id='decimal-input-Garantias1:importe_garantia' tag='INPUT' /&gt;" TimeoutMS="120000">
+                            <ui:Target.WaitForReady>
+                              <InArgument x:TypeArguments="ui:WaitForReady" />
+                            </ui:Target.WaitForReady>
+                          </ui:Target>
+                        </ui:TypeInto.Target>
+                      </ui:TypeInto>
+                      <ui:SelectItem ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Seleccionar Moneda" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="SelectItem_10" Item="MONEDA NACIONAL">
+                        <ui:SelectItem.Items>
+                          <scg:List x:TypeArguments="x:String" Capacity="32">
+                            <x:String>MONEDA NACIONAL</x:String>
+                            <x:String>DOLARES EUA COMPRA</x:String>
+                            <x:String>LIRA ITALIANA</x:String>
+                            <x:String>MARCO ALEMAN</x:String>
+                            <x:String>PESETA ESPAÑOLA</x:String>
+                            <x:String>FRANCO SUIZO</x:String>
+                            <x:String>LIBRA ESTERLINA</x:String>
+                            <x:String>FRANCO FRANCES</x:String>
+                            <x:String>FLORIN HOLANDES</x:String>
+                            <x:String>FRANCO BELGA</x:String>
+                            <x:String>YEN JAPONES</x:String>
+                            <x:String>CHELIN AUSTRIACO</x:String>
+                            <x:String>DOLAR AUSTRALIANO</x:String>
+                            <x:String>DOLAR CANADIENSE</x:String>
+                            <x:String>CORONA NORUEGA</x:String>
+                            <x:String>CORONA SUECA</x:String>
+                            <x:String>EURO</x:String>
+                            <x:String>UDIS</x:String>
+                            <x:String>INPC IND. NAC. PRECIOS DIARIOS</x:String>
+                            <x:String>DOLARES EUA VENTA</x:String>
+                            <x:String>SALARIO MINIMO</x:String>
+                            <x:String>DÓLAR FIX</x:String>
+                          </scg:List>
+                        </ui:SelectItem.Items>
+                        <ui:SelectItem.Target>
+                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="aab723525999fd5a87787ff236118227" Selector="&lt;webctrl id='singleselect-Garantias1:moneda_garantia' tag='SELECT' /&gt;" TimeoutMS="180000" WaitForReady="INTERACTIVE" />
+                        </ui:SelectItem.Target>
+                      </ui:SelectItem>
+                      <ui:TypeInto ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" Activate="True" DisplayName="Escribir Aforo" EmptyField="True" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_19" SendWindowMessages="True" SimulateType="False" Text="Aforo">
+                        <ui:TypeInto.Target>
+                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="d677b4f5d893d9aa1d1dedb47044f483" Selector="&lt;webctrl id='text-input-Garantias1:aforo' tag='INPUT' /&gt;" TimeoutMS="120000" WaitForReady="INTERACTIVE" />
+                        </ui:TypeInto.Target>
+                      </ui:TypeInto>
+                      <ui:SelectItem ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Seleccionar Tipo de prelacion" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="SelectItem_11" Item="5">
+                        <ui:SelectItem.Items>
+                          <scg:List x:TypeArguments="x:String" Capacity="16">
+                            <x:String>1</x:String>
+                            <x:String>2</x:String>
+                            <x:String>3</x:String>
+                            <x:String>4</x:String>
+                            <x:String>5</x:String>
+                            <x:String>6</x:String>
+                            <x:String>7</x:String>
+                            <x:String>8</x:String>
+                            <x:String>9</x:String>
+                            <x:String>10</x:String>
+                          </scg:List>
+                        </ui:SelectItem.Items>
+                        <ui:SelectItem.Target>
+                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="51983bcad2b6be4cebcd6065465662a6" Selector="&lt;webctrl id='singleselect-Garantias1:tipo_prelacion' tag='SELECT' /&gt;" TimeoutMS="180000" WaitForReady="INTERACTIVE" />
+                        </ui:SelectItem.Target>
+                      </ui:SelectItem>
+                      <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Clic Aplica Seguro" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_13" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
+                        <ui:Click.CursorPosition>
+                          <ui:CursorPosition Position="Center">
+                            <ui:CursorPosition.OffsetX>
+                              <InArgument x:TypeArguments="x:Int32" />
+                            </ui:CursorPosition.OffsetX>
+                            <ui:CursorPosition.OffsetY>
+                              <InArgument x:TypeArguments="x:Int32" />
+                            </ui:CursorPosition.OffsetY>
+                          </ui:CursorPosition>
+                        </ui:Click.CursorPosition>
+                        <ui:Click.Target>
+                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="5154868ae28e4be233b36d71ee6c0eaa" Selector="&lt;webctrl id='radiogroup-item-input-Garantias1:aplica_seguro[0]' tag='INPUT' /&gt;" TimeoutMS="120000" WaitForReady="INTERACTIVE" />
+                        </ui:Click.Target>
+                      </ui:Click>
+                      <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Selecciona una persona" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_17" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
+                        <ui:Click.CursorPosition>
+                          <ui:CursorPosition Position="Center">
+                            <ui:CursorPosition.OffsetX>
+                              <InArgument x:TypeArguments="x:Int32" />
+                            </ui:CursorPosition.OffsetX>
+                            <ui:CursorPosition.OffsetY>
+                              <InArgument x:TypeArguments="x:Int32" />
+                            </ui:CursorPosition.OffsetY>
+                          </ui:CursorPosition>
+                        </ui:Click.CursorPosition>
+                        <ui:Click.Target>
+                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="a60c5325b2f1658a8fe963d3805bd62c" Selector="&lt;webctrl id='table-rowselect-Garantias1:Table3[0]' tag='INPUT' /&gt;" TimeoutMS="120000" WaitForReady="[WaitForReady.INTERACTIVE]" />
+                        </ui:Click.Target>
+                      </ui:Click>
+                      <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click fecha" sap:VirtualizedContainerService.HintSize="334,68" sap2010:WorkflowViewState.IdRef="Click_24" KeyModifiers="None" MouseButton="BTN_LEFT">
+                        <ui:Click.CursorPosition>
+                          <ui:CursorPosition Position="Center">
+                            <ui:CursorPosition.OffsetX>
+                              <InArgument x:TypeArguments="x:Int32" />
+                            </ui:CursorPosition.OffsetX>
+                            <ui:CursorPosition.OffsetY>
+                              <InArgument x:TypeArguments="x:Int32" />
+                            </ui:CursorPosition.OffsetY>
+                          </ui:CursorPosition>
+                        </ui:Click.CursorPosition>
+                        <ui:Click.Target>
+                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="&lt;webctrl id='datetimepicker-input-Garantias1:fechaAval' tag='INPUT' /&gt;">
+                            <ui:Target.TimeoutMS>
+                              <InArgument x:TypeArguments="x:Int32" />
+                            </ui:Target.TimeoutMS>
+                            <ui:Target.WaitForReady>
+                              <InArgument x:TypeArguments="ui:WaitForReady" />
+                            </ui:Target.WaitForReady>
+                          </ui:Target>
+                        </ui:Click.Target>
+                      </ui:Click>
+                      <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click seleccionar fecha" sap:VirtualizedContainerService.HintSize="334,68" sap2010:WorkflowViewState.IdRef="Click_25" KeyModifiers="None" MouseButton="BTN_LEFT">
+                        <ui:Click.CursorPosition>
+                          <ui:CursorPosition Position="Center">
+                            <ui:CursorPosition.OffsetX>
+                              <InArgument x:TypeArguments="x:Int32" />
+                            </ui:CursorPosition.OffsetX>
+                            <ui:CursorPosition.OffsetY>
+                              <InArgument x:TypeArguments="x:Int32" />
+                            </ui:CursorPosition.OffsetY>
+                          </ui:CursorPosition>
+                        </ui:Click.CursorPosition>
+                        <ui:Click.Target>
+                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="&lt;webctrl id='bpm-Garantias1:fechaAval-daypick-day-20' /&gt;">
+                            <ui:Target.TimeoutMS>
+                              <InArgument x:TypeArguments="x:Int32" />
+                            </ui:Target.TimeoutMS>
+                            <ui:Target.WaitForReady>
+                              <InArgument x:TypeArguments="ui:WaitForReady" />
+                            </ui:Target.WaitForReady>
+                          </ui:Target>
+                        </ui:Click.Target>
+                      </ui:Click>
+                      <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click cerrar fecha" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_23" KeyModifiers="None" MouseButton="BTN_LEFT">
+                        <ui:Click.CursorPosition>
+                          <ui:CursorPosition Position="Center">
+                            <ui:CursorPosition.OffsetX>
+                              <InArgument x:TypeArguments="x:Int32" />
+                            </ui:CursorPosition.OffsetX>
+                            <ui:CursorPosition.OffsetY>
+                              <InArgument x:TypeArguments="x:Int32" />
+                            </ui:CursorPosition.OffsetY>
+                          </ui:CursorPosition>
+                        </ui:Click.CursorPosition>
+                        <ui:Click.Target>
+                          <ui:Target Element="{x:Null}" InformativeScreenshot="a3b309e8bb6a6c85b59725836d040e3a" Selector="&lt;webctrl src='https://15.128.91.14:8443/teamworks/process.lsw?zWorkflowState=1*' tag='IFRAME' /&gt;">
+                            <ui:Target.ClippingRegion>
+                              <ui:Region Rectangle="0, 251, 26, 15" />
+                            </ui:Target.ClippingRegion>
+                            <ui:Target.TimeoutMS>
+                              <InArgument x:TypeArguments="x:Int32" />
+                            </ui:Target.TimeoutMS>
+                            <ui:Target.WaitForReady>
+                              <InArgument x:TypeArguments="ui:WaitForReady" />
+                            </ui:Target.WaitForReady>
+                          </ui:Target>
+                        </ui:Click.Target>
+                      </ui:Click>
+                      <ui:TypeInto DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SimulateType="{x:Null}" Activate="True" ClickBeforeTyping="True" DisplayName="Type capital" EmptyField="True" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_24" SendWindowMessages="True" Text="1000000">
+                        <ui:TypeInto.Target>
+                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="4a26a534483a3a4ac137020e3509324f" Selector="&lt;webctrl id='decimal-input-Garantias1:capitalPatrimonio' tag='INPUT' /&gt;">
+                            <ui:Target.TimeoutMS>
+                              <InArgument x:TypeArguments="x:Int32" />
+                            </ui:Target.TimeoutMS>
+                            <ui:Target.WaitForReady>
+                              <InArgument x:TypeArguments="ui:WaitForReady" />
+                            </ui:Target.WaitForReady>
+                          </ui:Target>
+                        </ui:TypeInto.Target>
+                      </ui:TypeInto>
+                    </Sequence>
+                    <FlowStep.Next>
+                      <FlowStep x:Name="__ReferenceID0">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <av:Point x:Key="ShapeLocation">140,597</av:Point>
+                            <av:Size x:Key="ShapeSize">200,66</av:Size>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <Sequence DisplayName="Secuencia guardar Garantia" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_33">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Clic Guardar Garantia" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_18" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="False">
+                            <ui:Click.CursorPosition>
+                              <ui:CursorPosition Position="Center">
+                                <ui:CursorPosition.OffsetX>
+                                  <InArgument x:TypeArguments="x:Int32" />
+                                </ui:CursorPosition.OffsetX>
+                                <ui:CursorPosition.OffsetY>
+                                  <InArgument x:TypeArguments="x:Int32" />
+                                </ui:CursorPosition.OffsetY>
+                              </ui:CursorPosition>
+                            </ui:Click.CursorPosition>
+                            <ui:Click.Target>
+                              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="dcfa7983c0bcf971647ee035c3dcb0fc" Selector="&lt;webctrl id='button-button-Garantias1:btn_guardar' tag='BUTTON' /&gt;" TimeoutMS="120000" WaitForReady="INTERACTIVE" />
+                            </ui:Click.Target>
+                          </ui:Click>
+                          <ui:ImageFound Found="{x:Null}" DisplayName="Esperar mensaje de confirmacion" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="ImageFound_6">
+                            <ui:ImageFound.Image>
+                              <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" Profile="Basic" TargetImageBase64="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" />
+                            </ui:ImageFound.Image>
+                            <ui:ImageFound.Target>
+                              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" TimeoutMS="120000" WaitForReady="INTERACTIVE" />
+                            </ui:ImageFound.Target>
+                          </ui:ImageFound>
+                          <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Clic Aceptar confirmacion" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_19" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
+                            <ui:Click.CursorPosition>
+                              <ui:CursorPosition Position="Center">
+                                <ui:CursorPosition.OffsetX>
+                                  <InArgument x:TypeArguments="x:Int32" />
+                                </ui:CursorPosition.OffsetX>
+                                <ui:CursorPosition.OffsetY>
+                                  <InArgument x:TypeArguments="x:Int32" />
+                                </ui:CursorPosition.OffsetY>
+                              </ui:CursorPosition>
+                            </ui:Click.CursorPosition>
+                            <ui:Click.Target>
+                              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="d1a781f2adc082b41f6f2177d41bdc46" Selector="&lt;webctrl id='button-button-Garantias1:okButton2' tag='BUTTON' /&gt;" TimeoutMS="120000" WaitForReady="INTERACTIVE" />
+                            </ui:Click.Target>
+                          </ui:Click>
+                          <ui:ImageFound Found="{x:Null}" DisplayName="Esperar aviso" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="ImageFound_7">
+                            <ui:ImageFound.Image>
+                              <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" Profile="Basic" TargetImageBase64="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" />
+                            </ui:ImageFound.Image>
+                            <ui:ImageFound.Target>
+                              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" TimeoutMS="120000" WaitForReady="INTERACTIVE" />
+                            </ui:ImageFound.Target>
+                          </ui:ImageFound>
+                          <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Clic Aceptar registro" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_20" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
+                            <ui:Click.CursorPosition>
+                              <ui:CursorPosition Position="Center">
+                                <ui:CursorPosition.OffsetX>
+                                  <InArgument x:TypeArguments="x:Int32" />
+                                </ui:CursorPosition.OffsetX>
+                                <ui:CursorPosition.OffsetY>
+                                  <InArgument x:TypeArguments="x:Int32" />
+                                </ui:CursorPosition.OffsetY>
+                              </ui:CursorPosition>
+                            </ui:Click.CursorPosition>
+                            <ui:Click.Target>
+                              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="315d94e25e89635ca891dd4aebbc54c7" Selector="&lt;webctrl id='button-button-Emergente1:okButton' tag='BUTTON' /&gt;" TimeoutMS="120000" WaitForReady="INTERACTIVE" />
+                            </ui:Click.Target>
+                          </ui:Click>
+                        </Sequence>
+                      </FlowStep>
+                    </FlowStep.Next>
+                  </FlowStep>
+                </FlowStep.Next>
+              </FlowStep>
+              <FlowStep x:Key="hipotecaria" x:Name="__ReferenceID3">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <av:Point x:Key="ShapeLocation">210,347</av:Point>
+                    <av:Size x:Key="ShapeSize">200,66</av:Size>
+                    <av:PointCollection x:Key="ConnectorLocation">310,413 310,443 420,443 420,467</av:PointCollection>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <Sequence DisplayName="Seleccionar garantia Hipotecaria" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_23">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:SelectItem ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Seleccionar categoria" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="SelectItem_4" Item="Real">
+                    <ui:SelectItem.Items>
+                      <scg:List x:TypeArguments="x:String" Capacity="4">
+                        <x:String>Real</x:String>
+                        <x:String>Personal</x:String>
+                      </scg:List>
+                    </ui:SelectItem.Items>
+                    <ui:SelectItem.Target>
+                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="a72bada0a19d7d976c8089f334d6a6d2" Selector="&lt;webctrl id='singleselect-Garantias1:categoriaNuevo' tag='SELECT' /&gt;" TimeoutMS="180000" WaitForReady="INTERACTIVE" />
+                    </ui:SelectItem.Target>
+                  </ui:SelectItem>
+                  <ui:SelectItem ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Seleccionar tipo de garantia" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="SelectItem_5" Item="Hipotecaria">
+                    <ui:SelectItem.Items>
+                      <scg:List x:TypeArguments="x:String" Capacity="4">
+                        <x:String>Hipotecaria</x:String>
+                        <x:String>Prendaria</x:String>
+                      </scg:List>
+                    </ui:SelectItem.Items>
+                    <ui:SelectItem.Target>
+                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="ee3830f5b165842dc156b958893f55c7" Selector="&lt;webctrl id='singleselect-Garantias1:tipoGarantiaNuevo' tag='SELECT' /&gt;" TimeoutMS="180000" WaitForReady="INTERACTIVE" />
+                    </ui:SelectItem.Target>
+                  </ui:SelectItem>
+                  <ui:SelectItem ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Seleccionar subtipo" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="SelectItem_6" Item="Hipotecaria / Inmuebles">
+                    <ui:SelectItem.Items>
+                      <scg:List x:TypeArguments="x:String" Capacity="8">
+                        <x:String>Hipotecaria / Aeronaves</x:String>
+                        <x:String>Hipotecaria / Embarcación</x:String>
+                        <x:String>Hipotecaria / Inmuebles</x:String>
+                        <x:String>Hipotecaria / Nave Industrial, Comercial o de Servicios</x:String>
+                        <x:String>Hipotecaria / Unidad Industrial, Comercial o de Servicios</x:String>
+                      </scg:List>
+                    </ui:SelectItem.Items>
+                    <ui:SelectItem.Target>
+                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="4c1c80293d6650a8b2e92e875c1413cf" Selector="&lt;webctrl id='singleselect-Garantias1:subtipoGarantiaNuevo' tag='SELECT' /&gt;" TimeoutMS="180000" WaitForReady="INTERACTIVE" />
+                    </ui:SelectItem.Target>
+                  </ui:SelectItem>
+                </Sequence>
+                <FlowStep.Next>
+                  <FlowStep x:Name="__ReferenceID1">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <av:Point x:Key="ShapeLocation">320,467</av:Point>
+                        <av:Size x:Key="ShapeSize">200,66</av:Size>
+                        <av:PointCollection x:Key="ConnectorLocation">420,533 420,563 240,563 240,597</av:PointCollection>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <Sequence DisplayName="LLenar datos de garantia hipotecaria y prendaria" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_43">
+                      <Sequence.Variables>
+                        <Variable x:TypeArguments="x:Boolean" Default="True" Name="ControlHotkeys" />
+                        <Variable x:TypeArguments="s:String[]" Name="ListaPersonas" />
+                        <Variable x:TypeArguments="x:Boolean" Name="FechaInscripcion" />
+                      </Sequence.Variables>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <ui:TypeInto DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SimulateType="{x:Null}" Activate="True" ClickBeforeTyping="True" DisplayName="Escribir importe" EmptyField="True" sap:VirtualizedContainerService.HintSize="521,134" sap2010:WorkflowViewState.IdRef="TypeInto_20" SendWindowMessages="True" Text="100000">
+                        <ui:TypeInto.Target>
+                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="548667749645f767581ee9af7431dc1b" Selector="&lt;webctrl id='decimal-input-Garantias1:importe_garantia' tag='INPUT' /&gt;" TimeoutMS="120000" WaitForReady="INTERACTIVE" />
+                        </ui:TypeInto.Target>
+                      </ui:TypeInto>
+                      <ui:SelectItem ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Seleccionar Moneda" sap:VirtualizedContainerService.HintSize="521,134" sap2010:WorkflowViewState.IdRef="SelectItem_12" Item="MONEDA NACIONAL">
+                        <ui:SelectItem.Items>
+                          <scg:List x:TypeArguments="x:String" Capacity="32">
+                            <x:String>MONEDA NACIONAL</x:String>
+                            <x:String>DOLARES EUA COMPRA</x:String>
+                            <x:String>LIRA ITALIANA</x:String>
+                            <x:String>MARCO ALEMAN</x:String>
+                            <x:String>PESETA ESPAÑOLA</x:String>
+                            <x:String>FRANCO SUIZO</x:String>
+                            <x:String>LIBRA ESTERLINA</x:String>
+                            <x:String>FRANCO FRANCES</x:String>
+                            <x:String>FLORIN HOLANDES</x:String>
+                            <x:String>FRANCO BELGA</x:String>
+                            <x:String>YEN JAPONES</x:String>
+                            <x:String>CHELIN AUSTRIACO</x:String>
+                            <x:String>DOLAR AUSTRALIANO</x:String>
+                            <x:String>DOLAR CANADIENSE</x:String>
+                            <x:String>CORONA NORUEGA</x:String>
+                            <x:String>CORONA SUECA</x:String>
+                            <x:String>EURO</x:String>
+                            <x:String>UDIS</x:String>
+                            <x:String>INPC IND. NAC. PRECIOS DIARIOS</x:String>
+                            <x:String>DOLARES EUA VENTA</x:String>
+                            <x:String>SALARIO MINIMO</x:String>
+                            <x:String>DÓLAR FIX</x:String>
+                          </scg:List>
+                        </ui:SelectItem.Items>
+                        <ui:SelectItem.Target>
+                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="d5235f641f3d0151e241c6ffe34975db" Selector="&lt;webctrl id='singleselect-Garantias1:moneda_garantia' tag='SELECT' /&gt;" TimeoutMS="120000" WaitForReady="INTERACTIVE" />
+                        </ui:SelectItem.Target>
+                      </ui:SelectItem>
+                      <ui:TypeInto ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" Activate="True" DisplayName="Escribir Aforo" EmptyField="True" sap:VirtualizedContainerService.HintSize="521,134" sap2010:WorkflowViewState.IdRef="TypeInto_21" SendWindowMessages="True" SimulateType="False" Text="Aforo">
+                        <ui:TypeInto.Target>
+                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="d3e5d8ffd2fa0790e68c8b755c2c50f2" Selector="&lt;webctrl id='text-input-Garantias1:aforo' tag='INPUT' /&gt;" TimeoutMS="120000" WaitForReady="INTERACTIVE" />
+                        </ui:TypeInto.Target>
+                      </ui:TypeInto>
+                      <ui:SelectItem ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Seleccionar Tipo de prelacion" sap:VirtualizedContainerService.HintSize="521,134" sap2010:WorkflowViewState.IdRef="SelectItem_13" Item="5">
+                        <ui:SelectItem.Items>
+                          <scg:List x:TypeArguments="x:String" Capacity="16">
+                            <x:String>1</x:String>
+                            <x:String>2</x:String>
+                            <x:String>3</x:String>
+                            <x:String>4</x:String>
+                            <x:String>5</x:String>
+                            <x:String>6</x:String>
+                            <x:String>7</x:String>
+                            <x:String>8</x:String>
+                            <x:String>9</x:String>
+                            <x:String>10</x:String>
+                          </scg:List>
+                        </ui:SelectItem.Items>
+                        <ui:SelectItem.Target>
+                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="094019bd138d870c4d64b2c95eff143a" Selector="&lt;webctrl id='singleselect-Garantias1:tipo_prelacion' tag='SELECT' /&gt;" TimeoutMS="180000" WaitForReady="INTERACTIVE" />
+                        </ui:SelectItem.Target>
+                      </ui:SelectItem>
+                      <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Clic  Aplica seguro" sap:VirtualizedContainerService.HintSize="521,106" sap2010:WorkflowViewState.IdRef="Click_14" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
+                        <ui:Click.CursorPosition>
+                          <ui:CursorPosition Position="Center">
+                            <ui:CursorPosition.OffsetX>
+                              <InArgument x:TypeArguments="x:Int32" />
+                            </ui:CursorPosition.OffsetX>
+                            <ui:CursorPosition.OffsetY>
+                              <InArgument x:TypeArguments="x:Int32" />
+                            </ui:CursorPosition.OffsetY>
+                          </ui:CursorPosition>
+                        </ui:Click.CursorPosition>
+                        <ui:Click.Target>
+                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="2728d29bcfd96b34041e1e9619f61f26" Selector="&lt;webctrl id='radiogroup-item-input-Garantias1:aplica_seguro[0]' tag='INPUT' /&gt;" WaitForReady="INTERACTIVE">
+                            <ui:Target.TimeoutMS>
+                              <InArgument x:TypeArguments="x:Int32" />
+                            </ui:Target.TimeoutMS>
+                          </ui:Target>
+                        </ui:Click.Target>
+                      </ui:Click>
+                      <ui:GetAttribute ContinueOnError="{x:Null}" Attribute="items" DisplayName="Consigue lista de personas" sap:VirtualizedContainerService.HintSize="521,134" sap2010:WorkflowViewState.IdRef="GetAttribute_1">
+                        <ui:GetAttribute.Result>
+                          <OutArgument x:TypeArguments="s:String[]">[ListaPersonas]</OutArgument>
+                        </ui:GetAttribute.Result>
+                        <ui:GetAttribute.Target>
+                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="45b836658079ba4c82bd22be58b361a3" Selector="&lt;webctrl id='singleselect-Garantias1:Single_Select4' tag='SELECT' /&gt;" TimeoutMS="120000" WaitForReady="INTERACTIVE" />
+                        </ui:GetAttribute.Target>
+                      </ui:GetAttribute>
+                      <ui:SelectItem ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" Items="{x:Null}" DisplayName="Select Item" sap:VirtualizedContainerService.HintSize="521,134" sap2010:WorkflowViewState.IdRef="SelectItem_14" Item="[ListaPersonas(0)]">
+                        <ui:SelectItem.Target>
+                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="2653dc6fbd47253491312cb13a4a3e30" Selector="&lt;webctrl id='singleselect-Garantias1:Single_Select4' tag='SELECT' /&gt;" TimeoutMS="120000" WaitForReady="INTERACTIVE" />
+                        </ui:SelectItem.Target>
+                      </ui:SelectItem>
+                      <ui:UiElementExists Exists="{x:Null}" DisplayName="Espera a el domicilio" sap:VirtualizedContainerService.HintSize="521,106" sap2010:WorkflowViewState.IdRef="UiElementExists_1">
+                        <ui:UiElementExists.Target>
+                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="d5d8ac0423b6c12660c6cb633a8f0003" Selector="&lt;webctrl id='table-rowselect-Garantias1:Table2[0]' tag='INPUT' /&gt;" TimeoutMS="180000" WaitForReady="INTERACTIVE" />
+                        </ui:UiElementExists.Target>
+                      </ui:UiElementExists>
+                      <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Clic al Primer domicilio" sap:VirtualizedContainerService.HintSize="521,106" sap2010:WorkflowViewState.IdRef="Click_15" KeyModifiers="None" MouseButton="BTN_LEFT">
+                        <ui:Click.CursorPosition>
+                          <ui:CursorPosition Position="Center">
+                            <ui:CursorPosition.OffsetX>
+                              <InArgument x:TypeArguments="x:Int32" />
+                            </ui:CursorPosition.OffsetX>
+                            <ui:CursorPosition.OffsetY>
+                              <InArgument x:TypeArguments="x:Int32" />
+                            </ui:CursorPosition.OffsetY>
+                          </ui:CursorPosition>
+                        </ui:Click.CursorPosition>
+                        <ui:Click.Target>
+                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="72977a41cb6e1d045c8c3ddf941ed33d" Selector="&lt;webctrl id='table-rowselect-Garantias1:Table2[0]' tag='INPUT' /&gt;" TimeoutMS="120000" WaitForReady="INTERACTIVE" />
+                        </ui:Click.Target>
+                      </ui:Click>
+                      <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click activar seccion" sap:VirtualizedContainerService.HintSize="521,106" sap2010:WorkflowViewState.IdRef="Click_21" KeyModifiers="None" MouseButton="BTN_LEFT">
+                        <ui:Click.CursorPosition>
+                          <ui:CursorPosition Position="Center">
+                            <ui:CursorPosition.OffsetX>
+                              <InArgument x:TypeArguments="x:Int32" />
+                            </ui:CursorPosition.OffsetX>
+                            <ui:CursorPosition.OffsetY>
+                              <InArgument x:TypeArguments="x:Int32" />
+                            </ui:CursorPosition.OffsetY>
+                          </ui:CursorPosition>
+                        </ui:Click.CursorPosition>
+                        <ui:Click.Target>
+                          <ui:Target Element="{x:Null}" InformativeScreenshot="5f9b8617ff52f3467716d34422ac7938" Selector="&lt;webctrl src='https://15.128.91.14:8443/teamworks/process.lsw?zWorkflowState=1*' tag='IFRAME' /&gt;">
+                            <ui:Target.ClippingRegion>
+                              <ui:Region Rectangle="3, 175, 40, 46" />
+                            </ui:Target.ClippingRegion>
+                            <ui:Target.TimeoutMS>
+                              <InArgument x:TypeArguments="x:Int32" />
+                            </ui:Target.TimeoutMS>
+                            <ui:Target.WaitForReady>
+                              <InArgument x:TypeArguments="ui:WaitForReady" />
+                            </ui:Target.WaitForReady>
+                          </ui:Target>
+                        </ui:Click.Target>
+                      </ui:Click>
+                      <ui:SendHotkey DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" ClickBeforeTyping="False" DisplayName="Bajar " sap:VirtualizedContainerService.HintSize="521,154" sap2010:WorkflowViewState.IdRef="SendHotkey_1" Key="pgdn" KeyModifiers="None" SpecialKey="True">
+                        <ui:SendHotkey.Target>
+                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="7628ef8206266699e515853b8515368b" Selector="&lt;webctrl src='https://15.128.91.14:8443/teamworks/process.lsw?zWorkflowState=1*' tag='IFRAME' /&gt;&lt;webctrl id='coach_frame*' tag='IFRAME' /&gt;">
+                            <ui:Target.TimeoutMS>
+                              <InArgument x:TypeArguments="x:Int32" />
+                            </ui:Target.TimeoutMS>
+                            <ui:Target.WaitForReady>
+                              <InArgument x:TypeArguments="ui:WaitForReady" />
+                            </ui:Target.WaitForReady>
+                          </ui:Target>
+                        </ui:SendHotkey.Target>
+                      </ui:SendHotkey>
+                      <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click activar de nuevo" sap:VirtualizedContainerService.HintSize="521,106" sap2010:WorkflowViewState.IdRef="Click_22" KeyModifiers="None" MouseButton="BTN_LEFT">
+                        <ui:Click.CursorPosition>
+                          <ui:CursorPosition Position="Center">
+                            <ui:CursorPosition.OffsetX>
+                              <InArgument x:TypeArguments="x:Int32" />
+                            </ui:CursorPosition.OffsetX>
+                            <ui:CursorPosition.OffsetY>
+                              <InArgument x:TypeArguments="x:Int32" />
+                            </ui:CursorPosition.OffsetY>
+                          </ui:CursorPosition>
+                        </ui:Click.CursorPosition>
+                        <ui:Click.Target>
+                          <ui:Target Element="{x:Null}" InformativeScreenshot="5f9b8617ff52f3467716d34422ac7938" Selector="&lt;webctrl src='https://15.128.91.14:8443/teamworks/process.lsw?zWorkflowState=1*' tag='IFRAME' /&gt;">
+                            <ui:Target.ClippingRegion>
+                              <ui:Region Rectangle="3, 175, 40, 46" />
+                            </ui:Target.ClippingRegion>
+                            <ui:Target.TimeoutMS>
+                              <InArgument x:TypeArguments="x:Int32" />
+                            </ui:Target.TimeoutMS>
+                            <ui:Target.WaitForReady>
+                              <InArgument x:TypeArguments="ui:WaitForReady" />
+                            </ui:Target.WaitForReady>
+                          </ui:Target>
+                        </ui:Click.Target>
+                      </ui:Click>
+                      <ui:SendHotkey DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" ClickBeforeTyping="False" DisplayName="Bajar a replicar" sap:VirtualizedContainerService.HintSize="521,154" sap2010:WorkflowViewState.IdRef="SendHotkey_2" Key="pgdn" KeyModifiers="None" SpecialKey="True">
+                        <ui:SendHotkey.Target>
+                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="7628ef8206266699e515853b8515368b" Selector="&lt;webctrl src='https://15.128.91.14:8443/teamworks/process.lsw?zWorkflowState=1*' tag='IFRAME' /&gt;&lt;webctrl id='coach_frame*' tag='IFRAME' /&gt;">
+                            <ui:Target.TimeoutMS>
+                              <InArgument x:TypeArguments="x:Int32" />
+                            </ui:Target.TimeoutMS>
+                            <ui:Target.WaitForReady>
+                              <InArgument x:TypeArguments="ui:WaitForReady" />
+                            </ui:Target.WaitForReady>
+                          </ui:Target>
+                        </ui:SendHotkey.Target>
+                      </ui:SendHotkey>
+                      <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Clic Replicar" sap:VirtualizedContainerService.HintSize="521,106" sap2010:WorkflowViewState.IdRef="Click_16" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="False">
+                        <ui:Click.CursorPosition>
+                          <ui:CursorPosition Position="Center">
+                            <ui:CursorPosition.OffsetX>
+                              <InArgument x:TypeArguments="x:Int32" />
+                            </ui:CursorPosition.OffsetX>
+                            <ui:CursorPosition.OffsetY>
+                              <InArgument x:TypeArguments="x:Int32" />
+                            </ui:CursorPosition.OffsetY>
+                          </ui:CursorPosition>
+                        </ui:Click.CursorPosition>
+                        <ui:Click.Target>
+                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="4c34360c2f622784fe6870591da1f460" Selector="&lt;webctrl id='button-button-Garantias1:Button18' tag='BUTTON' /&gt;" TimeoutMS="120000" WaitForReady="INTERACTIVE" />
+                        </ui:Click.Target>
+                      </ui:Click>
+                      <ui:UiElementExists DisplayName="Existe fecha de inscripcion" Exists="[FechaInscripcion]" sap:VirtualizedContainerService.HintSize="521,106" sap2010:WorkflowViewState.IdRef="UiElementExists_2">
+                        <ui:UiElementExists.Target>
+                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="f33da5cc2a45620f0d44b755a9d534a6" Selector="&lt;webctrl parentclass='Date_Picker required CoachView div_297_style CPP CoachView_show layoutCell' /&gt;&#xA;&lt;webctrl tag='INPUT' /&gt;" TimeoutMS="20000" WaitForReady="COMPLETE" />
+                        </ui:UiElementExists.Target>
+                      </ui:UiElementExists>
+                      <If Condition="[FechaInscripcion]" DisplayName="si existe fecha de inscripcion" sap:VirtualizedContainerService.HintSize="521,548" sap2010:WorkflowViewState.IdRef="If_2">
+                        <If.Then>
+                          <Sequence sap:VirtualizedContainerService.HintSize="376,400" sap2010:WorkflowViewState.IdRef="Sequence_46">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <ui:TypeInto DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" ClickBeforeTyping="True" DisplayName="Escribir Fecha de inscripcion" EmptyField="True" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_22" Text="[Now.ToShortDateString]">
+                              <ui:TypeInto.Target>
+                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="d77042785b8ea95b79f8e0ce186c6915" Selector="&lt;webctrl parentclass='Date_Picker required CoachView div_297_style CPP CoachView_show layoutCell' /&gt;&lt;webctrl tag='INPUT' /&gt;" TimeoutMS="120000" WaitForReady="INTERACTIVE" />
+                              </ui:TypeInto.Target>
+                            </ui:TypeInto>
+                            <ui:TypeInto DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" ClickBeforeTyping="True" DisplayName="Escribir Municipio" EmptyField="True" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_25" Text="Cuernavaca">
+                              <ui:TypeInto.Target>
+                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="1fb7f15e1f802359dfb7521ee8b49383" Selector="&lt;webctrl id='text-input-Garantias1:municipio_insc_hipo' tag='INPUT' /&gt;" TimeoutMS="120000" WaitForReady="INTERACTIVE" />
+                              </ui:TypeInto.Target>
+                            </ui:TypeInto>
+                          </Sequence>
+                        </If.Then>
+                      </If>
+                    </Sequence>
+                    <FlowStep.Next>
+                      <x:Reference>__ReferenceID0</x:Reference>
+                    </FlowStep.Next>
+                  </FlowStep>
+                </FlowStep.Next>
+              </FlowStep>
+              <FlowStep x:Key="prendaria" x:Name="__ReferenceID2">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <av:Point x:Key="ShapeLocation">420,347</av:Point>
+                    <av:Size x:Key="ShapeSize">200,66</av:Size>
+                    <av:PointCollection x:Key="ConnectorLocation">520,413 520,443 420,443 420,467</av:PointCollection>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <Sequence DisplayName="Seleccionar garantia Prendaria" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:SelectItem ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Seleccionar Categoria" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="SelectItem_1" Item="Real">
+                    <ui:SelectItem.Items>
+                      <scg:List x:TypeArguments="x:String" Capacity="4">
+                        <x:String>Real</x:String>
+                        <x:String>Personal</x:String>
+                      </scg:List>
+                    </ui:SelectItem.Items>
+                    <ui:SelectItem.Target>
+                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="5e534b397acdc5451ec2e6d8d3a34a27" Selector="&lt;webctrl id='singleselect-Garantias1:categoriaNuevo' tag='SELECT' /&gt;" TimeoutMS="180000" WaitForReady="INTERACTIVE" />
+                    </ui:SelectItem.Target>
+                  </ui:SelectItem>
+                  <ui:SelectItem ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Seleccionar Tipo de garantia" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="SelectItem_2" Item="Prendaria">
+                    <ui:SelectItem.Items>
+                      <scg:List x:TypeArguments="x:String" Capacity="4">
+                        <x:String>Hipotecaria</x:String>
+                        <x:String>Prendaria</x:String>
+                      </scg:List>
+                    </ui:SelectItem.Items>
+                    <ui:SelectItem.Target>
+                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="078ab25986594c00ed763c7f127c7fab" Selector="&lt;webctrl id='singleselect-Garantias1:tipoGarantiaNuevo' tag='SELECT' /&gt;" TimeoutMS="180000" WaitForReady="INTERACTIVE" />
+                    </ui:SelectItem.Target>
+                  </ui:SelectItem>
+                  <ui:SelectItem ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Seleccionar Subtipo" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="SelectItem_3" Item="Fiduciaria">
+                    <ui:SelectItem.Items>
+                      <scg:List x:TypeArguments="x:String" Capacity="16">
+                        <x:String>Prenda / Acciones (Media/Alta Bursatilidad)</x:String>
+                        <x:String>Prenda / Acciones (Nula/Baja Bursatilidad)</x:String>
+                        <x:String>Prenda / Certificados de Depósito y Bonos de Prenda (Emitidos por el Gob. Federal)</x:String>
+                        <x:String>Prenda / Certificados de Depósito y Bonos de Prenda (Emitidos por ent. diferente a Gob. Federal)</x:String>
+                        <x:String>Prenda / Derechos de Cobro</x:String>
+                        <x:String>Hipotecaria y Prendaria</x:String>
+                        <x:String>Prenda / Muebles</x:String>
+                        <x:String>Prenda / Cartera</x:String>
+                        <x:String>Fiduciaria</x:String>
+                        <x:String>Garantías Propias del Crédito</x:String>
+                        <x:String>Cesión de Derechos de Cobro</x:String>
+                        <x:String>CARTA GARANTÍA</x:String>
+                        <x:String>Garantía Fondos de Fomento</x:String>
+                      </scg:List>
+                    </ui:SelectItem.Items>
+                    <ui:SelectItem.Target>
+                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="868eb955403518795086eb93f5dd3146" Selector="&lt;webctrl id='singleselect-Garantias1:subtipoGarantiaNuevo' tag='SELECT' /&gt;" TimeoutMS="180000" WaitForReady="INTERACTIVE" />
+                    </ui:SelectItem.Target>
+                  </ui:SelectItem>
+                </Sequence>
+                <FlowStep.Next>
+                  <x:Reference>__ReferenceID1</x:Reference>
+                </FlowStep.Next>
+              </FlowStep>
+            </FlowSwitch>
+            <x:Reference>__ReferenceID2</x:Reference>
+            <x:Reference>__ReferenceID3</x:Reference>
+            <x:Reference>__ReferenceID4</x:Reference>
+            <x:Reference>__ReferenceID0</x:Reference>
+            <x:Reference>__ReferenceID1</x:Reference>
+            <x:Reference>__ReferenceID5</x:Reference>
+            <FlowStep x:Name="__ReferenceID7">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <av:Point x:Key="ShapeLocation">210,114.5</av:Point>
+                  <av:Size x:Key="ShapeSize">200,51</av:Size>
+                  <av:PointCollection x:Key="ConnectorLocation">310,165.5 310,206.5</av:PointCollection>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Clic abrir garantías" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="Click_12" KeyModifiers="None" MouseButton="BTN_LEFT">
+                <ui:Click.CursorPosition>
+                  <ui:CursorPosition Position="Center">
+                    <ui:CursorPosition.OffsetX>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:CursorPosition.OffsetX>
+                    <ui:CursorPosition.OffsetY>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:CursorPosition.OffsetY>
+                  </ui:CursorPosition>
+                </ui:Click.CursorPosition>
+                <ui:Click.Target>
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="aced8c64e21b60a43a2146935e755fa8" Selector="&lt;html app='chrome.exe' title='IBM BPM Portal - Step: Integración de información' /&gt;&lt;webctrl id='button-button-Garantias1:Button10' tag='BUTTON' /&gt;" TimeoutMS="180000" WaitForReady="INTERACTIVE" />
+                </ui:Click.Target>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </ui:Click>
+              <FlowStep.Next>
+                <x:Reference>__ReferenceID6</x:Reference>
+              </FlowStep.Next>
+            </FlowStep>
+          </Flowchart>
+        </ActivityAction>
+      </ui:BrowserScope.Body>
+    </ui:BrowserScope>
+  </Sequence>
+</Activity>

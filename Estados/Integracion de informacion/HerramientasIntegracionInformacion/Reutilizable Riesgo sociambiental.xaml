@@ -1,0 +1,372 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Reutilizable_Riesgo_sociambiental" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="622,4251" sap2010:WorkflowViewState.IdRef="Reutilizable_Riesgo_sociambiental_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap:VirtualizedContainerService.HintSize="602,4191" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Attach Browser" sap:VirtualizedContainerService.HintSize="560,4099" sap2010:WorkflowViewState.IdRef="BrowserScope_1" InformativeScreenshot="40918438d85385f4ed498d708e6fe6b3" Selector="&lt;html app='chrome.exe' omit:htmlwindowname='NUMERO_GRUPO' title='IBM BPM Portal - Step: Integración de información' /&gt;">
+      <ui:BrowserScope.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Reutilizable_Riesgo_sociambiental" sap:VirtualizedContainerService.HintSize="526,3953" sap2010:WorkflowViewState.IdRef="Sequence_1">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:SendHotkey DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" ClickBeforeTyping="True" DisplayName="Bajar en la pagina" sap:VirtualizedContainerService.HintSize="484,154" sap2010:WorkflowViewState.IdRef="SendHotkey_1" Key="pgdn" KeyModifiers="None" SpecialKey="True">
+              <ui:SendHotkey.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="fa918d98ac4adcfdb0f1c4c42ad23dea" Selector="&lt;webctrl id='div_317_1_1_1_2_1_1_1' /&gt;">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:SendHotkey.Target>
+            </ui:SendHotkey>
+            <ui:SendHotkey DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" ClickBeforeTyping="True" DisplayName="Bajar hasta destino" sap:VirtualizedContainerService.HintSize="484,154" sap2010:WorkflowViewState.IdRef="SendHotkey_3" Key="pgdn" KeyModifiers="None" SpecialKey="True">
+              <ui:SendHotkey.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="fa918d98ac4adcfdb0f1c4c42ad23dea" Selector="&lt;webctrl id='div_317_1_1_1_2_1_1_1' /&gt;">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:SendHotkey.Target>
+            </ui:SendHotkey>
+            <ui:TypeInto DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" Activate="True" ClickBeforeTyping="True" DisplayName="Escribir Detalle del destino" EmptyField="True" sap:VirtualizedContainerService.HintSize="484,134" sap2010:WorkflowViewState.IdRef="TypeInto_1" SendWindowMessages="True" SimulateType="False" Text="Destino">
+              <ui:TypeInto.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="a2b783a3e45e7c7af940c665a765337b" Selector="&lt;webctrl id='text-input-Riesgo_Socioambiental1:Text10' tag='INPUT' /&gt;" TimeoutMS="180000" WaitForReady="COMPLETE" />
+              </ui:TypeInto.Target>
+            </ui:TypeInto>
+            <ui:TypeInto DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" Activate="True" ClickBeforeTyping="True" DisplayName="Escribir numero CASB" EmptyField="True" sap:VirtualizedContainerService.HintSize="484,134" sap2010:WorkflowViewState.IdRef="TypeInto_2" SendWindowMessages="True" SimulateType="False" Text="9211012">
+              <ui:TypeInto.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="bb354c0cdecc892115954a59373af9d7" Selector="&lt;webctrl id='text-input-Riesgo_Socioambiental1:Text5' tag='INPUT' /&gt;" TimeoutMS="180000" WaitForReady="INTERACTIVE" />
+              </ui:TypeInto.Target>
+            </ui:TypeInto>
+            <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Clic Consultar" sap:VirtualizedContainerService.HintSize="484,106" sap2010:WorkflowViewState.IdRef="Click_1" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="True" SimulateClick="False">
+              <ui:Click.CursorPosition>
+                <ui:CursorPosition Position="Center">
+                  <ui:CursorPosition.OffsetX>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetX>
+                  <ui:CursorPosition.OffsetY>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetY>
+                </ui:CursorPosition>
+              </ui:Click.CursorPosition>
+              <ui:Click.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="7d4c90443d6bd10263f5e9e585a65079" Selector="&lt;webctrl id='button-button-Riesgo_Socioambiental1:Button9' tag='BUTTON' /&gt;" TimeoutMS="120000" WaitForReady="INTERACTIVE" />
+              </ui:Click.Target>
+            </ui:Click>
+            <ui:SendHotkey DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" ClickBeforeTyping="True" DisplayName="Bajar hasta codigo postal" sap:VirtualizedContainerService.HintSize="484,154" sap2010:WorkflowViewState.IdRef="SendHotkey_4" Key="pgdn" KeyModifiers="None" SpecialKey="True">
+              <ui:SendHotkey.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="fa918d98ac4adcfdb0f1c4c42ad23dea" Selector="&lt;webctrl id='div_317_1_1_1_2_1_1_1' /&gt;">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:SendHotkey.Target>
+            </ui:SendHotkey>
+            <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click proyecto de inversión" sap:VirtualizedContainerService.HintSize="484,106" sap2010:WorkflowViewState.IdRef="Click_8" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="True">
+              <ui:Click.CursorPosition>
+                <ui:CursorPosition Position="Center">
+                  <ui:CursorPosition.OffsetX>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetX>
+                  <ui:CursorPosition.OffsetY>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetY>
+                </ui:CursorPosition>
+              </ui:Click.CursorPosition>
+              <ui:Click.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="adebe0ecba509d4d94147cc4b85b52a7" Selector="&lt;webctrl id='radiogroup-item-input-Riesgo_Socioambiental1:proyecto_Inv[0]' tag='INPUT' /&gt;">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:Click.Target>
+            </ui:Click>
+            <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Clic en pregunta" sap:VirtualizedContainerService.HintSize="484,106" sap2010:WorkflowViewState.IdRef="Click_2" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="True" SimulateClick="False">
+              <ui:Click.CursorPosition>
+                <ui:CursorPosition Position="Center">
+                  <ui:CursorPosition.OffsetX>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetX>
+                  <ui:CursorPosition.OffsetY>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetY>
+                </ui:CursorPosition>
+              </ui:Click.CursorPosition>
+              <ui:Click.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="3883b1b49461648b777e4b9865910a42" Selector="&lt;webctrl id='radiogroup-item-input-Riesgo_Socioambiental1:proyecto_Cap[0]' tag='INPUT' /&gt;" TimeoutMS="120000" WaitForReady="INTERACTIVE" />
+              </ui:Click.Target>
+            </ui:Click>
+            <ui:TypeInto DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" Activate="True" ClickBeforeTyping="True" DisplayName="Escribir Ubicacion" EmptyField="True" sap:VirtualizedContainerService.HintSize="484,134" sap2010:WorkflowViewState.IdRef="TypeInto_3" SendWindowMessages="True" SimulateType="False" Text="Cuernavaca">
+              <ui:TypeInto.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="2751bde4356bc0d24db702ab35d4c978" Selector="&lt;webctrl id='textarea-textarea-Riesgo_Socioambiental1:ubicacion_Destino' /&gt;" TimeoutMS="180000" WaitForReady="INTERACTIVE" />
+              </ui:TypeInto.Target>
+            </ui:TypeInto>
+            <ui:TypeInto DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" Activate="True" ClickBeforeTyping="True" DisplayName="Escribe CP" EmptyField="True" sap:VirtualizedContainerService.HintSize="484,134" sap2010:WorkflowViewState.IdRef="TypeInto_4" SendWindowMessages="True" SimulateType="False" Text="62270">
+              <ui:TypeInto.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="0177ad09c81dfdd6e2103036d49825ed" Selector="&lt;webctrl id='text-input-Riesgo_Socioambiental1:Text12' /&gt;" TimeoutMS="180000" WaitForReady="INTERACTIVE" />
+              </ui:TypeInto.Target>
+            </ui:TypeInto>
+            <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Clic consultar cp" sap:VirtualizedContainerService.HintSize="484,106" sap2010:WorkflowViewState.IdRef="Click_3" KeyModifiers="None" MouseButton="BTN_LEFT">
+              <ui:Click.CursorPosition>
+                <ui:CursorPosition Position="Center">
+                  <ui:CursorPosition.OffsetX>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetX>
+                  <ui:CursorPosition.OffsetY>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetY>
+                </ui:CursorPosition>
+              </ui:Click.CursorPosition>
+              <ui:Click.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="ba40160e94c9d85a3ae7dc5c51ae710a" Selector="&lt;webctrl id='button-button-Riesgo_Socioambiental1:Button7' tag='BUTTON' /&gt;">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:Click.Target>
+            </ui:Click>
+            <DoWhile DisplayName="Esperar a que cargue las colonias" sap:VirtualizedContainerService.HintSize="484,463" sap2010:WorkflowViewState.IdRef="DoWhile_1">
+              <DoWhile.Variables>
+                <Variable x:TypeArguments="x:String" Name="municipio" />
+              </DoWhile.Variables>
+              <DoWhile.Condition>[String.IsNullOrEmpty(municipio)]</DoWhile.Condition>
+              <Sequence DisplayName="Espera" sap:VirtualizedContainerService.HintSize="376,302" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Municipio" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="GetValue_1">
+                  <ui:GetValue.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="3e37a78ded38b4ccec7a3c9bb5030665" Selector="&lt;webctrl id='text-input-Riesgo_Socioambiental1:municipioOculto' /&gt;">
+                      <ui:Target.TimeoutMS>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:Target.TimeoutMS>
+                      <ui:Target.WaitForReady>
+                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                      </ui:Target.WaitForReady>
+                    </ui:Target>
+                  </ui:GetValue.Target>
+                  <ui:GetValue.Value>
+                    <OutArgument x:TypeArguments="x:String">[municipio]</OutArgument>
+                  </ui:GetValue.Value>
+                </ui:GetValue>
+                <Delay sap2010:Annotation.AnnotationText="Necesario para no saturar la memoria" DisplayName="Delay de 5 segundos" Duration="00:00:05" sap:VirtualizedContainerService.HintSize="334,64" sap2010:WorkflowViewState.IdRef="Delay_1">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </Delay>
+              </Sequence>
+            </DoWhile>
+            <ui:SelectItem ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" Items="{x:Null}" DisplayName="Selecciona colonia" sap:VirtualizedContainerService.HintSize="484,134" sap2010:WorkflowViewState.IdRef="SelectItem_1" Item="MIRAVAL">
+              <ui:SelectItem.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="ad2f251277f0ec27e747614f6658c770" Selector="&lt;webctrl id='singleselect-Riesgo_Socioambiental1:Text21' tag='SELECT' /&gt;">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:SelectItem.Target>
+            </ui:SelectItem>
+            <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Clic El destino se ubica en area sensible" sap:VirtualizedContainerService.HintSize="484,106" sap2010:WorkflowViewState.IdRef="Click_4" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="True" SimulateClick="False">
+              <ui:Click.CursorPosition>
+                <ui:CursorPosition Position="Center">
+                  <ui:CursorPosition.OffsetX>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetX>
+                  <ui:CursorPosition.OffsetY>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetY>
+                </ui:CursorPosition>
+              </ui:Click.CursorPosition>
+              <ui:Click.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="8989da4960919fefd6e560ac644fcccf" Selector="&lt;webctrl id='radiogroup-item-input-Riesgo_Socioambiental1:areas_Sensibles[0]' tag='INPUT' /&gt;" TimeoutMS="120000" WaitForReady="INTERACTIVE" />
+              </ui:Click.Target>
+            </ui:Click>
+            <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Clic Tipo de area sensible" sap:VirtualizedContainerService.HintSize="484,106" sap2010:WorkflowViewState.IdRef="Click_5" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="True" SimulateClick="False">
+              <ui:Click.CursorPosition>
+                <ui:CursorPosition Position="Center">
+                  <ui:CursorPosition.OffsetX>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetX>
+                  <ui:CursorPosition.OffsetY>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetY>
+                </ui:CursorPosition>
+              </ui:Click.CursorPosition>
+              <ui:Click.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="2107da21ee66a9ae086d4b92976eda78" Selector="&lt;webctrl id='checkbox-input-Riesgo_Socioambiental1:area_natural_check' tag='INPUT' /&gt;" TimeoutMS="120000" WaitForReady="INTERACTIVE" />
+              </ui:Click.Target>
+            </ui:Click>
+            <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Clic Consultar riesgo" sap:VirtualizedContainerService.HintSize="484,106" sap2010:WorkflowViewState.IdRef="Click_6" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="True" SimulateClick="False">
+              <ui:Click.CursorPosition>
+                <ui:CursorPosition Position="Center">
+                  <ui:CursorPosition.OffsetX>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetX>
+                  <ui:CursorPosition.OffsetY>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetY>
+                </ui:CursorPosition>
+              </ui:Click.CursorPosition>
+              <ui:Click.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="cd7d07e0aa6465791c746c02c7ca84af" Selector="&lt;webctrl id='button-button-Riesgo_Socioambiental1:Button5' tag='BUTTON' /&gt;" TimeoutMS="120000" WaitForReady="INTERACTIVE" />
+              </ui:Click.Target>
+            </ui:Click>
+            <ui:ImageFound Found="{x:Null}" DisplayName="Mensaje de confirmacion de riesgo" sap:VirtualizedContainerService.HintSize="484,106" sap2010:WorkflowViewState.IdRef="ImageFound_1">
+              <ui:ImageFound.Image>
+                <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" Profile="Basic" TargetImageBase64="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" />
+              </ui:ImageFound.Image>
+              <ui:ImageFound.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" TimeoutMS="180000" WaitForReady="INTERACTIVE" />
+              </ui:ImageFound.Target>
+            </ui:ImageFound>
+            <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Clic confirmar y Consultar riesgo" sap:VirtualizedContainerService.HintSize="484,106" sap2010:WorkflowViewState.IdRef="Click_7" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="True" SimulateClick="False">
+              <ui:Click.CursorPosition>
+                <ui:CursorPosition Position="Center">
+                  <ui:CursorPosition.OffsetX>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetX>
+                  <ui:CursorPosition.OffsetY>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetY>
+                </ui:CursorPosition>
+              </ui:Click.CursorPosition>
+              <ui:Click.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="cb934d8288b34270b0b56fc1af2716fb" Selector="&lt;webctrl id='button-button-Riesgo_Socioambiental1:Button3' tag='BUTTON' /&gt;" TimeoutMS="120000" WaitForReady="INTERACTIVE" />
+              </ui:Click.Target>
+            </ui:Click>
+            <ui:ImageFound Found="{x:Null}" DisplayName="Image Exists 'chrome.exe IBM'" sap:VirtualizedContainerService.HintSize="484,106" sap2010:WorkflowViewState.IdRef="ImageFound_2">
+              <ui:ImageFound.Image>
+                <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" Profile="Basic" TargetImageBase64="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" />
+              </ui:ImageFound.Image>
+              <ui:ImageFound.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:ImageFound.Target>
+            </ui:ImageFound>
+            <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Clic confirmar y Consultar riesgo" sap:VirtualizedContainerService.HintSize="484,106" sap2010:WorkflowViewState.IdRef="Click_9" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="True" SimulateClick="False">
+              <ui:Click.CursorPosition>
+                <ui:CursorPosition Position="Center">
+                  <ui:CursorPosition.OffsetX>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetX>
+                  <ui:CursorPosition.OffsetY>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetY>
+                </ui:CursorPosition>
+              </ui:Click.CursorPosition>
+              <ui:Click.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="cb934d8288b34270b0b56fc1af2716fb" Selector="&lt;webctrl id='button-button-Riesgo_Socioambiental1:Button1' tag='BUTTON' /&gt;" TimeoutMS="120000" WaitForReady="INTERACTIVE" />
+              </ui:Click.Target>
+            </ui:Click>
+            <ui:UiElementExists Exists="{x:Null}" DisplayName="Element Exists" sap:VirtualizedContainerService.HintSize="484,106" sap2010:WorkflowViewState.IdRef="UiElementExists_2">
+              <ui:UiElementExists.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="76e86ce845391b5cb26224f715110cbe" Selector="&lt;webctrl id='outputtext-text-Riesgo_Socioambiental1:Table1:Output_Text17[1]' /&gt;">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:UiElementExists.Target>
+            </ui:UiElementExists>
+            <ui:SendHotkey DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" ClickBeforeTyping="True" DisplayName="ir al principio de la pagina" sap:VirtualizedContainerService.HintSize="484,154" sap2010:WorkflowViewState.IdRef="SendHotkey_5" Key="home" KeyModifiers="None" SpecialKey="True">
+              <ui:SendHotkey.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="fa918d98ac4adcfdb0f1c4c42ad23dea" Selector="&lt;webctrl id='div_317_1_1_1_2_1_1_1' /&gt;">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:SendHotkey.Target>
+            </ui:SendHotkey>
+          </Sequence>
+        </ActivityAction>
+      </ui:BrowserScope.Body>
+    </ui:BrowserScope>
+  </Sequence>
+</Activity>

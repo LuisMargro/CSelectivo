@@ -1,0 +1,303 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Lineas_y_garantias" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="in_TransactionItem" Type="InArgument(sd:DataRow)" />
+    <x:Property Name="in_NombreCliente" Type="InArgument(x:String)" />
+    <x:Property Name="io_EstadoTermiando" Type="InOutArgument(x:Int32)" />
+  </x:Members>
+  <mva:VisualBasic.Settings>
+    <x:Null />
+  </mva:VisualBasic.Settings>
+  <sap:VirtualizedContainerService.HintSize>622,2898</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>Lineas y garantias_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="21">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="20">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.Entity</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Lineas y garantias" sap:VirtualizedContainerService.HintSize="602,2838" sap2010:WorkflowViewState.IdRef="Sequence_21">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="scg:List(x:String)" Default="[New List(of String)]" Name="listaFilial" />
+      <Variable x:TypeArguments="scg:List(x:String)" Default="[New List(of String)]" Name="listaTipoLinea" />
+      <Variable x:TypeArguments="x:Int32" Default="0" Name="indiceLista" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Attach Process portal acceder a lineas y garantias" sap:VirtualizedContainerService.HintSize="560,929" sap2010:WorkflowViewState.IdRef="BrowserScope_4" InformativeScreenshot="f994aa5a4a6324be622fec1cff0fcf76" Selector="&lt;html app='chrome.exe' title='IBM BPM Portal - Step: Integración de información' /&gt;">
+      <ui:BrowserScope.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Acceder a la seccion " sap:VirtualizedContainerService.HintSize="526,783" sap2010:WorkflowViewState.IdRef="Sequence_20">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:Boolean" Name="ImagenBuro" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:ImageFound DisplayName="Busca la imagen de Buro" Found="[ImagenBuro]" sap:VirtualizedContainerService.HintSize="484,106" sap2010:WorkflowViewState.IdRef="ImageFound_13">
+              <ui:ImageFound.Image>
+                <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" Profile="Basic" TargetImageBase64="iVBORw0KGgoAAAANSUhEUgAAASEAAAAbCAYAAAAzizlkAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAUfSURBVHhe7Zk9TuRAEIX3TlyDO3AQDkBOTkxMzBkISYnJCAln9UZ8q6e31bZn7MH7U59Umml313+7NOz+ODRN0+xID6GmaXalh1DTNLvSQ6hpml3pIdQ0za70EGqaZld6CDVNsys9hJqm2ZUeQk3T7EoPoaZpdqWH0Ao+Pj4ONzc3h9vb28Pn5+fX06b5e7i/vz9cX18f3t7evp58P5sMISVydXX1S15eXr52TgdbS22oeCri0kHw9PR0tK/PtciGhpCG0bkwyNba+Rf5H4c897OSLe6sw7uz5n3dgtVDaFS0vRP7W+ghNKaH0O/yL75Xq4aQLoYuiP+co4j6RQNMXAo5NdHzlxDrx8fHXzb8ha1+CXF58eexEB8x5FmJNxr/fOrs+/v70Z/rTOUk0McG8ePfnzme393dXemPnLSvsxLp0Z/KLyhX9iV5yUdxi9T1Hogl/hP39/z8fNRxu6fcpfSf5/E1ultiKgfqXvWi8iOhNyMqfcFz2RLVvedMvjt8Evs5fbkkq38JkaAXw8lLg+RlB+xlIVP0XGQzVEwVdXTem5zNQLwp6V/rKqapy1Wdz3hHF2FUPwk1IidEtmWrys3jzCGCTNWeuEdxSUeMajtVp8wDmfM5d5dc3H+1L8HfXA7Ek+eX+BjF7PfTyefpW3Bm1D+t53Lag9VDqLrIXsAsDC+dF8+hcFlIfQr8oZ/NwB/n8yVn32MEGlRdIuxVcIaYnSpfr0nGl5Cfx5Q5snYfWSfheuRKHAId7c/FTVyjusz5T/BXxYMN9y+qGKeQX9dnTTzYo9ZzOeiZ9ugdNeE8a/ZFZdPBfiWuk75E1ifzE3M57cEm/zBNQZQIQkIUIsUb43A+C8k6L142I88nFFyfjscpe7Lrzyt7eWGqM1VtEOmTz6ge6CsOyBpUOVVxu57+pFzi1+NF5Ed+ZSefw5x/XgDIPoo87z1yGeUA1AchJtnzXgvO6sySHPy8RN+pA3usBXUbxYzOSBSTqOrlsYgq/iU5fTebDCGHQlBkkk7J5kMWKddZsGxGVWTHLwYXglhyLSp7czE6xKf9FOmRz+hSZn4ia+A5Ac88JtdbM4QUN2CTvYxp5J9cYEme1DnF++XM9SnXwuNekgNxy5bEY5Ge9L0v0pHuqO74dB2BH/Sqep2aH0z15TtYNYQI3guaz6qkp5grZBYsm4E/1hJ953J4k1MX25wVI//kh30/42S8SdpLiNFjIgfF5mt9gmLRM/freh43el4PhtQo7gR7xDnnP6EO2qeOnMcG66rOSdbV80Wf3hIPOqfk4HbzLPUkBlHZdLCvTydt5ZrYpZv5eb2W5PTdbPYP0ykkRLFG+0kWLtcUmyJin7U3wwV/3uRRbHqmPTHynzp+JsGGCz6wJ9H3ZBSjBH/VxVUtVJPU8dykn/sS7E7FPdKlD0v8J+SRkr3OfXrrLOlTlZ/k1Bw8bu+BGPkghmRUA4RcT8nPfZ3Tl0uzyZ9jWWgKBXl5aHJFFi7XFD8vptvMBvkeTeayeNPlS358P/0Lzkhk+/X19RhD5u1gB8l8JPqeeH5z/0Xvz0ReuMqH51LZGMUtUjftL/GfuL+Hh4ejjvfvlLs01yd8nftf9EBMEn1PPKfRGaCXlRA3ZH7KQ9/pEX69Z+KcvlySzf9NqNkWH0Kjl605j9FLeirdo3X0EPrD6Qt+ObYaQqNfos0yegj94fQQuhxrh5D+hNGfMrLR/TmfHkJN0+xKD6GmaXalh1DTNDtyOPwEmQC8DVWbKbAAAAAASUVORK5CYII=" />
+              </ui:ImageFound.Image>
+              <ui:ImageFound.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:ImageFound.Target>
+            </ui:ImageFound>
+            <If Condition="[ImagenBuro = True]" DisplayName="Si" sap:VirtualizedContainerService.HintSize="484,253" sap2010:WorkflowViewState.IdRef="If_4">
+              <If.Then>
+                <ui:ClickImage ContinueOnError="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Clic en aceptar para cerrar la posible imagen" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="ClickImage_15" KeyModifiers="None" MouseButton="BTN_LEFT">
+                  <ui:ClickImage.CursorPosition>
+                    <ui:CursorPosition Position="Center">
+                      <ui:CursorPosition.OffsetX>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:CursorPosition.OffsetX>
+                      <ui:CursorPosition.OffsetY>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:CursorPosition.OffsetY>
+                    </ui:CursorPosition>
+                  </ui:ClickImage.CursorPosition>
+                  <ui:ClickImage.Image>
+                    <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" Profile="Basic" TargetImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFEAAAAlCAYAAAA6PAXhAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHpSURBVGhD7ZSxSgNBFEX9h/yEf5TWzj/wMywtBXtLW60EawuxsdFCFkQFDUYSkzF38S43w2xA90bX8B4csrtvZ+a9M7PZShGdo5ZYDQdBBxqJj7vbwQ8IiQZCooGQaCAkGgiJBkKigZBoICQaCIkGQqKBkGhgLRIn1xeYMr2fHxfz62B0uJfmr0/p7eSgmF8ndolsZvZwl2bPVXrZ3ym+52ajJOL0Qd749CjNx6NiUx/3N1iyDrwDAczxFNcxnTTjKWlyeVY/R3CT6txiHga/APxq6FpYZ3p71Yzr8tXYJUIQCkRzaBLXmse9nlC9z3NojI1TlIrAWksi5STWAvNNWIzFGK6r+S5YJaIgFKqNaNNspLTruQTCTSmN1fXaxiuYSyXqhnWhckpEYSwS5I1r03yH4Bk/0zwaiZkknb9NYj5vryWyoVKwWDS0SmJbDnxXIn4pj5vY+5OIQtEQmsmf879Hm9Z3wKpcWx5z4lkzt0jMvwrQe4laoIIiUSyKxn1evMpHjtfIqThe61hdsyRR38U9orcSUThOW9spyuWgkSa+TinfXcotgnNSouZzCcxhPTxHnoGc1tE7ib8BJbZt1F8SEg2ERAP/RmKfCYkGQqKBkGggJBoIiQZCooGQaCAkGgiJBqrhIH0CenDZf2+AuXMAAAAASUVORK5CYII=" />
+                  </ui:ClickImage.Image>
+                  <ui:ClickImage.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}">
+                      <ui:Target.TimeoutMS>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:Target.TimeoutMS>
+                      <ui:Target.WaitForReady>
+                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                      </ui:Target.WaitForReady>
+                    </ui:Target>
+                  </ui:ClickImage.Target>
+                </ui:ClickImage>
+              </If.Then>
+            </If>
+            <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Clic Solicitud" sap:VirtualizedContainerService.HintSize="484,106" sap2010:WorkflowViewState.IdRef="Click_11" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
+              <ui:Click.CursorPosition>
+                <ui:CursorPosition Position="Center">
+                  <ui:CursorPosition.OffsetX>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetX>
+                  <ui:CursorPosition.OffsetY>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetY>
+                </ui:CursorPosition>
+              </ui:Click.CursorPosition>
+              <ui:Click.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="5dde4fd04bcfa2fc32297579f9ef8ab3" Selector="&lt;html app='chrome.exe' title='IBM BPM Portal - Step: Integración de información' /&gt;&lt;webctrl id='tabs-Tab_Section2-tab-text1' tag='A' /&gt;" TimeoutMS="180000" WaitForReady="INTERACTIVE" />
+              </ui:Click.Target>
+            </ui:Click>
+            <ui:UiElementExists Exists="{x:Null}" DisplayName="Elemento de Fillial existe?" sap:VirtualizedContainerService.HintSize="484,106" sap2010:WorkflowViewState.IdRef="UiElementExists_2">
+              <ui:UiElementExists.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="cc5117d3edeebc1f6be628d3a0d0e2d2" Selector="&lt;webctrl id='singleselect-Linea_Nueva1:filtroFilial' tag='SELECT' /&gt;" TimeoutMS="180000" WaitForReady="INTERACTIVE" />
+              </ui:UiElementExists.Target>
+            </ui:UiElementExists>
+          </Sequence>
+        </ActivityAction>
+      </ui:BrowserScope.Body>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:BrowserScope>
+    <InvokeMethod DisplayName="Ingresar filial default" sap:VirtualizedContainerService.HintSize="560,132" sap2010:WorkflowViewState.IdRef="InvokeMethod_1" MethodName="Add">
+      <InvokeMethod.TargetObject>
+        <InArgument x:TypeArguments="scg:List(x:String)">[listaFilial]</InArgument>
+      </InvokeMethod.TargetObject>
+      <InArgument x:TypeArguments="x:String">[in_TransactionItem(6).ToString.Trim]</InArgument>
+    </InvokeMethod>
+    <InvokeMethod DisplayName="Ingresar tipo linea default" sap:VirtualizedContainerService.HintSize="560,132" sap2010:WorkflowViewState.IdRef="InvokeMethod_2" MethodName="Add">
+      <InvokeMethod.TargetObject>
+        <InArgument x:TypeArguments="scg:List(x:String)">[listaTipoLinea]</InArgument>
+      </InvokeMethod.TargetObject>
+      <InArgument x:TypeArguments="x:String">[in_TransactionItem(7).ToString.Trim]</InArgument>
+    </InvokeMethod>
+    <If Condition="[not String.IsNullOrEmpty(in_TransactionItem(8).ToString) and Not String.IsNullOrEmpty(in_TransactionItem(9).ToString)]" DisplayName="Si la segunda linea es requerida" sap:VirtualizedContainerService.HintSize="560,544" sap2010:WorkflowViewState.IdRef="If_5">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <If.Then>
+        <Sequence DisplayName="Secuencia" sap:VirtualizedContainerService.HintSize="280,396" sap2010:WorkflowViewState.IdRef="Sequence_22">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <InvokeMethod DisplayName="Ingresar degunda filial" sap:VirtualizedContainerService.HintSize="238,132" sap2010:WorkflowViewState.IdRef="InvokeMethod_3" MethodName="Add">
+            <InvokeMethod.TargetObject>
+              <InArgument x:TypeArguments="scg:List(x:String)">[listaFilial]</InArgument>
+            </InvokeMethod.TargetObject>
+            <InArgument x:TypeArguments="x:String">[in_TransactionItem(8).ToString.Trim]</InArgument>
+          </InvokeMethod>
+          <InvokeMethod DisplayName="Ingresar el segundo tipo linea" sap:VirtualizedContainerService.HintSize="238,132" sap2010:WorkflowViewState.IdRef="InvokeMethod_4" MethodName="Add">
+            <InvokeMethod.TargetObject>
+              <InArgument x:TypeArguments="scg:List(x:String)">[listaTipoLinea]</InArgument>
+            </InvokeMethod.TargetObject>
+            <InArgument x:TypeArguments="x:String">[in_TransactionItem(9).ToString.Trim]</InArgument>
+          </InvokeMethod>
+        </Sequence>
+      </If.Then>
+    </If>
+    <If Condition="[not String.IsNullOrEmpty(in_TransactionItem(10).ToString) and Not String.IsNullOrEmpty(in_TransactionItem(11).ToString)]" DisplayName="Si la tercera linea es requerida" sap:VirtualizedContainerService.HintSize="560,51" sap2010:WorkflowViewState.IdRef="If_6">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <If.Then>
+        <Sequence DisplayName="Secuencia" sap:VirtualizedContainerService.HintSize="280,396" sap2010:WorkflowViewState.IdRef="Sequence_23">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <InvokeMethod DisplayName="Ingresar tercera filial" sap:VirtualizedContainerService.HintSize="238,132" sap2010:WorkflowViewState.IdRef="InvokeMethod_5" MethodName="Add">
+            <InvokeMethod.TargetObject>
+              <InArgument x:TypeArguments="scg:List(x:String)">[listaFilial]</InArgument>
+            </InvokeMethod.TargetObject>
+            <InArgument x:TypeArguments="x:String">[in_TransactionItem(10).ToString.Trim]</InArgument>
+          </InvokeMethod>
+          <InvokeMethod DisplayName="Ingresar el tercer tipo line" sap:VirtualizedContainerService.HintSize="238,132" sap2010:WorkflowViewState.IdRef="InvokeMethod_6" MethodName="Add">
+            <InvokeMethod.TargetObject>
+              <InArgument x:TypeArguments="scg:List(x:String)">[listaTipoLinea]</InArgument>
+            </InvokeMethod.TargetObject>
+            <InArgument x:TypeArguments="x:String">[in_TransactionItem(11).ToString.Trim]</InArgument>
+          </InvokeMethod>
+        </Sequence>
+      </If.Then>
+    </If>
+    <If Condition="[not String.IsNullOrEmpty(in_TransactionItem(12).ToString) and Not String.IsNullOrEmpty(in_TransactionItem(13).ToString)]" DisplayName="Si la cuarta linea es requerida" sap:VirtualizedContainerService.HintSize="560,51" sap2010:WorkflowViewState.IdRef="If_7">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <If.Then>
+        <Sequence DisplayName="Secuencia" sap:VirtualizedContainerService.HintSize="280,396" sap2010:WorkflowViewState.IdRef="Sequence_24">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <InvokeMethod DisplayName="Ingresar cuarta filial" sap:VirtualizedContainerService.HintSize="238,132" sap2010:WorkflowViewState.IdRef="InvokeMethod_7" MethodName="Add">
+            <InvokeMethod.TargetObject>
+              <InArgument x:TypeArguments="scg:List(x:String)">[listaFilial]</InArgument>
+            </InvokeMethod.TargetObject>
+            <InArgument x:TypeArguments="x:String">[in_TransactionItem(12).ToString.Trim]</InArgument>
+          </InvokeMethod>
+          <InvokeMethod DisplayName="Ingresar la cuarta tipo line" sap:VirtualizedContainerService.HintSize="238,132" sap2010:WorkflowViewState.IdRef="InvokeMethod_8" MethodName="Add">
+            <InvokeMethod.TargetObject>
+              <InArgument x:TypeArguments="scg:List(x:String)">[listaTipoLinea]</InArgument>
+            </InvokeMethod.TargetObject>
+            <InArgument x:TypeArguments="x:String">[in_TransactionItem(13).ToString.Trim]</InArgument>
+          </InvokeMethod>
+        </Sequence>
+      </If.Then>
+    </If>
+    <ui:ForEach x:TypeArguments="x:String" CurrentIndex="[indiceLista]" DisplayName="Para cada" sap:VirtualizedContainerService.HintSize="560,440" sap2010:WorkflowViewState.IdRef="ForEach`1_2" Values="[listaFilial]">
+      <ui:ForEach.Body>
+        <ActivityAction x:TypeArguments="x:String">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:String" Name="filial" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Cuerpo" sap:VirtualizedContainerService.HintSize="421,306" sap2010:WorkflowViewState.IdRef="Sequence_25">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke SeleccionarTipoLinea workflow" sap:VirtualizedContainerService.HintSize="379,87" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_12" UnSafe="False" WorkflowFileName="Estados\Integracion de informacion\Reutilizables Lineas y garantia\SeleccionarTipoLinea.xaml">
+              <ui:InvokeWorkflowFile.Arguments>
+                <InArgument x:TypeArguments="x:String" x:Key="in_TipoLinea">[listaTipoLinea.Item(indiceLista)]</InArgument>
+              </ui:InvokeWorkflowFile.Arguments>
+            </ui:InvokeWorkflowFile>
+            <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke SeleccionarFilialYDictamenTecnico workflow" sap:VirtualizedContainerService.HintSize="379,87" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_13" UnSafe="False" WorkflowFileName="Estados\Integracion de informacion\Reutilizables Lineas y garantia\SeleccionarFilialYDictamenTecnico.xaml">
+              <ui:InvokeWorkflowFile.Arguments>
+                <InArgument x:TypeArguments="x:String" x:Key="in_Filial">[filial]</InArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="in_TipoLinea">[listaTipoLinea.Item(indiceLista)]</InArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="in_DictamenTecnico">[in_TransactionItem(17).ToString.Trim]</InArgument>
+              </ui:InvokeWorkflowFile.Arguments>
+            </ui:InvokeWorkflowFile>
+          </Sequence>
+        </ActivityAction>
+      </ui:ForEach.Body>
+    </ui:ForEach>
+    <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke AsignaciónGarantías workflow" sap:VirtualizedContainerService.HintSize="560,87" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_14" UnSafe="False" WorkflowFileName="Estados\Integracion de informacion\Reutilizables Lineas y garantia\AsignaciónGarantías.xaml">
+      <ui:InvokeWorkflowFile.Arguments>
+        <InArgument x:TypeArguments="sd:DataRow" x:Key="in_TrasactionItem">[in_TransactionItem]</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="in_NombreCliente">[in_NombreCliente]</InArgument>
+      </ui:InvokeWorkflowFile.Arguments>
+    </ui:InvokeWorkflowFile>
+    <Assign DisplayName="Asignar Estado" sap:VirtualizedContainerService.HintSize="560,60" sap2010:WorkflowViewState.IdRef="Assign_2">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:Int32">[io_EstadoTermiando]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:Int32">4</InArgument>
+      </Assign.Value>
+    </Assign>
+  </Sequence>
+</Activity>

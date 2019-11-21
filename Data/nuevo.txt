@@ -1,0 +1,25 @@
+63774
+64243
+P@g#3j7$
+HBISL950
+2020mexico
+02/05/1997
+primera opcion a todos- medio uno in_transactionItem(1).toString.equals("Medio") and Cint(in_transactionItem(2))=1
+primera opcion a todos a casb el segundo (Exclusion 1)
+
+primera opcion a todos a casb el tercero (bajo 1)
+https://15.128.91.14:8443/ProcessPortal/launchTaskCompletion?taskId=1145980
+
+PF ZEVN740815QD8
+PFAE ZETA681011ED0
+PM BTB191028CV1
+
+agregar un pf cuando sea pm
+
+65275
+65276
+65277 -
+65278 -
+65248
+
+https://f5lbbpmcmyq.qa.unix.banorte.com/ProcessPortal/login.jsp

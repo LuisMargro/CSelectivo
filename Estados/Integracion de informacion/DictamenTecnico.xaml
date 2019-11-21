@@ -1,0 +1,802 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="DictamenTecnico" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="in_Dictamen" Type="InArgument(x:String)" />
+    <x:Property Name="io_EstadoTerminado" Type="InOutArgument(x:Int32)" />
+  </x:Members>
+  <mva:VisualBasic.Settings>
+    <x:Null />
+  </mva:VisualBasic.Settings>
+  <sap:VirtualizedContainerService.HintSize>739,1349</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>DictamenTecnico_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="21">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="32">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="DictamenTecnico" sap:VirtualizedContainerService.HintSize="719,1289" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Anexar Dictamente tecnico" sap:VirtualizedContainerService.HintSize="677,1197" sap2010:WorkflowViewState.IdRef="BrowserScope_1" InformativeScreenshot="61cdbcf66be88f0b944920a4ed915188" Selector="&lt;html app='chrome.exe' title='IBM BPM Portal - Step: Integración de información' /&gt;">
+      <ui:BrowserScope.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+          </ActivityAction.Argument>
+          <Flowchart sap:VirtualizedContainerService.HintSize="643,1051" sap2010:WorkflowViewState.IdRef="Flowchart_1">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                <av:Point x:Key="ShapeLocation">270,2.5</av:Point>
+                <av:Size x:Key="ShapeSize">60,75</av:Size>
+                <av:PointCollection x:Key="ConnectorLocation">300,77.5 300,97</av:PointCollection>
+                <x:Double x:Key="Height">1015</x:Double>
+                <x:Double x:Key="Width">609</x:Double>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <Flowchart.StartNode>
+              <x:Reference>__ReferenceID8</x:Reference>
+            </Flowchart.StartNode>
+            <FlowStep x:Name="__ReferenceID3">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <av:Point x:Key="ShapeLocation">40,397</av:Point>
+                  <av:Size x:Key="ShapeSize">200,66</av:Size>
+                  <av:PointCollection x:Key="ConnectorLocation">140,463 140,493 150,493 150,507</av:PointCollection>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <Sequence DisplayName="Turismo" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                <Sequence.Variables>
+                  <Variable x:TypeArguments="s:String[]" Name="colonias" />
+                </Sequence.Variables>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click dictamen técnico" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_1" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
+                  <ui:Click.CursorPosition>
+                    <ui:CursorPosition Position="Center">
+                      <ui:CursorPosition.OffsetX>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:CursorPosition.OffsetX>
+                      <ui:CursorPosition.OffsetY>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:CursorPosition.OffsetY>
+                    </ui:CursorPosition>
+                  </ui:Click.CursorPosition>
+                  <ui:Click.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="9e4611e7cb8893c1fab5794994ba9261" Selector="&lt;html app='chrome.exe' omit:htmlwindowname='NUMERO_GRUPO' title='IBM BPM Portal*' /&gt;&lt;webctrl id='checkbox-input-Dictamen_Tecnico1:Checkbox3' /&gt;" TimeoutMS="180000" WaitForReady="INTERACTIVE" />
+                  </ui:Click.Target>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </ui:Click>
+                <ui:TypeInto ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Escribir nombre del proyecto" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_1" SimulateType="True" Text="TestingTurismo">
+                  <ui:TypeInto.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="cb7c9abc239bdb08fa0686850069f086" Selector="&lt;html app='chrome.exe' omit:htmlwindowname='NUMERO_GRUPO' title='IBM BPM Portal*' /&gt;&lt;webctrl id='text-input-Dictamen_Tecnico1:Text3' /&gt;" TimeoutMS="180000" WaitForReady="INTERACTIVE" />
+                  </ui:TypeInto.Target>
+                </ui:TypeInto>
+                <ui:TypeInto ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="descripción del proyecto" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_2" SimulateType="True" Text="Testing de turismo">
+                  <ui:TypeInto.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="1c480abba074127d132860ae503130b1" Selector="&lt;html app='chrome.exe' omit:htmlwindowname='NUMERO_GRUPO' title='IBM BPM Portal*' /&gt;&lt;webctrl id='textarea-textarea-Dictamen_Tecnico1:Text_Area2' /&gt;" TimeoutMS="180000" WaitForReady="INTERACTIVE" />
+                  </ui:TypeInto.Target>
+                </ui:TypeInto>
+                <ui:TypeInto ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="calle" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_3" SimulateType="True" Text="Calle 8">
+                  <ui:TypeInto.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="66514356e9cded1306810fb73be931f3" Selector="&lt;html app='chrome.exe' omit:htmlwindowname='NUMERO_GRUPO' title='IBM BPM Portal*' /&gt;&lt;webctrl id='text-input-Dictamen_Tecnico1:calle_Participante' /&gt;" TimeoutMS="180000" WaitForReady="INTERACTIVE" />
+                  </ui:TypeInto.Target>
+                </ui:TypeInto>
+                <ui:TypeInto ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="numero exterior" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_4" SimulateType="True" Text="8">
+                  <ui:TypeInto.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="84e0576df3059769d8324ead8be9edb4" Selector="&lt;html app='chrome.exe' omit:htmlwindowname='NUMERO_GRUPO' title='IBM BPM Portal*' /&gt;&lt;webctrl id='text-input-Dictamen_Tecnico1:numExterior_P' /&gt;" TimeoutMS="180000" WaitForReady="INTERACTIVE" />
+                  </ui:TypeInto.Target>
+                </ui:TypeInto>
+                <ui:TypeInto ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="codigo postal" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_5" SimulateType="True" Text="62906">
+                  <ui:TypeInto.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="a426bb92037b34e2d0acb6fe677aa21d" Selector="&lt;html app='chrome.exe' omit:htmlwindowname='NUMERO_GRUPO' title='IBM BPM Portal*' /&gt;&lt;webctrl id='text-input-Dictamen_Tecnico1:codigo_Postal_1' /&gt;" TimeoutMS="180000" WaitForReady="INTERACTIVE" />
+                  </ui:TypeInto.Target>
+                </ui:TypeInto>
+                <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Consultar" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_2" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
+                  <ui:Click.CursorPosition>
+                    <ui:CursorPosition Position="Center">
+                      <ui:CursorPosition.OffsetX>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:CursorPosition.OffsetX>
+                      <ui:CursorPosition.OffsetY>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:CursorPosition.OffsetY>
+                    </ui:CursorPosition>
+                  </ui:Click.CursorPosition>
+                  <ui:Click.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="8e0aa12cfc22e93fa89baca0a75938c1" Selector="&lt;html app='chrome.exe' omit:htmlwindowname='NUMERO_GRUPO' title='IBM BPM Portal*' /&gt;&lt;webctrl id='button-button-Dictamen_Tecnico1:Button7' /&gt;" TimeoutMS="180000" WaitForReady="INTERACTIVE" />
+                  </ui:Click.Target>
+                </ui:Click>
+                <ui:UiElementExists Exists="{x:Null}" DisplayName="Esperar a que cargue las colonias" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="UiElementExists_1">
+                  <ui:UiElementExists.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="0c27d8c0887baf8e3852224012220961" Selector="&lt;html app='chrome.exe' omit:htmlwindowname='NUMERO_GRUPO' title='IBM BPM Portal*' /&gt;&lt;webctrl id='singleselect-Dictamen_Tecnico1:Input_Group10' tag='SELECT' innertext='*A*' /&gt;" TimeoutMS="180000" WaitForReady="INTERACTIVE" />
+                  </ui:UiElementExists.Target>
+                </ui:UiElementExists>
+                <ui:GetAttribute ContinueOnError="{x:Null}" Attribute="items" DisplayName="Obtener las colonias" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="GetAttribute_1">
+                  <ui:GetAttribute.Result>
+                    <OutArgument x:TypeArguments="s:String[]">[colonias]</OutArgument>
+                  </ui:GetAttribute.Result>
+                  <ui:GetAttribute.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="9356631a822866e5a30cdc919d92c867" Selector="&lt;html app='chrome.exe' omit:htmlwindowname='NUMERO_GRUPO' title='IBM BPM Portal*' /&gt;&#xA;&lt;webctrl id='singleselect-Dictamen_Tecnico1:Input_Group10' tag='SELECT' innertext='*A*' /&gt;" TimeoutMS="180000" WaitForReady="INTERACTIVE" />
+                  </ui:GetAttribute.Target>
+                </ui:GetAttribute>
+                <ui:SelectItem ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" Items="{x:Null}" DisplayName="Seleccionar la primer colonia" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="SelectItem_1" Item="[colonias(0).toString]">
+                  <ui:SelectItem.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="20e9abae8573a4bfdfcf10e8ee9aa067" Selector="&lt;html app='chrome.exe' omit:htmlwindowname='NUMERO_GRUPO' title='IBM BPM Portal*' /&gt;&lt;webctrl id='singleselect-Dictamen_Tecnico1:Input_Group10' /&gt;" TimeoutMS="180000" WaitForReady="INTERACTIVE" />
+                  </ui:SelectItem.Target>
+                </ui:SelectItem>
+              </Sequence>
+              <FlowStep.Next>
+                <FlowStep x:Name="__ReferenceID0">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <av:Point x:Key="ShapeLocation">50,507</av:Point>
+                      <av:Size x:Key="ShapeSize">200,66</av:Size>
+                      <av:PointCollection x:Key="ConnectorLocation">150,573 150,597</av:PointCollection>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <Sequence DisplayName="Agropecuario" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                    <Sequence.Variables>
+                      <Variable x:TypeArguments="s:String[]" Name="colonias" />
+                    </Sequence.Variables>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click dictamen técnico para proyecto agropecuario" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_3" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
+                      <ui:Click.CursorPosition>
+                        <ui:CursorPosition Position="Center">
+                          <ui:CursorPosition.OffsetX>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:CursorPosition.OffsetX>
+                          <ui:CursorPosition.OffsetY>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:CursorPosition.OffsetY>
+                        </ui:CursorPosition>
+                      </ui:Click.CursorPosition>
+                      <ui:Click.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="9e4611e7cb8893c1fab5794994ba9261" Selector="&lt;html app='chrome.exe' omit:htmlwindowname='NUMERO_GRUPO' title='IBM BPM Portal*' /&gt;&lt;webctrl id='checkbox-input-Dictamen_Tecnico1:Checkbox9' /&gt;" TimeoutMS="180000" WaitForReady="INTERACTIVE" />
+                      </ui:Click.Target>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </ui:Click>
+                    <ui:TypeInto ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Escribir nombre del proyecto" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_6" SimulateType="True" Text="TestingAgropecuario">
+                      <ui:TypeInto.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="cb7c9abc239bdb08fa0686850069f086" Selector="&lt;html app='chrome.exe' omit:htmlwindowname='NUMERO_GRUPO' title='IBM BPM Portal*' /&gt;&lt;webctrl id='text-input-Dictamen_Tecnico1:Text5' /&gt;" TimeoutMS="180000" WaitForReady="INTERACTIVE" />
+                      </ui:TypeInto.Target>
+                    </ui:TypeInto>
+                    <ui:TypeInto ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="descripción del proyecto" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_7" SimulateType="True" Text="testing de agropecuario">
+                      <ui:TypeInto.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="1c480abba074127d132860ae503130b1" Selector="&lt;html app='chrome.exe' omit:htmlwindowname='NUMERO_GRUPO' title='IBM BPM Portal*' /&gt;&lt;webctrl id='textarea-textarea-Dictamen_Tecnico1:Text_Area3' /&gt;" TimeoutMS="180000" WaitForReady="INTERACTIVE" />
+                      </ui:TypeInto.Target>
+                    </ui:TypeInto>
+                    <ui:TypeInto ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="calle" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_8" SimulateType="True" Text="Calle 8">
+                      <ui:TypeInto.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="66514356e9cded1306810fb73be931f3" Selector="&lt;html app='chrome.exe' omit:htmlwindowname='NUMERO_GRUPO' title='IBM BPM Portal*' /&gt;&lt;webctrl id='text-input-Dictamen_Tecnico1:calle_Participante1' /&gt;" TimeoutMS="180000" WaitForReady="INTERACTIVE" />
+                      </ui:TypeInto.Target>
+                    </ui:TypeInto>
+                    <ui:TypeInto ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="numero exterior" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_9" SimulateType="True" Text="8">
+                      <ui:TypeInto.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="84e0576df3059769d8324ead8be9edb4" Selector="&lt;html app='chrome.exe' omit:htmlwindowname='NUMERO_GRUPO' title='IBM BPM Portal*' /&gt;&lt;webctrl id='text-input-Dictamen_Tecnico1:numExterior_P1' /&gt;" TimeoutMS="180000" WaitForReady="INTERACTIVE" />
+                      </ui:TypeInto.Target>
+                    </ui:TypeInto>
+                    <ui:TypeInto ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="codigo postal" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_10" SimulateType="True" Text="62906">
+                      <ui:TypeInto.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="a426bb92037b34e2d0acb6fe677aa21d" Selector="&lt;html app='chrome.exe' omit:htmlwindowname='NUMERO_GRUPO' title='IBM BPM Portal*' /&gt;&lt;webctrl id='text-input-Dictamen_Tecnico1:codigo_Postal_2' /&gt;" TimeoutMS="180000" WaitForReady="INTERACTIVE" />
+                      </ui:TypeInto.Target>
+                    </ui:TypeInto>
+                    <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Consultar" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_4" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
+                      <ui:Click.CursorPosition>
+                        <ui:CursorPosition Position="Center">
+                          <ui:CursorPosition.OffsetX>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:CursorPosition.OffsetX>
+                          <ui:CursorPosition.OffsetY>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:CursorPosition.OffsetY>
+                        </ui:CursorPosition>
+                      </ui:Click.CursorPosition>
+                      <ui:Click.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="8e0aa12cfc22e93fa89baca0a75938c1" Selector="&lt;html app='chrome.exe' omit:htmlwindowname='NUMERO_GRUPO' title='IBM BPM Portal*' /&gt;&lt;webctrl id='button-button-Dictamen_Tecnico1:Button1' /&gt;" TimeoutMS="180000" WaitForReady="INTERACTIVE" />
+                      </ui:Click.Target>
+                    </ui:Click>
+                    <ui:UiElementExists Exists="{x:Null}" DisplayName="Esperar a que cargue la colonia x2" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="UiElementExists_2">
+                      <ui:UiElementExists.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="0c27d8c0887baf8e3852224012220961" Selector="&lt;html app='chrome.exe' omit:htmlwindowname='NUMERO_GRUPO' title='IBM BPM Portal*' /&gt;&lt;webctrl id='singleselect-Dictamen_Tecnico1:Input_Group1' tag='SELECT' innertext='*A*' /&gt;" TimeoutMS="180000" WaitForReady="INTERACTIVE" />
+                      </ui:UiElementExists.Target>
+                    </ui:UiElementExists>
+                    <ui:GetAttribute ContinueOnError="{x:Null}" Attribute="items" DisplayName="Obtener las colonias x2" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="GetAttribute_2">
+                      <ui:GetAttribute.Result>
+                        <OutArgument x:TypeArguments="s:String[]">[colonias]</OutArgument>
+                      </ui:GetAttribute.Result>
+                      <ui:GetAttribute.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="9356631a822866e5a30cdc919d92c867" Selector="&lt;html app='chrome.exe' omit:htmlwindowname='NUMERO_GRUPO' title='IBM BPM Portal*' /&gt;&lt;webctrl id='singleselect-Dictamen_Tecnico1:Input_Group1' tag='SELECT' innertext='*A*' /&gt;" TimeoutMS="180000" WaitForReady="INTERACTIVE" />
+                      </ui:GetAttribute.Target>
+                    </ui:GetAttribute>
+                    <ui:SelectItem ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" Items="{x:Null}" DisplayName="Seleccionar la primer colonia x2" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="SelectItem_2" Item="[colonias(0).toString]">
+                      <ui:SelectItem.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="20e9abae8573a4bfdfcf10e8ee9aa067" Selector="&lt;html app='chrome.exe' omit:htmlwindowname='NUMERO_GRUPO' title='IBM BPM Portal*' /&gt;&lt;webctrl id='singleselect-Dictamen_Tecnico1:Input_Group1' tag='SELECT' innertext='*A*' /&gt;" TimeoutMS="180000" WaitForReady="INTERACTIVE" />
+                      </ui:SelectItem.Target>
+                    </ui:SelectItem>
+                  </Sequence>
+                  <FlowStep.Next>
+                    <FlowStep x:Name="__ReferenceID1">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <av:Point x:Key="ShapeLocation">50,597</av:Point>
+                          <av:Size x:Key="ShapeSize">200,66</av:Size>
+                          <av:PointCollection x:Key="ConnectorLocation">150,663 140,663 140,677</av:PointCollection>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <Sequence DisplayName="Inmobiliario" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                        <Sequence.Variables>
+                          <Variable x:TypeArguments="s:String[]" Name="colonias" />
+                        </Sequence.Variables>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click dictamen técnico" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_5" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
+                          <ui:Click.CursorPosition>
+                            <ui:CursorPosition Position="Center">
+                              <ui:CursorPosition.OffsetX>
+                                <InArgument x:TypeArguments="x:Int32" />
+                              </ui:CursorPosition.OffsetX>
+                              <ui:CursorPosition.OffsetY>
+                                <InArgument x:TypeArguments="x:Int32" />
+                              </ui:CursorPosition.OffsetY>
+                            </ui:CursorPosition>
+                          </ui:Click.CursorPosition>
+                          <ui:Click.Target>
+                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="9e4611e7cb8893c1fab5794994ba9261" Selector="&lt;html app='chrome.exe' omit:htmlwindowname='NUMERO_GRUPO' title='IBM BPM Portal*' /&gt;&lt;webctrl id='checkbox-input-Dictamen_Tecnico1:Checkbox1' /&gt;" TimeoutMS="180000" WaitForReady="INTERACTIVE" />
+                          </ui:Click.Target>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </ui:Click>
+                        <ui:TypeInto ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Escribir nombre del proyecto" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_11" SimulateType="True" Text="Testing inmobiliario">
+                          <ui:TypeInto.Target>
+                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="cb7c9abc239bdb08fa0686850069f086" Selector="&lt;html app='chrome.exe' omit:htmlwindowname='NUMERO_GRUPO' title='IBM BPM Portal*' /&gt;&lt;webctrl id='text-input-Dictamen_Tecnico1:Text1' /&gt;" TimeoutMS="180000" WaitForReady="INTERACTIVE" />
+                          </ui:TypeInto.Target>
+                        </ui:TypeInto>
+                        <ui:TypeInto ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="descripción del proyecto" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_12" SimulateType="True" Text="Testing de inmobiliario">
+                          <ui:TypeInto.Target>
+                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="1c480abba074127d132860ae503130b1" Selector="&lt;html app='chrome.exe' omit:htmlwindowname='NUMERO_GRUPO' title='IBM BPM Portal*' /&gt;&lt;webctrl id='textarea-textarea-Dictamen_Tecnico1:Text_Area1' /&gt;" TimeoutMS="180000" WaitForReady="INTERACTIVE" />
+                          </ui:TypeInto.Target>
+                        </ui:TypeInto>
+                        <ui:TypeInto ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="calle" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_13" SimulateType="True" Text="Calle 8">
+                          <ui:TypeInto.Target>
+                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="66514356e9cded1306810fb73be931f3" Selector="&lt;html app='chrome.exe' omit:htmlwindowname='NUMERO_GRUPO' title='IBM BPM Portal*' /&gt;&lt;webctrl id='text-input-Dictamen_Tecnico1:calle_Participante2' /&gt;" TimeoutMS="180000" WaitForReady="INTERACTIVE" />
+                          </ui:TypeInto.Target>
+                        </ui:TypeInto>
+                        <ui:TypeInto ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="numero exterior" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_14" SimulateType="True" Text="8">
+                          <ui:TypeInto.Target>
+                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="84e0576df3059769d8324ead8be9edb4" Selector="&lt;html app='chrome.exe' omit:htmlwindowname='NUMERO_GRUPO' title='IBM BPM Portal*' /&gt;&lt;webctrl id='text-input-Dictamen_Tecnico1:numExterior_P2' /&gt;" TimeoutMS="180000" WaitForReady="INTERACTIVE" />
+                          </ui:TypeInto.Target>
+                        </ui:TypeInto>
+                        <ui:TypeInto ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="codigo postal" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_15" SimulateType="True" Text="62906">
+                          <ui:TypeInto.Target>
+                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="a426bb92037b34e2d0acb6fe677aa21d" Selector="&lt;html app='chrome.exe' omit:htmlwindowname='NUMERO_GRUPO' title='IBM BPM Portal*' /&gt;&lt;webctrl id='text-input-Dictamen_Tecnico1:codigo_Postal_3' /&gt;" TimeoutMS="180000" WaitForReady="INTERACTIVE" />
+                          </ui:TypeInto.Target>
+                        </ui:TypeInto>
+                        <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Consultar" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_6" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
+                          <ui:Click.CursorPosition>
+                            <ui:CursorPosition Position="Center">
+                              <ui:CursorPosition.OffsetX>
+                                <InArgument x:TypeArguments="x:Int32" />
+                              </ui:CursorPosition.OffsetX>
+                              <ui:CursorPosition.OffsetY>
+                                <InArgument x:TypeArguments="x:Int32" />
+                              </ui:CursorPosition.OffsetY>
+                            </ui:CursorPosition>
+                          </ui:Click.CursorPosition>
+                          <ui:Click.Target>
+                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="8e0aa12cfc22e93fa89baca0a75938c1" Selector="&lt;html app='chrome.exe' omit:htmlwindowname='NUMERO_GRUPO' title='IBM BPM Portal*' /&gt;&lt;webctrl id='button-button-Dictamen_Tecnico1:Button4' /&gt;" TimeoutMS="180000" WaitForReady="INTERACTIVE" />
+                          </ui:Click.Target>
+                        </ui:Click>
+                        <ui:UiElementExists Exists="{x:Null}" DisplayName="Esperar a que cargue  las colonias x3" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="UiElementExists_3">
+                          <ui:UiElementExists.Target>
+                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="0c27d8c0887baf8e3852224012220961" Selector="&lt;html app='chrome.exe' omit:htmlwindowname='NUMERO_GRUPO' title='IBM BPM Portal*' /&gt;&lt;webctrl id='singleselect-Dictamen_Tecnico1:Input_Group2' tag='SELECT' innertext='*A*' /&gt;" TimeoutMS="180000" WaitForReady="INTERACTIVE" />
+                          </ui:UiElementExists.Target>
+                        </ui:UiElementExists>
+                        <ui:GetAttribute ContinueOnError="{x:Null}" Attribute="items" DisplayName="Obtener las colonias x3" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="GetAttribute_3">
+                          <ui:GetAttribute.Result>
+                            <OutArgument x:TypeArguments="s:String[]">[colonias]</OutArgument>
+                          </ui:GetAttribute.Result>
+                          <ui:GetAttribute.Target>
+                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="9356631a822866e5a30cdc919d92c867" Selector="&lt;html app='chrome.exe' omit:htmlwindowname='NUMERO_GRUPO' title='IBM BPM Portal*' /&gt;&lt;webctrl id='singleselect-Dictamen_Tecnico1:Input_Group2' tag='SELECT' innertext='*A*' /&gt;" TimeoutMS="180000" WaitForReady="INTERACTIVE" />
+                          </ui:GetAttribute.Target>
+                        </ui:GetAttribute>
+                        <ui:SelectItem ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" Items="{x:Null}" DisplayName="Seleccionar la primer colonia x3" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="SelectItem_3" Item="[colonias(0).toString]">
+                          <ui:SelectItem.Target>
+                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="20e9abae8573a4bfdfcf10e8ee9aa067" Selector="&lt;html app='chrome.exe' omit:htmlwindowname='NUMERO_GRUPO' title='IBM BPM Portal*' /&gt;&lt;webctrl id='singleselect-Dictamen_Tecnico1:Input_Group2' /&gt;" TimeoutMS="180000" WaitForReady="INTERACTIVE" />
+                          </ui:SelectItem.Target>
+                        </ui:SelectItem>
+                      </Sequence>
+                      <FlowStep.Next>
+                        <FlowStep x:Name="__ReferenceID2">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <av:Point x:Key="ShapeLocation">40,677</av:Point>
+                              <av:Size x:Key="ShapeSize">200,66</av:Size>
+                              <av:PointCollection x:Key="ConnectorLocation">140,743 140,773 300,773 300,780</av:PointCollection>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <Sequence DisplayName="Secuencia de solicitud" sap:VirtualizedContainerService.HintSize="418,2518" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click solicitar dictamen turismo" sap:VirtualizedContainerService.HintSize="376,106" sap2010:WorkflowViewState.IdRef="Click_7" KeyModifiers="None" MouseButton="BTN_LEFT">
+                              <ui:Click.CursorPosition>
+                                <ui:CursorPosition Position="Center">
+                                  <ui:CursorPosition.OffsetX>
+                                    <InArgument x:TypeArguments="x:Int32" />
+                                  </ui:CursorPosition.OffsetX>
+                                  <ui:CursorPosition.OffsetY>
+                                    <InArgument x:TypeArguments="x:Int32" />
+                                  </ui:CursorPosition.OffsetY>
+                                </ui:CursorPosition>
+                              </ui:Click.CursorPosition>
+                              <ui:Click.Target>
+                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="fbf55fff0a4e40104cf9018cdf1c79f3" Selector="&lt;html app='chrome.exe' omit:htmlwindowname='NUMERO_GRUPO' title='IBM BPM Portal*' /&gt;&lt;webctrl id='button-button-Dictamen_Tecnico1:Button10' /&gt;" TimeoutMS="180000" WaitForReady="INTERACTIVE" />
+                              </ui:Click.Target>
+                            </ui:Click>
+                            <ui:ImageFound Found="{x:Null}" DisplayName="Image Exists seguro de solicitar el dictamen turismo" sap:VirtualizedContainerService.HintSize="376,106" sap2010:WorkflowViewState.IdRef="ImageFound_1">
+                              <ui:ImageFound.Image>
+                                <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" Profile="Basic" TargetImageBase64="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" />
+                              </ui:ImageFound.Image>
+                              <ui:ImageFound.Target>
+                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" TimeoutMS="300000">
+                                  <ui:Target.WaitForReady>
+                                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                                  </ui:Target.WaitForReady>
+                                </ui:Target>
+                              </ui:ImageFound.Target>
+                            </ui:ImageFound>
+                            <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click aceptar solicitar dictamen técnico" sap:VirtualizedContainerService.HintSize="376,106" sap2010:WorkflowViewState.IdRef="Click_8" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
+                              <ui:Click.CursorPosition>
+                                <ui:CursorPosition Position="Center">
+                                  <ui:CursorPosition.OffsetX>
+                                    <InArgument x:TypeArguments="x:Int32" />
+                                  </ui:CursorPosition.OffsetX>
+                                  <ui:CursorPosition.OffsetY>
+                                    <InArgument x:TypeArguments="x:Int32" />
+                                  </ui:CursorPosition.OffsetY>
+                                </ui:CursorPosition>
+                              </ui:Click.CursorPosition>
+                              <ui:Click.Target>
+                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="f33c7448f511e65b30e702fdb90ed9c4" Selector="&lt;html app='chrome.exe' omit:htmlwindowname='NUMERO_GRUPO' title='IBM BPM Portal*' /&gt;&lt;webctrl id='button-button-Dictamen_Tecnico1:Button17' /&gt;" TimeoutMS="180000" WaitForReady="INTERACTIVE" />
+                              </ui:Click.Target>
+                            </ui:Click>
+                            <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click solicitar dictamen agropecuario" sap:VirtualizedContainerService.HintSize="376,106" sap2010:WorkflowViewState.IdRef="Click_10" KeyModifiers="None" MouseButton="BTN_LEFT">
+                              <ui:Click.CursorPosition>
+                                <ui:CursorPosition Position="Center">
+                                  <ui:CursorPosition.OffsetX>
+                                    <InArgument x:TypeArguments="x:Int32" />
+                                  </ui:CursorPosition.OffsetX>
+                                  <ui:CursorPosition.OffsetY>
+                                    <InArgument x:TypeArguments="x:Int32" />
+                                  </ui:CursorPosition.OffsetY>
+                                </ui:CursorPosition>
+                              </ui:Click.CursorPosition>
+                              <ui:Click.Target>
+                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="1385e04b618c3edb66c1ad451a6f816a" Selector="&lt;html app='chrome.exe' omit:htmlwindowname='NUMERO_GRUPO' title='IBM BPM Portal*' /&gt;&lt;webctrl id='button-button-Dictamen_Tecnico1:Button14' /&gt;" TimeoutMS="180000" WaitForReady="INTERACTIVE" />
+                              </ui:Click.Target>
+                            </ui:Click>
+                            <ui:ImageFound Found="{x:Null}" DisplayName="Image Exists seguro de solicitar el dictamen agropecuario" sap:VirtualizedContainerService.HintSize="376,106" sap2010:WorkflowViewState.IdRef="ImageFound_3">
+                              <ui:ImageFound.Image>
+                                <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" Profile="Basic" TargetImageBase64="iVBORw0KGgoAAAANSUhEUgAAAZ8AAAAYCAYAAAAlIPBAAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAfESURBVHhe7ZoxklQ5EET3TlyDM8ANuAAHwMfHxsbGBBcDA5fAxMPE7I2c4LE5SZXUPU337jb1IhTT+pKqslL6rR12/joMwzAMw5WZy2cYhmG4OnP5DMMwDFdnLp9hGIbh6szlMwzDMFyduXyGYRiGq/Ofvnw+f/58ePz48eHly5c/ngzDMAy3wFmXz5s3bw6PHj0q29OnTw/fvn37MXPNhw8fygtGz54/f374/v37jyd/Fqpb9Z/i5fAPnE/9rPor5Ld8d++1Hy9evLj7j6JrcYpmgW7em6qOHd37ONwGDzkTgl8GHvIdX/GvXz466Jo/h/1X5vI5j1O/uFewF3r5/k+Xz6nM+zhU5MVDO+e76ajLp3sBjn0xmEfjYHPQaRTCC+RjmtuRcfLFS+O6OtTev39/7wsfLW4y+YhD/GfPnt01H1OtxD7mi8u1vH79+pfLJ73ZfUl47Vr36tWru8/4iT76xHcPV/51ta90rvxyMkbl38pfvCR29gXPcj251b5+/XrnB/M8hq9Xc98Y029Lil3pF/hBjEqfP0vcg7dv397bP69Dn0W3N/kesSbnq3Fe0K58qlNj1Ol1+f4L9y19oR6df9a7/gqPp+b7IHx89Y7rueagN/fG6/B1vFc5R6xqFek73gq8WL2fq9oZ8zP48ePHn7rxVPOpXc3HBDoUD4jtz07h4pdPGkvTmhxTwdWLzpibAXk4aN3hobGZqUFznzx58jMfm+35WUPdmUOf9YwNy0buJLXQUkuOd/5389XQsDvcO/+q2jncPl9t55eTLwMNL8TOX+VTn7xd3xta8EGtu3y6/eri46mz85cYxEwyB41cXoc+08/58jLr6WpnTLE6/XqH8nnW5I14ottXPa/Y7UOOS1f1jvscrelqS29zXI3cu1o77Xi1ez+79V1+rdOeKgY6undNted7Cb4GbadysX9246BgDmYkjHcHiyI7Izgg3Xo0VpunzxiIPvSwMcyn73NYgwbXyLNqnXKqLsc3M+MSI/OyxnM4mc9zaEzsDvfKP41Xte90VmuSXJOkNyLrRTs6vE8drqEaJz56VprJz1kkHnoqmLPzXz8T5vr69CDrIB4aczxrSNIH9oG+a0IzZ0x91pNPkDPnoyFr2uE1kM/jM44G16wxcN3CY2letY7YmqfxVa0Zz8epHQ2Mk1PrKi9yvfKo7/OJgS7W+BzWEcdhzzWONw/ht/zmUzVEU6iPYaRIsxyMV+teet9Amuv0GN6k6cuXL/c2QRCPZ7lRAs3kYTOqzXMtGdup8uT8zu/Om0oDz9gD/KGPDmpZ+ae5q9qzobNaU5FxqhxeW+cXc7y/04APxCJ25TWx0MlZzvwVO39XMaoa0M2zrCP3Ozn1fUwNlU9eA3qI442cqTFr6qj2IesXaORZNad6JvDHa3FdHpvvF/R467Qlx3pR1S6q85N5M4fo8vA85z+E7eWDmVWyqrCOzhw2kz75OLzZ73BT1DANY7Mp3urfPnlGXJ+TdVMbOQV1uTcZ26ny5HzyVq06CKlT8Iz5efCylpV/mlvVvtNZrVnhGsh7jL9Zv/d3GnI/iE1+gQbObvYzf8XO31WMqgZ08yzrIB/7nWQNWXf2U0OOC68BPepnI0ZqzJqS1T5k/QKNPDtmDhDba+nWrS4fzcl//qpIL9LvVe2iOj+pmznkEMwhD5Cf+OewvHwwUsJShKgK25GFp1lpLvP9MK9AM/MrY8Hrowb0oC/zV2tSsz8jjiC2z4NjtNA/1u/MRy16pjHB4Samfvoa+sxPqtp3Oqs1x4AW/TzGX58vvF95wXp5wjjxFU9xlVO5Bd6xnvic5cxfwRxiJKsYVQ3Mx4OsI8ezLvdA5F4Rj/k5nvGE18A4eirSV3KSI1ntA/nIL6gRDcRPTcRlncdSDNbRF8TWPI2vaq20pZ+pgdpyvKrd+6wXWa9rVkyRcS5Be/m4MZ0ABFaNw9fNISaFq2nNu3fv7n76XMY4zI6v94aRbGaOV/nVNNf/Z6T7kI0NzQMDylGt46AkXS1o4dDkeOaFbr4aGrr9Oda/qvadzs4vp4uhdVovdv5SG/vU9b0Rn/xq+iyd0ss85e7y403mq9j5u4tR1aCGt1lH5yv5/AxK1+59zL3EJ8ZF1tBpZt/wlT6au/Oy2wevSU3adn9UJLq9SW9zXO3YWlNbjnfr0bCrnfXoEVkve5YxfA8BvcQ/h/byyUNV0RmjVh0+msf0wlnj81UkBbuBTm7g7hBlTeTTnE+fPt2Newxfr+f6c1Z9Rs/KKz8c1LfCa9efR6YWDg5zstbEtSuW/nxVnznc7r9a/qmuWPnX1b7SufLLyRhq6IaVv3jJPmVfuN9qxCe36/ZzpryuT7nz7FT5Klb+HhPDPdCf/Co/Mao6XHfm00/19Rw/3aN8H3MvWe97UdXgMXOMenIvXKfj9VT7IMhXjbPe50PujbSBrzv2T63VvFbh5yrHfT/Uuj+l11hVG7k9ZlVv5vExB61Z40PYXj4ugsQUfgtw0DGz2phbgsPIiz0Mt86l3vFb/664NMv/58OmZbulLy6+jLNxUG+NuXyGP41LveNz+ZzH8vIReQHd4pdW1nhLv9klc/kMfyKXeMfn8jmP7eUzDMMwDL+buXyGYRiGqzOXzzAMw3B15vIZhmEYrszh8Ddo0qeKZFtwgQAAAABJRU5ErkJggg==" />
+                              </ui:ImageFound.Image>
+                              <ui:ImageFound.Target>
+                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" TimeoutMS="300000">
+                                  <ui:Target.WaitForReady>
+                                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                                  </ui:Target.WaitForReady>
+                                </ui:Target>
+                              </ui:ImageFound.Target>
+                            </ui:ImageFound>
+                            <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click aceptar solicitar dictamen agropecuario" sap:VirtualizedContainerService.HintSize="376,106" sap2010:WorkflowViewState.IdRef="Click_11" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
+                              <ui:Click.CursorPosition>
+                                <ui:CursorPosition Position="Center">
+                                  <ui:CursorPosition.OffsetX>
+                                    <InArgument x:TypeArguments="x:Int32" />
+                                  </ui:CursorPosition.OffsetX>
+                                  <ui:CursorPosition.OffsetY>
+                                    <InArgument x:TypeArguments="x:Int32" />
+                                  </ui:CursorPosition.OffsetY>
+                                </ui:CursorPosition>
+                              </ui:Click.CursorPosition>
+                              <ui:Click.Target>
+                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="f33c7448f511e65b30e702fdb90ed9c4" Selector="&lt;html app='chrome.exe' omit:htmlwindowname='NUMERO_GRUPO' title='IBM BPM Portal*' /&gt;&lt;webctrl id='button-button-Dictamen_Tecnico1:Button8' /&gt;" TimeoutMS="180000" WaitForReady="INTERACTIVE" />
+                              </ui:Click.Target>
+                            </ui:Click>
+                            <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click solicitar dictamen inmobiliario" sap:VirtualizedContainerService.HintSize="376,106" sap2010:WorkflowViewState.IdRef="Click_13" KeyModifiers="None" MouseButton="BTN_LEFT">
+                              <ui:Click.CursorPosition>
+                                <ui:CursorPosition Position="Center">
+                                  <ui:CursorPosition.OffsetX>
+                                    <InArgument x:TypeArguments="x:Int32" />
+                                  </ui:CursorPosition.OffsetX>
+                                  <ui:CursorPosition.OffsetY>
+                                    <InArgument x:TypeArguments="x:Int32" />
+                                  </ui:CursorPosition.OffsetY>
+                                </ui:CursorPosition>
+                              </ui:Click.CursorPosition>
+                              <ui:Click.Target>
+                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="fbf55fff0a4e40104cf9018cdf1c79f3" Selector="&lt;html app='chrome.exe' omit:htmlwindowname='NUMERO_GRUPO' title='IBM BPM Portal*' /&gt;&lt;webctrl id='button-button-Dictamen_Tecnico1:Button19' /&gt;" TimeoutMS="180000" WaitForReady="INTERACTIVE" />
+                              </ui:Click.Target>
+                            </ui:Click>
+                            <ui:ImageFound Found="{x:Null}" DisplayName="Image Exists seguro de solicitar el dictamen inmobiliario" sap:VirtualizedContainerService.HintSize="376,106" sap2010:WorkflowViewState.IdRef="ImageFound_5">
+                              <ui:ImageFound.Image>
+                                <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" Profile="Basic" TargetImageBase64="iVBORw0KGgoAAAANSUhEUgAAAY4AAAAWCAYAAADXRnvmAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAdVSURBVHhe7Zo7UiRJEET3TlyDM8ANuAAHQEdHRkbmAEgjo4GKhojYa47NYxzfyKyq7t6dgQ03C4OsjI+HR1YnzPDXrtFoNBqNDeiLo9FoNBqb0BdHo9FoNDahL45Go9FobEJfHI1Go9HYhD/+4ri7u9udnJzsfvz48fNJo9FoNH4nDr44rq+v3z/YK7u8vNy9vb399JxDF4TM8fr6ujs/P//H8/8T0GCLlo1f4HzqBw+0lOn7JTw9Pe1OT08/aa84rdfEHwvewxrIT/68N/zwteU9ku9Xeu/o8Xf+gFmdl0TOIme7ddYV9skhvuKtOGwW/0dcHClm4xf64jgMx3gRwdaL51jY2oP8DnmfvuL7COdjzHlfrLk4Esc8n/uiujSwEa/VF8eowTWNz24zBo4huvb9+dLLmnnEy+H7Gq6G7KAP7am2f1hXByIPKvF8hW/2vuZDhxyy+/v7T1wE+OAjLjN471dXV++54CHT984L7T3vTL9R7zOe5BMf+WROkOfAdRCW9IWT8lS9Znyls569vLy8x+GXOfM5GGmTWKOv53U4B33VmdH36E1u1z91JbfzkKFH+nsf7HG2fN/jvL5AX+4v0I/s5ubmw0f+I8CbPsh9e3v7cQaPwdn3ct/Pi/JWPvDkWc4211nPe6DexcXFu2lfeTOHMOPNHrMWvBeeOf6TiwMfN14OhMRE9PHx8WPYbspTIUXBECdryHwAuX92dvZJtEpEYug7e9Ravorx5zJ6r1BxlSWX3B/pP9KG/mX63vUgZq1+Ve9LPDOnawtGOTgHa/SFm+pmr6P41Frr6uJ4eHgo45e0SazVt5rxqAdZzo/16EzoeTWXpfdxlI/3iHU1Fzd0Z065L6s0EODNfpVfdgjnUQw5R+dVBq+cBTyTt9ajfKN6cM2cS7wrwHPk86/+U5WL4wNIpJgJBOJgJRCmiufF8hfR/f2QIjR8qFfVx4cYdHChqVPFVQOpuGSOrEuM13DAS3ECvaAH8awFaipGOZV7tC9UvS/xZH/EW4BrpZWQ2gjkJQZu8s1eM55eOas594xPZLxQaeMgxnOO9EVLB74ejz/xaKKv1PN85ICj+1dIXZID+9TImuhIvEBN32ctZE8Jjxfwpyc913pfzrkW4Mm8ycFagNdIW3iSM9cO8tNDVU/wHGt4O9yfOhWO9htHZYijGH/OsECKCfwAyUaNpJ8sRfI9TNxzGB7Ds8oHztSp9KmeZW7HGi4jveUjX4f8FecHhGf4k9/jmZd6ZD/rycRFmPWeRp3RzB1w9Xj3X6Ov+2SvSxxyHhnv8H5d74qjg5zEuilWmOWoepCfP3OfWQ+gyikkV3ShHnyrGt4DupLHbcQxe0rAGY1SM3Ieypl44HXxIaeQcfjTR/LMtQA3PZeRa8RpK28Hsd5DhVUXB8RFQEQcVaMjQBYjJsXMZkfNJ/Ajv7il6G7Kx6/hnpuYWf3su9KhGk7mdlR10p86aYpTvEP+ivM9nimncpOfteDzYD/ryZKT97nEM2c+Q3Kg7hp9nVv2usQh55HxaElPuRYqbRzklE9a1UOi6kF+/sx9socKmTN1yDX1xFOoangPxGudJr8qPntKwBmNUjNy7ss544HXTV2EfJbaJk9fL+le1RO28gbal59rMMLixUFhFUFkRza+BvL1fClmrvHP5keAs0z/Nj0Tw/ujB+pTjwGRo4qpdKh4k7vScg0X1l5nBnilltmL+lOfHB5iWONfoep9iSf78FoDuMCVXmb6Ojd6pZfUIv3zxcz40T78Ml+FffUF2QP59AxtXetqP/twfyHX1MSfNZqnTkI1B+ITVTw14JCAo/yE1CxrbuXsumVO5o2OPn94USe1TJ6+Tl8400PODWzlvQ+mFwcFnHwCkpUplg/uap9GEEimGP0lhPthKRDweLccVlpVX5b/Oe46pJEjD4DgQ3ObDWzEFS4cltyn14T4pK9M/aivEUeZuAhL+lW9L/EkJzUqjLijxRp9nRtzXOo9tWad50B/8VP1OKo/wj76glEPspwf65Gu5Hc+6nfpfSQfs02dheyBtRu6VfHUoIcEnDM/a3IewpmYNHKMzryMHDmLrOFrn4Pb6HyCrbxBpcEI04uDglnAAcnKIFAdbj8AECYmLxvxUB1/IRMpcoqZ+15foA/Vf35+fv/qOVx8PedlYjjEswbZO5rM4Jrqwym55AHNXhPeu3jL33l4Pj3PP+cUZvqNep/xJJ/nqeC6y1K/JX2dG+fMfWbx1YvpOuh7X6sWfOlrpE3C83i8sJSDvuQjvpxNcpDbc6auvuf59HXpfSSXnnm8a1n1wDPPK1Tx1HCeDnokR9YjJ7Mk31bOxGHOx8/LMf4cN8+mnmkf3avzKWzlDSoNRlh1cTgxGhe57wAfDmKOBvIdQL9rDkej0WhUmF4c/qHqxo33XcANnVbdyl8dfXE0Go1Dsfif43l5fLdLQ6guyO/yG1WiL45Go3EoFi+ORqPRaDQcfXE0Go1GYxP64mg0Go3GBux2fwNEkl3ID45fCwAAAABJRU5ErkJggg==" />
+                              </ui:ImageFound.Image>
+                              <ui:ImageFound.Target>
+                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" TimeoutMS="300000">
+                                  <ui:Target.WaitForReady>
+                                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                                  </ui:Target.WaitForReady>
+                                </ui:Target>
+                              </ui:ImageFound.Target>
+                            </ui:ImageFound>
+                            <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click aceptar solicitar dictamen inmobiliario" sap:VirtualizedContainerService.HintSize="376,106" sap2010:WorkflowViewState.IdRef="Click_14" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
+                              <ui:Click.CursorPosition>
+                                <ui:CursorPosition Position="Center">
+                                  <ui:CursorPosition.OffsetX>
+                                    <InArgument x:TypeArguments="x:Int32" />
+                                  </ui:CursorPosition.OffsetX>
+                                  <ui:CursorPosition.OffsetY>
+                                    <InArgument x:TypeArguments="x:Int32" />
+                                  </ui:CursorPosition.OffsetY>
+                                </ui:CursorPosition>
+                              </ui:Click.CursorPosition>
+                              <ui:Click.Target>
+                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="f33c7448f511e65b30e702fdb90ed9c4" Selector="&lt;html app='chrome.exe' omit:htmlwindowname='NUMERO_GRUPO' title='IBM BPM Portal*' /&gt;&lt;webctrl id='button-button-Dictamen_Tecnico1:Button9' /&gt;" TimeoutMS="180000" WaitForReady="INTERACTIVE" />
+                              </ui:Click.Target>
+                            </ui:Click>
+                            <Sequence sap:VirtualizedContainerService.HintSize="376,344" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <ui:ImageFound Found="{x:Null}" DisplayName="Image Exists se inicio proceso turismo" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="ImageFound_2">
+                                <ui:ImageFound.Image>
+                                  <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" Profile="Basic" TargetImageBase64="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" />
+                                </ui:ImageFound.Image>
+                                <ui:ImageFound.Target>
+                                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" TimeoutMS="300000">
+                                    <ui:Target.WaitForReady>
+                                      <InArgument x:TypeArguments="ui:WaitForReady" />
+                                    </ui:Target.WaitForReady>
+                                  </ui:Target>
+                                </ui:ImageFound.Target>
+                              </ui:ImageFound>
+                              <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="click aceptar proceso turismo" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_9" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
+                                <ui:Click.CursorPosition>
+                                  <ui:CursorPosition Position="Center">
+                                    <ui:CursorPosition.OffsetX>
+                                      <InArgument x:TypeArguments="x:Int32" />
+                                    </ui:CursorPosition.OffsetX>
+                                    <ui:CursorPosition.OffsetY>
+                                      <InArgument x:TypeArguments="x:Int32" />
+                                    </ui:CursorPosition.OffsetY>
+                                  </ui:CursorPosition>
+                                </ui:Click.CursorPosition>
+                                <ui:Click.Target>
+                                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="406a1f2aadbd2b19c79accaef13ba91e" Selector="&lt;html app='chrome.exe' omit:htmlwindowname='NUMERO_GRUPO' title='IBM BPM Portal*' /&gt;&lt;webctrl id='button-button-Emergente1:okButton' /&gt;" TimeoutMS="180000" WaitForReady="INTERACTIVE" />
+                                </ui:Click.Target>
+                              </ui:Click>
+                            </Sequence>
+                            <Sequence sap:VirtualizedContainerService.HintSize="376,344" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <ui:ImageFound Found="{x:Null}" DisplayName="Image Exists se inicio proceso agropecuario" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="ImageFound_4">
+                                <ui:ImageFound.Image>
+                                  <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" Profile="Basic" TargetImageBase64="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" />
+                                </ui:ImageFound.Image>
+                                <ui:ImageFound.Target>
+                                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" TimeoutMS="300000">
+                                    <ui:Target.WaitForReady>
+                                      <InArgument x:TypeArguments="ui:WaitForReady" />
+                                    </ui:Target.WaitForReady>
+                                  </ui:Target>
+                                </ui:ImageFound.Target>
+                              </ui:ImageFound>
+                              <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="click aceptar proceso agropecuario" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_12" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
+                                <ui:Click.CursorPosition>
+                                  <ui:CursorPosition Position="Center">
+                                    <ui:CursorPosition.OffsetX>
+                                      <InArgument x:TypeArguments="x:Int32" />
+                                    </ui:CursorPosition.OffsetX>
+                                    <ui:CursorPosition.OffsetY>
+                                      <InArgument x:TypeArguments="x:Int32" />
+                                    </ui:CursorPosition.OffsetY>
+                                  </ui:CursorPosition>
+                                </ui:Click.CursorPosition>
+                                <ui:Click.Target>
+                                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="406a1f2aadbd2b19c79accaef13ba91e" Selector="&lt;html app='chrome.exe' omit:htmlwindowname='NUMERO_GRUPO' title='IBM BPM Portal*' /&gt;&lt;webctrl id='button-button-Emergente1:okButton' /&gt;" TimeoutMS="180000" WaitForReady="INTERACTIVE" />
+                                </ui:Click.Target>
+                              </ui:Click>
+                            </Sequence>
+                            <Sequence sap:VirtualizedContainerService.HintSize="376,344" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <ui:ImageFound Found="{x:Null}" DisplayName="Image Exists se inicio proceso inmobiliario" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="ImageFound_6">
+                                <ui:ImageFound.Image>
+                                  <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" Profile="Basic" TargetImageBase64="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" />
+                                </ui:ImageFound.Image>
+                                <ui:ImageFound.Target>
+                                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" TimeoutMS="300000">
+                                    <ui:Target.WaitForReady>
+                                      <InArgument x:TypeArguments="ui:WaitForReady" />
+                                    </ui:Target.WaitForReady>
+                                  </ui:Target>
+                                </ui:ImageFound.Target>
+                              </ui:ImageFound>
+                              <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="click aceptar proceso agropecuario" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_15" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
+                                <ui:Click.CursorPosition>
+                                  <ui:CursorPosition Position="Center">
+                                    <ui:CursorPosition.OffsetX>
+                                      <InArgument x:TypeArguments="x:Int32" />
+                                    </ui:CursorPosition.OffsetX>
+                                    <ui:CursorPosition.OffsetY>
+                                      <InArgument x:TypeArguments="x:Int32" />
+                                    </ui:CursorPosition.OffsetY>
+                                  </ui:CursorPosition>
+                                </ui:Click.CursorPosition>
+                                <ui:Click.Target>
+                                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="406a1f2aadbd2b19c79accaef13ba91e" Selector="&lt;html app='chrome.exe' omit:htmlwindowname='NUMERO_GRUPO' title='IBM BPM Portal*' /&gt;&lt;webctrl id='button-button-Emergente1:okButton' /&gt;" TimeoutMS="180000" WaitForReady="INTERACTIVE" />
+                                </ui:Click.Target>
+                              </ui:Click>
+                            </Sequence>
+                          </Sequence>
+                          <FlowStep.Next>
+                            <FlowStep x:Name="__ReferenceID4">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <av:Point x:Key="ShapeLocation">169,780</av:Point>
+                                  <av:Size x:Key="ShapeSize">262,60</av:Size>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_1">
+                                <Assign.To>
+                                  <OutArgument x:TypeArguments="x:Int32">[io_EstadoTerminado]</OutArgument>
+                                </Assign.To>
+                                <Assign.Value>
+                                  <InArgument x:TypeArguments="x:Int32">7</InArgument>
+                                </Assign.Value>
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                              </Assign>
+                            </FlowStep>
+                          </FlowStep.Next>
+                        </FlowStep>
+                      </FlowStep.Next>
+                    </FlowStep>
+                  </FlowStep.Next>
+                </FlowStep>
+              </FlowStep.Next>
+            </FlowStep>
+            <x:Reference>__ReferenceID0</x:Reference>
+            <x:Reference>__ReferenceID1</x:Reference>
+            <x:Reference>__ReferenceID2</x:Reference>
+            <FlowDecision x:Name="__ReferenceID7" Condition="[in_Dictamen.Equals(&quot;Si&quot;)]" DisplayName="Flow Decision" sap:VirtualizedContainerService.HintSize="79,87" sap2010:WorkflowViewState.IdRef="FlowDecision_1">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <av:Point x:Key="ShapeLocation">260.5,176.5</av:Point>
+                  <av:Size x:Key="ShapeSize">79,87</av:Size>
+                  <av:PointCollection x:Key="TrueConnector">260.5,220 140,220 140,244.5</av:PointCollection>
+                  <av:PointCollection x:Key="FalseConnector">339.5,220 360,220 360,750 300,750 300,780</av:PointCollection>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <FlowDecision.True>
+                <FlowStep x:Name="__ReferenceID5">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <av:Point x:Key="ShapeLocation">40,244.5</av:Point>
+                      <av:Size x:Key="ShapeSize">200,51</av:Size>
+                      <av:PointCollection x:Key="ConnectorLocation">140,295.5 140,324.5</av:PointCollection>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Clic solicitud" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="Click_16" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
+                    <ui:Click.CursorPosition>
+                      <ui:CursorPosition Position="Center">
+                        <ui:CursorPosition.OffsetX>
+                          <InArgument x:TypeArguments="x:Int32" />
+                        </ui:CursorPosition.OffsetX>
+                        <ui:CursorPosition.OffsetY>
+                          <InArgument x:TypeArguments="x:Int32" />
+                        </ui:CursorPosition.OffsetY>
+                      </ui:CursorPosition>
+                    </ui:Click.CursorPosition>
+                    <ui:Click.Target>
+                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="65317e949321c9fdbb3a2e5c165cf39b" Selector="&lt;html app='chrome.exe' omit:htmlwindowname='NUMERO_GRUPO' title='IBM BPM Portal*' /&gt;&lt;webctrl id='tabs-Tab_Section2-tab-text1' /&gt;" TimeoutMS="120000" WaitForReady="INTERACTIVE" />
+                    </ui:Click.Target>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </ui:Click>
+                  <FlowStep.Next>
+                    <FlowStep x:Name="__ReferenceID6">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <av:Point x:Key="ShapeLocation">40,324.5</av:Point>
+                          <av:Size x:Key="ShapeSize">200,51</av:Size>
+                          <av:PointCollection x:Key="ConnectorLocation">140,375.5 140,397</av:PointCollection>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Clic Dictamen" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="Click_17" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
+                        <ui:Click.CursorPosition>
+                          <ui:CursorPosition Position="Center">
+                            <ui:CursorPosition.OffsetX>
+                              <InArgument x:TypeArguments="x:Int32" />
+                            </ui:CursorPosition.OffsetX>
+                            <ui:CursorPosition.OffsetY>
+                              <InArgument x:TypeArguments="x:Int32" />
+                            </ui:CursorPosition.OffsetY>
+                          </ui:CursorPosition>
+                        </ui:Click.CursorPosition>
+                        <ui:Click.Target>
+                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="f76f0ce45a99c4aab02a9e5eb15aadc0" Selector="&lt;html app='chrome.exe' omit:htmlwindowname='NUMERO_GRUPO' title='IBM BPM Portal*' /&gt;&lt;webctrl id='tabs-Tab_Section4-tab-text5' /&gt;" TimeoutMS="120000" WaitForReady="INTERACTIVE" />
+                        </ui:Click.Target>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </ui:Click>
+                      <FlowStep.Next>
+                        <x:Reference>__ReferenceID3</x:Reference>
+                      </FlowStep.Next>
+                    </FlowStep>
+                  </FlowStep.Next>
+                </FlowStep>
+              </FlowDecision.True>
+              <FlowDecision.False>
+                <x:Reference>__ReferenceID4</x:Reference>
+              </FlowDecision.False>
+            </FlowDecision>
+            <x:Reference>__ReferenceID4</x:Reference>
+            <x:Reference>__ReferenceID5</x:Reference>
+            <x:Reference>__ReferenceID6</x:Reference>
+            <FlowStep x:Name="__ReferenceID8">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <av:Point x:Key="ShapeLocation">200,97</av:Point>
+                  <av:Size x:Key="ShapeSize">200,66</av:Size>
+                  <av:PointCollection x:Key="ConnectorLocation">300,163 300,176.5</av:PointCollection>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <Sequence DisplayName="ir al principio" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click activar de nuevo" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_18" KeyModifiers="None" MouseButton="BTN_LEFT">
+                  <ui:Click.CursorPosition>
+                    <ui:CursorPosition Position="Center">
+                      <ui:CursorPosition.OffsetX>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:CursorPosition.OffsetX>
+                      <ui:CursorPosition.OffsetY>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:CursorPosition.OffsetY>
+                    </ui:CursorPosition>
+                  </ui:Click.CursorPosition>
+                  <ui:Click.Target>
+                    <ui:Target Element="{x:Null}" InformativeScreenshot="5f9b8617ff52f3467716d34422ac7938" Selector="&lt;webctrl src='https://15.128.91.14:8443/teamworks/process.lsw?zWorkflowState=1*' tag='IFRAME' /&gt;">
+                      <ui:Target.ClippingRegion>
+                        <ui:Region Rectangle="3, 175, 40, 46" />
+                      </ui:Target.ClippingRegion>
+                      <ui:Target.TimeoutMS>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:Target.TimeoutMS>
+                      <ui:Target.WaitForReady>
+                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                      </ui:Target.WaitForReady>
+                    </ui:Target>
+                  </ui:Click.Target>
+                </ui:Click>
+                <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="ir al principio de la pagina" sap:VirtualizedContainerService.HintSize="334,154" sap2010:WorkflowViewState.IdRef="SendHotkey_1" Key="home" KeyModifiers="None" SpecialKey="True">
+                  <ui:SendHotkey.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="0529136d912487b03730ff11326cab23" Selector="&lt;webctrl src='https://15.128.91.14:8443/teamworks/process.lsw?zWorkflowState=1*' tag='IFRAME' /&gt;&lt;webctrl id='coach_frame*' tag='IFRAME' /&gt;">
+                      <ui:Target.TimeoutMS>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:Target.TimeoutMS>
+                      <ui:Target.WaitForReady>
+                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                      </ui:Target.WaitForReady>
+                    </ui:Target>
+                  </ui:SendHotkey.Target>
+                </ui:SendHotkey>
+              </Sequence>
+              <FlowStep.Next>
+                <x:Reference>__ReferenceID7</x:Reference>
+              </FlowStep.Next>
+            </FlowStep>
+          </Flowchart>
+        </ActivityAction>
+      </ui:BrowserScope.Body>
+    </ui:BrowserScope>
+  </Sequence>
+</Activity>

@@ -1,0 +1,352 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="ComplementoAltamiraPFAE" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="in_Cliente" Type="InArgument(sd:DataRow)" />
+  </x:Members>
+  <mva:VisualBasic.Settings>
+    <x:Null />
+  </mva:VisualBasic.Settings>
+  <sap:VirtualizedContainerService.HintSize>851,2641</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>ComplementoAltamiraPFAE_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="21">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="32">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.Entity</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap2010:Annotation.AnnotationText="Llena todos los datos del complemento altamira de una persona fisica con actividad empresarial&#xA;&#xA;&#xA;condicion: se tiene que estar dentro de la pantalla integracion de informacion y se tiene que tener llenos los datos de Datos generales" DisplayName="ComplementoAltamiraPFAE" sap:VirtualizedContainerService.HintSize="831,2541" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Attach Process portal" sap:VirtualizedContainerService.HintSize="789,2377" sap2010:WorkflowViewState.IdRef="BrowserScope_2" InformativeScreenshot="f994aa5a4a6324be622fec1cff0fcf76" Selector="&lt;html app='chrome.exe' title='IBM BPM Portal - Step: Integración de información' /&gt;">
+      <ui:BrowserScope.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Proceso de llenado de datos generales" sap:VirtualizedContainerService.HintSize="755,2231" sap2010:WorkflowViewState.IdRef="Sequence_17">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:SelectItem ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Seleccionar Entidad de nacimiento" sap:VirtualizedContainerService.HintSize="713,134" sap2010:WorkflowViewState.IdRef="SelectItem_1" Item="[in_Cliente(7).ToString.trim]">
+              <ui:SelectItem.Items>
+                <scg:List x:TypeArguments="x:String" Capacity="32">
+                  <x:String>CD. DE MEXICO</x:String>
+                  <x:String>AGUASCALIENTES</x:String>
+                  <x:String>B.CALIFORNIA N.</x:String>
+                  <x:String>B.CALIFORNIA S.</x:String>
+                  <x:String>CAMPECHE</x:String>
+                  <x:String>COAHUILA</x:String>
+                  <x:String>COLIMA</x:String>
+                  <x:String>CHIAPAS</x:String>
+                  <x:String>CHIHUAHUA</x:String>
+                  <x:String>DURANGO</x:String>
+                  <x:String>GUANAJUATO</x:String>
+                  <x:String>GUERRERO</x:String>
+                  <x:String>HIDALGO</x:String>
+                  <x:String>JALISCO</x:String>
+                  <x:String>EDO DE MEXICO</x:String>
+                  <x:String>MICHOACAN</x:String>
+                  <x:String>OAXACA</x:String>
+                  <x:String>MORELOS</x:String>
+                  <x:String>NAYARIT</x:String>
+                  <x:String>NUEVO LEON</x:String>
+                  <x:String>PUEBLA</x:String>
+                  <x:String>QUERETARO</x:String>
+                  <x:String>QUINTANA ROO</x:String>
+                  <x:String>SAN LUIS POTOSI</x:String>
+                  <x:String>SINALOA</x:String>
+                  <x:String>SONORA</x:String>
+                  <x:String>TABASCO</x:String>
+                  <x:String>TAMAULIPAS</x:String>
+                  <x:String>TLAXCALA</x:String>
+                  <x:String>VERACRUZ</x:String>
+                  <x:String>YUCATAN</x:String>
+                  <x:String>ZACATECAS</x:String>
+                </scg:List>
+              </ui:SelectItem.Items>
+              <ui:SelectItem.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="04167c6d5670adb68982a1084f1d4419" Selector="&lt;webctrl id='singleselect-Domicilio_Fiscal1:entidadNacpfae' tag='SELECT' /&gt;" TimeoutMS="180000" WaitForReady="INTERACTIVE" />
+              </ui:SelectItem.Target>
+            </ui:SelectItem>
+            <ui:SelectItem ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Seleccionar Pais de nacimiento" sap:VirtualizedContainerService.HintSize="713,134" sap2010:WorkflowViewState.IdRef="SelectItem_2" Item="MEXICO">
+              <ui:SelectItem.Items>
+                <scg:List x:TypeArguments="x:String" Capacity="50">
+                  <x:String>ISLAS SALOMON</x:String>
+                  <x:String>ISLANDIA</x:String>
+                  <x:String>ISRAEL</x:String>
+                  <x:String>ITALIA</x:String>
+                  <x:String>ISLAS TURCAS Y CAICOS</x:String>
+                  <x:String>ISLAS DE ULTRAMAR MENORES DE ESTADOS UNI</x:String>
+                  <x:String>ISLAS VIRGENES DE ESTADOS UNIDOS</x:String>
+                  <x:String>ISLAS VIRGENES BRITANICAS</x:String>
+                  <x:String>ISLAS WALLIS Y FUTUNA</x:String>
+                  <x:String>JAMAICA</x:String>
+                  <x:String>JAPON</x:String>
+                  <x:String>JERSEY</x:String>
+                  <x:String>JORDANIA</x:String>
+                  <x:String>KAZAJSTAN</x:String>
+                  <x:String>KENYA</x:String>
+                  <x:String>KIRGUISTAN</x:String>
+                  <x:String>KIRIBATI</x:String>
+                  <x:String>KUWAIT</x:String>
+                  <x:String>LAOS</x:String>
+                  <x:String>LESOTO</x:String>
+                  <x:String>LETONIA</x:String>
+                  <x:String>LIBANO</x:String>
+                  <x:String>LIECHTENSTEIN</x:String>
+                  <x:String>LIBIA</x:String>
+                  <x:String>LIBERIA</x:String>
+                  <x:String>LITUANIA</x:String>
+                  <x:String>LUXEMBURGO</x:String>
+                  <x:String>MACAO</x:String>
+                  <x:String>MADAGASCAR</x:String>
+                  <x:String>MACEDONIA</x:String>
+                  <x:String>MALI</x:String>
+                  <x:String>MALASIA</x:String>
+                  <x:String>MAURITANIA</x:String>
+                  <x:String>MARRUECOS</x:String>
+                  <x:String>MARTINICA</x:String>
+                  <x:String>MAURICIO</x:String>
+                  <x:String>MALAWI</x:String>
+                  <x:String>MAYOTTE</x:String>
+                  <x:String>MEXICO</x:String>
+                  <x:String>MICRONESIA</x:String>
+                  <x:String>MALTA</x:String>
+                  <x:String>MONACO</x:String>
+                  <x:String>MONTENEGRO</x:String>
+                  <x:String>MOLDAVIA</x:String>
+                  <x:String>MONGOLIA</x:String>
+                  <x:String>MONTSERRAT</x:String>
+                  <x:String>MOZAMBIQUE</x:String>
+                  <x:String>NAMIBIA</x:String>
+                  <x:String>NAURU</x:String>
+                  <x:String>NUEVA CALEDONIA</x:String>
+                </scg:List>
+              </ui:SelectItem.Items>
+              <ui:SelectItem.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="c8a2a78f2c5e00fc0e276b744f285227" Selector="&lt;webctrl id='singleselect-Domicilio_Fiscal1:paispfae' tag='SELECT' /&gt;" TimeoutMS="180000" WaitForReady="INTERACTIVE" />
+              </ui:SelectItem.Target>
+            </ui:SelectItem>
+            <ui:TypeInto ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" Activate="True" DisplayName="Escribir Fecha alta SHCP" EmptyField="True" sap:VirtualizedContainerService.HintSize="713,134" sap2010:WorkflowViewState.IdRef="TypeInto_1" SendWindowMessages="True" SimulateType="False" Text="[in_Cliente(3).ToString.trim]">
+              <ui:TypeInto.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="9570effae1d90f8e3177137f47b88526" Selector="&lt;webctrl id='datetimepicker-input-Domicilio_Fiscal1:FechaIngreso' tag='INPUT' /&gt;" TimeoutMS="120000" WaitForReady="INTERACTIVE" />
+              </ui:TypeInto.Target>
+            </ui:TypeInto>
+            <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click cerrar cuadro shcp" sap:VirtualizedContainerService.HintSize="713,106" sap2010:WorkflowViewState.IdRef="Click_2" KeyModifiers="None" MouseButton="BTN_LEFT">
+              <ui:Click.CursorPosition>
+                <ui:CursorPosition Position="Center">
+                  <ui:CursorPosition.OffsetX>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetX>
+                  <ui:CursorPosition.OffsetY>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetY>
+                </ui:CursorPosition>
+              </ui:Click.CursorPosition>
+              <ui:Click.Target>
+                <ui:Target Element="{x:Null}" InformativeScreenshot="3c76a751c4b7f9d36437d5f8e44644b7" Selector="&lt;webctrl src='https://15.128.91.14:8443/teamworks/process.lsw?zWorkflowState=1*' tag='IFRAME' /&gt;">
+                  <ui:Target.ClippingRegion>
+                    <ui:Region Rectangle="12, 73, 39, 39" />
+                  </ui:Target.ClippingRegion>
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:Click.Target>
+            </ui:Click>
+            <ui:TypeInto ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" Activate="True" DisplayName="Escribir Fecha de nacimiento" EmptyField="True" sap:VirtualizedContainerService.HintSize="713,134" sap2010:WorkflowViewState.IdRef="TypeInto_2" SendWindowMessages="True" SimulateType="False" Text="[in_Cliente(3).ToString.trim]">
+              <ui:TypeInto.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="0720aec587f64f176913182146645fab" Selector="&lt;webctrl id='datetimepicker-input-Domicilio_Fiscal1:FechaNacimiento' tag='INPUT' /&gt;" TimeoutMS="120000" WaitForReady="INTERACTIVE" />
+              </ui:TypeInto.Target>
+            </ui:TypeInto>
+            <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click cerrar cuadro" sap:VirtualizedContainerService.HintSize="713,106" sap2010:WorkflowViewState.IdRef="Click_1" KeyModifiers="None" MouseButton="BTN_LEFT">
+              <ui:Click.CursorPosition>
+                <ui:CursorPosition Position="Center">
+                  <ui:CursorPosition.OffsetX>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetX>
+                  <ui:CursorPosition.OffsetY>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetY>
+                </ui:CursorPosition>
+              </ui:Click.CursorPosition>
+              <ui:Click.Target>
+                <ui:Target Element="{x:Null}" InformativeScreenshot="3c76a751c4b7f9d36437d5f8e44644b7" Selector="&lt;webctrl src='https://15.128.91.14:8443/teamworks/process.lsw?zWorkflowState=1*' tag='IFRAME' /&gt;">
+                  <ui:Target.ClippingRegion>
+                    <ui:Region Rectangle="12, 73, 39, 39" />
+                  </ui:Target.ClippingRegion>
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:Click.Target>
+            </ui:Click>
+            <If Condition="[in_Cliente(6).toString.Trim.Equals(&quot;MUJER&quot;)]" DisplayName="Si el genero requerido es femenino" sap:VirtualizedContainerService.HintSize="713,281" sap2010:WorkflowViewState.IdRef="If_4">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <If.Then>
+                <ui:SelectItem ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Seleccionar Femenino" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="SelectItem_3" Item="FEMENINO">
+                  <ui:SelectItem.Items>
+                    <scg:List x:TypeArguments="x:String" Capacity="4">
+                      <x:String>MASCULINO</x:String>
+                      <x:String>FEMENINO</x:String>
+                    </scg:List>
+                  </ui:SelectItem.Items>
+                  <ui:SelectItem.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="31c474c21cc74647de9982f218a1bf8d" Selector="&lt;webctrl id='singleselect-Domicilio_Fiscal1:Sexo' tag='SELECT' /&gt;" TimeoutMS="120000" WaitForReady="INTERACTIVE" />
+                  </ui:SelectItem.Target>
+                </ui:SelectItem>
+              </If.Then>
+              <If.Else>
+                <ui:SelectItem ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Seleccionar Masculino" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="SelectItem_4" Item="MASCULINO">
+                  <ui:SelectItem.Items>
+                    <scg:List x:TypeArguments="x:String" Capacity="4">
+                      <x:String>MASCULINO</x:String>
+                      <x:String>FEMENINO</x:String>
+                    </scg:List>
+                  </ui:SelectItem.Items>
+                  <ui:SelectItem.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="31c474c21cc74647de9982f218a1bf8d" Selector="&lt;webctrl id='singleselect-Domicilio_Fiscal1:Sexo' tag='SELECT' /&gt;" TimeoutMS="120000" WaitForReady="INTERACTIVE" />
+                  </ui:SelectItem.Target>
+                </ui:SelectItem>
+              </If.Else>
+            </If>
+            <ui:SelectItem ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Seleccionar  Credencial de elector" sap:VirtualizedContainerService.HintSize="713,134" sap2010:WorkflowViewState.IdRef="SelectItem_5" Item="CREDENCIAL DE ELECTOR">
+              <ui:SelectItem.Items>
+                <scg:List x:TypeArguments="x:String" Capacity="32">
+                  <x:String>ACTA CONSTITUTIVA</x:String>
+                  <x:String>MATRICULA CONSULAR</x:String>
+                  <x:String>CARTILLA</x:String>
+                  <x:String>IDENTIFICACION SEDENA</x:String>
+                  <x:String>CREDENCIAL DE ELECTOR</x:String>
+                  <x:String>FECHA DE NACIMIENTO</x:String>
+                  <x:String>CERTIFICADO DERECHOS AGRARIOS</x:String>
+                  <x:String>CREDENCIAL CNDH</x:String>
+                  <x:String>CREDENCIAL I.M.S.S</x:String>
+                  <x:String>LICENCIA DE MANEJO</x:String>
+                  <x:String>FORMA MIGRATORIA</x:String>
+                  <x:String>NOMINA</x:String>
+                  <x:String>CEDULA PROFESIONAL</x:String>
+                  <x:String>PASAPORTE</x:String>
+                  <x:String>DOCUMENTO VERDE DE PROCAMPO</x:String>
+                  <x:String>R.F.C</x:String>
+                  <x:String>SIN IDENTIFICACION</x:String>
+                  <x:String>CUENTA CEDEL O EUROCLEAR</x:String>
+                  <x:String>PROSPECTO</x:String>
+                </scg:List>
+              </ui:SelectItem.Items>
+              <ui:SelectItem.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="342b54265426da80a426254669870d33" Selector="&lt;webctrl id='singleselect-Domicilio_Fiscal1:CodIdent2' tag='SELECT' /&gt;" TimeoutMS="180000" WaitForReady="INTERACTIVE" />
+              </ui:SelectItem.Target>
+            </ui:SelectItem>
+            <ui:SelectItem ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Seleccionar Cargo politico" sap:VirtualizedContainerService.HintSize="713,134" sap2010:WorkflowViewState.IdRef="SelectItem_6" Item="SIN CARGO POLITICO">
+              <ui:SelectItem.Items>
+                <scg:List x:TypeArguments="x:String" Capacity="16">
+                  <x:String>SIN CARGO POLITICO</x:String>
+                  <x:String>PRESIDENTE DE LA REPUBLICA</x:String>
+                  <x:String>GOBERNADORES DE LOS EDOS Y JEFE DEL DF 305</x:String>
+                  <x:String>SECRETARIOS DE ESTADO</x:String>
+                  <x:String>SECRETARIOS DE GOBIERNO Y FINANZAS DE LOS ESTADOS Y DF</x:String>
+                  <x:String>PROCURADOR GENERAL DE LA REPUBLICA</x:String>
+                  <x:String>DIPUTADOS FEDERALES Y SENADORES</x:String>
+                  <x:String>PRESIDENTES DE LOS PARTIDOS POLITICOS REG. ANTE EL IFE</x:String>
+                  <x:String>MINISTROS DE LA SUPREMA CORTE DE JUSTICIA DE LA NACION</x:String>
+                  <x:String>DIRECTOR GENERAL DE PEMEX</x:String>
+                  <x:String>DIRECTOR GENERAL DE CFE</x:String>
+                  <x:String>POLITICO EXTRANJERO</x:String>
+                  <x:String>OTROS CARGOS POLITICOS</x:String>
+                </scg:List>
+              </ui:SelectItem.Items>
+              <ui:SelectItem.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="a24c40700ad51fef4a9b83c444d2e412" Selector="&lt;webctrl id='singleselect-Domicilio_Fiscal1:cargoPoliticopfae' tag='SELECT' /&gt;" TimeoutMS="180000" WaitForReady="INTERACTIVE" />
+              </ui:SelectItem.Target>
+            </ui:SelectItem>
+            <ui:SelectItem ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Seleccionar tipo de telefono" sap:VirtualizedContainerService.HintSize="713,134" sap2010:WorkflowViewState.IdRef="SelectItem_7" Item="CELULAR">
+              <ui:SelectItem.Items>
+                <scg:List x:TypeArguments="x:String" Capacity="8">
+                  <x:String>CELULAR</x:String>
+                  <x:String>DOMICILIO</x:String>
+                  <x:String>EMPRESA</x:String>
+                  <x:String>FAX</x:String>
+                  <x:String>OFICINA</x:String>
+                </scg:List>
+              </ui:SelectItem.Items>
+              <ui:SelectItem.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="0be2d9f73f1baec0d46e64a8124311ee" Selector="&lt;webctrl id='singleselect-Domicilio_Fiscal1:tipoTelefonopfae' tag='SELECT' /&gt;" TimeoutMS="180000" WaitForReady="INTERACTIVE" />
+              </ui:SelectItem.Target>
+            </ui:SelectItem>
+            <ui:TypeInto ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Escribir Numero telefonico" EmptyField="True" sap:VirtualizedContainerService.HintSize="713,134" sap2010:WorkflowViewState.IdRef="TypeInto_3" SimulateType="True" Text="7771287651">
+              <ui:TypeInto.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="f2fecb3efd34c4d7c15ed259629f614d" Selector="&lt;webctrl id='text-input-Domicilio_Fiscal1:numeroTelefonicopfae' tag='INPUT' /&gt;" TimeoutMS="120000" WaitForReady="INTERACTIVE" />
+              </ui:TypeInto.Target>
+            </ui:TypeInto>
+            <ui:TypeInto ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Escribir Clave de identificacion" EmptyField="True" sap:VirtualizedContainerService.HintSize="713,134" sap2010:WorkflowViewState.IdRef="TypeInto_4" SimulateType="True" Text="245718083673527152">
+              <ui:TypeInto.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="500a935705dd76223aec04382c0e4310" Selector="&lt;webctrl id='text-input-Domicilio_Fiscal1:ClaveIdent2' tag='INPUT' /&gt;" TimeoutMS="120000" WaitForReady="INTERACTIVE" />
+              </ui:TypeInto.Target>
+            </ui:TypeInto>
+          </Sequence>
+        </ActivityAction>
+      </ui:BrowserScope.Body>
+    </ui:BrowserScope>
+  </Sequence>
+</Activity>
