@@ -2,7 +2,7 @@
   <x:Members>
     <x:Property Name="in_NumeroInstancia" Type="InArgument(x:Int32)" />
   </x:Members>
-  <sap:VirtualizedContainerService.HintSize>618,1666</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>583,1626</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <mva:VisualBasic.Settings>Assembly references and imported namespaces for internal implementation</mva:VisualBasic.Settings>
   <TextExpression.NamespacesForImplementation>
@@ -26,7 +26,7 @@
       <AssemblyReference>System.Activities</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="Esta sequencia se encarga de buscar el numero de instancia generado, para poder continuar con su proceso.&#xA;&#xA;condicion: se requiere que la sesion se encuentre iniciada en el sistema" DisplayName="Buscar numero de instancia" sap:VirtualizedContainerService.HintSize="598,1566" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="Esta sequencia se encarga de buscar el numero de instancia generado, para poder continuar con su proceso.&#xA;&#xA;condicion: se requiere que la sesion se encuentre iniciada en el sistema" DisplayName="Buscar numero de instancia" sap:VirtualizedContainerService.HintSize="563,1566" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:Boolean" Name="CargoPagina" />
     </Sequence.Variables>
@@ -36,7 +36,7 @@
         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg1:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:ImageFound DisplayName="Imagen documento" Found="[CargoPagina]" sap:VirtualizedContainerService.HintSize="556,106" sap2010:WorkflowViewState.IdRef="ImageFound_1">
+    <ui:ImageFound DisplayName="Imagen documento" Found="[CargoPagina]" sap:VirtualizedContainerService.HintSize="521,106" sap2010:WorkflowViewState.IdRef="ImageFound_1">
       <ui:ImageFound.Image>
         <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" Profile="Basic" TargetImageBase64="iVBORw0KGgoAAAANSUhEUgAAAB0AAAAeCAYAAADQBxWhAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADlSURBVEhLY/g/AIDhw4d3/+mJ161bN1ItjaqeRnWMbD4IY1hqFNNAdYxsPghjtdQ1u/t/46x1FGOQL4m2FFuQkINBFpNsKbrLkfGqXcfAarYfPgtmo+Prdx+A1ZFsKYiNC4MMBKmpmLQCrB4dgxxDM0vxYZpZOnXlTjAbHR89fw1Mg9Qimw/Co8ELZ+PCMEupHrzoBiFjULYAqaG6pZRisizFlUiIwSD9ZFmKq7QhBoP0D53gBdEgPjkYpH80eAdf8FKKB7+l1smtYIspxaC2FlGWYtNMKUY2H4QxLKUHHiBL1/0HAFpu8oe3ne1sAAAAAElFTkSuQmCC" />
       </ui:ImageFound.Image>
@@ -48,7 +48,7 @@
         </ui:Target>
       </ui:ImageFound.Target>
     </ui:ImageFound>
-    <If Condition="[Not CargoPagina]" DisplayName="¿No ha cargado la pagina?" sap:VirtualizedContainerService.HintSize="556,540" sap2010:WorkflowViewState.IdRef="If_3">
+    <If Condition="[Not CargoPagina]" DisplayName="¿No ha cargado la pagina?" sap:VirtualizedContainerService.HintSize="521,540" sap2010:WorkflowViewState.IdRef="If_3">
       <If.Then>
         <Sequence DisplayName="secuencia si no ha cargado la pagina" sap:VirtualizedContainerService.HintSize="376,392" sap2010:WorkflowViewState.IdRef="Sequence_6">
           <sap:WorkflowViewStateService.ViewState>
@@ -107,7 +107,7 @@
         </ui:CursorPosition>
       </ui:Click.CursorPosition>
       <ui:Click.Target>
-        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="f35650fa4c8141a619e232cc9594620b" Selector="&lt;html app='chrome.exe' title='IBM BPM Portal - Work' /&gt;&lt;webctrl aaname='Step: Integración de información' parentid='*-grid-container' tag='SPAN' /&gt;" TimeoutMS="120000" WaitForReady="INTERACTIVE" />
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="f35650fa4c8141a619e232cc9594620b" Selector="&lt;html app='chrome.exe' title='IBM BPM Portal - Work' /&gt;&lt;webctrl aaname='Step: Integración de información' parentid='div_1_2_1_2_2' tag='A' /&gt;" TimeoutMS="120000" WaitForReady="INTERACTIVE" />
       </ui:Click.Target>
     </ui:Click>
     <ui:UiElementExists Exists="{x:Null}" DisplayName="Esperar a que la pagina cargue" sap:VirtualizedContainerService.HintSize="521,106" sap2010:WorkflowViewState.IdRef="UiElementExists_3">
