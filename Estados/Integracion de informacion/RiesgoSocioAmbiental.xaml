@@ -70,7 +70,7 @@
           <Flowchart DisplayName="Riesgo socio ambiental" sap:VirtualizedContainerService.HintSize="637,865" sap2010:WorkflowViewState.IdRef="Flowchart_1">
             <Flowchart.Variables>
               <Variable x:TypeArguments="x:Boolean" Name="Linea" />
-              <Variable x:TypeArguments="x:Int32" Default="0" Name="indiceLinea" />
+              <Variable x:TypeArguments="x:Int32" Default="2" Name="indiceLinea" />
             </Flowchart.Variables>
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -105,7 +105,7 @@
                       <av:PointCollection x:Key="ConnectorLocation">150,635.5 150,665.5 310,665.5 310,740</av:PointCollection>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <While DisplayName="Recorrer el numero de lineas" sap:VirtualizedContainerService.HintSize="484,729" sap2010:WorkflowViewState.IdRef="While_6" Condition="[Linea]">
+                  <While DisplayName="Recorrer el numero de lineas" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="While_6" Condition="[Linea]">
                     <Sequence DisplayName="Sequence numero de lineas" sap:VirtualizedContainerService.HintSize="421,571" sap2010:WorkflowViewState.IdRef="Sequence_6">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
