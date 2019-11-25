@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="PersonaParticipantePF" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="PersonaParticipantePF" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
     <x:Property Name="in_RFC" Type="InArgument(x:String)" />
     <x:Property Name="out_validacionGarantia" Type="OutArgument(x:Boolean)" />
@@ -6,10 +6,10 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>514,3676</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>622,3969</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>PersonaParticipantePF_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
-    <sco:Collection x:TypeArguments="x:String">
+    <scg:List x:TypeArguments="x:String" Capacity="21">
       <x:String>System.Activities</x:String>
       <x:String>System.Activities.Statements</x:String>
       <x:String>System.Activities.Expressions</x:String>
@@ -31,10 +31,10 @@
       <x:String>UiPath.Core</x:String>
       <x:String>UiPath.Core.Activities</x:String>
       <x:String>System.Windows.Markup</x:String>
-    </sco:Collection>
+    </scg:List>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
-    <sco:Collection x:TypeArguments="AssemblyReference">
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="19">
       <AssemblyReference>System.Activities</AssemblyReference>
       <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
       <AssemblyReference>mscorlib</AssemblyReference>
@@ -54,28 +54,31 @@
       <AssemblyReference>System.ValueTuple</AssemblyReference>
       <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
       <AssemblyReference>System.ServiceModel</AssemblyReference>
-    </sco:Collection>
+    </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="Se agrega la persona participante pf de la matriz de casos" DisplayName="PersonaParticipantePF" sap:VirtualizedContainerService.HintSize="494,3616" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="Se agrega la persona participante pf de la matriz de casos" DisplayName="PersonaParticipantePF" sap:VirtualizedContainerService.HintSize="602,3909" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Attach Process portal" sap:VirtualizedContainerService.HintSize="452,3497" sap2010:WorkflowViewState.IdRef="BrowserScope_1" InformativeScreenshot="d557e9d2c0bee168fe515f0291b731bb" Selector="&lt;html app='chrome.exe' title='IBM BPM Portal*' /&gt;">
+    <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Attach Process portal" sap:VirtualizedContainerService.HintSize="560,3790" sap2010:WorkflowViewState.IdRef="BrowserScope_1" InformativeScreenshot="d557e9d2c0bee168fe515f0291b731bb" Selector="&lt;html app='chrome.exe' title='IBM BPM Portal*' /&gt;">
       <ui:BrowserScope.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Proceso de llenado de la persona Pf" sap:VirtualizedContainerService.HintSize="418,3351" sap2010:WorkflowViewState.IdRef="Sequence_3">
+          <Sequence DisplayName="Proceso de llenado de la persona Pf" sap:VirtualizedContainerService.HintSize="526,3644" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="ui:GenericValue" Name="TextoCorreo" />
+            </Sequence.Variables>
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click rfc" sap:VirtualizedContainerService.HintSize="376,106" sap2010:WorkflowViewState.IdRef="Click_1" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
+            <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click rfc" sap:VirtualizedContainerService.HintSize="484,106" sap2010:WorkflowViewState.IdRef="Click_1" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
               <ui:Click.CursorPosition>
                 <ui:CursorPosition Position="Center">
                   <ui:CursorPosition.OffsetX>
@@ -90,7 +93,7 @@
                 <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="4438dbc1af772656d6a3dcb8ad01f572" Selector="&lt;webctrl id='radio-input-Personas_Participantes_21:Radio_Button1' tag='INPUT' /&gt;" TimeoutMS="120000" WaitForReady="COMPLETE" />
               </ui:Click.Target>
             </ui:Click>
-            <ui:TypeInto DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" ClickBeforeTyping="True" DisplayName="Ingregar el rfc de la persona participante" EmptyField="True" sap:VirtualizedContainerService.HintSize="376,134" sap2010:WorkflowViewState.IdRef="TypeInto_1" SimulateType="True" Text="[in_RFC]">
+            <ui:TypeInto DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" ClickBeforeTyping="True" DisplayName="Ingregar el rfc de la persona participante" EmptyField="True" sap:VirtualizedContainerService.HintSize="484,134" sap2010:WorkflowViewState.IdRef="TypeInto_1" SimulateType="True" Text="[in_RFC]">
               <ui:TypeInto.Target>
                 <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="b8e20f9cdf77b6c6a0113e50b42b90fc" Selector="&lt;webctrl id='text-input-Personas_Participantes_21:Text15' tag='INPUT' /&gt;" WaitForReady="INTERACTIVE">
                   <ui:Target.TimeoutMS>
@@ -99,7 +102,7 @@
                 </ui:Target>
               </ui:TypeInto.Target>
             </ui:TypeInto>
-            <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click buscar persona participante" sap:VirtualizedContainerService.HintSize="376,106" sap2010:WorkflowViewState.IdRef="Click_2" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
+            <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click buscar persona participante" sap:VirtualizedContainerService.HintSize="484,106" sap2010:WorkflowViewState.IdRef="Click_2" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
               <ui:Click.CursorPosition>
                 <ui:CursorPosition Position="Center">
                   <ui:CursorPosition.OffsetX>
@@ -118,7 +121,7 @@
                 </ui:Target>
               </ui:Click.Target>
             </ui:Click>
-            <ui:ImageFound Found="{x:Null}" DisplayName="Esperara a que el modal cargue" sap:VirtualizedContainerService.HintSize="376,106" sap2010:WorkflowViewState.IdRef="ImageFound_1">
+            <ui:ImageFound Found="{x:Null}" DisplayName="Esperara a que el modal cargue" sap:VirtualizedContainerService.HintSize="484,106" sap2010:WorkflowViewState.IdRef="ImageFound_1">
               <ui:ImageFound.Image>
                 <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" Profile="Basic" TargetImageBase64="iVBORw0KGgoAAAANSUhEUgAAAKcAAAAfCAYAAACCj930AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAANQSURBVHhe7ZftbRRBEAUtCARBIOBAgDhwHDgLO4qL5DI5VJbKerRm1ni9Pg1S/yjdzr6e6Y95d5ib8/l8aZoVaXM2y9LmbJalzdksS5uzWZY2Z7Msbc5mWdqczbK0OZtl2W3Oh4fHy82Hj3/Bu1HsiF93d5ev326H2lF8//HziZHWrM8uc/6+v38y4+l0en6nWdEydsY1zNn83+wy5+wXiXdpOMybv6wYUq2as/4SV5MTn3p+MWZardMvleQvvbGfPn951rOG2kvqauz3031iv1D3i/slNdbqzi3PqvH/Mvvcnzrk3qrXOdY+jmKXOSmUotIgFYeTBuDibdIB8awx87xs2nxqrDnrJY3L1CgO1Bx17cVbrzrPwHNegvE826u5Rlgnn6zt2XzsdR4wyp865+Q691uP9da1tbiu8897ynh0zzJ2dHdHsftvTi9H6sXQUH3HMNJUDpO4HEbV2eMgJQc50zjXGjir5uCdOp/mg3oJFXKi82ysRhtBbnuXrG+UK3tDzz5rvUnOLt/l7GstW/WnAd/TjJXd5kwYBAXnAPNdBT0HyKBGcQ6Q59ngtrS8/LxoyRoyFmaGq7Vm7NaFkSvP9x35vfARxBDLc9ZiTsnctRcwB8/Zt6DV+dQ7NEe+t7734BBzCoVqKBrYKjwHNDJOwhBmBtzS8pLeak5NaQxnsc7YNEiFXHm+78ifxpmRtVSszdnXXiBzZN+C5nzQWBvj3tof5/AeZrW9hV3mzEaSHADDqQNIckB81mEmW+bd0vKSyEHO1DNvxkKaM/uSPeas8zBn5ko9eUnPGka5eKd5Rzp76WnUi/3nu2Q02yM49D9Eedk2mUWjjQZk82kyNHVi3Zfx5NjSvHzeayZrruuMBevnvHo5apBr9RHOzB49k0/W5PY88EzjMxZyPmA/PNe9dZ2zF3VjMxdrQDMPz3Wv66PY/c+6RSY0nTE2KjmQOiAvS9Ioxqeew5lp1XC15jyjxlq7lzTKoe5znlexX75InpEGAPKrVX0Un2dB5rcmSfPU2UPGjOaUep0F6zzrKA79m7OZMzJEs02b80q0OV9Pm/NKtDlfT5uzWZY2Z7Msbc5mWdqczbK0OZtlaXM2y9LmbJalzdksS5uzWZTz5Q9T/h7rKjbALgAAAABJRU5ErkJggg==" />
               </ui:ImageFound.Image>
@@ -130,7 +133,7 @@
                 </ui:Target>
               </ui:ImageFound.Target>
             </ui:ImageFound>
-            <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click Agregar como persona participante" sap:VirtualizedContainerService.HintSize="376,106" sap2010:WorkflowViewState.IdRef="Click_3" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
+            <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click Agregar como persona participante" sap:VirtualizedContainerService.HintSize="484,106" sap2010:WorkflowViewState.IdRef="Click_3" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
               <ui:Click.CursorPosition>
                 <ui:CursorPosition Position="Center">
                   <ui:CursorPosition.OffsetX>
@@ -145,7 +148,7 @@
                 <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="d4f184c1c4726fd0d7542c4fd456c5bf" Selector="&lt;webctrl id='button-button-Personas_Participantes_21:Table3:Button13' tag='BUTTON' /&gt;" TimeoutMS="120000" WaitForReady="COMPLETE" />
               </ui:Click.Target>
             </ui:Click>
-            <ui:ImageFound Found="{x:Null}" DisplayName="Imagen Personas participantes" sap:VirtualizedContainerService.HintSize="376,106" sap2010:WorkflowViewState.IdRef="ImageFound_4">
+            <ui:ImageFound Found="{x:Null}" DisplayName="Imagen Personas participantes" sap:VirtualizedContainerService.HintSize="484,106" sap2010:WorkflowViewState.IdRef="ImageFound_4">
               <ui:ImageFound.Image>
                 <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" Profile="Basic" TargetImageBase64="iVBORw0KGgoAAAANSUhEUgAAAKYAAAAgCAYAAACYYQOyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAOxSURBVHhe7ZexbhNhEIQjeBoErwCEAqVC6VF6UgMtKYGS1KFLSvIKqU2VlC79Joe+oLEmk9/47PikH9hilPv/nd2dnVudlb3FYjEUCr2hFrPQJWoxC12iFrPQJWoxC12iFrPQJWoxC11i68X8dno67D16fA9vj46G+XzezCm08ePy8o5veDvGx7G8h4L69EFnKz4FHrSY7z98vHfPXS3nZsjF7A3/xGJeXV0Nbw4Ph+vrm9szw/gX1YejxqeTk+HF/qtljDtxnzx9dltPfBmkuPdXX+opni87tdBXOvkrHaA1m0Ds85evSy2pk2fuVMvj9CFPOl8fHCx50pNfwlWeOE/zn519X3JzBs6KZZxnfxcAv9JzesLPe9ebvdznsZh0MRnMRRF7/nL/jrFudPL9LCPUM8/UoJbO5JArI6mVC0Icvmql6TonyMFwanL22tKhmGoBnr2v6sFVnDN9dSa2yhPnqa/OgGf14a/3oI7PQNz9obb6qJa4Ors/5KuX62qdx2CniynB3OcwguelYDfdc1bFMFGL7s+Ku1ktKC6t6GnxEll3Xb7PiX7mcF94dh/Ev7n5/XUdU7c1/5/8TB05k9fTfOKmXkA9PkjwXZfim2Kyf340eIsjA3IAGSCejGhxgZvhRiqeZgPifBlSC710t85UctCTd94r509ffLZ80Zp1Npvd4zrcE+bSL5XiLU/IkSag2qnfc6lPH3GzhqAvrs/uX+FNsPOfcqH1AhJubMao7YO1uPQYu5jcayFXvYzkZUzgHj15B/yliOPaW77w7LOJv8vFhIsm6sFJHdLfyqU+fcT1vuK3oDzv2+K1MNliShS8VhysG9BrYEoO5+b5s+JudkuvxxOtfkLmpc6cyefMhQCZI/6ufspns5+3PO/5kMVU3bGL1pp5HSZbTIAQ/5RrQBntxorvA7fMUc88O5czcLOzF2d9FVNX5ia497lcd87AmT7q3XpJPKc2nbOez+k8zmiSZp/Jnz2GLunIeb2P+OLq7HzX6boyJv46TLqYAB4GCDJHMR8AUNP5MgO4oWCVkbojLk4rl/4yTC9W8dTlIJc4uXB9SRX3OucXF0tOazF1J076kh4q13nkMf+74+MlT7ODnA9N5IrD3+S7n9IgjjSrnnwkll6nP2Ow9WL+z8iX2ANykf521GJugVrM6VGLuQVqMadHLWahS9RiFrpELWahS9RiFrpELWahS9RiFrpELWahS9RiFrpELWahS9RiFrpELWahS9RiFjrEYvgFjMpnKnlkcmcAAAAASUVORK5CYII=" />
               </ui:ImageFound.Image>
@@ -157,7 +160,7 @@
                 </ui:Target>
               </ui:ImageFound.Target>
             </ui:ImageFound>
-            <ui:SelectItem ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Select Nacionalidad" sap:VirtualizedContainerService.HintSize="376,134" sap2010:WorkflowViewState.IdRef="SelectItem_1" Item="MEXICANA">
+            <ui:SelectItem ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Select Nacionalidad" sap:VirtualizedContainerService.HintSize="484,134" sap2010:WorkflowViewState.IdRef="SelectItem_1" Item="MEXICANA">
               <ui:SelectItem.Items>
                 <scg:List x:TypeArguments="x:String" Capacity="50">
                   <x:String>AFGANO</x:String>
@@ -216,7 +219,7 @@
                 <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="d6fea25e0c26a4bb8850be4128e2cdde" Selector="&lt;webctrl id='singleselect-Personas_Participantes_21:nacionalidad_2' tag='SELECT' /&gt;" TimeoutMS="120000" WaitForReady="COMPLETE" />
               </ui:SelectItem.Target>
             </ui:SelectItem>
-            <Sequence DisplayName="Seleccion de Tipo de participacion" sap:VirtualizedContainerService.HintSize="376,636" sap2010:WorkflowViewState.IdRef="Sequence_4">
+            <Sequence DisplayName="Seleccion de Tipo de participacion" sap:VirtualizedContainerService.HintSize="484,636" sap2010:WorkflowViewState.IdRef="Sequence_4">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -284,17 +287,43 @@
                 </ui:Click.Target>
               </ui:Click>
             </Sequence>
-            <ui:TypeInto DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" Activate="True" ClickBeforeTyping="True" DisplayName="Escribir correo electronico" EmptyField="True" sap:VirtualizedContainerService.HintSize="376,134" sap2010:WorkflowViewState.IdRef="TypeInto_4" SendWindowMessages="True" SimulateType="False" Text="info@beeckerco.com">
-              <ui:TypeInto.Target>
-                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="a0c412282559256558f44bc1d5197697" Selector="&lt;html app='chrome.exe' title='IBM BPM Portal - Step: Integración de información' /&gt;&lt;webctrl id='text-input-Personas_Participantes_21:mail' tag='INPUT' /&gt;" TimeoutMS="120000" WaitForReady="INTERACTIVE" />
-              </ui:TypeInto.Target>
-            </ui:TypeInto>
-            <ui:TypeInto ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Escribir Folio" EmptyField="True" sap:VirtualizedContainerService.HintSize="376,134" sap2010:WorkflowViewState.IdRef="TypeInto_5" SimulateType="True" Text="9876">
+            <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Leer el campo de correo electronico" sap:VirtualizedContainerService.HintSize="484,106" sap2010:WorkflowViewState.IdRef="GetValue_1">
+              <ui:GetValue.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="14e826f6b0a2661e9a3401fe4cd2b8a3" Selector="&lt;webctrl id='text-input-Personas_Participantes_21:mail' tag='INPUT' /&gt;">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:GetValue.Target>
+              <ui:GetValue.Value>
+                <OutArgument x:TypeArguments="ui:GenericValue">[TextoCorreo]</OutArgument>
+              </ui:GetValue.Value>
+            </ui:GetValue>
+            <If Condition="[String.IsNullOrEmpty(TextoCorreo)]" sap:VirtualizedContainerService.HintSize="484,281" sap2010:WorkflowViewState.IdRef="If_1">
+              <If.Then>
+                <ui:TypeInto DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" Activate="True" ClickBeforeTyping="True" DisplayName="Ingresar correo electronico" EmptyField="True" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_7" SendWindowMessages="True" SimulateType="False" Text="info@beeckerco.com">
+                  <ui:TypeInto.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="134eaa5c843280c16d5711fe7f6c0cde" Selector="&lt;webctrl id='text-input-Personas_Participantes_21:mail' tag='INPUT' /&gt;">
+                      <ui:Target.TimeoutMS>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:Target.TimeoutMS>
+                      <ui:Target.WaitForReady>
+                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                      </ui:Target.WaitForReady>
+                    </ui:Target>
+                  </ui:TypeInto.Target>
+                </ui:TypeInto>
+              </If.Then>
+            </If>
+            <ui:TypeInto ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Escribir Folio" EmptyField="True" sap:VirtualizedContainerService.HintSize="484,134" sap2010:WorkflowViewState.IdRef="TypeInto_5" SimulateType="True" Text="9876">
               <ui:TypeInto.Target>
                 <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="80484d8ffaba0015a076b7c553fbacc7" Selector="&lt;html app='chrome.exe' title='IBM BPM Portal - Step: Integración de información' /&gt;&lt;webctrl id='text-input-Personas_Participantes_21:Text5' tag='INPUT' /&gt;" TimeoutMS="180000" WaitForReady="INTERACTIVE" />
               </ui:TypeInto.Target>
             </ui:TypeInto>
-            <ui:TypeInto DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SimulateType="{x:Null}" Activate="True" ClickBeforeTyping="False" DisplayName="Escribe Participacion directa" EmptyField="True" sap:VirtualizedContainerService.HintSize="376,134" sap2010:WorkflowViewState.IdRef="TypeInto_6" SendWindowMessages="True" Text="33">
+            <ui:TypeInto DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SimulateType="{x:Null}" Activate="True" ClickBeforeTyping="False" DisplayName="Escribe Participacion directa" EmptyField="True" sap:VirtualizedContainerService.HintSize="484,134" sap2010:WorkflowViewState.IdRef="TypeInto_6" SendWindowMessages="True" Text="33">
               <ui:TypeInto.Target>
                 <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="956d2e7860d1431b76f1d30a42f9457d" Selector="&lt;html app='chrome.exe' title='IBM BPM Portal - Step: Integración de información' /&gt;&lt;webctrl id='decimal-input-Personas_Participantes_21:participacion_directaQ' tag='INPUT' /&gt;" TimeoutMS="180000" WaitForReady="INTERACTIVE" />
               </ui:TypeInto.Target>

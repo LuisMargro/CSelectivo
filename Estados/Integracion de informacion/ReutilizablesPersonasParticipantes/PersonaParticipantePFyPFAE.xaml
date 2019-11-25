@@ -8,7 +8,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>659,5047</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>659,5210</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>PersonaParticipantePF_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="21">
@@ -59,22 +59,23 @@
       <AssemblyReference>System.Data.Entity</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="Se agrega la persona participante pf de la matriz de casos" DisplayName="PersonaParticipantePF" sap:VirtualizedContainerService.HintSize="639,4987" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="Se agrega la persona participante pf de la matriz de casos" DisplayName="PersonaParticipantePF" sap:VirtualizedContainerService.HintSize="639,5110" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Attach Process portal" sap:VirtualizedContainerService.HintSize="597,4868" sap2010:WorkflowViewState.IdRef="BrowserScope_1" InformativeScreenshot="d557e9d2c0bee168fe515f0291b731bb" Selector="&lt;html app='chrome.exe' title='IBM BPM Portal*' /&gt;">
+    <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Attach Process portal" sap:VirtualizedContainerService.HintSize="597,4991" sap2010:WorkflowViewState.IdRef="BrowserScope_1" InformativeScreenshot="d557e9d2c0bee168fe515f0291b731bb" Selector="&lt;html app='chrome.exe' title='IBM BPM Portal*' /&gt;">
       <ui:BrowserScope.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Proceso de llenado de la persona Pf" sap:VirtualizedContainerService.HintSize="563,4722" sap2010:WorkflowViewState.IdRef="Sequence_3">
+          <Sequence DisplayName="Proceso de llenado de la persona Pf" sap:VirtualizedContainerService.HintSize="563,4845" sap2010:WorkflowViewState.IdRef="Sequence_3">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:Boolean" Name="CargoModal" />
+              <Variable x:TypeArguments="ui:GenericValue" Name="TextoCorreo" />
             </Sequence.Variables>
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -201,29 +202,6 @@
                 <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="d9784282e8c3942d8f8e9bc6fdc983fc" Selector="&lt;webctrl id='singleselect-Personas_Participantes_21:civil' tag='SELECT' /&gt;" TimeoutMS="120000" WaitForReady="COMPLETE" />
               </ui:SelectItem.Target>
             </ui:SelectItem>
-            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="521,304" sap2010:WorkflowViewState.IdRef="CommentOut_1">
-              <ui:CommentOut.Body>
-                <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="376,226" sap2010:WorkflowViewState.IdRef="Sequence_8">
-                  <sap:WorkflowViewStateService.ViewState>
-                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                    </scg:Dictionary>
-                  </sap:WorkflowViewStateService.ViewState>
-                  <ui:TypeInto DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" Activate="True" ClickBeforeTyping="True" DisplayName="Ingresar correo electronico" EmptyField="True" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_2" SendWindowMessages="True" SimulateType="False" Text="info@beeckerco.com">
-                    <ui:TypeInto.Target>
-                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="134eaa5c843280c16d5711fe7f6c0cde" Selector="&lt;webctrl id='text-input-Personas_Participantes_21:mail' tag='INPUT' /&gt;">
-                        <ui:Target.TimeoutMS>
-                          <InArgument x:TypeArguments="x:Int32" />
-                        </ui:Target.TimeoutMS>
-                        <ui:Target.WaitForReady>
-                          <InArgument x:TypeArguments="ui:WaitForReady" />
-                        </ui:Target.WaitForReady>
-                      </ui:Target>
-                    </ui:TypeInto.Target>
-                  </ui:TypeInto>
-                </Sequence>
-              </ui:CommentOut.Body>
-            </ui:CommentOut>
             <Sequence DisplayName="Seleccion de Tipo de participacion" sap:VirtualizedContainerService.HintSize="521,636" sap2010:WorkflowViewState.IdRef="Sequence_4">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -292,6 +270,37 @@
                 </ui:Click.Target>
               </ui:Click>
             </Sequence>
+            <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Leer el campo de correo electronico" sap:VirtualizedContainerService.HintSize="521,106" sap2010:WorkflowViewState.IdRef="GetValue_1">
+              <ui:GetValue.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="14e826f6b0a2661e9a3401fe4cd2b8a3" Selector="&lt;webctrl id='text-input-Personas_Participantes_21:mail' tag='INPUT' /&gt;">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:GetValue.Target>
+              <ui:GetValue.Value>
+                <OutArgument x:TypeArguments="ui:GenericValue">[TextoCorreo]</OutArgument>
+              </ui:GetValue.Value>
+            </ui:GetValue>
+            <If Condition="[String.IsNullOrEmpty(TextoCorreo)]" sap:VirtualizedContainerService.HintSize="521,281" sap2010:WorkflowViewState.IdRef="If_4">
+              <If.Then>
+                <ui:TypeInto DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" Activate="True" ClickBeforeTyping="True" DisplayName="Ingresar correo electronico" EmptyField="True" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_2" SendWindowMessages="True" SimulateType="False" Text="info@beeckerco.com">
+                  <ui:TypeInto.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="134eaa5c843280c16d5711fe7f6c0cde" Selector="&lt;webctrl id='text-input-Personas_Participantes_21:mail' tag='INPUT' /&gt;">
+                      <ui:Target.TimeoutMS>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:Target.TimeoutMS>
+                      <ui:Target.WaitForReady>
+                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                      </ui:Target.WaitForReady>
+                    </ui:Target>
+                  </ui:TypeInto.Target>
+                </ui:TypeInto>
+              </If.Then>
+            </If>
             <If Condition="[in_PM]" DisplayName="¿Existe un PM?" sap:VirtualizedContainerService.HintSize="521,1013" sap2010:WorkflowViewState.IdRef="If_1">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
