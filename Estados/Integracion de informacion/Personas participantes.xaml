@@ -364,7 +364,7 @@
                                                           </sap:WorkflowViewStateService.ViewState>
                                                         </Assign>
                                                         <FlowStep.Next>
-                                                          <FlowDecision x:Name="__ReferenceID18" Condition="[not String.IsNullOrEmpty(in_TransactionItem(14).ToString) and not String.IsNullOrEmpty(in_TransactionItem(15).ToString) and not String.IsNullOrEmpty(in_TransactionItem(16).ToString)]" DisplayName="Garantias no vacio" sap:VirtualizedContainerService.HintSize="103,87" sap2010:WorkflowViewState.IdRef="FlowDecision_32">
+                                                          <FlowDecision x:Name="__ReferenceID18" Condition="[not String.IsNullOrEmpty(in_TransactionItem(16).ToString)]" DisplayName="Garantias no vacio" sap:VirtualizedContainerService.HintSize="103,87" sap2010:WorkflowViewState.IdRef="FlowDecision_32">
                                                             <sap:WorkflowViewStateService.ViewState>
                                                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -391,7 +391,7 @@
                                                                         <av:Size x:Key="ShapeSize">200,51</av:Size>
                                                                       </scg:Dictionary>
                                                                     </sap:WorkflowViewStateService.ViewState>
-                                                                    <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke PersonaParticipante PFAE garantia" sap:VirtualizedContainerService.HintSize="379,87" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_4" UnSafe="False" WorkflowFileName="Estados\Integracion de informacion\ReutilizablesPersonasParticipantes\PersonaParticipantePFyPFAE.xaml">
+                                                                    <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke PersonaParticipante PFAE garantia" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_4" UnSafe="False" WorkflowFileName="Estados\Integracion de informacion\ReutilizablesPersonasParticipantes\PersonaParticipantePFyPFAE.xaml">
                                                                       <ui:InvokeWorkflowFile.Arguments>
                                                                         <InArgument x:TypeArguments="x:String" x:Key="in_RFC">ZEVN740815QD8</InArgument>
                                                                         <InArgument x:TypeArguments="x:Boolean" x:Key="in_PM">False</InArgument>
