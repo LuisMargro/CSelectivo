@@ -6,7 +6,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>659,1382</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>622,1077</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Login a la plataforma Process Portal_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="21">
@@ -53,7 +53,7 @@
       <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="Esta secuencia sera la encargada de ingresar al Process Portal con los diferentes usuarios de las distintos estados" DisplayName="Login a la plataforma Process Portal" sap:VirtualizedContainerService.HintSize="639,1322" sap2010:WorkflowViewState.IdRef="Sequence_2">
+  <Sequence sap2010:Annotation.AnnotationText="Esta secuencia sera la encargada de ingresar al Process Portal con los diferentes usuarios de las distintos estados" DisplayName="Login a la plataforma Process Portal" sap:VirtualizedContainerService.HintSize="602,1017" sap2010:WorkflowViewState.IdRef="Sequence_2">
     <Sequence.Variables>
       <Variable x:TypeArguments="ui:Browser" Name="VariableExplorador" />
     </Sequence.Variables>
@@ -63,23 +63,43 @@
         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" sap2010:Annotation.AnnotationText="Espera hasta 1 minuto para que la pagina cargue, si la pagina carga antes, inicia su proceso" BrowserType="Chrome" DisplayName="Attach process login portal" sap:VirtualizedContainerService.HintSize="597,1203" sap2010:WorkflowViewState.IdRef="BrowserScope_1" InformativeScreenshot="87eeb9fbf6915182cf256e3d2e9a281f" Selector="&lt;html app='chrome.exe' omit:title='Process Portal' /&gt;" TimeoutMS="120000" UiBrowser="[VariableExplorador]">
+    <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" sap2010:Annotation.AnnotationText="Espera hasta 1 minuto para que la pagina cargue, si la pagina carga antes, inicia su proceso" BrowserType="Chrome" DisplayName="Attach process login portal" sap:VirtualizedContainerService.HintSize="560,883" sap2010:WorkflowViewState.IdRef="BrowserScope_1" InformativeScreenshot="87eeb9fbf6915182cf256e3d2e9a281f" Selector="&lt;html app='chrome.exe' omit:title='Process Portal' /&gt;" TimeoutMS="120000" UiBrowser="[VariableExplorador]">
       <ui:BrowserScope.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Secuencia" sap:VirtualizedContainerService.HintSize="563,1030" sap2010:WorkflowViewState.IdRef="Sequence_5">
+          <Sequence DisplayName="Secuencia" sap:VirtualizedContainerService.HintSize="526,710" sap2010:WorkflowViewState.IdRef="Sequence_5">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:Boolean" Name="ExisteLogin" />
+              <Variable x:TypeArguments="ui:GenericValue" Name="URLActual" />
             </Sequence.Variables>
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:NavigateTo Browser="{x:Null}" DisplayName="Navigate To" sap:VirtualizedContainerService.HintSize="521,59" sap2010:WorkflowViewState.IdRef="NavigateTo_1" Url="https://15.128.91.14:8443/ProcessPortal/" />
-            <ui:UiElementExists DisplayName="Existe campo de login" Exists="[ExisteLogin]" sap:VirtualizedContainerService.HintSize="521,106" sap2010:WorkflowViewState.IdRef="UiElementExists_1">
+            <ui:GetAttribute ContinueOnError="{x:Null}" Attribute="url" DisplayName="Obtener URL actual" sap:VirtualizedContainerService.HintSize="484,134" sap2010:WorkflowViewState.IdRef="GetAttribute_2">
+              <ui:GetAttribute.Result>
+                <OutArgument x:TypeArguments="ui:GenericValue">[URLActual]</OutArgument>
+              </ui:GetAttribute.Result>
+              <ui:GetAttribute.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" InformativeScreenshot="beff2a0fd5fb1cbfbc595ffba89f1a71">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:GetAttribute.Target>
+            </ui:GetAttribute>
+            <If Condition="[Not URLActual.Contains(&quot;ProcessPortal&quot;)]" DisplayName="¿Ya se encuentra en el portal?" sap:VirtualizedContainerService.HintSize="484,207" sap2010:WorkflowViewState.IdRef="If_3">
+              <If.Then>
+                <ui:NavigateTo Browser="{x:Null}" DisplayName="Navigate To" sap:VirtualizedContainerService.HintSize="334,59" sap2010:WorkflowViewState.IdRef="NavigateTo_1" Url="https://15.128.91.14:8443/ProcessPortal/" />
+              </If.Then>
+            </If>
+            <ui:UiElementExists DisplayName="Existe campo de login" Exists="[ExisteLogin]" sap:VirtualizedContainerService.HintSize="484,106" sap2010:WorkflowViewState.IdRef="UiElementExists_1">
               <ui:UiElementExists.Target>
                 <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="1ffce969b565826e0a9dfa4c088fbb68" Selector="&lt;webctrl id='username' tag='INPUT' /&gt;">
                   <ui:Target.TimeoutMS>
@@ -91,7 +111,13 @@
                 </ui:Target>
               </ui:UiElementExists.Target>
             </ui:UiElementExists>
-            <If Condition="[ExisteLogin]" DisplayName="¿Se puede logear?" sap:VirtualizedContainerService.HintSize="521,693" sap2010:WorkflowViewState.IdRef="If_1">
+            <If Condition="[ExisteLogin]" DisplayName="¿Se puede logear?" sap:VirtualizedContainerService.HintSize="484,51" sap2010:WorkflowViewState.IdRef="If_1">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
               <If.Then>
                 <Sequence DisplayName="Loguearse" sap:VirtualizedContainerService.HintSize="376,546" sap2010:WorkflowViewState.IdRef="Sequence_6">
                   <sap:WorkflowViewStateService.ViewState>
