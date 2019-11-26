@@ -108,16 +108,12 @@
                 </ui:CursorPosition>
               </ui:Click.CursorPosition>
               <ui:Click.Target>
-                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="294e1df9467b876ccba5c21a9d6e0987" Selector="&lt;webctrl id='button-button-Button6' tag='BUTTON' /&gt;" TimeoutMS="180000" WaitForReady="INTERACTIVE" />
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="294e1df9467b876ccba5c21a9d6e0987" Selector="&lt;webctrl id='button-button-Button6' tag='BUTTON' /&gt;" TimeoutMS="300000" WaitForReady="INTERACTIVE" />
               </ui:Click.Target>
             </ui:Click>
             <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Obtener número solicitud" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="GetValue_1">
               <ui:GetValue.Target>
-                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="d7f6a503e8c9eb79351f968d234450b1" Selector="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' parentid='div_1_1_1' tag='DIV' class='input' parentclass='form-group' /&gt;&lt;webctrl id='outputtext-text-Output_Text1' tag='P' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;p' /&gt;" WaitForReady="INTERACTIVE">
-                  <ui:Target.TimeoutMS>
-                    <InArgument x:TypeArguments="x:Int32" />
-                  </ui:Target.TimeoutMS>
-                </ui:Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="d7f6a503e8c9eb79351f968d234450b1" Selector="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' parentid='div_1_1_1' tag='DIV' class='input' parentclass='form-group' /&gt;&lt;webctrl id='outputtext-text-Output_Text1' tag='P' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;p' /&gt;" TimeoutMS="300000" WaitForReady="COMPLETE" />
               </ui:GetValue.Target>
               <ui:GetValue.Value>
                 <OutArgument x:TypeArguments="x:Int32">[out_NumeroSolicitud]</OutArgument>
@@ -135,7 +131,7 @@
                 </ui:CursorPosition>
               </ui:Click.CursorPosition>
               <ui:Click.Target>
-                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="544e420a35f528e61eb2b4897940a360" Selector="&lt;webctrl id='button-button-Button1' tag='BUTTON' /&gt;" TimeoutMS="120000" WaitForReady="INTERACTIVE" />
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="544e420a35f528e61eb2b4897940a360" Selector="&lt;webctrl id='button-button-Button1' tag='BUTTON' /&gt;" TimeoutMS="300000" WaitForReady="INTERACTIVE" />
               </ui:Click.Target>
             </ui:Click>
             <Assign DisplayName="Estatus terminado" sap:VirtualizedContainerService.HintSize="334,60" sap2010:WorkflowViewState.IdRef="Assign_4">
