@@ -71,7 +71,7 @@
                 <OutArgument x:TypeArguments="ui:GenericValue">[value]</OutArgument>
               </ui:GetAttribute.Result>
               <ui:GetAttribute.Target>
-                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="&lt;webctrl id='table-rowselect-Checklist1:id_Tabla[26]' /&gt;">
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="&lt;html app='chrome.exe' title='IBM BPM Portal - Step: Integración de información' /&gt;&lt;webctrl id='table-rowselect-Verificaciones1:Table2[0]' /&gt;">
                   <ui:Target.TimeoutMS>
                     <InArgument x:TypeArguments="x:Int32" />
                   </ui:Target.TimeoutMS>

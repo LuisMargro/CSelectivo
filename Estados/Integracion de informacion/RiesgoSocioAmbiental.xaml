@@ -70,7 +70,7 @@
           <Flowchart DisplayName="Riesgo socio ambiental" sap:VirtualizedContainerService.HintSize="637,865" sap2010:WorkflowViewState.IdRef="Flowchart_1">
             <Flowchart.Variables>
               <Variable x:TypeArguments="x:Boolean" Name="Linea" />
-              <Variable x:TypeArguments="x:Int32" Default="2" Name="indiceLinea" />
+              <Variable x:TypeArguments="x:Int32" Default="0" Name="indiceLinea" />
             </Flowchart.Variables>
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -105,7 +105,7 @@
                       <av:PointCollection x:Key="ConnectorLocation">150,635.5 150,665.5 310,665.5 310,740</av:PointCollection>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <While DisplayName="Recorrer el numero de lineas" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="While_6" Condition="[Linea]">
+                  <While DisplayName="Recorrer el numero de lineas" sap:VirtualizedContainerService.HintSize="484,729" sap2010:WorkflowViewState.IdRef="While_6" Condition="[Linea]">
                     <Sequence DisplayName="Sequence numero de lineas" sap:VirtualizedContainerService.HintSize="421,571" sap2010:WorkflowViewState.IdRef="Sequence_6">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -124,7 +124,7 @@
                           </ui:CursorPosition>
                         </ui:Click.CursorPosition>
                         <ui:Click.Target>
-                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="396eb019389c9c3103cf9c010eb5048a" Selector="[&quot;&lt;webctrl id='table-rowselect-Riesgo_Socioambiental1:Table*[&quot;+indiceLinea.ToString+&quot;]' /&gt;&quot;]" WaitForReady="INTERACTIVE">
+                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="396eb019389c9c3103cf9c010eb5048a" Selector="[&quot;&lt;html app='chrome.exe' omit:htmlwindowname='NUMERO_GRUPO' title='IBM BPM Portal - Step: Integración de información' /&gt;&lt;webctrl id='table-rowselect-Riesgo_Socioambiental1:Table*[&quot;+indiceLinea.ToString+&quot;]' /&gt;&quot;]" WaitForReady="INTERACTIVE">
                             <ui:Target.TimeoutMS>
                               <InArgument x:TypeArguments="x:Int32" />
                             </ui:Target.TimeoutMS>
@@ -146,7 +146,7 @@
                       </Assign>
                       <ui:UiElementExists DisplayName="Existen lineas por analizar" Exists="[Linea]" sap:VirtualizedContainerService.HintSize="379,106" sap2010:WorkflowViewState.IdRef="UiElementExists_2">
                         <ui:UiElementExists.Target>
-                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="0f61a5e0050a3cc3adfb16364e2c1c14" Selector="[&quot;&lt;webctrl id='table-rowselect-Riesgo_Socioambiental1:Table1[&quot;+indiceLinea.ToString+&quot;]' /&gt;&quot;]" TimeoutMS="120000" WaitForReady="COMPLETE" />
+                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="0f61a5e0050a3cc3adfb16364e2c1c14" Selector="[&quot;&lt;html app='chrome.exe' omit:htmlwindowname='NUMERO_GRUPO' title='IBM BPM Portal - Step: Integración de información' /&gt;&lt;webctrl id='table-rowselect-Riesgo_Socioambiental1:Table*[&quot;+indiceLinea.ToString+&quot;]' /&gt;&quot;]" TimeoutMS="120000" WaitForReady="COMPLETE" />
                         </ui:UiElementExists.Target>
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">

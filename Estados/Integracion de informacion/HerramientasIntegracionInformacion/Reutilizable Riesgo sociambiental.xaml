@@ -352,17 +352,14 @@
                 <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" Profile="Basic" TargetImageBase64="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" />
               </ui:ImageFound.Image>
               <ui:ImageFound.Target>
-                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}">
-                  <ui:Target.TimeoutMS>
-                    <InArgument x:TypeArguments="x:Int32" />
-                  </ui:Target.TimeoutMS>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" TimeoutMS="180000">
                   <ui:Target.WaitForReady>
                     <InArgument x:TypeArguments="ui:WaitForReady" />
                   </ui:Target.WaitForReady>
                 </ui:Target>
               </ui:ImageFound.Target>
             </ui:ImageFound>
-            <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Clic confirmar y Consultar riesgo" sap:VirtualizedContainerService.HintSize="484,106" sap2010:WorkflowViewState.IdRef="Click_9" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="True" SimulateClick="False">
+            <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Clic aceptar" sap:VirtualizedContainerService.HintSize="484,106" sap2010:WorkflowViewState.IdRef="Click_9" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="True" SimulateClick="False">
               <ui:Click.CursorPosition>
                 <ui:CursorPosition Position="Center">
                   <ui:CursorPosition.OffsetX>
@@ -374,7 +371,7 @@
                 </ui:CursorPosition>
               </ui:Click.CursorPosition>
               <ui:Click.Target>
-                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="cb934d8288b34270b0b56fc1af2716fb" Selector="&lt;webctrl id='button-button-Riesgo_Socioambiental1:Button1' tag='BUTTON' /&gt;" TimeoutMS="120000" WaitForReady="INTERACTIVE" />
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="ac1edd1435b3bb638568671371c4daff" Selector="&lt;webctrl id='button-button-Emergente1:okButton' tag='BUTTON' /&gt;" TimeoutMS="120000" WaitForReady="INTERACTIVE" />
               </ui:Click.Target>
             </ui:Click>
             <ui:UiElementExists Exists="{x:Null}" DisplayName="Element Exists" sap:VirtualizedContainerService.HintSize="484,106" sap2010:WorkflowViewState.IdRef="UiElementExists_2">

@@ -6,7 +6,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>654,1046</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>654,1163</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Verificaciones_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="21">
@@ -57,185 +57,23 @@
       <AssemblyReference>System.ServiceModel</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Flowchart DisplayName="Verificaciones" sap:VirtualizedContainerService.HintSize="634,986" sap2010:WorkflowViewState.IdRef="Flowchart_1">
+  <Flowchart DisplayName="Verificaciones" sap:VirtualizedContainerService.HintSize="634,1103" sap2010:WorkflowViewState.IdRef="Flowchart_1">
+    <Flowchart.Variables>
+      <Variable x:TypeArguments="ui:GenericValue" Name="Seleccionado" />
+    </Flowchart.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         <av:Point x:Key="ShapeLocation">270,2.5</av:Point>
         <av:Size x:Key="ShapeSize">60,75</av:Size>
         <av:PointCollection x:Key="ConnectorLocation">300,77.5 300,94.5</av:PointCollection>
-        <x:Double x:Key="Height">950</x:Double>
+        <x:Double x:Key="Height">1067</x:Double>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <Flowchart.StartNode>
-      <x:Reference>__ReferenceID10</x:Reference>
+      <x:Reference>__ReferenceID9</x:Reference>
     </Flowchart.StartNode>
-    <FlowStep x:Name="__ReferenceID0">
-      <sap:WorkflowViewStateService.ViewState>
-        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <av:Point x:Key="ShapeLocation">10,787</av:Point>
-          <av:Size x:Key="ShapeSize">200,66</av:Size>
-          <av:PointCollection x:Key="ConnectorLocation">110,853 110,883 330,883 330,890</av:PointCollection>
-        </scg:Dictionary>
-      </sap:WorkflowViewStateService.ViewState>
-      <Sequence DisplayName="Llenado de verificación de propiedad" sap:VirtualizedContainerService.HintSize="526,1638" sap2010:WorkflowViewState.IdRef="Sequence_3">
-        <Sequence.Variables>
-          <Variable x:TypeArguments="x:Boolean" Name="Observaciones" />
-        </Sequence.Variables>
-        <sap:WorkflowViewStateService.ViewState>
-          <scg:Dictionary x:TypeArguments="x:String, x:Object">
-            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-          </scg:Dictionary>
-        </sap:WorkflowViewStateService.ViewState>
-        <ui:SendHotkey DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" ClickBeforeTyping="True" DisplayName="Ir al principio de la pagina" sap:VirtualizedContainerService.HintSize="484,154" sap2010:WorkflowViewState.IdRef="SendHotkey_5" Key="home" KeyModifiers="None" SpecialKey="True">
-          <ui:SendHotkey.Target>
-            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="ddb17144dea74fe577d0efaf57bc8118" Selector="&lt;html app='chrome.exe' title='IBM BPM Portal - Step: Integración de información' /&gt;&lt;webctrl src='https://15.128.91.14:8443/teamworks/process.lsw?zWorkflowState=1*' tag='IFRAME' /&gt;&lt;webctrl id='coach_frame*' tag='IFRAME' /&gt;">
-              <ui:Target.TimeoutMS>
-                <InArgument x:TypeArguments="x:Int32" />
-              </ui:Target.TimeoutMS>
-              <ui:Target.WaitForReady>
-                <InArgument x:TypeArguments="ui:WaitForReady" />
-              </ui:Target.WaitForReady>
-            </ui:Target>
-          </ui:SendHotkey.Target>
-          <sap:WorkflowViewStateService.ViewState>
-            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-            </scg:Dictionary>
-          </sap:WorkflowViewStateService.ViewState>
-        </ui:SendHotkey>
-        <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click número de garantía" sap:VirtualizedContainerService.HintSize="484,106" sap2010:WorkflowViewState.IdRef="Click_5" KeyModifiers="None" MouseButton="BTN_LEFT">
-          <ui:Click.CursorPosition>
-            <ui:CursorPosition Position="Center">
-              <ui:CursorPosition.OffsetX>
-                <InArgument x:TypeArguments="x:Int32" />
-              </ui:CursorPosition.OffsetX>
-              <ui:CursorPosition.OffsetY>
-                <InArgument x:TypeArguments="x:Int32" />
-              </ui:CursorPosition.OffsetY>
-            </ui:CursorPosition>
-          </ui:Click.CursorPosition>
-          <ui:Click.Target>
-            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="a5b3a72419abc326414301a99a80e2b6" Selector="&lt;html app='chrome.exe' omit:htmlwindowname='NUMERO_GRUPO' title='IBM BPM Portal*' /&gt;&lt;webctrl id='table-rowselect-Verificaciones1:Table1[0]' /&gt;" TimeoutMS="180000" WaitForReady="INTERACTIVE" />
-          </ui:Click.Target>
-        </ui:Click>
-        <ui:SendHotkey DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" ClickBeforeTyping="True" DisplayName="Ir al fondo de la pagina" sap:VirtualizedContainerService.HintSize="484,154" sap2010:WorkflowViewState.IdRef="SendHotkey_6" Key="end" KeyModifiers="None" SpecialKey="True">
-          <ui:SendHotkey.Target>
-            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="ddb17144dea74fe577d0efaf57bc8118" Selector="&lt;html app='chrome.exe' title='IBM BPM Portal - Step: Integración de información' /&gt;&lt;webctrl src='https://15.128.91.14:8443/teamworks/process.lsw?zWorkflowState=1*' tag='IFRAME' /&gt;&lt;webctrl id='coach_frame*' tag='IFRAME' /&gt;">
-              <ui:Target.TimeoutMS>
-                <InArgument x:TypeArguments="x:Int32" />
-              </ui:Target.TimeoutMS>
-              <ui:Target.WaitForReady>
-                <InArgument x:TypeArguments="ui:WaitForReady" />
-              </ui:Target.WaitForReady>
-            </ui:Target>
-          </ui:SendHotkey.Target>
-          <sap:WorkflowViewStateService.ViewState>
-            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-            </scg:Dictionary>
-          </sap:WorkflowViewStateService.ViewState>
-        </ui:SendHotkey>
-        <ui:ImageFound DisplayName="Existe observaciones abierto" Found="[Observaciones]" sap:VirtualizedContainerService.HintSize="484,106" sap2010:WorkflowViewState.IdRef="ImageFound_6">
-          <ui:ImageFound.Image>
-            <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" Profile="Basic" TargetImageBase64="iVBORw0KGgoAAAANSUhEUgAAAH0AAAAaCAYAAACacVPHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJ0SURBVGhD7ZcxcsJADEVzJ67BHTgIJTegp6bmFFRcgStQUjrzEz/yR9k1Ng5FvHozGsxKq5X010zy0SXNkaI3SIreICl6g6ToDZKiN0iK3iApeoOk6A2SojdIit4gk0S/3W7dZrPpVqvVw7bbbXe/3/uInxiZnpfA9Xrt1uv1r17/K6NFp3EXHNO6/GKJoi+NUaLrduuWS+D9ft+vltdd9MPh8LgYtX3Y5XLpvd8oHp9fIM9Pjt1u93Xx/Iz4drKPnDI/M9bEPlF602O81yio/3g8Pl6WGBNfpNPp1HvGzehVRoleahoYpvyKKw0XoykXFGN/zc/Zpfzn8/nL70PVWfLpszRAGfE1P2fG/mvxz3qQcTHJGf0I+2xGcxglugrRoRQc0ToFuSg0wH6G5vER9hMrEFB5SvmFxyBK7Yzoj/VFv0zP+GO84HxmhGh8j3u8XhH7HprRXN4mug+ENZmeyYexLhiw+zENKuYC9qkWf45ojXzUjAD6LEE+F0TxCCaoqxZT80ejr6EZzeVtP+9eZGlNMGxMjXKWr2MaVC2X6lJ9WudvCQaOjxrj96miE/8O0akJSjOay5/9IUczNOcF6tNjIvhd1FosfpmeHR+Q+6No5GDAnO97XLS4v9QPZzMf3y84kz2lizMEZ/r8X2WU6ILGdXA0v500V4pTo2pYjZf8DICBuXEG+V0g8LN9OLXayVmrCYHYz/davM/hmei1mrSvll829pIMMVp0URKUJsBFmfIvmy6EE4WPw5PpORKHDf4roBj59cy5sSbPH0UXQ/Ei1kHdniMKP5RfFmf0KpNET5ZBit4gKXqDpOgNkqI3R9d9Aijl1f+qpLI9AAAAAElFTkSuQmCC" />
-          </ui:ImageFound.Image>
-          <ui:ImageFound.Target>
-            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="&lt;html app='chrome.exe' title='IBM BPM Portal - Step: Integración de información' /&gt;" TimeoutMS="5000">
-              <ui:Target.WaitForReady>
-                <InArgument x:TypeArguments="ui:WaitForReady" />
-              </ui:Target.WaitForReady>
-            </ui:Target>
-          </ui:ImageFound.Target>
-        </ui:ImageFound>
-        <If Condition="[not Observaciones]" DisplayName="si no existe observaciones" sap:VirtualizedContainerService.HintSize="484,254" sap2010:WorkflowViewState.IdRef="If_5">
-          <If.Then>
-            <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click verficacion de propiedad" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_3" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
-              <ui:Click.CursorPosition>
-                <ui:CursorPosition Position="Center">
-                  <ui:CursorPosition.OffsetX>
-                    <InArgument x:TypeArguments="x:Int32" />
-                  </ui:CursorPosition.OffsetX>
-                  <ui:CursorPosition.OffsetY>
-                    <InArgument x:TypeArguments="x:Int32" />
-                  </ui:CursorPosition.OffsetY>
-                </ui:CursorPosition>
-              </ui:Click.CursorPosition>
-              <ui:Click.Target>
-                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="2e22e97024bcea02fce4539461c6f664" Selector="&lt;html app='chrome.exe' omit:htmlwindowname='NUMERO_GRUPO' title='IBM BPM Portal*' /&gt;&lt;webctrl id='collapsiblepanel-header-Verificaciones1:Collapsible_Panel5' /&gt;" TimeoutMS="180000" WaitForReady="INTERACTIVE" />
-              </ui:Click.Target>
-            </ui:Click>
-          </If.Then>
-        </If>
-        <ui:TypeInto ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Type Into estado de inscripción" sap:VirtualizedContainerService.HintSize="484,134" sap2010:WorkflowViewState.IdRef="TypeInto_7" SimulateType="True" Text="Testing">
-          <ui:TypeInto.Target>
-            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="94e3ecd7f5c1a7604588d6e056f8b50b" Selector="&lt;html app='chrome.exe' omit:htmlwindowname='NUMERO_GRUPO' title='IBM BPM Portal*' /&gt;&lt;webctrl id='text-input-Verificaciones1:Text47' /&gt;" TimeoutMS="180000" WaitForReady="INTERACTIVE" />
-          </ui:TypeInto.Target>
-        </ui:TypeInto>
-        <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click Consultar verificación de propiedad" sap:VirtualizedContainerService.HintSize="484,106" sap2010:WorkflowViewState.IdRef="Click_4" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
-          <ui:Click.CursorPosition>
-            <ui:CursorPosition Position="Center">
-              <ui:CursorPosition.OffsetX>
-                <InArgument x:TypeArguments="x:Int32" />
-              </ui:CursorPosition.OffsetX>
-              <ui:CursorPosition.OffsetY>
-                <InArgument x:TypeArguments="x:Int32" />
-              </ui:CursorPosition.OffsetY>
-            </ui:CursorPosition>
-          </ui:Click.CursorPosition>
-          <ui:Click.Target>
-            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="1cea79ad6d3587ef111a57765513e326" Selector="&lt;html app='chrome.exe' omit:htmlwindowname='NUMERO_GRUPO' title='IBM BPM Portal*' /&gt;&lt;webctrl id='button-button-Verificaciones1:Button14' /&gt;" TimeoutMS="180000" WaitForReady="COMPLETE" />
-          </ui:Click.Target>
-        </ui:Click>
-        <ui:ImageFound Found="{x:Null}" DisplayName="Verificacion de propiedad solicitada" sap:VirtualizedContainerService.HintSize="484,106" sap2010:WorkflowViewState.IdRef="ImageFound_2">
-          <ui:ImageFound.Image>
-            <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" Profile="Basic" TargetImageBase64="iVBORw0KGgoAAAANSUhEUgAAAPsAAAAdCAYAAABsbxo5AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAUPSURBVHhe7ZkxTiRBDEX3TlyDO3ADLsAByMmJiZHICAmICAhIickICWf1Z3mrr4+ru2cYJEbtJ5Vmqqtsf9vtWa34s2maZhX0sDfNSuhhb5qV0MPeNCuhh71pVkIPe9OshB72plkJPewT3N7ebk5OTjZPT0+fT5rmeCmHXS+3XvKLi4vNx8fH59N/MABXV1efT3ZDdj5A7+/vm7Ozs+0zrbu7u83p6WkZ+9AQW0vfHc6U76Ghvj/h+6fJ/u3Kd3OnLz/1fuQ7kfs5Xl9fv7y/ynnfeRGHel/KYSdBiZZ4kHglkc+/wzG/+Puyxpzh2Ib9u5Dvrx12wS+4B8hfLQqje5kQd8/Pz7cLX/4vg/bYasnX8/Pzl1/GqTj8ALmfLIrH8R+qUWPRmPcFvq6vr/9ryjuJ69fn/f399rvrHGmsQN/Nzc32Ln7JYVR7wYvDcg3YqZ6Xl5flHe8feL2ylnO5L+mf+5e9/Pj7kcje/cneIc/qHL3kkXuRml2L1/Dx8fH/Ha306WdeTz/X5z41qxgOO6I9SYoux5VgD5oF1Xc9w8fSYR/FoUH480UskTH8HN9VjrloRuVPyxvuVI1hUavKp2tKRhrRMKp9DjqLWqadL/Indu59oWNJ7pX9XP+0RvUe5Ui8UY74y3ci96OcsMe/9tWwv729lfZz/rWW1mzEcNg9qApI0jilqAjgPqJJOkXky0IzsxnyJZ+cy05k8RP3n5qFx0tfxHbf5Jl62Fc2DvZ+jkb5yrqJrG2CfdaEPNHkeRNHdtR+iR35EquqL7UQ3Nf5XO4VlX/2Ap8e0+F8zj/nWRdiojn3GR/7rCHn3Kd+Sdpzn3hil5pNMRx2QePkLEVzlmuUNKQw/JBI2i1NJPXo/kgDZCNTi6AZozt5nlQ+qaWeoUH7XNQ60XPqDMQZ5T2qRWXncdGHnfeD++j1Jb/41id47g53WaM8Uk9S1VO+/ExL38E15Z3cVzk5qRnfVS+ppZZsZFv536VmU0wOO8KVqMS7wwzkS3eqRgl/WUQml3Z5P8lz3480QDZSNq5FyE72o2bneZL3hcdBg/a5RrqrmhBnlDdx0ueudlV9tc+le3O5i137N8ojSW3yq/uyy165JvxzJ/dVTk5qxrfiCzToju7mvvK/S82mmBx2hMiRlhcpBSRVo0QKy+TSjnP2Xhz9/94b4Xrln0Z5PHRLRzaS2Oz9fupBLzHdxsGec9coH3P2FdRQn0J2sueFqWrvcanFyI69IF9ief+w9zjOXO7YV+fun71AzyhmkjHQn/3LmNzPfeYkvCZZe+5TvzzHPzVP/65vSc2mmBx2QXCCAUE5Y5FEJgVeGEHz8D0qhsfQkp/RmVb690Vhs3ACfblGeim2+3C8GbnwUWnUGjVvpHGu9t5LX/kiVnfQkv2rtFDfudz37Z9W5gaj+3M54i/fidyPcsI+a+811/OHh4cy/iFrNmJ22HGOGCcDUxCRSUO+LDRHn6Kyyzh+5sXU85eXl609zRX5AhAbv65b+AuceadempM+HNcvf/qTmfsQqdHPEvTN/ektay+8XhnH7fb901uezeW+pH/unz95VrlB1jLvkifnHgu91DP3gp5j72dZe7+r5zp3fYpNDagJMbHZp2YVs8Pe/D54+X2oDsHUj0Rz/PSwHyE97M0+9LAfIT3szT70sDfNSuhhb5qV0MPeNCuhh71pVkIPe9OshB72plkJPexNsxJ62JtmFWw2fwGAm1yEjNou7QAAAABJRU5ErkJggg==" />
-          </ui:ImageFound.Image>
-          <ui:ImageFound.Target>
-            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="&lt;html app='chrome.exe' title='IBM BPM Portal - Step: Integración de información' /&gt;" TimeoutMS="180000" WaitForReady="COMPLETE" />
-          </ui:ImageFound.Target>
-        </ui:ImageFound>
-        <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Clic aceptar verificacion" sap:VirtualizedContainerService.HintSize="484,106" sap2010:WorkflowViewState.IdRef="Click_8" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
-          <ui:Click.CursorPosition>
-            <ui:CursorPosition Position="Center">
-              <ui:CursorPosition.OffsetX>
-                <InArgument x:TypeArguments="x:Int32" />
-              </ui:CursorPosition.OffsetX>
-              <ui:CursorPosition.OffsetY>
-                <InArgument x:TypeArguments="x:Int32" />
-              </ui:CursorPosition.OffsetY>
-            </ui:CursorPosition>
-          </ui:Click.CursorPosition>
-          <ui:Click.Target>
-            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="eee2d78b463ea578da847d44a0e25c41" Selector="&lt;html app='chrome.exe' omit:htmlwindowname='NUMERO_GRUPO' title='IBM BPM Portal*' /&gt;&lt;webctrl id='button-button-Verificaciones1:Button4' /&gt;" TimeoutMS="180000" WaitForReady="INTERACTIVE" />
-          </ui:Click.Target>
-        </ui:Click>
-      </Sequence>
-      <FlowStep.Next>
-        <FlowStep x:Name="__ReferenceID1">
-          <sap:WorkflowViewStateService.ViewState>
-            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <av:Point x:Key="ShapeLocation">199,890</av:Point>
-              <av:Size x:Key="ShapeSize">262,60</av:Size>
-            </scg:Dictionary>
-          </sap:WorkflowViewStateService.ViewState>
-          <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_1">
-            <Assign.To>
-              <OutArgument x:TypeArguments="x:Int32">[io_EstadoTerminado]</OutArgument>
-            </Assign.To>
-            <Assign.Value>
-              <InArgument x:TypeArguments="x:Int32">8</InArgument>
-            </Assign.Value>
-            <sap:WorkflowViewStateService.ViewState>
-              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-              </scg:Dictionary>
-            </sap:WorkflowViewStateService.ViewState>
-          </Assign>
-        </FlowStep>
-      </FlowStep.Next>
-    </FlowStep>
-    <FlowDecision x:Name="__ReferenceID4" Condition="[in_TransactionItem(0).ToString.Equals(&quot;PM&quot;) Or in_TransactionItem(3).ToString.Equals(&quot;Si&quot;)]" DisplayName="Si hay PM" sap:VirtualizedContainerService.HintSize="70,87" sap2010:WorkflowViewState.IdRef="FlowDecision_2">
+    <FlowDecision x:Name="__ReferenceID3" Condition="[in_TransactionItem(0).ToString.Equals(&quot;PM&quot;) Or in_TransactionItem(3).ToString.Equals(&quot;Si&quot;)]" DisplayName="Si hay PM" sap:VirtualizedContainerService.HintSize="70,87" sap2010:WorkflowViewState.IdRef="FlowDecision_2">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -246,7 +84,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <FlowDecision.True>
-        <FlowStep x:Name="__ReferenceID6">
+        <FlowStep x:Name="__ReferenceID5">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <av:Point x:Key="ShapeLocation">15,288</av:Point>
@@ -269,8 +107,8 @@
                 <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="512e5782a189ec26201b96ea34cb76dc" Selector="&lt;html app='chrome.exe' title='IBM BPM Portal - Step: Integración de información' /&gt;&lt;webctrl id='table-rowselect-Verificaciones1:Table1[0]' /&gt;" TimeoutMS="120000" WaitForReady="INTERACTIVE" />
               </ui:UiElementExists.Target>
             </ui:UiElementExists>
-            <While DisplayName="Recorrer si el cliente existe" sap:VirtualizedContainerService.HintSize="614,3150" sap2010:WorkflowViewState.IdRef="While_1" Condition="[ClienteExists = true]">
-              <Sequence DisplayName="Secuencia de clic al cliente" sap:VirtualizedContainerService.HintSize="568,2992" sap2010:WorkflowViewState.IdRef="Sequence_6">
+            <While DisplayName="Recorrer si el cliente existe" sap:VirtualizedContainerService.HintSize="614,3296" sap2010:WorkflowViewState.IdRef="While_1" Condition="[ClienteExists = true]">
+              <Sequence DisplayName="Secuencia de clic al cliente" sap:VirtualizedContainerService.HintSize="568,3138" sap2010:WorkflowViewState.IdRef="Sequence_6">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -330,7 +168,7 @@
                     </ui:SendHotkey.Target>
                   </ui:SendHotkey>
                 </Sequence>
-                <Sequence DisplayName="Llenado de verificación de sociedad" sap:VirtualizedContainerService.HintSize="526,1278" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                <Sequence DisplayName="Llenado de verificación de sociedad" sap:VirtualizedContainerService.HintSize="526,1424" sap2010:WorkflowViewState.IdRef="Sequence_9">
                   <Sequence.Variables>
                     <Variable x:TypeArguments="x:Boolean" Name="ExisteEmpresaConstituida" />
                   </Sequence.Variables>
@@ -376,6 +214,31 @@
                       <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="c1eb8aef5d07c2270330a18af5052c3c" Selector="&lt;html app='chrome.exe' omit:htmlwindowname='NUMERO_GRUPO' title='IBM BPM Portal*' /&gt;&lt;webctrl id='text-input-Verificaciones1:Text33' /&gt;" TimeoutMS="180000" WaitForReady="INTERACTIVE" />
                     </ui:TypeInto.Target>
                   </ui:TypeInto>
+                  <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click activar seccion" sap:VirtualizedContainerService.HintSize="484,106" sap2010:WorkflowViewState.IdRef="Click_22" KeyModifiers="None" MouseButton="BTN_LEFT">
+                    <ui:Click.CursorPosition>
+                      <ui:CursorPosition Position="Center">
+                        <ui:CursorPosition.OffsetX>
+                          <InArgument x:TypeArguments="x:Int32" />
+                        </ui:CursorPosition.OffsetX>
+                        <ui:CursorPosition.OffsetY>
+                          <InArgument x:TypeArguments="x:Int32" />
+                        </ui:CursorPosition.OffsetY>
+                      </ui:CursorPosition>
+                    </ui:Click.CursorPosition>
+                    <ui:Click.Target>
+                      <ui:Target Element="{x:Null}" InformativeScreenshot="8257cd65c9f0f74bb7a3364fb512aeb1" Selector="&lt;html app='chrome.exe' title='IBM BPM Portal - Step: Integración de información' /&gt;&lt;webctrl src='https://15.128.91.14:8443/teamworks/process.lsw?zWorkflowState=1*' tag='IFRAME' /&gt;">
+                        <ui:Target.ClippingRegion>
+                          <ui:Region Rectangle="1, 215, 30, 23" />
+                        </ui:Target.ClippingRegion>
+                        <ui:Target.TimeoutMS>
+                          <InArgument x:TypeArguments="x:Int32" />
+                        </ui:Target.TimeoutMS>
+                        <ui:Target.WaitForReady>
+                          <InArgument x:TypeArguments="ui:WaitForReady" />
+                        </ui:Target.WaitForReady>
+                      </ui:Target>
+                    </ui:Click.Target>
+                  </ui:Click>
                   <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click consultar" sap:VirtualizedContainerService.HintSize="484,106" sap2010:WorkflowViewState.IdRef="Click_14" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
                     <ui:Click.CursorPosition>
                       <ui:CursorPosition Position="Center">
@@ -425,7 +288,7 @@
                 </Assign>
                 <ui:UiElementExists DisplayName="Cliente Existe" Exists="[ClienteExists]" sap:VirtualizedContainerService.HintSize="526,106" sap2010:WorkflowViewState.IdRef="UiElementExists_2">
                   <ui:UiElementExists.Target>
-                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="512e5782a189ec26201b96ea34cb76dc" Selector="[&quot;&lt;html app='chrome.exe' title='IBM BPM Portal - Step: Integración de información' /&gt;&lt;webctrl id='table-rowselect-Verificaciones1:Table1[&quot;+AumentarCliente.ToString+&quot;]' /&gt;&quot;]" TimeoutMS="120000" WaitForReady="INTERACTIVE" />
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="512e5782a189ec26201b96ea34cb76dc" Selector="[&quot;&lt;html app='chrome.exe' title='IBM BPM Portal - Step: Integración de información' /&gt;&lt;webctrl id='table-rowselect-Verificaciones1:Table1[&quot;+AumentarCliente.ToString+&quot;]' /&gt;&quot;]" TimeoutMS="5000" WaitForReady="INTERACTIVE" />
                   </ui:UiElementExists.Target>
                 </ui:UiElementExists>
                 <If Condition="[Not ClienteExists]" DisplayName="Si cliente no exite" sap:VirtualizedContainerService.HintSize="526,208" sap2010:WorkflowViewState.IdRef="If_2">
@@ -444,18 +307,18 @@
             </While>
           </Sequence>
           <FlowStep.Next>
-            <FlowDecision x:Name="__ReferenceID2" Condition="[in_TransactionItem(14).ToString.Equals(&quot;Si&quot;)]" DisplayName="Hip/Inmueble = Si" sap:VirtualizedContainerService.HintSize="103,87" sap2010:WorkflowViewState.IdRef="FlowDecision_1">
+            <FlowDecision x:Name="__ReferenceID1" Condition="[in_TransactionItem(14).ToString.Equals(&quot;Si&quot;)]" DisplayName="Hip/Inmueble = Si" sap:VirtualizedContainerService.HintSize="103,87" sap2010:WorkflowViewState.IdRef="FlowDecision_1">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   <av:Point x:Key="ShapeLocation">348.5,556.5</av:Point>
                   <av:Size x:Key="ShapeSize">103,87</av:Size>
                   <av:PointCollection x:Key="TrueConnector">348.5,600 318.5,600 318.5,450 210,450</av:PointCollection>
-                  <av:PointCollection x:Key="FalseConnector">451.5,600 480,600 480,860 330,860 330,890</av:PointCollection>
+                  <av:PointCollection x:Key="FalseConnector">451.5,600 470,600 470,970 380,970 380,1000</av:PointCollection>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
               <FlowDecision.True>
-                <FlowStep x:Name="__ReferenceID9">
+                <FlowStep x:Name="__ReferenceID7">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <av:Point x:Key="ShapeLocation">10,424.5</av:Point>
@@ -494,12 +357,12 @@
                     </sap:WorkflowViewStateService.ViewState>
                   </ui:Click>
                   <FlowStep.Next>
-                    <FlowStep x:Name="__ReferenceID8">
+                    <FlowStep x:Name="__ReferenceID6">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <av:Point x:Key="ShapeLocation">10,534.5</av:Point>
                           <av:Size x:Key="ShapeSize">200,51</av:Size>
-                          <av:PointCollection x:Key="ConnectorLocation">110,585.5 110,624.5</av:PointCollection>
+                          <av:PointCollection x:Key="ConnectorLocation">110,585.5 110,615.5 100,615.5 100,664.5</av:PointCollection>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                       <ui:SendHotkey DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" ClickBeforeTyping="True" DisplayName="Ir al principio de la pagina" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="SendHotkey_4" Key="home" KeyModifiers="None" SpecialKey="True">
@@ -520,44 +383,80 @@
                         </sap:WorkflowViewStateService.ViewState>
                       </ui:SendHotkey>
                       <FlowStep.Next>
-                        <FlowStep x:Name="__ReferenceID7">
+                        <FlowStep x:Name="__ReferenceID8">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                              <av:Point x:Key="ShapeLocation">10,624.5</av:Point>
+                              <av:Point x:Key="ShapeLocation">0,664.5</av:Point>
                               <av:Size x:Key="ShapeSize">200,51</av:Size>
-                              <av:PointCollection x:Key="ConnectorLocation">110,675.5 110,697</av:PointCollection>
+                              <av:PointCollection x:Key="ConnectorLocation">100,715.5 100,777</av:PointCollection>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Clic Garantia" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="Click_12" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="False">
-                            <ui:Click.CursorPosition>
-                              <ui:CursorPosition Position="Center">
-                                <ui:CursorPosition.OffsetX>
-                                  <InArgument x:TypeArguments="x:Int32" />
-                                </ui:CursorPosition.OffsetX>
-                                <ui:CursorPosition.OffsetY>
-                                  <InArgument x:TypeArguments="x:Int32" />
-                                </ui:CursorPosition.OffsetY>
-                              </ui:CursorPosition>
-                            </ui:Click.CursorPosition>
-                            <ui:Click.Target>
-                              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="7efeeb4628befe5b3637305da7ec6897" Selector="&lt;html app='chrome.exe' title='IBM BPM Portal - Step: Integración de información' /&gt;&lt;webctrl id='table-rowselect-Verificaciones1:Table2[0]' /&gt;" TimeoutMS="180000" WaitForReady="COMPLETE" />
-                            </ui:Click.Target>
+                          <DoWhile DisplayName="Do mientras selecciona" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="DoWhile_1">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                          </ui:Click>
-                          <FlowStep.Next>
-                            <FlowStep x:Name="__ReferenceID3">
+                            <DoWhile.Condition>[Not Seleccionado]</DoWhile.Condition>
+                            <Sequence sap:VirtualizedContainerService.HintSize="376,434" sap2010:WorkflowViewState.IdRef="Sequence_10">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                  <av:Point x:Key="ShapeLocation">10,697</av:Point>
-                                  <av:Size x:Key="ShapeSize">200,66</av:Size>
-                                  <av:PointCollection x:Key="ConnectorLocation">110,763 110,787</av:PointCollection>
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
-                              <Sequence DisplayName="Llenado de verificación" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                              <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Clic Garantia" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_21" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="False">
+                                <ui:Click.CursorPosition>
+                                  <ui:CursorPosition Position="Center">
+                                    <ui:CursorPosition.OffsetX>
+                                      <InArgument x:TypeArguments="x:Int32" />
+                                    </ui:CursorPosition.OffsetX>
+                                    <ui:CursorPosition.OffsetY>
+                                      <InArgument x:TypeArguments="x:Int32" />
+                                    </ui:CursorPosition.OffsetY>
+                                  </ui:CursorPosition>
+                                </ui:Click.CursorPosition>
+                                <ui:Click.Target>
+                                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="7efeeb4628befe5b3637305da7ec6897" Selector="&lt;html app='chrome.exe' title='IBM BPM Portal - Step: Integración de información' /&gt;&lt;webctrl id='table-rowselect-Verificaciones1:Table2[0]' /&gt;" TimeoutMS="180000" WaitForReady="COMPLETE" />
+                                </ui:Click.Target>
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                              </ui:Click>
+                              <ui:GetAttribute ContinueOnError="{x:Null}" Attribute="checked" DisplayName="Obtener si ya esta seleccionado" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="GetAttribute_2">
+                                <ui:GetAttribute.Result>
+                                  <OutArgument x:TypeArguments="ui:GenericValue">[Seleccionado]</OutArgument>
+                                </ui:GetAttribute.Result>
+                                <ui:GetAttribute.Target>
+                                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="4b9e32d89c06dbd62c7e911744a0baa3" Selector="&lt;html app='chrome.exe' title='IBM BPM Portal - Step: Integración de información' /&gt;&#xA;&lt;webctrl id='table-rowselect-Verificaciones1:Table2[0]' /&gt;&#xA;">
+                                    <ui:Target.TimeoutMS>
+                                      <InArgument x:TypeArguments="x:Int32" />
+                                    </ui:Target.TimeoutMS>
+                                    <ui:Target.WaitForReady>
+                                      <InArgument x:TypeArguments="ui:WaitForReady" />
+                                    </ui:Target.WaitForReady>
+                                  </ui:Target>
+                                </ui:GetAttribute.Target>
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                              </ui:GetAttribute>
+                              <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="Delay_1" />
+                            </Sequence>
+                          </DoWhile>
+                          <FlowStep.Next>
+                            <FlowStep x:Name="__ReferenceID2">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <av:Point x:Key="ShapeLocation">0,777</av:Point>
+                                  <av:Size x:Key="ShapeSize">200,66</av:Size>
+                                  <av:PointCollection x:Key="ConnectorLocation">100,843 100,873 380,873 380,1000</av:PointCollection>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <Sequence DisplayName="Llenado de verificación" sap:VirtualizedContainerService.HintSize="526,3278" sap2010:WorkflowViewState.IdRef="Sequence_4">
                                 <Sequence.Variables>
                                   <Variable x:TypeArguments="x:Boolean" Name="ExisteEmpresaConstituida" />
                                 </Sequence.Variables>
@@ -694,6 +593,58 @@
                                     </ui:Click>
                                   </If.Then>
                                 </If>
+                                <ui:TypeInto ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" Activate="True" DisplayName="Type Into empresa constituida en " EmptyField="True" sap:VirtualizedContainerService.HintSize="484,134" sap2010:WorkflowViewState.IdRef="TypeInto_22" SendWindowMessages="True" SimulateType="False" Text="Cuernavaca">
+                                  <ui:TypeInto.Target>
+                                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="3595d27fc21248f7727ae5b6254f6f1e" Selector="&lt;html app='chrome.exe' omit:htmlwindowname='NUMERO_GRUPO' title='IBM BPM Portal*' /&gt;&lt;webctrl id='text-input-Verificaciones1:Text47' /&gt;" TimeoutMS="180000" WaitForReady="INTERACTIVE" />
+                                  </ui:TypeInto.Target>
+                                </ui:TypeInto>
+                                <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click activar seccion" sap:VirtualizedContainerService.HintSize="484,106" sap2010:WorkflowViewState.IdRef="Click_23" KeyModifiers="None" MouseButton="BTN_LEFT">
+                                  <ui:Click.CursorPosition>
+                                    <ui:CursorPosition Position="Center">
+                                      <ui:CursorPosition.OffsetX>
+                                        <InArgument x:TypeArguments="x:Int32" />
+                                      </ui:CursorPosition.OffsetX>
+                                      <ui:CursorPosition.OffsetY>
+                                        <InArgument x:TypeArguments="x:Int32" />
+                                      </ui:CursorPosition.OffsetY>
+                                    </ui:CursorPosition>
+                                  </ui:Click.CursorPosition>
+                                  <ui:Click.Target>
+                                    <ui:Target Element="{x:Null}" InformativeScreenshot="8e860258e3b0852c6b25a48d55fe0c71" Selector="&lt;html app='chrome.exe' title='IBM BPM Portal - Step: Integración de información' /&gt;&lt;webctrl src='https://15.128.91.14:8443/teamworks/process.lsw?zWorkflowState=1*' tag='IFRAME' /&gt;">
+                                      <ui:Target.ClippingRegion>
+                                        <ui:Region Rectangle="0, 233, 32, 20" />
+                                      </ui:Target.ClippingRegion>
+                                      <ui:Target.TimeoutMS>
+                                        <InArgument x:TypeArguments="x:Int32" />
+                                      </ui:Target.TimeoutMS>
+                                      <ui:Target.WaitForReady>
+                                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                                      </ui:Target.WaitForReady>
+                                    </ui:Target>
+                                  </ui:Click.Target>
+                                </ui:Click>
+                                <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click consultar verificacion" sap:VirtualizedContainerService.HintSize="484,106" sap2010:WorkflowViewState.IdRef="Click_24" KeyModifiers="None" MouseButton="BTN_LEFT">
+                                  <ui:Click.CursorPosition>
+                                    <ui:CursorPosition Position="Center">
+                                      <ui:CursorPosition.OffsetX>
+                                        <InArgument x:TypeArguments="x:Int32" />
+                                      </ui:CursorPosition.OffsetX>
+                                      <ui:CursorPosition.OffsetY>
+                                        <InArgument x:TypeArguments="x:Int32" />
+                                      </ui:CursorPosition.OffsetY>
+                                    </ui:CursorPosition>
+                                  </ui:Click.CursorPosition>
+                                  <ui:Click.Target>
+                                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="18eb78d51df449f0854930dd46ad8f72" Selector="&lt;html app='chrome.exe' title='IBM BPM Portal - Step: Integración de información' /&gt;&lt;webctrl id='button-button-Verificaciones1:Button14' /&gt;">
+                                      <ui:Target.TimeoutMS>
+                                        <InArgument x:TypeArguments="x:Int32" />
+                                      </ui:Target.TimeoutMS>
+                                      <ui:Target.WaitForReady>
+                                        <InArgument x:TypeArguments="ui:WaitForReady" />
+                                      </ui:Target.WaitForReady>
+                                    </ui:Target>
+                                  </ui:Click.Target>
+                                </ui:Click>
                                 <ui:ImageFound Found="{x:Null}" DisplayName="Esperar mensaje de confirmacion" sap:VirtualizedContainerService.HintSize="484,106" sap2010:WorkflowViewState.IdRef="ImageFound_8">
                                   <ui:ImageFound.Image>
                                     <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" Profile="Basic" TargetImageBase64="iVBORw0KGgoAAAANSUhEUgAAAPgAAAAYCAYAAADXlTCJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAATzSURBVHhe7ZkxTiNBEEX3TlyDO3ADLsAByMmJiZHICAmICAhIickICb36Xh76fFczHmMkPFtPKtk93VX1q2raqxV/Vk3TLJa+4E2zYPqCN82C6QveNAumL3jTLJi+4E2zYPqCN82C6QtecH19vTo6Olo9PDy8P2maw+TTBdcLrRf77Oxs9fb29v70H7z0FxcX70/mIT+/NK+vr6uTk5P1M9nNzc3q+Pi4zL1vyC3Td4c91btv6O9PxP5pcn5z+W7tzOWn3o98J3I9xfPz88b7q5p3vS9iH+/LpwtOURIqwSDBEp7Pv8Mhv+y78j/WDId2wb8L9f6qCy74pfag+etEM3Qui+Ds6enp2ojl/wJoja9MsR4fHzd+Ab/Kw4+Ox8lGeB7/cRoNE415XhDr8vLyQ1OeSVy/Pm9vb9ffXedIYwX6rq6u1meJSw2j3gteFsw14Kd+np+fl2d8fuD9yl5O1b7N/Dy+/BXH349E/h5P/g51VvvopY5ci9TsWryH9/f3H2dkGdP3vJ++r89depZsXHCEemE0WsEqkZ4om6jvekaMbS/4KA9DIZ4buUTm8H1iVzWmMYAqnsyH7FTDwOhVFdM1JSONaBj1Pi83Ri/Tz436yZ1rN3RsU3vlPzU/2ajfoxrJN6qRePlO5HpUE/7E17q64C8vL6X/VHzZtj2r2LjgnkhNo1AC0UiSch6hFJqJ8wVhgDkAxVJM9uUnsuGJx0/NwvNlLHJ7bOpMPawrHwd/30ejYmXfRPY2wT97Qp1o8rrJIz96v40f9ZKr6i+9EJzX/lTtFVV81oKYntNhfyo++9kXcqI515kf/+wh+5ynf0n6c558Yk7PRmxccMGwFCCFspc2KhRSDHEQn37biBepR+dHGiCHl1oEAxidyf2kikkv9QwNWqfR60TP6TOQZ1T3qBeVn+dFH34+D86j101xia1P8NodzmKjOlJPUvVTsXxPpu/gmvJMrquanNRM7GqW9FImH/lW8ef0bER5wRGr4iTYg2RwN52phiP8BRFZUPrl+ST3fT3SADk8+bgWIT/5jwac+0meF54HDVqnjXRXPSHPqG7yZMy5flV/tU7Tuanaxdz5jepIUpvi6rz8clauificyXVVk5Oaia38Ag06o7O5ruLP6dmI8oKTXM4yb0wmTarhiBSTBaUf+6y9Ifr/ujff9So+w/F86JaOHB65Wfv51INecrqPgz/7rlExpvwr6KE+hfzkz0tS9d7z0ouRH2tBveTy+eHveZyp2vGv9j0+a4GeUc4kc6A/55c5OZ/rrEl4T7L3nKd/uU98ep7xXd82PRtRXnBBQhIAidjDEJ6FgDdDMDBijxrgOWSKM9qTZXw3mpnNEuhLG+mlwR7D8QGkEaPSKBsNbKRxqvc+S7d8+aozaMn5VVro71Ttu85PlrXB6PxUjcTLdyLXo5rwz957z/X87u6uzL/PnlUMLzgBEeBkMpogslDIF4SB6FNUfpnH97yBev709LT2Z6Aih05u4rpu4S9t1p16GUjGcFy/4unPWx5DpEbfS9A39Wey7L3wfmUe99v1z2S5N1X7NvPz+Px5sqoNspd5ljrZ91zopZ+5Fswcf9/L3vtZPde+61NuekBPyInPLj1Lhhe8+X3wwvtF2gdf/TA0h01f8AOiL3gzl77gB0Rf8GYufcGbZsH0BW+aBdMXvGkWy2r1F9YitAXsyCGTAAAAAElFTkSuQmCC" />
@@ -730,7 +681,27 @@
                                 </ui:Click>
                               </Sequence>
                               <FlowStep.Next>
-                                <x:Reference>__ReferenceID0</x:Reference>
+                                <FlowStep x:Name="__ReferenceID0">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <av:Point x:Key="ShapeLocation">249,1000</av:Point>
+                                      <av:Size x:Key="ShapeSize">262,60</av:Size>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_1">
+                                    <Assign.To>
+                                      <OutArgument x:TypeArguments="x:Int32">[io_EstadoTerminado]</OutArgument>
+                                    </Assign.To>
+                                    <Assign.Value>
+                                      <InArgument x:TypeArguments="x:Int32">8</InArgument>
+                                    </Assign.Value>
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                  </Assign>
+                                </FlowStep>
                               </FlowStep.Next>
                             </FlowStep>
                           </FlowStep.Next>
@@ -741,20 +712,20 @@
                 </FlowStep>
               </FlowDecision.True>
               <FlowDecision.False>
-                <x:Reference>__ReferenceID1</x:Reference>
+                <x:Reference>__ReferenceID0</x:Reference>
               </FlowDecision.False>
             </FlowDecision>
           </FlowStep.Next>
         </FlowStep>
       </FlowDecision.True>
       <FlowDecision.False>
-        <x:Reference>__ReferenceID2</x:Reference>
+        <x:Reference>__ReferenceID1</x:Reference>
       </FlowDecision.False>
     </FlowDecision>
-    <x:Reference>__ReferenceID2</x:Reference>
-    <x:Reference>__ReferenceID3</x:Reference>
     <x:Reference>__ReferenceID1</x:Reference>
-    <FlowStep x:Name="__ReferenceID10">
+    <x:Reference>__ReferenceID2</x:Reference>
+    <x:Reference>__ReferenceID0</x:Reference>
+    <FlowStep x:Name="__ReferenceID9">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <av:Point x:Key="ShapeLocation">200,94.5</av:Point>
@@ -783,7 +754,7 @@
         </sap:WorkflowViewStateService.ViewState>
       </ui:Click>
       <FlowStep.Next>
-        <FlowStep x:Name="__ReferenceID5">
+        <FlowStep x:Name="__ReferenceID4">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <av:Point x:Key="ShapeLocation">200,186.5</av:Point>
@@ -812,15 +783,15 @@
             </sap:WorkflowViewStateService.ViewState>
           </ui:Click>
           <FlowStep.Next>
-            <x:Reference>__ReferenceID4</x:Reference>
+            <x:Reference>__ReferenceID3</x:Reference>
           </FlowStep.Next>
         </FlowStep>
       </FlowStep.Next>
     </FlowStep>
+    <x:Reference>__ReferenceID4</x:Reference>
     <x:Reference>__ReferenceID5</x:Reference>
     <x:Reference>__ReferenceID6</x:Reference>
     <x:Reference>__ReferenceID7</x:Reference>
     <x:Reference>__ReferenceID8</x:Reference>
-    <x:Reference>__ReferenceID9</x:Reference>
   </Flowchart>
 </Activity>
