@@ -107,7 +107,7 @@
         </ui:CursorPosition>
       </ui:Click.CursorPosition>
       <ui:Click.Target>
-        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="f35650fa4c8141a619e232cc9594620b" Selector="&lt;html app='chrome.exe' title='IBM BPM Portal - Work' /&gt;&lt;webctrl class='bpm-icon icon-task' /&gt;" TimeoutMS="120000" WaitForReady="INTERACTIVE" />
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="f35650fa4c8141a619e232cc9594620b" Selector="&lt;html app='chrome.exe' title='IBM BPM Portal - Work' /&gt;&lt;webctrl parentclass='task-info' /&gt;" TimeoutMS="120000" WaitForReady="INTERACTIVE" />
       </ui:Click.Target>
     </ui:Click>
     <ui:UiElementExists Exists="{x:Null}" DisplayName="Esperar a que la pagina cargue" sap:VirtualizedContainerService.HintSize="521,106" sap2010:WorkflowViewState.IdRef="UiElementExists_3">
