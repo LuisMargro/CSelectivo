@@ -358,12 +358,12 @@
                                                                   </sap:WorkflowViewStateService.ViewState>
                                                                 </ui:InvokeWorkflowFile>
                                                                 <FlowStep.Next>
-                                                                  <FlowDecision x:Name="__ReferenceID4" Condition="[io_EstadoTerminado=6 And io_NumeroInstancia&gt;0]" DisplayName="DictamenTecnico" sap:VirtualizedContainerService.HintSize="97,87" sap2010:WorkflowViewState.IdRef="FlowDecision_8">
+                                                                  <FlowDecision x:Name="__ReferenceID4" Condition="[io_EstadoTerminado=6 And io_NumeroInstancia&gt;0]" DisplayName="DictamenTecnico" sap:VirtualizedContainerService.HintSize="98,87" sap2010:WorkflowViewState.IdRef="FlowDecision_8">
                                                                     <sap:WorkflowViewStateService.ViewState>
                                                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                                         <av:Point x:Key="ShapeLocation">419.641666666667,1106.5</av:Point>
-                                                                        <av:Size x:Key="ShapeSize">97,87</av:Size>
+                                                                        <av:Size x:Key="ShapeSize">98,87</av:Size>
                                                                         <av:PointCollection x:Key="TrueConnector">419.641666666667,1150 110,1150 110,1174.02</av:PointCollection>
                                                                         <av:PointCollection x:Key="FalseConnector">516.641666666667,1150 546.641666666667,1150 546.641666666667,1216.5 369.641666666667,1216.5 369.641666666667,1246.5</av:PointCollection>
                                                                       </scg:Dictionary>
@@ -486,40 +486,29 @@
                                                                                                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                                                                         <av:Point x:Key="ShapeLocation">604.5,1696.5</av:Point>
                                                                                                         <av:Size x:Key="ShapeSize">131,87</av:Size>
-                                                                                                        <av:PointCollection x:Key="TrueConnector">604.5,1740 574.5,1740 574.5,1707 120,1707 120,1737</av:PointCollection>
+                                                                                                        <av:PointCollection x:Key="TrueConnector">604.5,1740 574.5,1740 574.5,1694.5 120,1694.5 120,1724.5</av:PointCollection>
                                                                                                       </scg:Dictionary>
                                                                                                     </sap:WorkflowViewStateService.ViewState>
                                                                                                     <FlowDecision.True>
                                                                                                       <FlowStep x:Name="__ReferenceID25">
                                                                                                         <sap:WorkflowViewStateService.ViewState>
                                                                                                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                                                                            <av:Point x:Key="ShapeLocation">20,1737</av:Point>
-                                                                                                            <av:Size x:Key="ShapeSize">200,66</av:Size>
+                                                                                                            <av:Point x:Key="ShapeLocation">20,1724.5</av:Point>
+                                                                                                            <av:Size x:Key="ShapeSize">200,51</av:Size>
                                                                                                           </scg:Dictionary>
                                                                                                         </sap:WorkflowViewStateService.ViewState>
-                                                                                                        <Sequence DisplayName="Asignacion de responsable" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                                                                                                        <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke AsignacionDeResponsable workflow" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_26" UnSafe="False" WorkflowFileName="Estados/LanzarAsignacionDeResponsable.xaml">
+                                                                                                          <ui:InvokeWorkflowFile.Arguments>
+                                                                                                            <InArgument x:TypeArguments="x:String" x:Key="in_Usuario">[Credenciales.Rows(8).Item(0).ToString]</InArgument>
+                                                                                                            <InArgument x:TypeArguments="x:String" x:Key="in_Contrasena">[Credenciales.Rows(8).Item(4).ToString]</InArgument>
+                                                                                                            <InArgument x:TypeArguments="x:String" x:Key="in_Cliente">[io_NombreCliente]</InArgument>
+                                                                                                          </ui:InvokeWorkflowFile.Arguments>
                                                                                                           <sap:WorkflowViewStateService.ViewState>
                                                                                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                                                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                                                                             </scg:Dictionary>
                                                                                                           </sap:WorkflowViewStateService.ViewState>
-                                                                                                          <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke AsignacionDeResponsable workflow" sap:VirtualizedContainerService.HintSize="334,87" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_27" UnSafe="False" WorkflowFileName="Estados/LanzarAsignacionDeResponsable.xaml">
-                                                                                                            <ui:InvokeWorkflowFile.Arguments>
-                                                                                                              <InArgument x:TypeArguments="x:String" x:Key="in_Usuario">[Credenciales.Rows(8).Item(0).ToString]</InArgument>
-                                                                                                              <InArgument x:TypeArguments="x:String" x:Key="in_Contrasena">[Credenciales.Rows(8).Item(4).ToString]</InArgument>
-                                                                                                            </ui:InvokeWorkflowFile.Arguments>
-                                                                                                            <sap:WorkflowViewStateService.ViewState>
-                                                                                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                                                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                                                                                              </scg:Dictionary>
-                                                                                                            </sap:WorkflowViewStateService.ViewState>
-                                                                                                          </ui:InvokeWorkflowFile>
-                                                                                                          <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke AsignacionDeResponsable workflow" sap:VirtualizedContainerService.HintSize="334,87" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_28" UnSafe="False" WorkflowFileName="Estados\AsignacionDeResponsable.xaml">
-                                                                                                            <ui:InvokeWorkflowFile.Arguments>
-                                                                                                              <InArgument x:TypeArguments="x:String" x:Key="in_Cliente">[io_NombreCliente]</InArgument>
-                                                                                                            </ui:InvokeWorkflowFile.Arguments>
-                                                                                                          </ui:InvokeWorkflowFile>
-                                                                                                        </Sequence>
+                                                                                                        </ui:InvokeWorkflowFile>
                                                                                                       </FlowStep>
                                                                                                     </FlowDecision.True>
                                                                                                   </FlowDecision>
