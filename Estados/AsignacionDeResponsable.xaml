@@ -5,7 +5,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>864,2764</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>864,2761</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>AsignacionDeResponsable_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="42">
@@ -56,19 +56,19 @@
       <AssemblyReference>System.ServiceModel</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="AsignacionDeResponsable" sap:VirtualizedContainerService.HintSize="844,2704" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="AsignacionDeResponsable" sap:VirtualizedContainerService.HintSize="844,2701" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Atach Asignacion de responsables" sap:VirtualizedContainerService.HintSize="802,2612" sap2010:WorkflowViewState.IdRef="BrowserScope_2" InformativeScreenshot="0dc87d6c9cf444db609fba9ab6db6efd" Selector="&lt;html app='chrome.exe' htmlwindowname='value' title='Run Recepcion de Solicitudes' /&gt;">
+    <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Atach Asignacion de responsables" sap:VirtualizedContainerService.HintSize="802,2609" sap2010:WorkflowViewState.IdRef="BrowserScope_2" InformativeScreenshot="0dc87d6c9cf444db609fba9ab6db6efd" Selector="&lt;html app='chrome.exe' title='*Recepcion de Solicitudes*' /&gt;">
       <ui:BrowserScope.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="768,2466" sap2010:WorkflowViewState.IdRef="Sequence_4">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="768,2463" sap2010:WorkflowViewState.IdRef="Sequence_4">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:Boolean" Default="True" Name="ClienteEncontrado" />
             </Sequence.Variables>
@@ -79,7 +79,7 @@
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
             <ui:MaximizeWindow Window="{x:Null}" DisplayName="Maximize Window" sap:VirtualizedContainerService.HintSize="726,22" sap2010:WorkflowViewState.IdRef="MaximizeWindow_1" />
-            <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="ir al fondo de la pagina" sap:VirtualizedContainerService.HintSize="726,155" sap2010:WorkflowViewState.IdRef="SendHotkey_1" Key="end" KeyModifiers="None" SpecialKey="True">
+            <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="ir al fondo de la pagina" sap:VirtualizedContainerService.HintSize="726,154" sap2010:WorkflowViewState.IdRef="SendHotkey_1" Key="end" KeyModifiers="None" SpecialKey="True">
               <ui:SendHotkey.Target>
                 <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="b3686a20ebb44ba792102dafb935b3c6" Selector="&lt;webctrl id='coach_frame*' tag='IFRAME' /&gt;">
                   <ui:Target.TimeoutMS>
@@ -91,7 +91,7 @@
                 </ui:Target>
               </ui:SendHotkey.Target>
             </ui:SendHotkey>
-            <DoWhile DisplayName="mientras encuentra el cliente" sap:VirtualizedContainerService.HintSize="726,453" sap2010:WorkflowViewState.IdRef="DoWhile_1">
+            <DoWhile DisplayName="mientras encuentra el cliente" sap:VirtualizedContainerService.HintSize="726,451" sap2010:WorkflowViewState.IdRef="DoWhile_1">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>

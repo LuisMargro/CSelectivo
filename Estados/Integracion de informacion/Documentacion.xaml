@@ -67,7 +67,7 @@
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="568,3366" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Proceso de documentacion" sap:VirtualizedContainerService.HintSize="568,3366" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <Sequence.Variables>
               <Variable x:TypeArguments="ui:GenericValue" Name="CargaDocumentos" />
               <Variable x:TypeArguments="x:Boolean" Name="TerminoRegistro" />
@@ -491,15 +491,15 @@
                     </ui:CursorPosition>
                   </ui:Click.CursorPosition>
                   <ui:Click.Target>
-                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="9636141fd67e9ff4bc1f2d8c820703a6" Selector="&lt;webctrl parentclass='update-filter' class='btn btn-default' /&gt;" TimeoutMS="180000" WaitForReady="COMPLETE" />
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="cc57a8e6d7aca55453df3852c6f19205" Selector="&lt;webctrl parentclass='update-filter' class='btn btn-default' /&gt;" TimeoutMS="180000" WaitForReady="COMPLETE" />
                   </ui:Click.Target>
                 </ui:Click>
                 <ui:UiElementExists DisplayName="Existe elemento de carga" Exists="[TerminoRegistro]" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="UiElementExists_4">
                   <ui:UiElementExists.Target>
-                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="47a1e6921db04878be5a8749b633e47d" Selector="&lt;webctrl class='bpm-icon icon-task' /&gt;" TimeoutMS="10000">
-                      <ui:Target.WaitForReady>
-                        <InArgument x:TypeArguments="ui:WaitForReady" />
-                      </ui:Target.WaitForReady>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="47a1e6921db04878be5a8749b633e47d" Selector="&lt;webctrl class='bpm-icon icon-task' /&gt;" WaitForReady="INTERACTIVE">
+                      <ui:Target.TimeoutMS>
+                        <InArgument x:TypeArguments="x:Int32" />
+                      </ui:Target.TimeoutMS>
                     </ui:Target>
                   </ui:UiElementExists.Target>
                 </ui:UiElementExists>
