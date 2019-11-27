@@ -334,14 +334,14 @@
                   <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="1eecd847cbec6dceb0553a7f2cd8ea18" Selector="&lt;webctrl id='button-button-Checklist1:Button26' tag='BUTTON' /&gt;" TimeoutMS="120000" WaitForReady="[WaitForReady.COMPLETE]" />
                 </ui:Click.Target>
               </ui:Click>
-              <Delay sap2010:Annotation.AnnotationText="Pausa necesaria para aplicar el filtro" Duration="00:00:10" sap:VirtualizedContainerService.HintSize="484,64" sap2010:WorkflowViewState.IdRef="Delay_4">
+              <Delay sap2010:Annotation.AnnotationText="Pausa necesaria para aplicar el filtro" Duration="00:00:15" sap:VirtualizedContainerService.HintSize="484,64" sap2010:WorkflowViewState.IdRef="Delay_4">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </Delay>
-              <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Clic Todos los documenos" sap:VirtualizedContainerService.HintSize="484,106" sap2010:WorkflowViewState.IdRef="Click_14" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="False">
+              <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_DOUBLE" DisplayName="Clic Todos los documenos" sap:VirtualizedContainerService.HintSize="484,106" sap2010:WorkflowViewState.IdRef="Click_14" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="False">
                 <ui:Click.CursorPosition>
                   <ui:CursorPosition Position="Center">
                     <ui:CursorPosition.OffsetX>
