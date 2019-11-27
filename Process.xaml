@@ -358,12 +358,12 @@
                                                                   </sap:WorkflowViewStateService.ViewState>
                                                                 </ui:InvokeWorkflowFile>
                                                                 <FlowStep.Next>
-                                                                  <FlowDecision x:Name="__ReferenceID4" Condition="[io_EstadoTerminado=6 And io_NumeroInstancia&gt;0]" DisplayName="DictamenTecnico" sap:VirtualizedContainerService.HintSize="98,87" sap2010:WorkflowViewState.IdRef="FlowDecision_8">
+                                                                  <FlowDecision x:Name="__ReferenceID4" Condition="[io_EstadoTerminado=6 And io_NumeroInstancia&gt;0]" DisplayName="DictamenTecnico" sap:VirtualizedContainerService.HintSize="97,87" sap2010:WorkflowViewState.IdRef="FlowDecision_8">
                                                                     <sap:WorkflowViewStateService.ViewState>
                                                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                                         <av:Point x:Key="ShapeLocation">419.641666666667,1106.5</av:Point>
-                                                                        <av:Size x:Key="ShapeSize">98,87</av:Size>
+                                                                        <av:Size x:Key="ShapeSize">97,87</av:Size>
                                                                         <av:PointCollection x:Key="TrueConnector">419.641666666667,1150 110,1150 110,1174.02</av:PointCollection>
                                                                         <av:PointCollection x:Key="FalseConnector">516.641666666667,1150 546.641666666667,1150 546.641666666667,1216.5 369.641666666667,1216.5 369.641666666667,1246.5</av:PointCollection>
                                                                       </scg:Dictionary>
@@ -469,9 +469,10 @@
                                                                                                     <av:PointCollection x:Key="ConnectorLocation">110,1625.02 110,1655.02 670,1655.02 670,1696.5</av:PointCollection>
                                                                                                   </scg:Dictionary>
                                                                                                 </sap:WorkflowViewStateService.ViewState>
-                                                                                                <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Documentacion workflow" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_25" UnSafe="False" WorkflowFileName="Estados\Integracion de informacion\Documentacion.xaml">
+                                                                                                <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Documentacion workflow" sap:VirtualizedContainerService.HintSize="379,87" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_25" UnSafe="False" WorkflowFileName="Estados\Integracion de informacion\Documentacion.xaml">
                                                                                                   <ui:InvokeWorkflowFile.Arguments>
                                                                                                     <InOutArgument x:TypeArguments="x:Int32" x:Key="io_EstadoTerminado">[io_EstadoTerminado]</InOutArgument>
+                                                                                                    <InArgument x:TypeArguments="x:Int32" x:Key="in_numeroInstancia">[io_NumeroInstancia]</InArgument>
                                                                                                   </ui:InvokeWorkflowFile.Arguments>
                                                                                                   <sap:WorkflowViewStateService.ViewState>
                                                                                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">

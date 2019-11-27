@@ -1,11 +1,12 @@
 <Activity mc:Ignorable="sap sap2010" x:Class="Documentacion" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
     <x:Property Name="io_EstadoTerminado" Type="InOutArgument(x:Int32)" />
+    <x:Property Name="in_numeroInstancia" Type="InArgument(x:Int32)" />
   </x:Members>
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>664,4513</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>664,4645</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Documentacion_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="21">
@@ -55,19 +56,19 @@
       <AssemblyReference>System.ServiceModel</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Documentacion" sap:VirtualizedContainerService.HintSize="644,4453" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Documentacion" sap:VirtualizedContainerService.HintSize="644,4585" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Anexar navegador 'chrome.exe IBM'" sap:VirtualizedContainerService.HintSize="602,4361" sap2010:WorkflowViewState.IdRef="BrowserScope_1" InformativeScreenshot="0b97c5317dc113904b314bfc405399e4" Selector="&lt;html app='chrome.exe' title='IBM BPM Portal*' /&gt;">
+    <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Anexar navegador 'chrome.exe IBM'" sap:VirtualizedContainerService.HintSize="602,4493" sap2010:WorkflowViewState.IdRef="BrowserScope_1" InformativeScreenshot="0b97c5317dc113904b314bfc405399e4" Selector="&lt;html app='chrome.exe' title='IBM BPM Portal*' /&gt;">
       <ui:BrowserScope.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Proceso de documentacion" sap:VirtualizedContainerService.HintSize="568,4215" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Proceso de documentacion" sap:VirtualizedContainerService.HintSize="568,4347" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <Sequence.Variables>
               <Variable x:TypeArguments="ui:GenericValue" Name="CargaDocumentos" />
               <Variable x:TypeArguments="x:Boolean" Name="TerminoRegistro" />
@@ -522,28 +523,25 @@
                 </Sequence>
               </If.Then>
             </If>
-            <DoWhile DisplayName="Mientras termina el proceso de registro" sap:VirtualizedContainerService.HintSize="526,505" sap2010:WorkflowViewState.IdRef="DoWhile_4" Condition="[TerminoRegistro]">
-              <Sequence sap:VirtualizedContainerService.HintSize="376,344" sap2010:WorkflowViewState.IdRef="Sequence_7">
+            <DoWhile DisplayName="Mientras termina el proceso de registro" sap:VirtualizedContainerService.HintSize="526,637" sap2010:WorkflowViewState.IdRef="DoWhile_4" Condition="[TerminoRegistro]">
+              <Sequence sap:VirtualizedContainerService.HintSize="376,476" sap2010:WorkflowViewState.IdRef="Sequence_7">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Clic terminar registro" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_18" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="False">
-                  <ui:Click.CursorPosition>
-                    <ui:CursorPosition Position="Center">
-                      <ui:CursorPosition.OffsetX>
-                        <InArgument x:TypeArguments="x:Int32" />
-                      </ui:CursorPosition.OffsetX>
-                      <ui:CursorPosition.OffsetY>
-                        <InArgument x:TypeArguments="x:Int32" />
-                      </ui:CursorPosition.OffsetY>
-                    </ui:CursorPosition>
-                  </ui:Click.CursorPosition>
-                  <ui:Click.Target>
-                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="cc57a8e6d7aca55453df3852c6f19205" Selector="&lt;webctrl parentclass='update-filter' class='btn btn-default' /&gt;" TimeoutMS="180000" WaitForReady="COMPLETE" />
-                  </ui:Click.Target>
-                </ui:Click>
+                <ui:TypeInto DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" ClickBeforeTyping="True" DisplayName="Ingresar numero de instancia" EmptyField="True" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_1" Text="[in_NumeroInstancia.ToString+ &quot;[k(enter)]&quot;]">
+                  <ui:TypeInto.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="5f9ffc007303cd11b6dc7e7246ab9c6d" Selector="&lt;webctrl parentid='div_1_2_1_2_1' tag='INPUT' type='text' /&gt;" TimeoutMS="300000" WaitForReady="INTERACTIVE" />
+                  </ui:TypeInto.Target>
+                </ui:TypeInto>
+                <Delay sap2010:Annotation.AnnotationText="Espera para poder desaparecer elemento" Duration="00:00:03" sap:VirtualizedContainerService.HintSize="334,64" sap2010:WorkflowViewState.IdRef="Delay_6">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </Delay>
                 <ui:UiElementExists DisplayName="Existe elemento de carga" Exists="[TerminoRegistro]" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="UiElementExists_4">
                   <ui:UiElementExists.Target>
                     <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="47a1e6921db04878be5a8749b633e47d" Selector="&lt;webctrl class='bpm-icon icon-task' /&gt;" WaitForReady="INTERACTIVE">
