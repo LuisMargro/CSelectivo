@@ -112,12 +112,12 @@
     </ui:Click>
     <ui:UiElementExists Exists="{x:Null}" DisplayName="Esperar a que la pagina cargue" sap:VirtualizedContainerService.HintSize="521,106" sap2010:WorkflowViewState.IdRef="UiElementExists_3">
       <ui:UiElementExists.Target>
-        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="d72019a19e74888145e76403f2412354" Selector="&lt;html app='chrome.exe' title='IBM BPM Portal - Step: Integración de información' /&gt;&lt;webctrl id='icon-label-MenuEmergente1:Input_Group2' tag='SPAN' /&gt;" TimeoutMS="180000" WaitForReady="INTERACTIVE" />
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="d72019a19e74888145e76403f2412354" Selector="&lt;html app='chrome.exe' title='IBM BPM Portal*' /&gt;&lt;webctrl id='icon-label-MenuEmergente1:Input_Group2' tag='SPAN' /&gt;" TimeoutMS="180000" WaitForReady="INTERACTIVE" />
       </ui:UiElementExists.Target>
     </ui:UiElementExists>
     <ui:UiElementExists Exists="{x:Null}" DisplayName="Esperar a que el resumen cargue" sap:VirtualizedContainerService.HintSize="521,106" sap2010:WorkflowViewState.IdRef="UiElementExists_2">
       <ui:UiElementExists.Target>
-        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="d97f87ae0e9cdb98cb8277986f9ea5fe" Selector="&lt;html app='chrome.exe' title='IBM BPM Portal - Step: Integración de información' /&gt;&lt;webctrl id='button-button-btn_resumen' tag='BUTTON' /&gt;" TimeoutMS="180000" WaitForReady="INTERACTIVE" />
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="d97f87ae0e9cdb98cb8277986f9ea5fe" Selector="&lt;html app='chrome.exe' title='IBM BPM Portal*' /&gt;&lt;webctrl id='button-button-btn_resumen' tag='BUTTON' /&gt;" TimeoutMS="180000" WaitForReady="INTERACTIVE" />
       </ui:UiElementExists.Target>
     </ui:UiElementExists>
   </Sequence>
