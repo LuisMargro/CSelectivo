@@ -6,7 +6,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>664,4645</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>664,7011</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Documentacion_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="21">
@@ -56,19 +56,19 @@
       <AssemblyReference>System.ServiceModel</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Documentacion" sap:VirtualizedContainerService.HintSize="644,4585" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Documentacion" sap:VirtualizedContainerService.HintSize="644,6951" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Anexar navegador 'chrome.exe IBM'" sap:VirtualizedContainerService.HintSize="602,4493" sap2010:WorkflowViewState.IdRef="BrowserScope_1" InformativeScreenshot="0b97c5317dc113904b314bfc405399e4" Selector="&lt;html app='chrome.exe' title='IBM BPM Portal*' /&gt;">
+    <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Anexar navegador 'chrome.exe IBM'" sap:VirtualizedContainerService.HintSize="602,6859" sap2010:WorkflowViewState.IdRef="BrowserScope_1" InformativeScreenshot="0b97c5317dc113904b314bfc405399e4" Selector="&lt;html app='chrome.exe' title='IBM BPM Portal*' /&gt;">
       <ui:BrowserScope.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Proceso de documentacion" sap:VirtualizedContainerService.HintSize="568,4347" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Proceso de documentacion" sap:VirtualizedContainerService.HintSize="568,6713" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <Sequence.Variables>
               <Variable x:TypeArguments="ui:GenericValue" Name="CargaDocumentos" />
               <Variable x:TypeArguments="x:Boolean" Name="TerminoRegistro" />
@@ -109,10 +109,10 @@
                 <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="324c3cbc365a9f3722aef0e81848a6b9" Selector="&lt;webctrl id='collapsiblepanel-header-Checklist1:Panel3' tag='DIV' /&gt;" TimeoutMS="120000" WaitForReady="[WaitForReady.COMPLETE]" />
               </ui:Click.Target>
             </ui:Click>
-            <Sequence DisplayName="Cargar documento reco" sap:VirtualizedContainerService.HintSize="526,66" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <Sequence DisplayName="Cargar documento reco" sap:VirtualizedContainerService.HintSize="526,1249" sap2010:WorkflowViewState.IdRef="Sequence_3">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
@@ -146,7 +146,7 @@
                   <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="1eecd847cbec6dceb0553a7f2cd8ea18" Selector="&lt;webctrl id='button-button-Checklist1:Button26' tag='BUTTON' /&gt;" TimeoutMS="120000" WaitForReady="[WaitForReady.COMPLETE]" />
                 </ui:Click.Target>
               </ui:Click>
-              <Delay sap2010:Annotation.AnnotationText="Pausa necesaria para aplicar el filtro" Duration="00:00:10" sap:VirtualizedContainerService.HintSize="484,64" sap2010:WorkflowViewState.IdRef="Delay_1">
+              <Delay sap2010:Annotation.AnnotationText="Pausa necesaria para aplicar el filtro" Duration="00:00:30" sap:VirtualizedContainerService.HintSize="484,64" sap2010:WorkflowViewState.IdRef="Delay_1">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
@@ -203,10 +203,10 @@
                 </ui:UiElementExists.Target>
               </ui:UiElementExists>
             </Sequence>
-            <Sequence DisplayName="Cargar documento  de estudio" sap:VirtualizedContainerService.HintSize="526,66" sap2010:WorkflowViewState.IdRef="Sequence_5">
+            <Sequence DisplayName="Cargar documento  de estudio" sap:VirtualizedContainerService.HintSize="526,1249" sap2010:WorkflowViewState.IdRef="Sequence_5">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
@@ -240,7 +240,7 @@
                   <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="1eecd847cbec6dceb0553a7f2cd8ea18" Selector="&lt;webctrl id='button-button-Checklist1:Button26' tag='BUTTON' /&gt;" TimeoutMS="120000" WaitForReady="[WaitForReady.COMPLETE]" />
                 </ui:Click.Target>
               </ui:Click>
-              <Delay sap2010:Annotation.AnnotationText="Pausa necesaria para aplicar el filtro" Duration="00:00:10" sap:VirtualizedContainerService.HintSize="484,64" sap2010:WorkflowViewState.IdRef="Delay_3">
+              <Delay sap2010:Annotation.AnnotationText="Pausa necesaria para aplicar el filtro" Duration="00:00:30" sap:VirtualizedContainerService.HintSize="484,64" sap2010:WorkflowViewState.IdRef="Delay_3">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
@@ -334,7 +334,7 @@
                   <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="1eecd847cbec6dceb0553a7f2cd8ea18" Selector="&lt;webctrl id='button-button-Checklist1:Button26' tag='BUTTON' /&gt;" TimeoutMS="120000" WaitForReady="[WaitForReady.COMPLETE]" />
                 </ui:Click.Target>
               </ui:Click>
-              <Delay sap2010:Annotation.AnnotationText="Pausa necesaria para aplicar el filtro" Duration="00:00:15" sap:VirtualizedContainerService.HintSize="484,64" sap2010:WorkflowViewState.IdRef="Delay_4">
+              <Delay sap2010:Annotation.AnnotationText="Pausa necesaria para aplicar el filtro" Duration="00:00:30" sap:VirtualizedContainerService.HintSize="484,64" sap2010:WorkflowViewState.IdRef="Delay_4">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
@@ -523,7 +523,7 @@
                 </Sequence>
               </If.Then>
             </If>
-            <DoWhile DisplayName="Mientras termina el proceso de registro" sap:VirtualizedContainerService.HintSize="526,637" sap2010:WorkflowViewState.IdRef="DoWhile_4" Condition="[TerminoRegistro]">
+            <DoWhile DisplayName="Mientras termina el proceso de registro" sap:VirtualizedContainerService.HintSize="526,637" sap2010:WorkflowViewState.IdRef="DoWhile_4" Condition="[Not TerminoRegistro]">
               <Sequence sap:VirtualizedContainerService.HintSize="376,476" sap2010:WorkflowViewState.IdRef="Sequence_7">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">

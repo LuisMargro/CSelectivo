@@ -3,11 +3,12 @@
     <x:Property Name="in_Usuario" Type="InArgument(x:String)" />
     <x:Property Name="in_Contrasena" Type="InArgument(x:String)" />
     <x:Property Name="in_Cliente" Type="InArgument(x:String)" />
+    <x:Property Name="io_EstadoTerminado" Type="InOutArgument(x:Int32)" />
   </x:Members>
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>659,2842</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>659,2899</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>AsignacionDeResponsable_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="21">
@@ -35,7 +36,7 @@
     </scg:List>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
-    <scg:List x:TypeArguments="AssemblyReference" Capacity="16">
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="32">
       <AssemblyReference>System.Activities</AssemblyReference>
       <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
       <AssemblyReference>mscorlib</AssemblyReference>
@@ -52,21 +53,24 @@
       <AssemblyReference>System.Xaml</AssemblyReference>
       <AssemblyReference>UiPath.System.Activities</AssemblyReference>
       <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="AsignacionDeResponsable" sap:VirtualizedContainerService.HintSize="639,2742" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="AsignacionDeResponsable" sap:VirtualizedContainerService.HintSize="639,2839" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:OpenBrowser CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Abrir process center" sap:VirtualizedContainerService.HintSize="597,2650" sap2010:WorkflowViewState.IdRef="OpenBrowser_1" Url="https://15.128.91.14:8443/ProcessCenter/login.jsp">
+    <ui:OpenBrowser CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Abrir process center" sap:VirtualizedContainerService.HintSize="597,2747" sap2010:WorkflowViewState.IdRef="OpenBrowser_1" Url="https://15.128.91.14:8443/ProcessCenter/login.jsp">
       <ui:OpenBrowser.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="563,2551" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="563,2648" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:Boolean" Name="ExisteGetting" />
               <Variable x:TypeArguments="x:Boolean" Name="ExisteRecepcionSolicitudes" />
@@ -131,7 +135,7 @@
                 </ui:Target>
               </ui:UiElementExists.Target>
             </ui:UiElementExists>
-            <If Condition="[ExisteGetting]" DisplayName="¿Existe Getting started?" sap:VirtualizedContainerService.HintSize="521,52" sap2010:WorkflowViewState.IdRef="If_1">
+            <If Condition="[ExisteGetting]" DisplayName="¿Existe Getting started?" sap:VirtualizedContainerService.HintSize="521,51" sap2010:WorkflowViewState.IdRef="If_1">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -238,7 +242,7 @@
                 </ui:Target>
               </ui:UiElementExists.Target>
             </ui:UiElementExists>
-            <If Condition="[Not ExisteRecepcionSolicitudes]" DisplayName="Si ya esta abierta recepcion de solicitudes" sap:VirtualizedContainerService.HintSize="521,808" sap2010:WorkflowViewState.IdRef="If_2">
+            <If Condition="[Not ExisteRecepcionSolicitudes]" DisplayName="Si ya esta abierta recepcion de solicitudes" sap:VirtualizedContainerService.HintSize="521,806" sap2010:WorkflowViewState.IdRef="If_2">
               <If.Then>
                 <Sequence DisplayName="Ir a rececipcion de solicitudes" sap:VirtualizedContainerService.HintSize="376,659" sap2010:WorkflowViewState.IdRef="Sequence_3">
                   <sap:WorkflowViewStateService.ViewState>
@@ -346,6 +350,14 @@
               </ui:InvokeWorkflowFile.Arguments>
             </ui:InvokeWorkflowFile>
             <ui:CloseTab Browser="{x:Null}" DisplayName="Close Tab" sap:VirtualizedContainerService.HintSize="521,22" sap2010:WorkflowViewState.IdRef="CloseTab_1" />
+            <Assign DisplayName="Retornar estado terminado" sap:VirtualizedContainerService.HintSize="521,60" sap2010:WorkflowViewState.IdRef="Assign_1">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:Int32">[io_EstadoTerminado]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:Int32">11</InArgument>
+              </Assign.Value>
+            </Assign>
           </Sequence>
         </ActivityAction>
       </ui:OpenBrowser.Body>

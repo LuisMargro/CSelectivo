@@ -655,9 +655,9 @@
       <Variable x:TypeArguments="scg:Dictionary(x:String, x:Object)" Name="Config" />
       <Variable x:TypeArguments="x:Int32" Default="0" Name="RetryNumber" />
       <Variable x:TypeArguments="sd:DataTable" Name="TransactionData" />
-      <Variable x:TypeArguments="x:Int32" Default="0" Name="NumeroInstancia" />
-      <Variable x:TypeArguments="x:Int32" Default="0" Name="EstadoTerminado" />
-      <Variable x:TypeArguments="x:String" Default="Carlos Alberto Santa Cruz Welsh" Name="NombreCliente" />
+      <Variable x:TypeArguments="x:Int32" Default="69929" Name="NumeroInstancia" />
+      <Variable x:TypeArguments="x:Int32" Default="10" Name="EstadoTerminado" />
+      <Variable x:TypeArguments="x:String" Default="AMAYA CURIEL Y CIA" Name="NombreCliente" />
       <Variable x:TypeArguments="x:String" Name="CodigoPostal" />
       <Variable x:TypeArguments="x:Int32" Name="IndiceCliente" />
     </StateMachine.Variables>
