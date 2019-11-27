@@ -2,7 +2,7 @@
   <x:Members>
     <x:Property Name="in_NumeroInstancia" Type="InArgument(x:Int32)" />
   </x:Members>
-  <sap:VirtualizedContainerService.HintSize>583,1626</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>583,1666</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <mva:VisualBasic.Settings>Assembly references and imported namespaces for internal implementation</mva:VisualBasic.Settings>
   <TextExpression.NamespacesForImplementation>
@@ -97,7 +97,7 @@
     </Delay>
     <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click abrir instancia" sap:VirtualizedContainerService.HintSize="521,106" sap2010:WorkflowViewState.IdRef="Click_2" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
       <ui:Click.CursorPosition>
-        <ui:CursorPosition Position="TopLeft">
+        <ui:CursorPosition Position="BottomLeft">
           <ui:CursorPosition.OffsetX>
             <InArgument x:TypeArguments="x:Int32" />
           </ui:CursorPosition.OffsetX>
@@ -107,7 +107,7 @@
         </ui:CursorPosition>
       </ui:Click.CursorPosition>
       <ui:Click.Target>
-        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="f35650fa4c8141a619e232cc9594620b" Selector="&lt;html app='chrome.exe' title='IBM BPM Portal - Work' /&gt;&lt;webctrl parentclass='task-info' /&gt;" TimeoutMS="120000" WaitForReady="INTERACTIVE" />
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="f35650fa4c8141a619e232cc9594620b" Selector="&lt;html app='chrome.exe' title='IBM BPM Portal - Work' /&gt;&lt;webctrl parentclass='name' class='ng-binding' /&gt;" TimeoutMS="120000" WaitForReady="INTERACTIVE" />
       </ui:Click.Target>
     </ui:Click>
     <ui:UiElementExists Exists="{x:Null}" DisplayName="Esperar a que la pagina cargue" sap:VirtualizedContainerService.HintSize="521,106" sap2010:WorkflowViewState.IdRef="UiElementExists_3">
