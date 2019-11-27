@@ -66,7 +66,7 @@
         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" sap2010:Annotation.AnnotationText="Espera hasta 1 minuto para que la pagina cargue, si la pagina carga antes, inicia su proceso" BrowserType="Chrome" DisplayName="Attach process login portal" sap:VirtualizedContainerService.HintSize="560,883" sap2010:WorkflowViewState.IdRef="BrowserScope_1" InformativeScreenshot="87eeb9fbf6915182cf256e3d2e9a281f" Selector="&lt;html app='chrome.exe' title='Process Portal' /&gt;" TimeoutMS="120000" UiBrowser="[VariableExplorador]">
+    <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" sap2010:Annotation.AnnotationText="Espera hasta 1 minuto para que la pagina cargue, si la pagina carga antes, inicia su proceso" BrowserType="Chrome" DisplayName="Attach process login portal" sap:VirtualizedContainerService.HintSize="560,883" sap2010:WorkflowViewState.IdRef="BrowserScope_1" InformativeScreenshot="87eeb9fbf6915182cf256e3d2e9a281f" Selector="&lt;html app='chrome.exe' omit:title='Process Portal' /&gt;" TimeoutMS="120000" UiBrowser="[VariableExplorador]">
       <ui:BrowserScope.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
