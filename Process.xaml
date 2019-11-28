@@ -93,9 +93,9 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <Flowchart.StartNode>
-        <x:Reference>__ReferenceID27</x:Reference>
+        <x:Reference>__ReferenceID28</x:Reference>
       </Flowchart.StartNode>
-      <FlowStep x:Name="__ReferenceID27">
+      <FlowStep x:Name="__ReferenceID28">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <av:Point x:Key="ShapeLocation">290,104.5</av:Point>
@@ -520,8 +520,38 @@
                                                                                                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                                                                                 <av:Point x:Key="ShapeLocation">580.5,1856.5</av:Point>
                                                                                                                 <av:Size x:Key="ShapeSize">74,87</av:Size>
+                                                                                                                <av:PointCollection x:Key="TrueConnector">580.5,1900 550.5,1900 550.5,1857 130,1857 130,1887</av:PointCollection>
                                                                                                               </scg:Dictionary>
                                                                                                             </sap:WorkflowViewStateService.ViewState>
+                                                                                                            <FlowDecision.True>
+                                                                                                              <FlowStep x:Name="__ReferenceID27">
+                                                                                                                <sap:WorkflowViewStateService.ViewState>
+                                                                                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                                                                    <av:Point x:Key="ShapeLocation">30,1887</av:Point>
+                                                                                                                    <av:Size x:Key="ShapeSize">200,66</av:Size>
+                                                                                                                  </scg:Dictionary>
+                                                                                                                </sap:WorkflowViewStateService.ViewState>
+                                                                                                                <Sequence DisplayName="Reco" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                                                                                                                  <sap:WorkflowViewStateService.ViewState>
+                                                                                                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                                                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                                                                                    </scg:Dictionary>
+                                                                                                                  </sap:WorkflowViewStateService.ViewState>
+                                                                                                                  <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke SolicitarReco workflow" sap:VirtualizedContainerService.HintSize="334,87" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_27" UnSafe="False" WorkflowFileName="Estados\SolicitarReco.xaml">
+                                                                                                                    <ui:InvokeWorkflowFile.Arguments>
+                                                                                                                      <InArgument x:TypeArguments="x:Int32" x:Key="in_NumeroInstancia">[io_NumeroInstancia]</InArgument>
+                                                                                                                    </ui:InvokeWorkflowFile.Arguments>
+                                                                                                                  </ui:InvokeWorkflowFile>
+                                                                                                                  <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke RegistrarAcuerdosReco workflow" sap:VirtualizedContainerService.HintSize="334,87" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_28" UnSafe="False" WorkflowFileName="Estados\RegistrarAcuerdosReco.xaml">
+                                                                                                                    <ui:InvokeWorkflowFile.Arguments>
+                                                                                                                      <InArgument x:TypeArguments="x:String" x:Key="in_Usuario">HDIMC930</InArgument>
+                                                                                                                      <InArgument x:TypeArguments="x:String" x:Key="in_Contrasena">L4m@c3#t</InArgument>
+                                                                                                                      <InArgument x:TypeArguments="x:Int32" x:Key="in_NumeroInstancia">[io_NumeroInstancia]</InArgument>
+                                                                                                                    </ui:InvokeWorkflowFile.Arguments>
+                                                                                                                  </ui:InvokeWorkflowFile>
+                                                                                                                </Sequence>
+                                                                                                              </FlowStep>
+                                                                                                            </FlowDecision.True>
                                                                                                           </FlowDecision>
                                                                                                         </FlowStep.Next>
                                                                                                       </FlowStep>
@@ -668,26 +698,7 @@
       <x:Reference>__ReferenceID25</x:Reference>
       <x:Reference>__ReferenceID26</x:Reference>
       <x:Reference>__ReferenceID0</x:Reference>
-      <FlowStep>
-        <sap:WorkflowViewStateService.ViewState>
-          <scg:Dictionary x:TypeArguments="x:String, x:Object">
-            <av:Point x:Key="ShapeLocation">30,1866.04</av:Point>
-            <av:Size x:Key="ShapeSize">200,66</av:Size>
-          </scg:Dictionary>
-        </sap:WorkflowViewStateService.ViewState>
-        <Sequence DisplayName="Reco" sap:VirtualizedContainerService.HintSize="376,179" sap2010:WorkflowViewState.IdRef="Sequence_2">
-          <sap:WorkflowViewStateService.ViewState>
-            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-            </scg:Dictionary>
-          </sap:WorkflowViewStateService.ViewState>
-          <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke SolicitarReco workflow" sap:VirtualizedContainerService.HintSize="334,87" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_27" UnSafe="False" WorkflowFileName="Estados\SolicitarReco.xaml">
-            <ui:InvokeWorkflowFile.Arguments>
-              <InArgument x:TypeArguments="x:Int32" x:Key="in_NumeroInstancia">[io_NumeroInstancia]</InArgument>
-            </ui:InvokeWorkflowFile.Arguments>
-          </ui:InvokeWorkflowFile>
-        </Sequence>
-      </FlowStep>
+      <x:Reference>__ReferenceID27</x:Reference>
     </Flowchart>
   </Sequence>
 </Activity>
