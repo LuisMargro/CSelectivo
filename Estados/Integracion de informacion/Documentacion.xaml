@@ -6,7 +6,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>664,7011</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>664,5547</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Documentacion_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="21">
@@ -56,23 +56,21 @@
       <AssemblyReference>System.ServiceModel</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Documentacion" sap:VirtualizedContainerService.HintSize="644,6951" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Documentacion" sap:VirtualizedContainerService.HintSize="644,5487" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Anexar navegador 'chrome.exe IBM'" sap:VirtualizedContainerService.HintSize="602,6859" sap2010:WorkflowViewState.IdRef="BrowserScope_1" InformativeScreenshot="0b97c5317dc113904b314bfc405399e4" Selector="&lt;html app='chrome.exe' title='IBM BPM Portal*' /&gt;">
+    <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Anexar navegador 'chrome.exe IBM'" sap:VirtualizedContainerService.HintSize="602,5395" sap2010:WorkflowViewState.IdRef="BrowserScope_1" InformativeScreenshot="0b97c5317dc113904b314bfc405399e4" Selector="&lt;html app='chrome.exe' title='IBM BPM Portal*' /&gt;">
       <ui:BrowserScope.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Proceso de documentacion" sap:VirtualizedContainerService.HintSize="568,6713" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Proceso de documentacion" sap:VirtualizedContainerService.HintSize="568,5249" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <Sequence.Variables>
               <Variable x:TypeArguments="ui:GenericValue" Name="CargaDocumentos" />
-              <Variable x:TypeArguments="x:Boolean" Name="TerminoRegistro" />
-              <Variable x:TypeArguments="x:Boolean" Name="CargoPagina" />
             </Sequence.Variables>
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -475,84 +473,6 @@
               </ui:Click.Target>
             </ui:Click>
             <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="526,22" sap2010:WorkflowViewState.IdRef="Delay_5" />
-            <ui:RefreshBrowser Browser="{x:Null}" DisplayName="Refresh Browser" sap:VirtualizedContainerService.HintSize="526,22" sap2010:WorkflowViewState.IdRef="RefreshBrowser_1" />
-            <ui:ImageFound DisplayName="Imagen documento" Found="[CargoPagina]" sap:VirtualizedContainerService.HintSize="526,106" sap2010:WorkflowViewState.IdRef="ImageFound_2">
-              <ui:ImageFound.Image>
-                <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" Profile="Basic" TargetImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFEAAAAkCAYAAADxYNZEAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKqSURBVGhD7ZlBixMxFMf9mH6Anj0vHquHvXtSUReKC9vD7h48WGFnDx1ke1ChVgYWZRBClz25IAOll+dL8tK+SadmOpNAyyT0TzrJ5OW9X9/L0PbR414PotopQvSgCNGDIkQPckI8Ok0g/XwTRKPTfuWehyYHxCHMCgjXigwGlfseliJED4oQPag+xOUSlgtPWpLNbkEsYHZWNd9QZxla7CzEC5iIOQiXvl5Ydix1G+IYhLx0tbsxre/D26sp3Irf8O3jGPK/c0he4HiEWKMRxAGCS36hgcVPSL8/6LmHKbxsCDG5wzWrD4hEtopsWB5P5ziKHxofq6lBhhZ38C0gxA9wu8DnkZjC6HKkjoE8+wLp9Xs4apqJEoy9Ro0V+CqP7wqCa78gYnBiMoLkxxz+FPqRnH9CO00hqnXGFy2ZnSKVfvJx7fc6O00c1Hg2S5vox0xmOc3ZEFUFWPtyBS3nJ6/wHOTOYykrx5pCJH9Eaq6lP7pkZaBraHLc+EwxrMBZ1+QLPw44RAXQ4WfgBwv77n01hGdPyW5jiBQgB2Bs8FJX9uk8rDob1TzFxN/TvIGYyL7GubojRE9qAZHDksGWs08HzEHzrFrbYZm6DaJpLCG2aUeICeRV30Bs5Qneq7NWpHaPdtpAXMGSvpWD1+djubSbQ5R7MJ9L68sKmIkncI5lfP7O7nGuFUSClUkb5VKTwRc4vj4PUS3K2WS7q6QDZmIfjt+8huPndo92WkJUsDALN0qt0i7FsLrXunZA3Fy/qYCZaJcxK42WEM36zTLbFrCJgxqfd0I091Ttp3WQmbhvCpiJ+seKyaXd41y3Ie7D03n/FDAT/6NuQsR47yt+N2yqe2O0YxCDtG5AjP8715ETYpRbEaIHRYgeFCF6UIToQRGiB0WIrdWDf7V7GVZlOPp5AAAAAElFTkSuQmCC" />
-              </ui:ImageFound.Image>
-              <ui:ImageFound.Target>
-                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" TimeoutMS="180000">
-                  <ui:Target.WaitForReady>
-                    <InArgument x:TypeArguments="ui:WaitForReady" />
-                  </ui:Target.WaitForReady>
-                </ui:Target>
-              </ui:ImageFound.Target>
-            </ui:ImageFound>
-            <If Condition="[Not CargoPagina]" DisplayName="¿No ha cargado la pagina?" sap:VirtualizedContainerService.HintSize="526,539" sap2010:WorkflowViewState.IdRef="If_1">
-              <If.Then>
-                <Sequence DisplayName="secuencia si no ha cargado la pagina" sap:VirtualizedContainerService.HintSize="376,392" sap2010:WorkflowViewState.IdRef="Sequence_8">
-                  <sap:WorkflowViewStateService.ViewState>
-                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                    </scg:Dictionary>
-                  </sap:WorkflowViewStateService.ViewState>
-                  <ui:SendHotkey DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" ClickBeforeTyping="True" DisplayName="Recargar la pagina" sap:VirtualizedContainerService.HintSize="334,154" sap2010:WorkflowViewState.IdRef="SendHotkey_1" Key="f5" KeyModifiers="None" SpecialKey="True">
-                    <ui:SendHotkey.Target>
-                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="6d8f382ac5ac08a85a9ea33c47f49fa2" Selector="&lt;html app='chrome.exe' omit:title='IBM BPM Portal - Work' /&gt;&lt;webctrl tag='HTML' /&gt;">
-                        <ui:Target.TimeoutMS>
-                          <InArgument x:TypeArguments="x:Int32" />
-                        </ui:Target.TimeoutMS>
-                        <ui:Target.WaitForReady>
-                          <InArgument x:TypeArguments="ui:WaitForReady" />
-                        </ui:Target.WaitForReady>
-                      </ui:Target>
-                    </ui:SendHotkey.Target>
-                  </ui:SendHotkey>
-                  <ui:ImageFound DisplayName="Esperar a que cargue la pagina de nuevo" Found="[CargoPagina]" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="ImageFound_3">
-                    <ui:ImageFound.Image>
-                      <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" Profile="Basic" TargetImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFcAAAAhCAYAAACsszewAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKoSURBVGhD7ZrPa9swFMf3Z+4PyHnnsmO2Q+87bWM/IKzQHNoedlgG9Q4xpTlsgyzDUDbMQKT0tMIwhFze3pOl+FlxZkfqG3iTyBfVkvX09NHTc2py7/5gAFEyinAFFeEKKsIVVIQrqE5wD44SSC8uRTQ5GjbO+S+oA9wxLAqQK0UGo8Z5+68IV1ARrqD2g7tew3p1R1obmxGupgCL46Z+Tx1naDHCdeCewkwtQbXp06ljx1GES3LhTkHRZVu5nprxQ3h5Pocr9QM+v5tC/msJyRNsj3BJYXBHCDT5jgZW3yD9clv23c7hqSfc5BrHbDbOyNgqsnG9PV1iK24mb+uoUYYWAzdeGO5buFrhc1DNYXI20ekkzz5C+uENHPhGLgFzx+i2Aj/19hBA/YCLi1azCSRfl/CzKL8i5O/Rji9cPc76UoqiWaXkJ28v/a6i2a7DFB79ZBP9WNCpMH0uXH1inHnbJJ4WHjzDPMsXhSlBO+wL1/ijUntN/pRHnwBUMKnd+mzWsAHqXBtfeFrhcDXYvf38Kw809m7ifAyPHhq73nDNwjkYa4OnDG3f5Num3Kv7zZr436bfwk2o9szbHnDvSAFwOUSCUI/WEgTfAB6FlR0W2bvg2sICZR95wE0gb/qPy1We4L1llKvUrdFOCNwNRPKtDqXMv/UU4Q+X5mA+18a3SzhyX8MJpoOTV26NfUFwDcSMbNSPLEEpsL3Kt6iAtGBPh09qEI7cIRy+eA6Hj90a7QTC1RAxareObKNds4bNvc51C9zt8d0kHLluOmBHLBCuHb99XHeBsOswhfe3wrX3NM23W72N3D5IOHLLlzyzM7fGvgiXFBK5gmmhBxKO3D8owiVVD4LipuG9ra9urNEIV67833Dj7xZ81QlulJ8iXEFFuGIawG+1brnUPh3YUQAAAABJRU5ErkJggg==" />
-                    </ui:ImageFound.Image>
-                    <ui:ImageFound.Target>
-                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" TimeoutMS="180000">
-                        <ui:Target.WaitForReady>
-                          <InArgument x:TypeArguments="ui:WaitForReady" />
-                        </ui:Target.WaitForReady>
-                      </ui:Target>
-                    </ui:ImageFound.Target>
-                  </ui:ImageFound>
-                </Sequence>
-              </If.Then>
-            </If>
-            <DoWhile DisplayName="Mientras termina el proceso de registro" sap:VirtualizedContainerService.HintSize="526,637" sap2010:WorkflowViewState.IdRef="DoWhile_4" Condition="[Not TerminoRegistro]">
-              <Sequence sap:VirtualizedContainerService.HintSize="376,476" sap2010:WorkflowViewState.IdRef="Sequence_7">
-                <sap:WorkflowViewStateService.ViewState>
-                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                  </scg:Dictionary>
-                </sap:WorkflowViewStateService.ViewState>
-                <ui:TypeInto DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" ClickBeforeTyping="True" DisplayName="Ingresar numero de instancia" EmptyField="True" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_1" Text="[in_NumeroInstancia.ToString+ &quot;[k(enter)]&quot;]">
-                  <ui:TypeInto.Target>
-                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="5f9ffc007303cd11b6dc7e7246ab9c6d" Selector="&lt;webctrl parentid='div_1_2_1_2_1' tag='INPUT' type='text' /&gt;" TimeoutMS="300000" WaitForReady="INTERACTIVE" />
-                  </ui:TypeInto.Target>
-                </ui:TypeInto>
-                <Delay sap2010:Annotation.AnnotationText="Espera para poder desaparecer elemento" Duration="00:00:03" sap:VirtualizedContainerService.HintSize="334,64" sap2010:WorkflowViewState.IdRef="Delay_6">
-                  <sap:WorkflowViewStateService.ViewState>
-                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
-                    </scg:Dictionary>
-                  </sap:WorkflowViewStateService.ViewState>
-                </Delay>
-                <ui:UiElementExists DisplayName="Existe elemento de carga" Exists="[TerminoRegistro]" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="UiElementExists_4">
-                  <ui:UiElementExists.Target>
-                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="47a1e6921db04878be5a8749b633e47d" Selector="&lt;webctrl class='bpm-icon icon-task' /&gt;" WaitForReady="INTERACTIVE">
-                      <ui:Target.TimeoutMS>
-                        <InArgument x:TypeArguments="x:Int32" />
-                      </ui:Target.TimeoutMS>
-                    </ui:Target>
-                  </ui:UiElementExists.Target>
-                </ui:UiElementExists>
-              </Sequence>
-            </DoWhile>
             <Assign sap:VirtualizedContainerService.HintSize="526,60" sap2010:WorkflowViewState.IdRef="Assign_1">
               <Assign.To>
                 <OutArgument x:TypeArguments="x:Int32">[io_EstadoTerminado]</OutArgument>
