@@ -5,7 +5,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>826,846</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>826,886</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Main2_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="52">
@@ -188,7 +188,7 @@
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
           <Transition.To>
-            <State x:Name="__ReferenceID2" sap2010:Annotation.AnnotationText="A transaction either succeeds or fails with a Business Rule Exception or a System Error. For System Error, it can be retried." DisplayName="Process Transaction" sap:VirtualizedContainerService.HintSize="231,142" sap2010:WorkflowViewState.IdRef="State_3">
+            <State x:Name="__ReferenceID2" sap2010:Annotation.AnnotationText="A transaction either succeeds or fails with a Business Rule Exception or a System Error. For System Error, it can be retried." DisplayName="Process Transaction" sap:VirtualizedContainerService.HintSize="484,984" sap2010:WorkflowViewState.IdRef="State_3">
               <State.Entry>
                 <TryCatch DisplayName="Process Transaction" sap:VirtualizedContainerService.HintSize="438,528" sap2010:WorkflowViewState.IdRef="TryCatch_1">
                   <sap:WorkflowViewStateService.ViewState>
@@ -655,8 +655,8 @@
       <Variable x:TypeArguments="scg:Dictionary(x:String, x:Object)" Name="Config" />
       <Variable x:TypeArguments="x:Int32" Default="0" Name="RetryNumber" />
       <Variable x:TypeArguments="sd:DataTable" Name="TransactionData" />
-      <Variable x:TypeArguments="x:Int32" Default="0" Name="NumeroInstancia" />
-      <Variable x:TypeArguments="x:Int32" Default="0" Name="EstadoTerminado" />
+      <Variable x:TypeArguments="x:Int32" Default="70045" Name="NumeroInstancia" />
+      <Variable x:TypeArguments="x:Int32" Default="9" Name="EstadoTerminado" />
       <Variable x:TypeArguments="x:String" Name="NombreCliente">
         <Variable.Default>
           <Literal x:TypeArguments="x:String" Value="" />

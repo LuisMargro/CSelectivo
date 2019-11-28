@@ -91,7 +91,7 @@
                 </ui:CursorPosition>
               </ui:Click.CursorPosition>
               <ui:Click.Target>
-                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="dce1587860bcbc24062bf2219c8b0525" Selector="&lt;webctrl id='button-button-btn_documentacion' tag='BUTTON' /&gt;" TimeoutMS="120000" WaitForReady="INTERACTIVE" />
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="dce1587860bcbc24062bf2219c8b0525" Selector="&lt;webctrl id='button-button-btn_documentacion' tag='BUTTON' /&gt;" TimeoutMS="300000" WaitForReady="INTERACTIVE" />
               </ui:Click.Target>
             </ui:Click>
             <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Clic Filtros de busqueda" sap:VirtualizedContainerService.HintSize="526,106" sap2010:WorkflowViewState.IdRef="Click_2" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
@@ -106,7 +106,7 @@
                 </ui:CursorPosition>
               </ui:Click.CursorPosition>
               <ui:Click.Target>
-                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="324c3cbc365a9f3722aef0e81848a6b9" Selector="&lt;webctrl id='collapsiblepanel-header-Checklist1:Panel3' tag='DIV' /&gt;" TimeoutMS="120000" WaitForReady="[WaitForReady.COMPLETE]" />
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="324c3cbc365a9f3722aef0e81848a6b9" Selector="&lt;webctrl id='collapsiblepanel-header-Checklist1:Panel3' tag='DIV' /&gt;" TimeoutMS="300000" WaitForReady="[WaitForReady.COMPLETE]" />
               </ui:Click.Target>
             </ui:Click>
             <Sequence DisplayName="Cargar documento reco" sap:VirtualizedContainerService.HintSize="526,1249" sap2010:WorkflowViewState.IdRef="Sequence_3">
@@ -426,7 +426,7 @@
                 <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" Profile="Basic" TargetImageBase64="iVBORw0KGgoAAAANSUhEUgAAAJQAAAAZCAYAAADXEgfSAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAMHSURBVGhD7Zc7jlpBEEW9J7bBHlgICyAnJidmIQREZIiQjJDwWRfNse6U+/OAtizLdaQOuqu7vvcxmh9TkgwkBZUMJQWVDCUFlQwlBZUMJQWVDOW/FdT9fp9Wq9W0Xq+nx+PxdZp8SlVQx+NxWiwWxYYfDoenbbvdfp2UuVwu03K5/OUj7iM6k02D1sA/pRVPNYyK8y+hufbm9glVQfEFayAaDDD0eF6iJ6DIaEEl3+FH4q8ISiiwEtDXDFEkJMlyMcS7JYHxa6e13+9/ExTC9hiKCYgQm/suxeOM+7G51KxcuNcTeOyB5ydaMalPizpkpy+bzeb5Vkt+oi+fjajlEs+pqXb+Lk1BkbwHcZHF4lg0DDsDjftYDIt4USxz7bV4tXyxC+qLy0Xg1GpgkL2YqkP1uE1v/UPT0v3z+Vz0RaxWLtGmmKfTqeivVuscmoLygSkhilcSalSkNsDSXr7wzVeGHcFEyIf4NAn/0R7j+8fg/qhPcIemxhhO6T33ed+L6YLCh0BQHpcz7vFWd7yftVziPhL79Q5NQQmKUBK1hLwpWiQUE/T97XZ7vnHx0Gw/AwajhWDIjWFFevEENeGDOAyF2qjBwVbKV9TsHrN2p1Sb98CX3l6v16If59X5vUNXUAxFARVIAWl2SzC9/RxBsdcbvY37UtMdjyd/7hv+pKBiPTBaUKpRf75auYgoqNZ8Yq1z6QqKppC8JxyLJuFagqUBl94TI77XmWw6ky3eFy6I+B4b8bw23RevCMrf4/PVmPj3GoTu+zvBGbk5c3LRO9kRVIyBnfvv0BWUIJAHFyQUFwnFgmoFxkVzuR/tOpNNPuQr2nvxa/fFK4IStRp434v5iqBqvhBILxe3y89ut/t2j1Xr3xxmCYqi5VxBQEEUjESUsIrjXkyolKCLUv8iy+bNdbt80xQaHXPwt6V4nLlP51VBCR+UlotAtGLi3/MW1N3zFfNq5eK9kg/91+i9681vDrMElSRzSUElQ0lBJUNJQSVDSUElQ0lBJUNJQSVDSUElA5mmn87S3g9oiycWAAAAAElFTkSuQmCC" />
               </ui:ImageFound.Image>
               <ui:ImageFound.Target>
-                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" TimeoutMS="200000" WaitForReady="COMPLETE" />
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" TimeoutMS="300000" WaitForReady="COMPLETE" />
               </ui:ImageFound.Target>
             </ui:ImageFound>
             <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" sap:VirtualizedContainerService.HintSize="526,106" sap2010:WorkflowViewState.IdRef="Click_8" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="False">
