@@ -655,8 +655,8 @@
       <Variable x:TypeArguments="scg:Dictionary(x:String, x:Object)" Name="Config" />
       <Variable x:TypeArguments="x:Int32" Default="0" Name="RetryNumber" />
       <Variable x:TypeArguments="sd:DataTable" Name="TransactionData" />
-      <Variable x:TypeArguments="x:Int32" Default="70045" Name="NumeroInstancia" />
-      <Variable x:TypeArguments="x:Int32" Default="9" Name="EstadoTerminado" />
+      <Variable x:TypeArguments="x:Int32" Default="0" Name="NumeroInstancia" />
+      <Variable x:TypeArguments="x:Int32" Default="0" Name="EstadoTerminado" />
       <Variable x:TypeArguments="x:String" Name="NombreCliente">
         <Variable.Default>
           <Literal x:TypeArguments="x:String" Value="" />

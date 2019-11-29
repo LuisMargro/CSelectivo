@@ -7,7 +7,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1184,2099</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1184,2102</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Personas participantes_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="21">
@@ -58,7 +58,7 @@
       <AssemblyReference>System.Data.Entity</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="Evalua las personas participantes requeridas en el caso de uso.&#xA;&#xA;cuando el caso de uso se trata de una PM se le agrega una persona PF." DisplayName="Personas participantes" sap:VirtualizedContainerService.HintSize="1164,2039" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="Evalua las personas participantes requeridas en el caso de uso.&#xA;&#xA;cuando el caso de uso se trata de una PM se le agrega una persona PF." DisplayName="Personas participantes" sap:VirtualizedContainerService.HintSize="1164,2042" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -83,14 +83,14 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <Flowchart.StartNode>
-        <x:Reference>__ReferenceID24</x:Reference>
+        <x:Reference>__ReferenceID23</x:Reference>
       </Flowchart.StartNode>
-      <FlowDecision x:Name="__ReferenceID20" Condition="[String.IsNullOrEmpty(in_TransactionItem(3).ToString) And String.IsNullOrEmpty(in_TransactionItem(4).ToString) And String.IsNullOrEmpty(in_TransactionItem(5).ToString)]" DisplayName="personas participantes" sap:VirtualizedContainerService.HintSize="124,87" sap2010:WorkflowViewState.IdRef="FlowDecision_42">
+      <FlowDecision x:Name="__ReferenceID19" Condition="[String.IsNullOrEmpty(in_TransactionItem(3).ToString) And String.IsNullOrEmpty(in_TransactionItem(4).ToString) And String.IsNullOrEmpty(in_TransactionItem(5).ToString)]" DisplayName="personas participantes" sap:VirtualizedContainerService.HintSize="125,87" sap2010:WorkflowViewState.IdRef="FlowDecision_42">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             <av:Point x:Key="ShapeLocation">328,186.5</av:Point>
-            <av:Size x:Key="ShapeSize">124,87</av:Size>
+            <av:Size x:Key="ShapeSize">125,87</av:Size>
             <av:PointCollection x:Key="TrueConnector">328,230 240,230 240,246.5</av:PointCollection>
             <av:PointCollection x:Key="FalseConnector">452,230 540,230 540,266.5</av:PointCollection>
             <x:String x:Key="TrueLabel">No existen</x:String>
@@ -98,25 +98,25 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
         <FlowDecision.True>
-          <FlowDecision x:Name="__ReferenceID5" Condition="[in_TransactionItem(0).ToString.trim.Equals(&quot;PM&quot;)]" DisplayName="Es cliente es PM" sap:VirtualizedContainerService.HintSize="90,87" sap2010:WorkflowViewState.IdRef="FlowDecision_30">
+          <FlowDecision x:Name="__ReferenceID6" Condition="[in_TransactionItem(0).ToString.trim.Equals(&quot;PM&quot;)]" DisplayName="Es cliente es PM" sap:VirtualizedContainerService.HintSize="91,87" sap2010:WorkflowViewState.IdRef="FlowDecision_30">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 <av:Point x:Key="ShapeLocation">194.5,246.5</av:Point>
-                <av:Size x:Key="ShapeSize">90,87</av:Size>
+                <av:Size x:Key="ShapeSize">91,87</av:Size>
                 <av:PointCollection x:Key="TrueConnector">194.5,290 120,290 120,384</av:PointCollection>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
             <FlowDecision.True>
-              <FlowStep x:Name="__ReferenceID21">
+              <FlowStep x:Name="__ReferenceID20">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <av:Point x:Key="ShapeLocation">20,384</av:Point>
-                    <av:Size x:Key="ShapeSize">200,51</av:Size>
+                    <av:Size x:Key="ShapeSize">200,52</av:Size>
                     <av:PointCollection x:Key="ConnectorLocation">120,436 120,466 140,466 140,490</av:PointCollection>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke PersonaParticipantePFyPFAE PF default" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Estados\Integracion de informacion\ReutilizablesPersonasParticipantes\PersonaParticipantePFyPFAE.xaml">
+                <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke PersonaParticipantePFyPFAE PF default" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Estados\Integracion de informacion\ReutilizablesPersonasParticipantes\PersonaParticipantePFyPFAE.xaml">
                   <ui:InvokeWorkflowFile.Arguments>
                     <InArgument x:TypeArguments="x:String" x:Key="in_RFC">ZEVN740815QD8</InArgument>
                     <InArgument x:TypeArguments="x:Boolean" x:Key="in_PM">True</InArgument>
@@ -157,7 +157,7 @@
           </FlowDecision>
         </FlowDecision.True>
         <FlowDecision.False>
-          <FlowDecision x:Name="__ReferenceID6" Condition="[Not String.IsNullOrEmpty(in_TransactionItem(3).ToString)]" DisplayName="PM no esta vacio" sap:VirtualizedContainerService.HintSize="96,87" sap2010:WorkflowViewState.IdRef="FlowDecision_41">
+          <FlowDecision x:Name="__ReferenceID7" Condition="[Not String.IsNullOrEmpty(in_TransactionItem(3).ToString)]" DisplayName="PM no esta vacio" sap:VirtualizedContainerService.HintSize="96,87" sap2010:WorkflowViewState.IdRef="FlowDecision_41">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -168,7 +168,7 @@
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
             <FlowDecision.True>
-              <FlowDecision x:Name="__ReferenceID7" Condition="[in_TransactionItem(3).ToString.Trim.Equals(&quot;Si&quot;)]" DisplayName="PM" sap:VirtualizedContainerService.HintSize="70,87" sap2010:WorkflowViewState.IdRef="FlowDecision_40">
+              <FlowDecision x:Name="__ReferenceID8" Condition="[in_TransactionItem(3).ToString.Trim.Equals(&quot;Si&quot;)]" DisplayName="PM" sap:VirtualizedContainerService.HintSize="70,87" sap2010:WorkflowViewState.IdRef="FlowDecision_40">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -179,15 +179,15 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
                 <FlowDecision.True>
-                  <FlowStep x:Name="__ReferenceID23">
+                  <FlowStep x:Name="__ReferenceID22">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <av:Point x:Key="ShapeLocation">300,494.5</av:Point>
-                        <av:Size x:Key="ShapeSize">200,51</av:Size>
+                        <av:Size x:Key="ShapeSize">200,52</av:Size>
                         <av:PointCollection x:Key="ConnectorLocation">400,545.5 400,575.5 540,575.5 540,596.5</av:PointCollection>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke PersonaParticipantePM workflow" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_5" UnSafe="False" WorkflowFileName="Estados\Integracion de informacion\ReutilizablesPersonasParticipantes\PersonaParticipantePM.xaml">
+                    <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke PersonaParticipantePM workflow" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_5" UnSafe="False" WorkflowFileName="Estados\Integracion de informacion\ReutilizablesPersonasParticipantes\PersonaParticipantePM.xaml">
                       <ui:InvokeWorkflowFile.Arguments>
                         <InArgument x:TypeArguments="x:String" x:Key="in_RFC">BTB191028CV1</InArgument>
                         <OutArgument x:TypeArguments="x:Boolean" x:Key="out_validacionGarantia">[ValidacionGarantias]</OutArgument>
@@ -199,7 +199,7 @@
                       </sap:WorkflowViewStateService.ViewState>
                     </ui:InvokeWorkflowFile>
                     <FlowStep.Next>
-                      <FlowDecision x:Name="__ReferenceID4" Condition="[in_TransactionItem(0).ToString.Trim.Equals(&quot;PM&quot;)]" DisplayName="Cliente pm" sap:VirtualizedContainerService.HintSize="70,87" sap2010:WorkflowViewState.IdRef="FlowDecision_39">
+                      <FlowDecision x:Name="__ReferenceID5" Condition="[in_TransactionItem(0).ToString.Trim.Equals(&quot;PM&quot;)]" DisplayName="Cliente pm" sap:VirtualizedContainerService.HintSize="70,87" sap2010:WorkflowViewState.IdRef="FlowDecision_39">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -232,15 +232,15 @@
                               </sap:WorkflowViewStateService.ViewState>
                             </Assign>
                             <FlowStep.Next>
-                              <FlowStep x:Name="__ReferenceID2">
+                              <FlowStep x:Name="__ReferenceID3">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                     <av:Point x:Key="ShapeLocation">240,774</av:Point>
-                                    <av:Size x:Key="ShapeSize">200,51</av:Size>
+                                    <av:Size x:Key="ShapeSize">200,52</av:Size>
                                     <av:PointCollection x:Key="ConnectorLocation">340,826 340,856 360,856 360,860</av:PointCollection>
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
-                                <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke PersonaParticipantePF" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="Estados\Integracion de informacion\ReutilizablesPersonasParticipantes\PersonaParticipantePFyPFAE.xaml">
+                                <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke PersonaParticipantePF" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="Estados\Integracion de informacion\ReutilizablesPersonasParticipantes\PersonaParticipantePFyPFAE.xaml">
                                   <ui:InvokeWorkflowFile.Arguments>
                                     <InArgument x:TypeArguments="x:String" x:Key="in_RFC">ZEVN740815QD8</InArgument>
                                     <InArgument x:TypeArguments="x:Boolean" x:Key="in_PM">[PM]</InArgument>
@@ -276,7 +276,7 @@
                                       </sap:WorkflowViewStateService.ViewState>
                                     </Assign>
                                     <FlowStep.Next>
-                                      <FlowDecision x:Name="__ReferenceID3" Condition="[Not String.IsNullOrEmpty(in_TransactionItem(3).ToString)]" DisplayName="pm no esta vacio" sap:VirtualizedContainerService.HintSize="96,87" sap2010:WorkflowViewState.IdRef="FlowDecision_36">
+                                      <FlowDecision x:Name="__ReferenceID4" Condition="[Not String.IsNullOrEmpty(in_TransactionItem(3).ToString)]" DisplayName="pm no esta vacio" sap:VirtualizedContainerService.HintSize="96,87" sap2010:WorkflowViewState.IdRef="FlowDecision_36">
                                         <sap:WorkflowViewStateService.ViewState>
                                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -287,14 +287,14 @@
                                           </scg:Dictionary>
                                         </sap:WorkflowViewStateService.ViewState>
                                         <FlowDecision.True>
-                                          <FlowDecision x:Name="__ReferenceID10" Condition="[in_TransactionItem(3).ToString.Equals(&quot;Si&quot;)]" DisplayName="PP PM es requerida" sap:VirtualizedContainerService.HintSize="108,87" sap2010:WorkflowViewState.IdRef="FlowDecision_33">
+                                          <FlowDecision x:Name="__ReferenceID11" Condition="[in_TransactionItem(3).ToString.Equals(&quot;Si&quot;)]" DisplayName="PP PM es requerida" sap:VirtualizedContainerService.HintSize="109,87" sap2010:WorkflowViewState.IdRef="FlowDecision_33">
                                             <sap:WorkflowViewStateService.ViewState>
                                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                 <av:Point x:Key="ShapeLocation">235.5,1046.5</av:Point>
-                                                <av:Size x:Key="ShapeSize">108,87</av:Size>
+                                                <av:Size x:Key="ShapeSize">109,87</av:Size>
                                                 <av:PointCollection x:Key="TrueConnector">235.5,1090 141,1090 141,1150</av:PointCollection>
-                                                <av:PointCollection x:Key="FalseConnector">343.5,1090 440,1090 440,1150</av:PointCollection>
+                                                <av:PointCollection x:Key="FalseConnector">344.5,1090 780,1090 780,1126.5</av:PointCollection>
                                               </scg:Dictionary>
                                             </sap:WorkflowViewStateService.ViewState>
                                             <FlowDecision.True>
@@ -324,11 +324,11 @@
                                                     <sap:WorkflowViewStateService.ViewState>
                                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                         <av:Point x:Key="ShapeLocation">340,1254.02</av:Point>
-                                                        <av:Size x:Key="ShapeSize">200,51</av:Size>
+                                                        <av:Size x:Key="ShapeSize">200,52</av:Size>
                                                         <av:PointCollection x:Key="ConnectorLocation">440,1306.02 440,1370 629,1370</av:PointCollection>
                                                       </scg:Dictionary>
                                                     </sap:WorkflowViewStateService.ViewState>
-                                                    <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke PersonaParticipante PFAE" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_3" UnSafe="False" WorkflowFileName="Estados\Integracion de informacion\ReutilizablesPersonasParticipantes\PersonaParticipantePFyPFAE.xaml">
+                                                    <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke PersonaParticipante PFAE" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_3" UnSafe="False" WorkflowFileName="Estados\Integracion de informacion\ReutilizablesPersonasParticipantes\PersonaParticipantePFyPFAE.xaml">
                                                       <ui:InvokeWorkflowFile.Arguments>
                                                         <InArgument x:TypeArguments="x:String" x:Key="in_RFC">TEIR620128DG5</InArgument>
                                                         <InArgument x:TypeArguments="x:Boolean" x:Key="in_PM">[PM]</InArgument>
@@ -364,7 +364,7 @@
                                                           </sap:WorkflowViewStateService.ViewState>
                                                         </Assign>
                                                         <FlowStep.Next>
-                                                          <FlowDecision x:Name="__ReferenceID18" Condition="[not String.IsNullOrEmpty(in_TransactionItem(16).ToString)]" DisplayName="Garantias no vacio" sap:VirtualizedContainerService.HintSize="103,87" sap2010:WorkflowViewState.IdRef="FlowDecision_32">
+                                                          <FlowDecision x:Name="__ReferenceID17" Condition="[not String.IsNullOrEmpty(in_TransactionItem(16).ToString)]" DisplayName="Garantias no vacio" sap:VirtualizedContainerService.HintSize="103,87" sap2010:WorkflowViewState.IdRef="FlowDecision_32">
                                                             <sap:WorkflowViewStateService.ViewState>
                                                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -374,24 +374,24 @@
                                                               </scg:Dictionary>
                                                             </sap:WorkflowViewStateService.ViewState>
                                                             <FlowDecision.True>
-                                                              <FlowDecision x:Name="__ReferenceID19" Condition="[in_TransactionItem(16).ToString.Trim.equals(&quot;Si&quot;) And ValidacionGarantias]" DisplayName="Requiere garantia" sap:VirtualizedContainerService.HintSize="98,87" sap2010:WorkflowViewState.IdRef="FlowDecision_31">
+                                                              <FlowDecision x:Name="__ReferenceID18" Condition="[in_TransactionItem(16).ToString.Trim.equals(&quot;Si&quot;) And ValidacionGarantias]" DisplayName="Requiere garantia" sap:VirtualizedContainerService.HintSize="99,87" sap2010:WorkflowViewState.IdRef="FlowDecision_31">
                                                                 <sap:WorkflowViewStateService.ViewState>
                                                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                                     <av:Point x:Key="ShapeLocation">531,1496.5</av:Point>
-                                                                    <av:Size x:Key="ShapeSize">98,87</av:Size>
+                                                                    <av:Size x:Key="ShapeSize">99,87</av:Size>
                                                                     <av:PointCollection x:Key="TrueConnector">531,1540 501,1540 501,1540.02 400,1540.02</av:PointCollection>
                                                                   </scg:Dictionary>
                                                                 </sap:WorkflowViewStateService.ViewState>
                                                                 <FlowDecision.True>
-                                                                  <FlowStep x:Name="__ReferenceID22">
+                                                                  <FlowStep x:Name="__ReferenceID21">
                                                                     <sap:WorkflowViewStateService.ViewState>
                                                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                         <av:Point x:Key="ShapeLocation">200,1514.02</av:Point>
-                                                                        <av:Size x:Key="ShapeSize">200,51</av:Size>
+                                                                        <av:Size x:Key="ShapeSize">200,52</av:Size>
                                                                       </scg:Dictionary>
                                                                     </sap:WorkflowViewStateService.ViewState>
-                                                                    <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke PersonaParticipante PFAE garantia" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_4" UnSafe="False" WorkflowFileName="Estados\Integracion de informacion\ReutilizablesPersonasParticipantes\PersonaParticipantePFyPFAE.xaml">
+                                                                    <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke PersonaParticipante PFAE garantia" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_4" UnSafe="False" WorkflowFileName="Estados\Integracion de informacion\ReutilizablesPersonasParticipantes\PersonaParticipantePFyPFAE.xaml">
                                                                       <ui:InvokeWorkflowFile.Arguments>
                                                                         <InArgument x:TypeArguments="x:String" x:Key="in_RFC">ZEVN740815QD8</InArgument>
                                                                         <InArgument x:TypeArguments="x:Boolean" x:Key="in_PM">False</InArgument>
@@ -419,62 +419,38 @@
                                               </FlowStep>
                                             </FlowDecision.True>
                                             <FlowDecision.False>
-                                              <FlowStep x:Name="__ReferenceID17">
+                                              <FlowDecision x:Name="__ReferenceID2" Condition="[Not String.IsNullOrEmpty(in_TransactionItem(5).ToString)]" DisplayName="PFAE no esta vacio" sap:VirtualizedContainerService.HintSize="104,87" sap2010:WorkflowViewState.IdRef="FlowDecision_35">
                                                 <sap:WorkflowViewStateService.ViewState>
                                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                    <av:Point x:Key="ShapeLocation">309,1150</av:Point>
-                                                    <av:Size x:Key="ShapeSize">262,60</av:Size>
-                                                    <av:PointCollection x:Key="ConnectorLocation">440,1210 440,1254.02</av:PointCollection>
+                                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                    <av:Point x:Key="ShapeLocation">728,1126.5</av:Point>
+                                                    <av:Size x:Key="ShapeSize">104,87</av:Size>
+                                                    <av:PointCollection x:Key="TrueConnector">728,1170 650,1170 650,1226.5</av:PointCollection>
+                                                    <av:PointCollection x:Key="FalseConnector">832,1170 883,1170 883,1271.04 760,1271.04 760,1340</av:PointCollection>
                                                   </scg:Dictionary>
                                                 </sap:WorkflowViewStateService.ViewState>
-                                                <Assign DisplayName="Terminar Estado PP PM" sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_47">
-                                                  <Assign.To>
-                                                    <OutArgument x:TypeArguments="x:Int32">[io_EstadoTerminado]</OutArgument>
-                                                  </Assign.To>
-                                                  <Assign.Value>
-                                                    <InArgument x:TypeArguments="x:Int32">3</InArgument>
-                                                  </Assign.Value>
-                                                  <sap:WorkflowViewStateService.ViewState>
-                                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                                    </scg:Dictionary>
-                                                  </sap:WorkflowViewStateService.ViewState>
-                                                </Assign>
-                                                <FlowStep.Next>
-                                                  <x:Reference>__ReferenceID0</x:Reference>
-                                                </FlowStep.Next>
-                                              </FlowStep>
+                                                <FlowDecision.True>
+                                                  <FlowDecision x:Name="__ReferenceID10" Condition="[in_TransactionItem(5).ToString.Trim.Equals(&quot;Si&quot;)]" DisplayName="PFAE" sap:VirtualizedContainerService.HintSize="70,87" sap2010:WorkflowViewState.IdRef="FlowDecision_34" True="{x:Reference __ReferenceID0}" False="{x:Reference __ReferenceID1}">
+                                                    <sap:WorkflowViewStateService.ViewState>
+                                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                        <av:Point x:Key="ShapeLocation">615,1226.5</av:Point>
+                                                        <av:Size x:Key="ShapeSize">70,87</av:Size>
+                                                        <av:PointCollection x:Key="TrueConnector">615,1270 585,1270 585,1280.02 540,1280.02</av:PointCollection>
+                                                        <av:PointCollection x:Key="FalseConnector">685,1270 760,1270 760,1340</av:PointCollection>
+                                                      </scg:Dictionary>
+                                                    </sap:WorkflowViewStateService.ViewState>
+                                                  </FlowDecision>
+                                                </FlowDecision.True>
+                                                <FlowDecision.False>
+                                                  <x:Reference>__ReferenceID1</x:Reference>
+                                                </FlowDecision.False>
+                                              </FlowDecision>
                                             </FlowDecision.False>
                                           </FlowDecision>
                                         </FlowDecision.True>
                                         <FlowDecision.False>
-                                          <FlowDecision x:Name="__ReferenceID12" Condition="[Not String.IsNullOrEmpty(in_TransactionItem(5).ToString)]" DisplayName="PFAE no esta vacio" sap:VirtualizedContainerService.HintSize="104,87" sap2010:WorkflowViewState.IdRef="FlowDecision_35">
-                                            <sap:WorkflowViewStateService.ViewState>
-                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                                <av:Point x:Key="ShapeLocation">728,1126.5</av:Point>
-                                                <av:Size x:Key="ShapeSize">104,87</av:Size>
-                                                <av:PointCollection x:Key="TrueConnector">728,1170 650,1170 650,1226.5</av:PointCollection>
-                                                <av:PointCollection x:Key="FalseConnector">832,1170 883,1170 883,1271.04 760,1271.04 760,1340</av:PointCollection>
-                                              </scg:Dictionary>
-                                            </sap:WorkflowViewStateService.ViewState>
-                                            <FlowDecision.True>
-                                              <FlowDecision x:Name="__ReferenceID9" Condition="[in_TransactionItem(5).ToString.Trim.Equals(&quot;Si&quot;)]" DisplayName="PFAE" sap:VirtualizedContainerService.HintSize="70,87" sap2010:WorkflowViewState.IdRef="FlowDecision_34" True="{x:Reference __ReferenceID0}" False="{x:Reference __ReferenceID1}">
-                                                <sap:WorkflowViewStateService.ViewState>
-                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                                    <av:Point x:Key="ShapeLocation">615,1226.5</av:Point>
-                                                    <av:Size x:Key="ShapeSize">70,87</av:Size>
-                                                    <av:PointCollection x:Key="TrueConnector">615,1270 585,1270 585,1280.02 540,1280.02</av:PointCollection>
-                                                    <av:PointCollection x:Key="FalseConnector">685,1270 760,1270 760,1340</av:PointCollection>
-                                                  </scg:Dictionary>
-                                                </sap:WorkflowViewStateService.ViewState>
-                                              </FlowDecision>
-                                            </FlowDecision.True>
-                                            <FlowDecision.False>
-                                              <x:Reference>__ReferenceID1</x:Reference>
-                                            </FlowDecision.False>
-                                          </FlowDecision>
+                                          <x:Reference>__ReferenceID2</x:Reference>
                                         </FlowDecision.False>
                                       </FlowDecision>
                                     </FlowStep.Next>
@@ -485,7 +461,7 @@
                           </FlowStep>
                         </FlowDecision.True>
                         <FlowDecision.False>
-                          <FlowDecision x:Name="__ReferenceID11" Condition="[Not String.IsNullOrEmpty(in_TransactionItem(4).ToString)]" DisplayName="PF no esta vacio" sap:VirtualizedContainerService.HintSize="91,87" sap2010:WorkflowViewState.IdRef="FlowDecision_38">
+                          <FlowDecision x:Name="__ReferenceID12" Condition="[Not String.IsNullOrEmpty(in_TransactionItem(4).ToString)]" DisplayName="PF no esta vacio" sap:VirtualizedContainerService.HintSize="91,87" sap2010:WorkflowViewState.IdRef="FlowDecision_38">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -496,7 +472,7 @@
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
                             <FlowDecision.True>
-                              <FlowDecision x:Name="__ReferenceID8" Condition="[in_TransactionItem(4).ToString.Trim.Equals(&quot;Si&quot;)]" DisplayName="PF" sap:VirtualizedContainerService.HintSize="70,87" sap2010:WorkflowViewState.IdRef="FlowDecision_37" True="{x:Reference __ReferenceID2}" False="{x:Reference __ReferenceID3}">
+                              <FlowDecision x:Name="__ReferenceID9" Condition="[in_TransactionItem(4).ToString.Trim.Equals(&quot;Si&quot;)]" DisplayName="PF" sap:VirtualizedContainerService.HintSize="70,87" sap2010:WorkflowViewState.IdRef="FlowDecision_37" True="{x:Reference __ReferenceID3}" False="{x:Reference __ReferenceID4}">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -509,7 +485,7 @@
                               </FlowDecision>
                             </FlowDecision.True>
                             <FlowDecision.False>
-                              <x:Reference>__ReferenceID3</x:Reference>
+                              <x:Reference>__ReferenceID4</x:Reference>
                             </FlowDecision.False>
                           </FlowDecision>
                         </FlowDecision.False>
@@ -518,26 +494,26 @@
                   </FlowStep>
                 </FlowDecision.True>
                 <FlowDecision.False>
-                  <x:Reference>__ReferenceID4</x:Reference>
+                  <x:Reference>__ReferenceID5</x:Reference>
                 </FlowDecision.False>
               </FlowDecision>
             </FlowDecision.True>
             <FlowDecision.False>
-              <x:Reference>__ReferenceID4</x:Reference>
+              <x:Reference>__ReferenceID5</x:Reference>
             </FlowDecision.False>
           </FlowDecision>
         </FlowDecision.False>
       </FlowDecision>
-      <x:Reference>__ReferenceID5</x:Reference>
       <x:Reference>__ReferenceID6</x:Reference>
       <x:Reference>__ReferenceID7</x:Reference>
       <x:Reference>__ReferenceID8</x:Reference>
       <x:Reference>__ReferenceID9</x:Reference>
-      <x:Reference>__ReferenceID4</x:Reference>
-      <x:Reference>__ReferenceID3</x:Reference>
       <x:Reference>__ReferenceID10</x:Reference>
+      <x:Reference>__ReferenceID5</x:Reference>
+      <x:Reference>__ReferenceID4</x:Reference>
       <x:Reference>__ReferenceID11</x:Reference>
       <x:Reference>__ReferenceID12</x:Reference>
+      <x:Reference>__ReferenceID2</x:Reference>
       <x:Reference>__ReferenceID13</x:Reference>
       <x:Reference>__ReferenceID14</x:Reference>
       <x:Reference>__ReferenceID15</x:Reference>
@@ -545,16 +521,15 @@
       <x:Reference>__ReferenceID1</x:Reference>
       <x:Reference>__ReferenceID17</x:Reference>
       <x:Reference>__ReferenceID18</x:Reference>
-      <x:Reference>__ReferenceID19</x:Reference>
-      <FlowStep x:Name="__ReferenceID24">
+      <FlowStep x:Name="__ReferenceID23">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <av:Point x:Key="ShapeLocation">290,104.5</av:Point>
-            <av:Size x:Key="ShapeSize">200,51</av:Size>
+            <av:Size x:Key="ShapeSize">200,52</av:Size>
             <av:PointCollection x:Key="ConnectorLocation">390,155.5 390,186.5</av:PointCollection>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
-        <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" ContinueOnError="True" DisplayName="Clic a Personas Participantes" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="Click_90" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
+        <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" ContinueOnError="True" DisplayName="Clic a Personas Participantes" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="Click_90" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
           <ui:Click.CursorPosition>
             <ui:CursorPosition Position="Center">
               <ui:CursorPosition.OffsetX>
@@ -582,14 +557,14 @@
           </sap:WorkflowViewStateService.ViewState>
         </ui:Click>
         <FlowStep.Next>
-          <x:Reference>__ReferenceID20</x:Reference>
+          <x:Reference>__ReferenceID19</x:Reference>
         </FlowStep.Next>
       </FlowStep>
-      <x:Reference>__ReferenceID21</x:Reference>
-      <x:Reference>__ReferenceID2</x:Reference>
+      <x:Reference>__ReferenceID20</x:Reference>
+      <x:Reference>__ReferenceID3</x:Reference>
       <x:Reference>__ReferenceID0</x:Reference>
+      <x:Reference>__ReferenceID21</x:Reference>
       <x:Reference>__ReferenceID22</x:Reference>
-      <x:Reference>__ReferenceID23</x:Reference>
     </Flowchart>
   </Sequence>
 </Activity>
