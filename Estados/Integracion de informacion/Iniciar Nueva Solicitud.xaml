@@ -6,7 +6,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>496,1163</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>496,1123</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Iniciar Nueva Solicitud_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="22">
@@ -93,7 +93,7 @@
                 </ui:CursorPosition>
               </ui:Click.CursorPosition>
               <ui:Click.Target>
-                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="01f9c2ec1438ab52241cbb2968cdd74e" Selector="&lt;webctrl aria-label='Iniciar Nueva Solicitud 2' /&gt;" TimeoutMS="180000" WaitForReady="INTERACTIVE" />
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="01f9c2ec1438ab52241cbb2968cdd74e" Selector="&lt;webctrl aaname='‪Iniciar Nueva Solicitud‬' idx='3' parentid='launch-menu-item-icon-service' tag='A' /&gt;" TimeoutMS="180000" WaitForReady="INTERACTIVE" />
               </ui:Click.Target>
             </ui:Click>
             <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Clic cliente nuevo" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_5" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
