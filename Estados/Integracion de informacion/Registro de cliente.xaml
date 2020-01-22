@@ -210,9 +210,9 @@
                             <av:PointCollection x:Key="ConnectorLocation">340,865.5 340,884.5</av:PointCollection>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <ui:SendHotkey DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" ClickBeforeTyping="True" DisplayName="Avanza una pagina para ver partida" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="SendHotkey_2" Key="pgdn" KeyModifiers="None" SpecialKey="True">
+                        <ui:SendHotkey DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" ClickBeforeTyping="True" DisplayName="Avanza una pagina para ver partida" sap:VirtualizedContainerService.HintSize="334,154" sap2010:WorkflowViewState.IdRef="SendHotkey_2" Key="pgdn" KeyModifiers="None" SpecialKey="True">
                           <ui:SendHotkey.Target>
-                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="80e246950aafa477a068722894750522" Selector="&lt;html app='chrome.exe' title='IBM BPM Portal - Step: Integración de información' /&gt;&lt;webctrl tag='HTML' /&gt;" TimeoutMS="120000" WaitForReady="INTERACTIVE" />
+                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="80e246950aafa477a068722894750522" Selector="&lt;html app='chrome.exe' omit:htmlwindowname='1558' title='IBM BPM Portal - Step: Integración de información' /&gt;&lt;webctrl src='https://15.128.91.14:8443/teamworks/process.lsw?zWorkflowState=1*' tag='IFRAME' /&gt;&lt;webctrl omit:id='coach_frame15497617.cf1' tag='IFRAME' /&gt;" TimeoutMS="120000" WaitForReady="INTERACTIVE" />
                           </ui:SendHotkey.Target>
                         </ui:SendHotkey>
                         <FlowStep.Next>
@@ -259,7 +259,7 @@
                                             <av:PointCollection x:Key="ConnectorLocation">300,192 300,214</av:PointCollection>
                                           </scg:Dictionary>
                                         </sap:WorkflowViewStateService.ViewState>
-                                        <Sequence DisplayName="secuencia general de guardado" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_47">
+                                        <Sequence DisplayName="secuencia general de guardado" sap:VirtualizedContainerService.HintSize="376,416" sap2010:WorkflowViewState.IdRef="Sequence_47">
                                           <Sequence.Variables>
                                             <Variable x:TypeArguments="s:Exception" Name="NuevoError" />
                                           </Sequence.Variables>
@@ -291,7 +291,7 @@
                                               <InArgument x:TypeArguments="x:Int32" x:Key="in_IndiceCliente">[out_IndiceCliente]</InArgument>
                                             </ui:InvokeWorkflowFile.Arguments>
                                           </ui:InvokeWorkflowFile>
-                                          <ui:CommentOut DisplayName="Buro Nacional" sap:VirtualizedContainerService.HintSize="334,52" sap2010:WorkflowViewState.IdRef="CommentOut_3">
+                                          <ui:CommentOut DisplayName="Buro Nacional" sap:VirtualizedContainerService.HintSize="334,51" sap2010:WorkflowViewState.IdRef="CommentOut_3">
                                             <ui:CommentOut.Body>
                                               <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="376,344" sap2010:WorkflowViewState.IdRef="Sequence_46">
                                                 <sap:WorkflowViewStateService.ViewState>
@@ -373,7 +373,7 @@
                                                         <av:PointCollection x:Key="ConnectorLocation">230,420 320,420 320,494</av:PointCollection>
                                                       </scg:Dictionary>
                                                     </sap:WorkflowViewStateService.ViewState>
-                                                    <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Clic Aceptar confirmacion" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="Click_18" KeyModifiers="None" MouseButton="BTN_LEFT">
+                                                    <ui:Click DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DelayBefore="500" DisplayName="Clic Aceptar confirmacion" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="Click_18" KeyModifiers="None" MouseButton="BTN_LEFT">
                                                       <ui:Click.CursorPosition>
                                                         <ui:CursorPosition Position="Center">
                                                           <ui:CursorPosition.OffsetX>
@@ -726,7 +726,7 @@
           <av:PointCollection x:Key="ConnectorLocation">570,355.5 570,384.5</av:PointCollection>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:ExcelApplicationScope Password="{x:Null}" DisplayName="Excel base de datos de PF y PFAE" sap:VirtualizedContainerService.HintSize="673,859" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_1" WorkbookPath="[in_PathBD]">
+      <ui:ExcelApplicationScope Password="{x:Null}" DisplayName="Excel base de datos de PF y PFAE" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_1" WorkbookPath="[in_PathBD]">
         <ui:ExcelApplicationScope.Body>
           <ActivityAction x:TypeArguments="ui:WorkbookApplication">
             <ActivityAction.Argument>

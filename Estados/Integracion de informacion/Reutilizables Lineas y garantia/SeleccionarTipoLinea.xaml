@@ -5,7 +5,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>790,1026</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>790,986</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>SeleccionarTipoLinea_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="21">
@@ -269,7 +269,7 @@
                   <av:PointCollection x:Key="ConnectorLocation">330,235.5 330,276.5</av:PointCollection>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Clic en Linea nueva" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="Click_1" KeyModifiers="None" MouseButton="BTN_LEFT">
+              <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Clic en Linea nueva" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="Click_1" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
                 <ui:Click.CursorPosition>
                   <ui:CursorPosition Position="Center">
                     <ui:CursorPosition.OffsetX>
@@ -281,7 +281,7 @@
                   </ui:CursorPosition>
                 </ui:Click.CursorPosition>
                 <ui:Click.Target>
-                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="5d1144a8a23257c4833e2df673241eaf" Selector="&lt;webctrl id='button-button-Linea_Nueva1:linea_Nueva' tag='BUTTON' /&gt;" TimeoutMS="180000" WaitForReady="INTERACTIVE" />
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="5d1144a8a23257c4833e2df673241eaf" Selector="&lt;webctrl id='button-button-Linea_Nueva1:linea_Nueva' tag='BUTTON' /&gt;" TimeoutMS="180000" WaitForReady="COMPLETE" />
                 </ui:Click.Target>
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
