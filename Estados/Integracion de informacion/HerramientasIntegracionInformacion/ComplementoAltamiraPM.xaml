@@ -5,7 +5,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>514,1859</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>514,1819</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ComplementoAltamiraPM_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -127,7 +127,7 @@
                   <InArgument x:TypeArguments="x:String">[in_Cliente(0).ToString.Trim.Substring(3,6)]</InArgument>
                 </Assign.Value>
               </Assign>
-              <ui:TypeInto ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" Activate="True" DisplayName="Escribir Fecha de alta SHCP" EmptyField="True" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_2" SendWindowMessages="True" SimulateType="False" Text="[Fecha.Substring(4)+&quot;/&quot;+Fecha.Substring(2,2)+&quot;/&quot;+Fecha.Substring(0,2)]">
+              <ui:TypeInto ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" Activate="True" DisplayName="Escribir Fecha de alta SHCP" EmptyField="True" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_2" SendWindowMessages="False" SimulateType="False" Text="[Fecha.Substring(4)+&quot;/&quot;+Fecha.Substring(2,2)+&quot;/&quot;+Fecha.Substring(0,2)]">
                 <ui:TypeInto.Target>
                   <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="ce79e99b927dc7a4823d536894164ac9" Selector="&lt;webctrl id='datetimepicker-input-Domicilio_Fiscal1:shcppm' tag='INPUT' /&gt;" TimeoutMS="120000" WaitForReady="INTERACTIVE" />
                 </ui:TypeInto.Target>

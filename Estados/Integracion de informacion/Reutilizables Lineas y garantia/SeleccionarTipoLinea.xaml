@@ -239,7 +239,7 @@
                     <av:PointCollection x:Key="ConnectorLocation">560,465.5 560,520 430,520</av:PointCollection>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <ui:SelectItem ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="30000" DisplayName="Seleccionar Linea Global" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="SelectItem_5" Item="Global Cliente">
+                <ui:SelectItem DelayAfter="{x:Null}" ContinueOnError="True" DelayBefore="30000" DisplayName="Seleccionar Linea Global" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="SelectItem_5" Item="Global Cliente">
                   <ui:SelectItem.Items>
                     <scg:List x:TypeArguments="x:String" Capacity="4">
                       <x:String>Revolvente</x:String>
@@ -248,7 +248,7 @@
                     </scg:List>
                   </ui:SelectItem.Items>
                   <ui:SelectItem.Target>
-                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="b336b77e1c4c27acb1004a7339e7335e" Selector="&lt;html app='chrome.exe' title='IBM BPM Portal - Step: Integración de información' /&gt;&lt;webctrl id='singleselect-Linea_Nueva1:lin_global' tag='SELECT' /&gt;" TimeoutMS="180000" WaitForReady="COMPLETE" />
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="b336b77e1c4c27acb1004a7339e7335e" Selector="&lt;html app='chrome.exe' title='IBM BPM Portal - Step: Integración de información' /&gt;&lt;webctrl id='singleselect-Linea_Nueva1:lin_global' tag='SELECT' /&gt;" TimeoutMS="180000" WaitForReady="INTERACTIVE" />
                   </ui:SelectItem.Target>
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">

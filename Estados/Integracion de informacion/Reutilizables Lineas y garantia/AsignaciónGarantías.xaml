@@ -174,7 +174,7 @@
                                   <av:Size x:Key="ShapeSize">200,66</av:Size>
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
-                              <Sequence DisplayName="Secuencia asignar líneas y garantías" sap:VirtualizedContainerService.HintSize="376,782" sap2010:WorkflowViewState.IdRef="Sequence_1">
+                              <Sequence DisplayName="Secuencia asignar líneas y garantías" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_1">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -304,19 +304,19 @@
               <av:Size x:Key="ShapeSize">200,51</av:Size>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Attach Browser lineas sin garantias" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="BrowserScope_1" InformativeScreenshot="d78224010b6d3135dc0daf85bd2d7c48" Selector="&lt;html app='chrome.exe' title='IBM BPM Portal - Step: Integración de información' /&gt;">
+          <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Attach Browser lineas sin garantias" sap:VirtualizedContainerService.HintSize="434,782" sap2010:WorkflowViewState.IdRef="BrowserScope_1" InformativeScreenshot="d78224010b6d3135dc0daf85bd2d7c48" Selector="&lt;html app='chrome.exe' title='IBM BPM Portal - Step: Integración de información' /&gt;">
             <ui:BrowserScope.Body>
               <ActivityAction x:TypeArguments="x:Object">
                 <ActivityAction.Argument>
                   <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
                 </ActivityAction.Argument>
-                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="476,636" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,636" sap2010:WorkflowViewState.IdRef="Sequence_3">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click seleccionar todas las líneas" sap:VirtualizedContainerService.HintSize="434,106" sap2010:WorkflowViewState.IdRef="Click_5" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
+                  <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click seleccionar todas las líneas" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_5" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="False">
                     <ui:Click.CursorPosition>
                       <ui:CursorPosition Position="Center">
                         <ui:CursorPosition.OffsetX>
@@ -335,7 +335,7 @@
                       </ui:Target>
                     </ui:Click.Target>
                   </ui:Click>
-                  <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click sin garantías" sap:VirtualizedContainerService.HintSize="434,106" sap2010:WorkflowViewState.IdRef="Click_6" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
+                  <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click sin garantías" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_6" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="False">
                     <ui:Click.CursorPosition>
                       <ui:CursorPosition Position="Center">
                         <ui:CursorPosition.OffsetX>
@@ -350,7 +350,7 @@
                       <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="54ce7a361431f99cb47daf9069756561" Selector="&lt;html app='chrome.exe' title='IBM BPM Portal - Step: Integración de información' /&gt;&lt;webctrl id='button-button-Garantias1:Button9' /&gt;" TimeoutMS="180000" WaitForReady="INTERACTIVE" />
                     </ui:Click.Target>
                   </ui:Click>
-                  <ui:WaitImageAppear FoundElement="{x:Null}" DisplayName="Esperar a mensaje de confirmación" sap:VirtualizedContainerService.HintSize="434,106" sap2010:WorkflowViewState.IdRef="WaitImageAppear_2">
+                  <ui:WaitImageAppear FoundElement="{x:Null}" DisplayName="Esperar a mensaje de confirmación" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="WaitImageAppear_2">
                     <ui:WaitImageAppear.Image>
                       <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" Profile="Basic" TargetImageBase64="iVBORw0KGgoAAAANSUhEUgAAAPsAAAAXCAYAAADN9DlfAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAATySURBVHhe7ZgxTiRBDEX3TlyDM8AJOAEHICcnJuYOpAQEiAxxA0LCXv0Rb/X5uLp6enZhNV1fsprqctnf3+Vh4Nc0MDCwCYxhHxjYCMawDwxsBGPYBwY2gjHsAwMbwRj2gUW4u7ubTk5OpoeHh483Az+F6+vr6fT0dHp5efl4swzNYX97e5vOz893DZbpZ71bA2IdEuM7sIan/C4vL/9qXe/v77uYh+jFcOq5L1IH1mtifQd06XX5pZm0OzZId7Sn1jUfuuWwc9kY9EMHPi/PseBf1fW/DfvAz+GQPibKYc9PSh9+/0TR14klHwR+eXResXVG50H1ATNXILl5kh/urRiIJ7u/v/80VM6TWtxfBmd8fU+1tXhlHLQFvn97e/uJFyCmTDXOfY0jnp7CPvqmDnPrm5ubP/HQBnhNyZcY7Mvmfltpz31dv7yv5BU3cvT0cj6Ko7uhn5fqt6bvPZ7V2efn50+1tvzYc5TD7oV7QQ6/eL0kVWMxGlzFm2tQ+mtN0/29jBx5YeR7dnb2pzHwZJ3+mDSpapJ/xWsuTsULg4dQ6SPT2QpcAHJU51v6pg6tdcaTwYf8bpyvBsf3E62+qibf5/5VuWWt+1nxubi42D2X6pf7Wvf63uOZ+3qfw97L4Wj+zZ7kvTCa7eJBrLp8fjnyMlSkBPJX8QT29QTJwXnqZz09J0JxyfBnzX6LY/oLFa8EceXjF408XF7i5loghvfAgRYt7vBEK0fW1Vr7eeIpHzXhL8xpib/fMQf1tzRlHy2onXWlnwNu7MOnxVdI/Vi3OArkwWcJT3zgkbUmMoejOewCidwUjIS5J6vE4XIsaX7mRMxEii3wLk15X19fv3CgqbxLnqw9ludLf6HiBVI3+VYxkheauFbpk6jOCEv0TU69taA45GPf82B5Cb1n0kYaJajV43hdOQBZ+xqtvB4Hvhj67dt3IfNWPNMnawWtHI7ZYQcutoJkYLcqSe9yCClWrhPVPu/SxPXx8fELhxS34im0hKz8K17UyjlfVzGSF/5oJVQXw5GXJHlVPEFy6q0F58i+1mnirH09pam0pRbWLWRcndFZ+sM6a99XKyE17+lX6UkM7VXrJTzTJ2vt5XCUw14d8HeITsIe8PciiKcicp+itS+/CuKR+whTnfGYCAcH8lY8Hblf+Ve88h089X4JLxrsefBp9YAceibPnr7p31sL8FE+4vu+Iy8s8XrDDoiPf8bz2t2/xSf1xn8f/fbtu6/neKZP1trL4ej+gy4ti3NrNSvFEhRHZ0RuSb5EFikgRMagcHJi8p37Bx3CpREvecu/4lVpJWvxwuAhtGK09IH7Gn1Th95aoAblE1raya/Vp9b9aenDhc8B8NqFaogc7Hts/wcd9fo+hn5r+r6EJz4yvdc3VK+1l8PR/BpfFeiFCJko9wGxvAgaSKGsZSrk6elpV1RFWiB35syLhCgA8eSjHC5uxdPFnosn088VL+LqfZVX8DhXV1df9gXXW3GqwQDE01PYR9/UobcWsp+C1zS3Jw7VeYfzl3nuQ4ddoCadq/j09KM38gMes+r7Ep4eQ88c9l4Ox6K/2Y8FNIQGIVQlzMB2wIeFjA/QHMRjwKaGnQamMfwD24T/dnTz4T8GbGrYBX67Y3wdGtg2+O3ud8O/kh8DNjfsAwNbxRj2gYGNYAz7wMBGMIZ9YGATmKbfN/YYH+mb3bwAAAAASUVORK5CYII=" />
                     </ui:WaitImageAppear.Image>
@@ -362,7 +362,7 @@
                       </ui:Target>
                     </ui:WaitImageAppear.Target>
                   </ui:WaitImageAppear>
-                  <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click aceptar" sap:VirtualizedContainerService.HintSize="434,106" sap2010:WorkflowViewState.IdRef="Click_7" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
+                  <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click aceptar" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_7" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
                     <ui:Click.CursorPosition>
                       <ui:CursorPosition Position="Center">
                         <ui:CursorPosition.OffsetX>
