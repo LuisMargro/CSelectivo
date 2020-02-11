@@ -4,6 +4,7 @@
     <x:Property Name="in_Config" Type="InArgument(scg:Dictionary(x:String, x:Object))" />
     <x:Property Name="out_TransactionItem" Type="OutArgument(sd:DataRow)" />
     <x:Property Name="io_TransactionData" Type="InOutArgument(sd:DataTable)" />
+    <x:Property Name="in_RetryNumber" Type="InArgument(x:Int32)" />
   </x:Members>
   <mva:VisualBasic.Settings>
     <x:Null />
@@ -69,7 +70,7 @@
         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <If Condition="[in_TransactionNumber=1]" DisplayName="Si es la primer transaccion." sap:VirtualizedContainerService.HintSize="579,507" sap2010:WorkflowViewState.IdRef="If_2">
+    <If Condition="[in_TransactionNumber=1 and in_RetryNumber=0]" DisplayName="Si es la primer transaccion." sap:VirtualizedContainerService.HintSize="579,507" sap2010:WorkflowViewState.IdRef="If_2">
       <If.Then>
         <ui:ExcelApplicationScope Password="{x:Null}" DisplayName="Excel Matriz de casos de uso" sap:VirtualizedContainerService.HintSize="434,359" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_1" WorkbookPath="[in_Config(&quot;UbicacionTData&quot;).ToString]">
           <ui:ExcelApplicationScope.Body>
