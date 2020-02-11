@@ -212,7 +212,7 @@
                         </sap:WorkflowViewStateService.ViewState>
                         <ui:SendHotkey DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" ClickBeforeTyping="True" DisplayName="Avanza una pagina para ver partida" sap:VirtualizedContainerService.HintSize="334,154" sap2010:WorkflowViewState.IdRef="SendHotkey_2" Key="pgdn" KeyModifiers="None" SpecialKey="True">
                           <ui:SendHotkey.Target>
-                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="80e246950aafa477a068722894750522" Selector="&lt;html app='chrome.exe' omit:htmlwindowname='1558' title='IBM BPM Portal - Step: Integración de información' /&gt;&lt;webctrl aria-labelledby='pnlHdr-lbl-493' /&gt;" TimeoutMS="120000" WaitForReady="INTERACTIVE" />
+                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="80e246950aafa477a068722894750522" Selector="&lt;html app='chrome.exe' omit:htmlwindowname='321' title='IBM BPM Portal - Step: Integración de información' /&gt;" TimeoutMS="120000" WaitForReady="INTERACTIVE" />
                           </ui:SendHotkey.Target>
                         </ui:SendHotkey>
                         <FlowStep.Next>
@@ -259,7 +259,7 @@
                                             <av:PointCollection x:Key="ConnectorLocation">300,192 300,214</av:PointCollection>
                                           </scg:Dictionary>
                                         </sap:WorkflowViewStateService.ViewState>
-                                        <Sequence DisplayName="secuencia general de guardado" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_47">
+                                        <Sequence DisplayName="secuencia general de guardado" sap:VirtualizedContainerService.HintSize="376,416" sap2010:WorkflowViewState.IdRef="Sequence_47">
                                           <Sequence.Variables>
                                             <Variable x:TypeArguments="s:Exception" Name="NuevoError" />
                                           </Sequence.Variables>
@@ -481,7 +481,7 @@
                                                                             <av:Size x:Key="ShapeSize">200,66</av:Size>
                                                                           </scg:Dictionary>
                                                                         </sap:WorkflowViewStateService.ViewState>
-                                                                        <Sequence DisplayName="secuencia actualizar el domicilio" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_51">
+                                                                        <Sequence DisplayName="secuencia actualizar el domicilio" sap:VirtualizedContainerService.HintSize="476,1192" sap2010:WorkflowViewState.IdRef="Sequence_51">
                                                                           <Sequence.Variables>
                                                                             <Variable x:TypeArguments="ui:GenericValue" Name="NuevoCodigoPostal" />
                                                                             <Variable x:TypeArguments="x:Boolean" Name="clienteYaRegistrado" />

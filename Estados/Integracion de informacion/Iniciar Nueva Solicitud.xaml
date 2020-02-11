@@ -6,7 +6,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>496,1123</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>496,1127</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Iniciar Nueva Solicitud_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="22">
@@ -62,7 +62,7 @@
       <x:Boolean x:Key="ShouldExpandAll">True</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <Sequence sap2010:Annotation.AnnotationText="Se crea la nueva solicitud en el track mas actual" DisplayName="Iniciar Nueva Solicitud" sap:VirtualizedContainerService.HintSize="476,1063" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="Se crea la nueva solicitud en el track mas actual" DisplayName="Iniciar Nueva Solicitud" sap:VirtualizedContainerService.HintSize="476,1067" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -93,7 +93,7 @@
                 </ui:CursorPosition>
               </ui:Click.CursorPosition>
               <ui:Click.Target>
-                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="01f9c2ec1438ab52241cbb2968cdd74e" Selector="&lt;webctrl aaname='‪Iniciar Nueva Solicitud‬' idx='3' parentid='launch-menu-item-icon-service' tag='A' /&gt;" TimeoutMS="180000" WaitForReady="INTERACTIVE" />
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="01f9c2ec1438ab52241cbb2968cdd74e" Selector="&lt;webctrl idx='657' parentid='launch-menu-item-icon-service' tag='SPAN' /&gt;&lt;nav up='2' /&gt;&lt;webctrl aaname='‪Iniciar Nueva Solicitud‬' parentid='launch-menu-item-icon-service' tag='A' /&gt;" TimeoutMS="180000" WaitForReady="INTERACTIVE" />
               </ui:Click.Target>
             </ui:Click>
             <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Clic cliente nuevo" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_5" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
