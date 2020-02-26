@@ -230,13 +230,16 @@
                                 <av:PointCollection x:Key="ConnectorLocation">340,936.5 340,1040</av:PointCollection>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Si el cliente no se ha guardado" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="BrowserScope_2" InformativeScreenshot="f994aa5a4a6324be622fec1cff0fcf76" Selector="&lt;html app='chrome.exe' title='IBM BPM Portal - Step: Integración de información' /&gt;">
+                            <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Si el cliente no se ha guardado" sap:VirtualizedContainerService.HintSize="939,1373" sap2010:WorkflowViewState.IdRef="BrowserScope_2" InformativeScreenshot="f994aa5a4a6324be622fec1cff0fcf76" Selector="&lt;html app='chrome.exe' title='IBM BPM Portal - Step: Integración de información' /&gt;">
                               <ui:BrowserScope.Body>
                                 <ActivityAction x:TypeArguments="x:Object">
                                   <ActivityAction.Argument>
                                     <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
                                   </ActivityAction.Argument>
-                                  <While DisplayName="Mientras se guarda el cliente" sap:VirtualizedContainerService.HintSize="905,1227" sap2010:WorkflowViewState.IdRef="While_2" Condition="[not ClienteGuardado]">
+                                  <While DisplayName="Mientras se guarda el cliente" sap:VirtualizedContainerService.HintSize="905,1227" sap2010:WorkflowViewState.IdRef="While_2">
+                                    <While.Condition>
+                                      <mva:VisualBasicValue x:TypeArguments="x:Boolean" ExpressionText="not ClienteGuardado" sap2010:WorkflowViewState.IdRef="VisualBasicValue`1_1" />
+                                    </While.Condition>
                                     <Flowchart DisplayName="proceso de guardado del cliente" sap:VirtualizedContainerService.HintSize="859,1070" sap2010:WorkflowViewState.IdRef="Flowchart_5">
                                       <Flowchart.Variables>
                                         <Variable x:TypeArguments="x:Boolean" Name="MensajeConfirmacion" />
@@ -265,7 +268,7 @@
                                             <av:PointCollection x:Key="ConnectorLocation">300,192 300,214</av:PointCollection>
                                           </scg:Dictionary>
                                         </sap:WorkflowViewStateService.ViewState>
-                                        <Sequence DisplayName="secuencia general de guardado" sap:VirtualizedContainerService.HintSize="376,416" sap2010:WorkflowViewState.IdRef="Sequence_47">
+                                        <Sequence DisplayName="secuencia general de guardado" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_47">
                                           <Sequence.Variables>
                                             <Variable x:TypeArguments="s:Exception" Name="NuevoError" />
                                           </Sequence.Variables>
@@ -430,7 +433,7 @@
                                                                     <av:Size x:Key="ShapeSize">200,51</av:Size>
                                                                   </scg:Dictionary>
                                                                 </sap:WorkflowViewStateService.ViewState>
-                                                                <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Clic Aceptar" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="Click_19" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
+                                                                <ui:Click DelayBefore="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DelayMS="3000" DisplayName="Clic Aceptar" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="Click_19" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
                                                                   <ui:Click.CursorPosition>
                                                                     <ui:CursorPosition Position="Center">
                                                                       <ui:CursorPosition.OffsetX>

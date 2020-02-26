@@ -8,7 +8,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>659,5210</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>659,5174</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>PersonaParticipantePF_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="21">
@@ -59,7 +59,7 @@
       <AssemblyReference>System.Data.Entity</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="Se agrega la persona participante pf de la matriz de casos" DisplayName="PersonaParticipantePF" sap:VirtualizedContainerService.HintSize="639,5110" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="Se agrega la persona participante pf de la matriz de casos" DisplayName="PersonaParticipantePF" sap:VirtualizedContainerService.HintSize="639,5114" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -160,7 +160,7 @@
                 <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" Profile="Basic" TargetImageBase64="iVBORw0KGgoAAAANSUhEUgAAANcAAAAWCAYAAABTyQmkAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAS3SURBVHhe7Zk9jlVHEIURrMaCLWDDAixyRG5i7NSEQGj2AVuYGEc4nHB28tD3pG98Xql/7gzvSjPQwdHtrt9T1V33PoYHV1dXh4WFhfNjDdfCwk5Yw7WwsBPWcC3cC3z6/Pnw4OGj47Olv4s4DpfEWzhnMW/+/OuIli7xz8ePm+xui69f/zv8+uz52WqD78tXrw6Xl5dN/fdga8/SLvnsyW0rbnKevbPBv3VexN7jrp4D18PVOgDkvzx+cri4uDiR742bHMZtcJ+G6za4i3y+Z7ioA3naKafOuzZUYjhckqc5yrAdfdloorq/3749aRQ6m8zAMrjamoOnMjnh8+79h6O9w+4hVP8eatx6gKmfvVAyN7Z/vH590r8RN9b2QT08Mr89AtrmXjtyeOnSjljyyTW6Ebeqy7wJ+GZuUPOk3HjqAesqx14Onk3PtnLtybM+1p5VS6+NulaN6mZ3BNxouGpTCf70t2fXSbBLvRfBRnkBbIDyuidOHizrjKu9vOq+YsYLfdZf60zUXNROo+vh9rjxrLnZW2/tKXJ12CbP3Pfscj3ihh47dXWf0M8atHVfQQy5teIm94w9s615R/Wx55m955lDgh57/Ooe29TVfQubfxb2GggBim3pvXjKbIxF11jCmO71S33lS6xWsfLCR1nmZ/37ixfXDRbkSx/RypN8Ztyqnrw5TPK1N9aenI2byB71+Iy4ffny71GHjboRMh/c6WH2JEFMbclXOeQZZJ0zW+To7cmoPvyqPnPlWl/j45dx1M8w/INGTrXJW3Y0Dn29pJVwHgiE018fdSlLv9Ye9A64cgB5KPhRZ9Yj4JGxQD0gQBxlM27Vv/JObuyNh10OYUXmzRy5ThuR+clp7cmxhayZdY2bgENyyx4L71qe18y216vMnfVlL9BlLuxa/SUefuaSgzlHaH65TJpEk4iyBHqKSHLVp1U8OglTBDKeaVf9WnGyiSlv8c5D6TW1h3pAgDjKZtyqf+Wd3Ngbb8Yz82aOXKeNqPmV+cKp9gJ7zxub7G9Fnmerf4k8r5ltr1dpk/XVeJkLu9FwVRm9yY9PC92fhTjhbGALqYlELRQYY1S8yMJZp131S1tl5KBReUlAi3c2Ndfp10MrT+U+4lb19GjLcM14Zo96fGbclG3RAfLxRyti9mwAeeU2i5l1zmxrr2b1VX3myrW+xsdP2RadGP6bC8f8BPLMaa0JeGYzaGj6ewFqIa04Hkb6uddf+7qvIM+IV+Vd+SUqV18g9m/GjWf2eutwtXyzrp5drkfczKsOZMwWyD/6ugliamOe9Mk65IRsZqseGbpRfex52ovU64/e2HWfedFxbrNfPMPhAhSWA0VCGioknvbqeKv500GdjSJnxskGYk9Oi0k/YWP0rzwqknf9LwJAfPUgdRWZm6dv73poxkpurNOWWrcOl3vj5rmkXeao+Ubc7Lu69GvBWKNegXqelYNybGvMkW3tVct+1PuaS5tWLpC9B7O6j8O1FyCWw7XwY4Hz5bLmBVz4H2cbLt8iozfFwo8F3tz5VV04xVm/XDf9WbFwP+GLtP5sWjjFrj8LFxZ+ZqzhWljYCWu4FhZ2whquhYWdsIZrYWEXXB2+AaKrpxbQI0Y7AAAAAElFTkSuQmCC" />
               </ui:ImageFound.Image>
               <ui:ImageFound.Target>
-                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" TimeoutMS="180000" WaitForReady="COMPLETE" />
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" TimeoutMS="60000" WaitForReady="COMPLETE" />
               </ui:ImageFound.Target>
             </ui:ImageFound>
             <If Condition="[CargoModal]" DisplayName="Si cargo el modal" sap:VirtualizedContainerService.HintSize="521,393" sap2010:WorkflowViewState.IdRef="If_3">
