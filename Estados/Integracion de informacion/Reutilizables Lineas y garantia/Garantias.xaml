@@ -78,30 +78,30 @@
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
                 <av:Point x:Key="ShapeLocation">280,0</av:Point>
                 <av:Size x:Key="ShapeSize">60,75</av:Size>
-                <av:PointCollection x:Key="ConnectorLocation">310,75 310,114.5</av:PointCollection>
+                <av:PointCollection x:Key="ConnectorLocation">310,75 310,94.5</av:PointCollection>
                 <x:Double x:Key="Height">841</x:Double>
                 <x:Double x:Key="Width">620</x:Double>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
             <Flowchart.StartNode>
-              <x:Reference>__ReferenceID7</x:Reference>
+              <x:Reference>__ReferenceID8</x:Reference>
             </Flowchart.StartNode>
             <FlowSwitch x:TypeArguments="x:String" x:Name="__ReferenceID6" DisplayName="Tipo Garantia" Expression="[in_TipoGarantia]" sap:VirtualizedContainerService.HintSize="76,87" sap2010:WorkflowViewState.IdRef="FlowSwitch`1_1">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <av:Point x:Key="ShapeLocation">272,206.5</av:Point>
+                  <av:Point x:Key="ShapeLocation">272,266.5</av:Point>
                   <av:Size x:Key="ShapeSize">76,87</av:Size>
-                  <av:PointCollection x:Key="hipotecariaConnector">310,293.5 310,347</av:PointCollection>
-                  <av:PointCollection x:Key="avalConnector">272,271.75 100,271.75 100,346</av:PointCollection>
-                  <av:PointCollection x:Key="prendariaConnector">348,271.75 520,271.75 520,347</av:PointCollection>
+                  <av:PointCollection x:Key="hipotecariaConnector">310,353.5 310,407</av:PointCollection>
+                  <av:PointCollection x:Key="avalConnector">272,331.75 100,331.75 100,407</av:PointCollection>
+                  <av:PointCollection x:Key="prendariaConnector">348,331.75 520,331.75 520,407</av:PointCollection>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
               <FlowStep x:Key="aval" x:Name="__ReferenceID4">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                    <av:Point x:Key="ShapeLocation">0,346</av:Point>
+                    <av:Point x:Key="ShapeLocation">0,407</av:Point>
                     <av:Size x:Key="ShapeSize">200,66</av:Size>
-                    <av:PointCollection x:Key="ConnectorLocation">100,412 100,467</av:PointCollection>
+                    <av:PointCollection x:Key="ConnectorLocation">100,473 100,527</av:PointCollection>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
                 <Sequence DisplayName="Seleccionar garantia Aval" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_22">
@@ -169,9 +169,9 @@
                   <FlowStep x:Name="__ReferenceID5">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <av:Point x:Key="ShapeLocation">0,467</av:Point>
+                        <av:Point x:Key="ShapeLocation">0,527</av:Point>
                         <av:Size x:Key="ShapeSize">200,66</av:Size>
-                        <av:PointCollection x:Key="ConnectorLocation">100,533 100,563 240,563 240,597</av:PointCollection>
+                        <av:PointCollection x:Key="ConnectorLocation">100,593 100,623 240,623 240,657</av:PointCollection>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                     <Sequence DisplayName="Secuencia ingresar datos de aval" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_44">
@@ -360,11 +360,11 @@
                       <FlowStep x:Name="__ReferenceID0">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                            <av:Point x:Key="ShapeLocation">140,597</av:Point>
+                            <av:Point x:Key="ShapeLocation">140,657</av:Point>
                             <av:Size x:Key="ShapeSize">200,66</av:Size>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <Sequence DisplayName="Secuencia guardar Garantia" sap:VirtualizedContainerService.HintSize="376,782" sap2010:WorkflowViewState.IdRef="Sequence_33">
+                        <Sequence DisplayName="Secuencia guardar Garantia" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_33">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -440,9 +440,9 @@
               <FlowStep x:Key="hipotecaria" x:Name="__ReferenceID3">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                    <av:Point x:Key="ShapeLocation">210,347</av:Point>
+                    <av:Point x:Key="ShapeLocation">210,407</av:Point>
                     <av:Size x:Key="ShapeSize">200,66</av:Size>
-                    <av:PointCollection x:Key="ConnectorLocation">310,413 310,443 420,443 420,467</av:PointCollection>
+                    <av:PointCollection x:Key="ConnectorLocation">310,473 310,503 420,503 420,527</av:PointCollection>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
                 <Sequence DisplayName="Seleccionar garantia Hipotecaria" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_23">
@@ -492,9 +492,9 @@
                   <FlowStep x:Name="__ReferenceID1">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <av:Point x:Key="ShapeLocation">320,467</av:Point>
+                        <av:Point x:Key="ShapeLocation">320,527</av:Point>
                         <av:Size x:Key="ShapeSize">200,66</av:Size>
-                        <av:PointCollection x:Key="ConnectorLocation">420,533 420,563 240,563 240,597</av:PointCollection>
+                        <av:PointCollection x:Key="ConnectorLocation">420,593 420,623 240,623 240,657</av:PointCollection>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                     <Sequence DisplayName="LLenar datos de garantia hipotecaria y prendaria" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_43">
@@ -746,12 +746,12 @@
               <FlowStep x:Key="prendaria" x:Name="__ReferenceID2">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                    <av:Point x:Key="ShapeLocation">420,347</av:Point>
+                    <av:Point x:Key="ShapeLocation">420,407</av:Point>
                     <av:Size x:Key="ShapeSize">200,66</av:Size>
-                    <av:PointCollection x:Key="ConnectorLocation">520,413 520,443 420,443 420,467</av:PointCollection>
+                    <av:PointCollection x:Key="ConnectorLocation">520,473 520,503 420,503 420,527</av:PointCollection>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <Sequence DisplayName="Seleccionar garantia Prendaria" sap:VirtualizedContainerService.HintSize="376,574" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                <Sequence DisplayName="Seleccionar garantia Prendaria" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_2">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -813,12 +813,12 @@
             <x:Reference>__ReferenceID0</x:Reference>
             <x:Reference>__ReferenceID1</x:Reference>
             <x:Reference>__ReferenceID5</x:Reference>
-            <FlowStep x:Name="__ReferenceID7">
+            <FlowStep x:Name="__ReferenceID8">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <av:Point x:Key="ShapeLocation">210,114.5</av:Point>
+                  <av:Point x:Key="ShapeLocation">210,94.5</av:Point>
                   <av:Size x:Key="ShapeSize">200,51</av:Size>
-                  <av:PointCollection x:Key="ConnectorLocation">310,165.5 310,206.5</av:PointCollection>
+                  <av:PointCollection x:Key="ConnectorLocation">310,145.5 310,185.5</av:PointCollection>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
               <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Clic abrir garantías" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="Click_12" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="False">
@@ -842,9 +842,34 @@
                 </sap:WorkflowViewStateService.ViewState>
               </ui:Click>
               <FlowStep.Next>
-                <x:Reference>__ReferenceID6</x:Reference>
+                <FlowStep x:Name="__ReferenceID7">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <av:Point x:Key="ShapeLocation">210,185.5</av:Point>
+                      <av:Size x:Key="ShapeSize">200,51</av:Size>
+                      <av:PointCollection x:Key="ConnectorLocation">310,236.5 310,266.5</av:PointCollection>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:WaitImageAppear FoundElement="{x:Null}" DisplayName="Espera a que abra el modal de Garantias" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="WaitImageAppear_1">
+                    <ui:WaitImageAppear.Image>
+                      <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" Profile="Basic" TargetImageBase64="iVBORw0KGgoAAAANSUhEUgAAAH0AAAAeCAYAAAAB4BHRAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAMxSURBVGhD7Zc9bhUxFIUjWA2CLQBhASg9Sk9qoCUlUJI1kJJs4b3QhSqUr3w7MfpGOtLRxTOeXynBLj7NG/v6+N57PIacHI/H1KiLZnqFNNMrpJleIc30CmmmV0gzvUKa6RXSTH+AHA6H9O78vIPfuZgljDb9581NOnnyNH2/usrON+ZDb93g3W6X3l9cbGI4jDJdJ+/Dx0/p1embdH//JxvXmEc0nf5uZTiMMp2T9/bsLO33+850kvR5HQpuAvjy9Vt6+fq0W0cBzH2+vOzmVBzjaGkNB8o1edcca33fuB/4DcRacnj2/EUHeWhO6OYCtPiyPAffH+Jc1Ad+K9735Un/1ANQHzwPfVCK18dVqncqo0xnAxXN0xugMRWhBFW0zPU1GosmqhCeaoD0KZR4xboe8d5k5nx9hDjitb8aL02eqsfnFR/1o55ylIbmpa/6VS/rfD/iZfqYeqdSNF0JqiA20leseRL0BIhVUnE9kLQXAcSic3f3uyvS45nzpkaY95zQjvpO3D/XWCfWUNIH9nDTPT9wDXT7TFe8k9ObQtH0mJAapFOaS9CTyplOsbqmHOJub3/9c4hyGlHHT743NAdzyt/H4hpiPL+S6cpT8WubTry0N/vSZbA2ciiOpHIJepE5w/qaBsSXTFfxfU0d0gfmhkyX2aoxt7/ra5410uW5lunEDdU7lUHT+8R513VLYtEkxkvXuxfpMMacx5f24/cU09nf57UnY7n9Yw1Rn/FYz1qmj6l3KoOmD5njSfNUHPB7yHSNoa8x34vfzBMnfU46GlFP737deW45iNMh4p0n+qxR/spN79qfsajPuOcrPdWTM8k1iFcs78S56aV6p9JrusTdGIcktLE3Bvhzpi9pwTrWa40XDTREc/yp46ddTQWZ57lGU3K4BnvzJ5vWx9x+XF93MdLM6fPueqxRf2DI9GgkqH/Ml+qdSvE/cnOISS8FHTd9CzBgbhMfG4tNz33JfoqnolvDDeB3vAmWEPU4TEv+jXxsrPKl+/UDcw0XNN+v1zUNBx0s6etazcX+j2xyvTceNs30CmmmV0gzvUKa6RXSTK+QZnqFNNOr45j+AsprGdl9OqYeAAAAAElFTkSuQmCC" />
+                    </ui:WaitImageAppear.Image>
+                    <ui:WaitImageAppear.Target>
+                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" TimeoutMS="120000" WaitForReady="COMPLETE" />
+                    </ui:WaitImageAppear.Target>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </ui:WaitImageAppear>
+                  <FlowStep.Next>
+                    <x:Reference>__ReferenceID6</x:Reference>
+                  </FlowStep.Next>
+                </FlowStep>
               </FlowStep.Next>
             </FlowStep>
+            <x:Reference>__ReferenceID7</x:Reference>
           </Flowchart>
         </ActivityAction>
       </ui:BrowserScope.Body>

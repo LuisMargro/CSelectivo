@@ -5,7 +5,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>662,3742</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>662,3706</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Simulacion_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="21">
@@ -55,7 +55,7 @@
       <AssemblyReference>System.ServiceModel</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="Se hace el proceso de simulacion" DisplayName="Simulacion" sap:VirtualizedContainerService.HintSize="642,3642" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="Se hace el proceso de simulacion" DisplayName="Simulacion" sap:VirtualizedContainerService.HintSize="642,3646" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -157,7 +157,9 @@
               <DoWhile.Variables>
                 <Variable x:TypeArguments="x:Boolean" Name="ExisteDatosComplementarios" />
               </DoWhile.Variables>
-              <DoWhile.Condition>[Not ExisteDatosComplementarios]</DoWhile.Condition>
+              <DoWhile.Condition>
+                <mva:VisualBasicValue x:TypeArguments="x:Boolean" ExpressionText="Not ExisteDatosComplementarios" sap2010:WorkflowViewState.IdRef="VisualBasicValue`1_1" />
+              </DoWhile.Condition>
               <Sequence DisplayName="Clicks" sap:VirtualizedContainerService.HintSize="478,722" sap2010:WorkflowViewState.IdRef="Sequence_4">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -273,7 +275,7 @@
               </ui:Click.Target>
             </ui:Click>
             <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="524,22" sap2010:WorkflowViewState.IdRef="Delay_1" />
-            <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Clic en simulacion" sap:VirtualizedContainerService.HintSize="524,106" sap2010:WorkflowViewState.IdRef="Click_3" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="False">
+            <ui:Click DelayBefore="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DelayMS="3000" DisplayName="Clic en simulacion" sap:VirtualizedContainerService.HintSize="524,106" sap2010:WorkflowViewState.IdRef="Click_3" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="False">
               <ui:Click.CursorPosition>
                 <ui:CursorPosition Position="Center">
                   <ui:CursorPosition.OffsetX>

@@ -174,7 +174,7 @@
                                   <av:Size x:Key="ShapeSize">200,66</av:Size>
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
-                              <Sequence DisplayName="Secuencia asignar líneas y garantías" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_1">
+                              <Sequence DisplayName="Secuencia asignar líneas y garantías" sap:VirtualizedContainerService.HintSize="376,782" sap2010:WorkflowViewState.IdRef="Sequence_1">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -214,7 +214,7 @@
                                     <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="c7361f9ce56ad2dd09d569826cf6dd73" Selector="&lt;html app='chrome.exe' title='IBM BPM Portal*' /&gt;&lt;webctrl id='table-header-selectall-Garantias1:Table1' /&gt;" TimeoutMS="180000" WaitForReady="INTERACTIVE" />
                                   </ui:Click.Target>
                                 </ui:Click>
-                                <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click asignar" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_3" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="False">
+                                <ui:Click DelayBefore="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DelayMS="1000" DisplayName="Click asignar" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_3" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
                                   <ui:Click.CursorPosition>
                                     <ui:CursorPosition Position="Center">
                                       <ui:CursorPosition.OffsetX>
@@ -226,19 +226,15 @@
                                     </ui:CursorPosition>
                                   </ui:Click.CursorPosition>
                                   <ui:Click.Target>
-                                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="43f61559a2be4074749df0c86476f8a9" Selector="&lt;html app='chrome.exe' title='IBM BPM Portal*' /&gt;&lt;webctrl id='button-button-Garantias1:Button8' /&gt;" TimeoutMS="180000" WaitForReady="INTERACTIVE" />
+                                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="43f61559a2be4074749df0c86476f8a9" Selector="&lt;html app='chrome.exe' title='IBM BPM Portal*' /&gt;&lt;webctrl id='button-button-Garantias1:Button8' /&gt;" TimeoutMS="180000" WaitForReady="COMPLETE" />
                                   </ui:Click.Target>
                                 </ui:Click>
-                                <ui:WaitImageAppear FoundElement="{x:Null}" DisplayName="Esperar a mensaje de confirmación" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="WaitImageAppear_1">
+                                <ui:WaitImageAppear FoundElement="{x:Null}" ContinueOnError="True" DisplayName="Esperar a mensaje de confirmacion asignar" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="WaitImageAppear_4">
                                   <ui:WaitImageAppear.Image>
-                                    <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" Profile="Basic" TargetImageBase64="iVBORw0KGgoAAAANSUhEUgAAANQAAAAXCAYAAABzomECAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAARbSURBVHhe7Zg9TiVBDIT3TlyDM8AJOAEHICcnJuYgBASIDBGSERLObj3xodqSu2dYRqunXX+SBT3dbZftMT/vx9I0zW70QDXNjvRANc2O9EA1zY70QDXNjvRANc2O9EA1zY4MB+rt7W05Pz9fTk5ODqbv9exPwNd3fOzJ8/Pzcnp6ulxeXi7v7+8fT/8uiqv4x1KTv8Hd3d3Bjpn7+/vl+vr6Y/V1yoGi2QzTd4fq2AbqGPjfBkqDpHfomAdKwySNuw9U/gT3AVNQUOAtw+YDpfvyncKrIZ4VH59+3rVRHIxcRPUbimc6K128APgk19vb289zmTN3MPcvfF9+tJ8+vKaKI10zMk+vgch9r6n3hdorPhr4ikavUfoSIy2juuR5rwV7V1dXn9rY93upwevn/jzXm5ubzzM6L2ZaRj4ryoEiuBykYPAgWL5A4P7SKHrlb/RCKQZFdiPZbDxG8dhHb6Xv4uLi8HWmT4bPbAhG/Ub73qBRDDQkI5+cH+2jucpbd1KH1qOarsXS82qgnp6epj0a+Ts7O/vtnr7nHanqN+sxplgZj77MfFYM/4dKRy4cce6YoklY4smwz/m1ga38JQwYGmk+zUnYRz9aquITHz34pAGj4rKv8+jTmnzRQONyLWYx3CcaRzHZJy/qVOUpMleR/eWuYuj7mRax1u/sCfezPsTI/FwPtXLNVa7kiSZionnNZ8VwoASX3eTIk0urCoYwiiMQn+cz5kg4UBQZL4oXG/M42Tx8eCx08CzPVMUWWRvdq/JHI8+I5zrzjFP5dDJH8LxGPqp6eJ3ddPfl5WWqRVT5CTTgD72KrbXi+jmP4TrX3snqPjHQlDHXfFZMBwporBwp2CwQYpwtyXhxqrWDHmmQllwDcdFGs9DPuoolXTM9+MaHnmuf/H1d5Y9mnnHeG5VnnMqnwz76wPMa+ajqwbM01fHh4WGqRRCX/LIHuc56VlpdJ/fR5TbqQdY8Y675rCgHKh0Lf4a4bNaItWRynxdJ+zqXZPG5r2faS/DHft6n2enP4ytvX3OGO7mPTz0nvtbZPHJGE2s/Qwyn8ul5yQf7qZk6sPaYInMR5OPPYE2L9rnPfq4zV9bSIiqtrpN97ifVfWKkhow58lmx+qFEmoIKknGjUclaMlviOTQrzxIf32kUJptdxR99KMGaO/io6iGjOSNNXpORj6oGYuST86N9NJGDaxCZqxjVfC0/fDBAMsXTp5x+DqOe+JtpTZ2s3XgnqvvEyIHyezOfFcM/+RDgjhAOGSz34avJqKiPj48H4RQ08QbpzMyfzGPnQPkzfOCfnMiVNTlVQyk/0q89j+ua+TjY94XXdNY4yDzJH2b7aB5pIFfwGsm8fmJLLD3X19fX18N9zuqu4pIzvvTM77vWSqfXz/eq+8RAp3JBk9d+5LNi0/9Q/zoUdq1ZTbNGD9Qv8icv5gPWNFvogfqA31LYlj+3mibpgWqaHemBapod6YFqmt1Ylp8EiGSFP9LNQwAAAABJRU5ErkJggg==" />
+                                    <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" Profile="Basic" TargetImageBase64="iVBORw0KGgoAAAANSUhEUgAAAOcAAAAdCAYAAABR/XtfAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAASMSURBVHhe7Zk7Tl1BEES9J7bBGmAFrIAFkJMTE7MQAgJEhgjJCAmvVU8+qFyamfs+FzSy+0gjmF93dfe0H+BfS1EUU1LNWRSTUs1ZFJNSzVkUk1LNWRSTUs1ZFJNSzVkUk1LNWRSTUs1ZFJNSzVkUk1LNWRSTUs1ZFJNSzVkUk3JUc358fCyXl5fL2dnZbuh7rR0Dtk6xsSWvr6/L+fn5cn19vXx+fv5Z/VnkV/5nyclP8PDwsBsz8/j4uNze3v6ZfT8HNycPh8Y8tUFna84Z+N+aU02pNzRzc6oxpXHq5sxPFm9WBQAKYp/G9ebUfdnOJLT+QRgVEpt+3rWRaAaxiNYnJ2s6K108JmwS6/39/de5jJk7DLcvfF92tJ82PKfyI10jMk7Pgch9z6nXhdzLPxr4ikbPUdoSPS29vOR5zwV7Nzc3X9rY93upwfPn9jzWu7u7rzM6L0Zaeja34ODmJBCJyeDBBTPyMYLby0EBW/Z6j1M+KJgPEpePiEEh2EdvS9/V1dXu60ifBjazuAzy19v3Yvd8oCHp2eR8bx/Nrbh1J3Vo3svpmi+tt5rz5eVlWKOevYuLi7/u6XveSCt/oxoz5Cv9UZeRzS046nfOFOVJIFAXSQEUZOKJYZ/za83fspfQrGjkIVHohH30o6VVSPyjB5sUs1co9nUefZoTLxp4BDkXIx9uE409n+wTF3lqxSkyVpH15a586PuRFrFW76wJ9zM/+Mj4XA+5cs2tWIkTTfhE85rNLTiqOQVCfEiUJypHK/kESaIFicjz6XMtCSRYg0fnhWO4n3wI2HBf6GAtz7QKJzI3uteKH42s4c915hmnZdPJGMHj6tlo5cPz7EN3397ehlpEKz6BBuyhV741l18/5z5c59qbbN3HB5rS55rNLTi6OYFHIlESPhJNYM4+ifFEt+YOeqRBWnIO+EUbhUc/85Yv6RrpwTY2tK594vd5K340s8Z5L3qecVo2HfbRBx5Xz0YrH6zlUB6fnp6GWgR+iS9rkPPMZ0ur6+Q+unz0apA5T59rNrfg4OZMkcLXCDQL32MtMbnPo9S+ziVZSO5rTXsJ9tjP+zyctOf+FbfPOcOd3Mem1vGveT4EYkYTcz+DD6dl0+OSDfZTM3lg7j5FxiKIx9dgTYv2uc9+zjNW5tIiWlpdJ/vcT1r38ZEa0mfP5hac9AehHApAkBgfFD1ZS8w+/hwKn2fxj+0cJDkfTst/7w9CzLmDjVY+NCh0T5PnpGejlQPRs8n53j6aiME1iIxV9HK+Fh82aEYN+dNfq/0cg3xib6Q1dTL3wZto3cdHNqffG9ncgqN+rCUYF0USIIXnPhyaGBXo+fl5lwSKk3ixdWZkT8N9Z3P6GjawT0zEypyYWg0uO9KvPffrmvkvAt8XntN9HkHGSfww2kdzTwOxgudIw/Mn9vGldX19f3/f3ees7sovMWNLa37ftbZ0ev58r3UfH+hULGjy3PdsbsHJv3P+61CktcIXxdZUc66QnwgMb9ai+A6qOfeAT0/GPj9SFsWpVHMWxaRUcxbFpFRzFsWULMtvNy3FrRk1kuAAAAAASUVORK5CYII=" />
                                   </ui:WaitImageAppear.Image>
                                   <ui:WaitImageAppear.Target>
-                                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" TimeoutMS="180000">
-                                      <ui:Target.WaitForReady>
-                                        <InArgument x:TypeArguments="ui:WaitForReady" />
-                                      </ui:Target.WaitForReady>
-                                    </ui:Target>
+                                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="&lt;html app='chrome.exe' htmlwindowname='506' title='IBM BPM Portal - Step: Integración de información' /&gt;" TimeoutMS="60000" WaitForReady="COMPLETE" />
                                   </ui:WaitImageAppear.Target>
                                 </ui:WaitImageAppear>
                                 <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click aceptar" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_4" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
@@ -304,7 +300,7 @@
               <av:Size x:Key="ShapeSize">200,51</av:Size>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Attach Browser lineas sin garantias" sap:VirtualizedContainerService.HintSize="434,782" sap2010:WorkflowViewState.IdRef="BrowserScope_1" InformativeScreenshot="d78224010b6d3135dc0daf85bd2d7c48" Selector="&lt;html app='chrome.exe' title='IBM BPM Portal - Step: Integración de información' /&gt;">
+          <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Attach Browser lineas sin garantias" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="BrowserScope_1" InformativeScreenshot="d78224010b6d3135dc0daf85bd2d7c48" Selector="&lt;html app='chrome.exe' title='IBM BPM Portal - Step: Integración de información' /&gt;">
             <ui:BrowserScope.Body>
               <ActivityAction x:TypeArguments="x:Object">
                 <ActivityAction.Argument>

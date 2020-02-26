@@ -101,7 +101,7 @@
                     <av:PointCollection x:Key="ConnectorLocation">100,465.02 100,520 230,520</av:PointCollection>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <ui:SelectItem ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Seleccionar linea Revolvente" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="SelectItem_3" Item="Revolvente">
+                <ui:SelectItem ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="1500" DisplayName="Seleccionar linea Revolvente" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="SelectItem_3" Item="Revolvente">
                   <ui:SelectItem.Items>
                     <scg:List x:TypeArguments="x:String" Capacity="4">
                       <x:String>Revolvente</x:String>
@@ -127,7 +127,7 @@
                         <av:PointCollection x:Key="ConnectorLocation">330,545.5 330,574.02</av:PointCollection>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <ui:SelectItem ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Seleccionar Solicitada" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="SelectItem_1" Item="Solicitada">
+                    <ui:SelectItem ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="2000" DisplayName="Seleccionar Solicitada" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="SelectItem_1" Item="Solicitada">
                       <ui:SelectItem.Items>
                         <scg:List x:TypeArguments="x:String" Capacity="16">
                           <x:String>Solicitada</x:String>
@@ -210,7 +210,7 @@
                     <av:PointCollection x:Key="ConnectorLocation">330,465.5 330,494.5</av:PointCollection>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <ui:SelectItem ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Seleccionar Linea No Revolvente" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="SelectItem_4" Item="No Revolvente (Simple)">
+                <ui:SelectItem ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="1500" DisplayName="Seleccionar Linea No Revolvente" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="SelectItem_4" Item="No Revolvente (Simple)">
                   <ui:SelectItem.Items>
                     <scg:List x:TypeArguments="x:String" Capacity="4">
                       <x:String>Revolvente</x:String>
@@ -239,7 +239,7 @@
                     <av:PointCollection x:Key="ConnectorLocation">560,465.5 560,520 430,520</av:PointCollection>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <ui:SelectItem ContinueOnError="True" DelayAfter="1000" DelayBefore="30000" DisplayName="Seleccionar Linea Global" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="SelectItem_5" Item="Global Cliente">
+                <ui:SelectItem ContinueOnError="{x:Null}" DelayAfter="4000" DelayBefore="5000" DisplayName="Seleccionar Linea Global" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="SelectItem_5" Item="Global Cliente">
                   <ui:SelectItem.Items>
                     <scg:List x:TypeArguments="x:String" Capacity="4">
                       <x:String>Revolvente</x:String>
@@ -248,7 +248,7 @@
                     </scg:List>
                   </ui:SelectItem.Items>
                   <ui:SelectItem.Target>
-                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="b336b77e1c4c27acb1004a7339e7335e" Selector="&lt;html app='chrome.exe' title='IBM BPM Portal - Step: Integración de información' /&gt;&lt;webctrl id='singleselect-Linea_Nueva1:lin_global' tag='SELECT' /&gt;" TimeoutMS="180000" WaitForReady="INTERACTIVE" />
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="b336b77e1c4c27acb1004a7339e7335e" Selector="&lt;html app='chrome.exe' title='IBM BPM Portal - Step: Integración de información' /&gt;&lt;webctrl id='singleselect-Linea_Nueva1:lin_global' tag='SELECT' /&gt;" TimeoutMS="180000" WaitForReady="COMPLETE" />
                   </ui:SelectItem.Target>
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -269,7 +269,7 @@
                   <av:PointCollection x:Key="ConnectorLocation">330,235.5 330,276.5</av:PointCollection>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <ui:Click DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DelayBefore="1000" DisplayName="Clic en Linea nueva" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="Click_1" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="False">
+              <ui:Click SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DelayBefore="1000" DelayMS="3000" DisplayName="Clic en Linea nueva" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="Click_1" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="False">
                 <ui:Click.CursorPosition>
                   <ui:CursorPosition Position="Center">
                     <ui:CursorPosition.OffsetX>

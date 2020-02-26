@@ -210,11 +210,17 @@
                             <av:PointCollection x:Key="ConnectorLocation">340,865.5 340,884.5</av:PointCollection>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <ui:SendHotkey DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" ClickBeforeTyping="True" DisplayName="Avanza una pagina para ver partida" sap:VirtualizedContainerService.HintSize="334,154" sap2010:WorkflowViewState.IdRef="SendHotkey_2" Key="pgdn" KeyModifiers="None" SpecialKey="True">
-                          <ui:SendHotkey.Target>
-                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="80e246950aafa477a068722894750522" Selector="&lt;html app='chrome.exe' omit:htmlwindowname='321' title='IBM BPM Portal - Step: Integración de información' /&gt;" TimeoutMS="120000" WaitForReady="INTERACTIVE" />
-                          </ui:SendHotkey.Target>
-                        </ui:SendHotkey>
+                        <ui:CommentOut sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="CommentOut_4">
+                          <ui:CommentOut.Body>
+                            <Sequence DisplayName="Ignored Activities" sap2010:WorkflowViewState.IdRef="Sequence_52">
+                              <ui:SendHotkey DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" ClickBeforeTyping="False" DisplayName="Avanza una pagina para ver partida" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="SendHotkey_2" Key="pgdn" KeyModifiers="None" SpecialKey="True">
+                                <ui:SendHotkey.Target>
+                                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="80e246950aafa477a068722894750522" Selector="&lt;html app='chrome.exe' omit:htmlwindowname='321' title='IBM BPM Portal - Step: Integración de información' /&gt;" TimeoutMS="120000" WaitForReady="INTERACTIVE" />
+                                </ui:SendHotkey.Target>
+                              </ui:SendHotkey>
+                            </Sequence>
+                          </ui:CommentOut.Body>
+                        </ui:CommentOut>
                         <FlowStep.Next>
                           <FlowStep x:Name="__ReferenceID33">
                             <sap:WorkflowViewStateService.ViewState>
@@ -481,7 +487,7 @@
                                                                             <av:Size x:Key="ShapeSize">200,66</av:Size>
                                                                           </scg:Dictionary>
                                                                         </sap:WorkflowViewStateService.ViewState>
-                                                                        <Sequence DisplayName="secuencia actualizar el domicilio" sap:VirtualizedContainerService.HintSize="476,1192" sap2010:WorkflowViewState.IdRef="Sequence_51">
+                                                                        <Sequence DisplayName="secuencia actualizar el domicilio" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_51">
                                                                           <Sequence.Variables>
                                                                             <Variable x:TypeArguments="ui:GenericValue" Name="NuevoCodigoPostal" />
                                                                             <Variable x:TypeArguments="x:Boolean" Name="clienteYaRegistrado" />
@@ -1350,7 +1356,7 @@
           </ui:CursorPosition>
         </ui:Click.CursorPosition>
         <ui:Click.Target>
-          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="776671deaa111e075c1f38afb2233fa8" Selector="&lt;html app='chrome.exe' title='IBM BPM Portal - Step: Integración de información' /&gt;&lt;webctrl id='button-button-btn_informacionsaaas' tag='BUTTON' /&gt;" TimeoutMS="2000" WaitForReady="INTERACTIVE" />
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="776671deaa111e075c1f38afb2233fa8" Selector="&lt;html app='chrome.exe' title='IBM BPM Portal - Step: Integración de información' /&gt;&lt;webctrl id='button-button-btn_informacion' tag='BUTTON' /&gt;" TimeoutMS="2000" WaitForReady="INTERACTIVE" />
         </ui:Click.Target>
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">

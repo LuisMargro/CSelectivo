@@ -2,19 +2,19 @@
   <x:Members>
     <x:Property Name="in_NumeroInstancia" Type="InArgument(x:Int32)" />
   </x:Members>
-  <sap:VirtualizedContainerService.HintSize>583,1626</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>583,2054</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <mva:VisualBasic.Settings>Assembly references and imported namespaces for internal implementation</mva:VisualBasic.Settings>
   <TextExpression.NamespacesForImplementation>
-    <sco:Collection x:TypeArguments="x:String">
+    <scg1:List x:TypeArguments="x:String" Capacity="4">
       <x:String>UiPath.Core</x:String>
       <x:String>UiPath.Core.Activities</x:String>
       <x:String>System</x:String>
       <x:String>System.Activities</x:String>
-    </sco:Collection>
+    </scg1:List>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
-    <sco:Collection x:TypeArguments="AssemblyReference">
+    <scg1:List x:TypeArguments="AssemblyReference" Capacity="9">
       <AssemblyReference>UiPath.System.Activities</AssemblyReference>
       <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
       <AssemblyReference>mscorlib</AssemblyReference>
@@ -24,9 +24,9 @@
       <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
       <AssemblyReference>System.ServiceModel</AssemblyReference>
       <AssemblyReference>System.Activities</AssemblyReference>
-    </sco:Collection>
+    </scg1:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="Esta sequencia se encarga de buscar el numero de instancia generado, para poder continuar con su proceso.&#xA;&#xA;condicion: se requiere que la sesion se encuentre iniciada en el sistema" DisplayName="Buscar numero de instancia" sap:VirtualizedContainerService.HintSize="563,1566" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="Esta sequencia se encarga de buscar el numero de instancia generado, para poder continuar con su proceso.&#xA;&#xA;condicion: se requiere que la sesion se encuentre iniciada en el sistema" DisplayName="Buscar numero de instancia" sap:VirtualizedContainerService.HintSize="563,1994" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:Boolean" Name="CargoPagina" />
     </Sequence.Variables>
@@ -83,18 +83,48 @@
         </Sequence>
       </If.Then>
     </If>
-    <ui:TypeInto ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Buscar instancia" EmptyField="True" sap:VirtualizedContainerService.HintSize="521,134" sap2010:WorkflowViewState.IdRef="TypeInto_2" Text="[in_NumeroInstancia.ToString+ &quot;[k(enter)]&quot;]">
-      <ui:TypeInto.Target>
-        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="7a4684d59fdc468a13968990976e555c" Selector="&lt;html app='chrome.exe' title='IBM BPM Portal - Work' /&gt;&lt;webctrl parentid='div_1_2_1_2_1' tag='INPUT' type='text' /&gt;" TimeoutMS="120000" WaitForReady="COMPLETE" />
-      </ui:TypeInto.Target>
-    </ui:TypeInto>
-    <Delay sap2010:Annotation.AnnotationText="Se hace una pequeña espera para que termine de cargar" DisplayName="Retraso" Duration="00:00:03" sap:VirtualizedContainerService.HintSize="521,64" sap2010:WorkflowViewState.IdRef="Delay_2">
-      <sap:WorkflowViewStateService.ViewState>
-        <scg1:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
-        </scg1:Dictionary>
-      </sap:WorkflowViewStateService.ViewState>
-    </Delay>
+    <DoWhile DisplayName="Mientras encuentra la instancia" sap:VirtualizedContainerService.HintSize="521,666" sap2010:WorkflowViewState.IdRef="DoWhile_1">
+      <DoWhile.Variables>
+        <Variable x:TypeArguments="ui:GenericValue" Name="NumInstanciaTmp" />
+      </DoWhile.Variables>
+      <DoWhile.Condition>
+        <mva:VisualBasicValue x:TypeArguments="x:Boolean" ExpressionText="Not NumInstanciaTmp.Contains(in_NumeroInstancia.ToString)" sap2010:WorkflowViewState.IdRef="VisualBasicValue`1_1" />
+      </DoWhile.Condition>
+      <Sequence DisplayName="Buscar número de instancia" sap:VirtualizedContainerService.HintSize="376,504" sap2010:WorkflowViewState.IdRef="Sequence_7">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg1:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          </scg1:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+        <ui:TypeInto ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Buscar instancia" EmptyField="True" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_2" Text="[in_NumeroInstancia.ToString+ &quot;[k(enter)]&quot;]">
+          <ui:TypeInto.Target>
+            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="7a4684d59fdc468a13968990976e555c" Selector="&lt;html app='chrome.exe' title='IBM BPM Portal - Work' /&gt;&lt;webctrl parentid='div_1_2_1_2_1' tag='INPUT' type='text' /&gt;" TimeoutMS="120000" WaitForReady="COMPLETE" />
+          </ui:TypeInto.Target>
+        </ui:TypeInto>
+        <Delay sap2010:Annotation.AnnotationText="Se hace una pequeña espera para que termine de cargar" DisplayName="Retraso" Duration="00:00:03" sap:VirtualizedContainerService.HintSize="334,64" sap2010:WorkflowViewState.IdRef="Delay_2">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg1:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+            </scg1:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+        </Delay>
+        <ui:GetAttribute ContinueOnError="{x:Null}" Attribute="aaname" DisplayName="Obtener número de instancia" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="GetAttribute_1">
+          <ui:GetAttribute.Result>
+            <OutArgument x:TypeArguments="ui:GenericValue">[NumInstanciaTmp]</OutArgument>
+          </ui:GetAttribute.Result>
+          <ui:GetAttribute.Target>
+            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="6b816eb4e2c397727b004ce3c533e18a" Selector="&lt;html app='chrome.exe' omit:htmlwindowname='370' title='IBM BPM Portal - Work' /&gt;&lt;webctrl parentid='div_1_2_1_2_2' tag='A' parentclass='process-name' /&gt;">
+              <ui:Target.TimeoutMS>
+                <InArgument x:TypeArguments="x:Int32" />
+              </ui:Target.TimeoutMS>
+              <ui:Target.WaitForReady>
+                <InArgument x:TypeArguments="ui:WaitForReady" />
+              </ui:Target.WaitForReady>
+            </ui:Target>
+          </ui:GetAttribute.Target>
+        </ui:GetAttribute>
+      </Sequence>
+    </DoWhile>
     <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click abrir instancia" sap:VirtualizedContainerService.HintSize="521,106" sap2010:WorkflowViewState.IdRef="Click_2" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
       <ui:Click.CursorPosition>
         <ui:CursorPosition Position="BottomLeft">

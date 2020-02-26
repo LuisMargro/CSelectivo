@@ -83,17 +83,14 @@
             </sap:WorkflowViewStateService.ViewState>
             <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click Iniciar nueva solicitud" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_12" KeyModifiers="None" MouseButton="BTN_LEFT">
               <ui:Click.CursorPosition>
-                <ui:CursorPosition Position="Center">
-                  <ui:CursorPosition.OffsetX>
-                    <InArgument x:TypeArguments="x:Int32" />
-                  </ui:CursorPosition.OffsetX>
+                <ui:CursorPosition OffsetX="6" Position="Center">
                   <ui:CursorPosition.OffsetY>
                     <InArgument x:TypeArguments="x:Int32" />
                   </ui:CursorPosition.OffsetY>
                 </ui:CursorPosition>
               </ui:Click.CursorPosition>
               <ui:Click.Target>
-                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="01f9c2ec1438ab52241cbb2968cdd74e" Selector="&lt;webctrl idx='657' parentid='launch-menu-item-icon-service' tag='SPAN' /&gt;&lt;nav up='2' /&gt;&lt;webctrl aaname='‪Iniciar Nueva Solicitud‬' parentid='launch-menu-item-icon-service' tag='A' /&gt;" TimeoutMS="180000" WaitForReady="INTERACTIVE" />
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="01f9c2ec1438ab52241cbb2968cdd74e" Selector="&lt;webctrl parentid='launch-menu-item-icon-service' tag='SPAN' aaname='‪Aplicacion_SICRED_13012020_PruebasCelula‬' class='snapshot-name ng-binding' innertext='‪Aplicacion_SICRED_13012020_PruebasCelula‬' idx='*' /&gt;&lt;nav up='2' /&gt;&lt;webctrl aaname='‪Iniciar Nueva Solicitud‬' parentid='launch-menu-item-icon-service' tag='A' /&gt;" TimeoutMS="180000" WaitForReady="INTERACTIVE" />
               </ui:Click.Target>
             </ui:Click>
             <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Clic cliente nuevo" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_5" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
